@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Wed Feb 12 14:01:15 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : NIOS_HyperRAM
+Top-level Entity Name : NIOS_HyperRAM
+Family : MAX 10
+Device : 10M08DAF256C8G
+Power Models : Final
+Total Thermal Power Dissipation : 93.61 mW
+Core Dynamic Thermal Power Dissipation : 10.38 mW
+Core Static Thermal Power Dissipation : 39.81 mW
+I/O Thermal Power Dissipation : 43.42 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

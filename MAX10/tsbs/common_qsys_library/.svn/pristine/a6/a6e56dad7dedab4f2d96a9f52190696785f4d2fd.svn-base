@@ -1,0 +1,19 @@
+create_driver griffin_udp_payload_inserter_driver
+
+set_sw_property hw_class_name griffin_udp_payload_inserter
+
+set_sw_property version 1.0
+
+set_sw_property min_compatible_hw_version 1.0
+
+set_sw_property auto_initialize false
+
+set_sw_property bsp_subdirectory drivers
+
+add_sw_property c_source HAL/src/griffin_udp_payload_inserter.c
+
+add_sw_property include_source HAL/inc/griffin_udp_payload_inserter.h
+add_sw_property include_source inc/griffin_udp_payload_inserter_regs.h
+
+add_sw_property supported_bsp_type HAL
+add_sw_property supported_bsp_type UCOSII

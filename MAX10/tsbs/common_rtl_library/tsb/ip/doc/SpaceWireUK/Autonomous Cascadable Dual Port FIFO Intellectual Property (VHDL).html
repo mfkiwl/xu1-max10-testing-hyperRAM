@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0041)http://www.spacewire.co.uk/auto_fifo.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)</title>
+<link href="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/spacewire.css" rel="stylesheet" type="text/css">
+
+<meta name="description" content="Autonomous Cascadable Dual Port FIFO (Intellectual Property) written entirely in VHDL (RTL) and targeted at Xilinx FPGA&#39;s.">
+<meta name="keywords" content="autonomous, cascadable, dual, port, fifo, handshake, read, write, vhdl, fpga, asic, xilinx, intellectual, property">
+<meta name="author" content="Steve Haywood (SpaceWire UK)">
+<meta name="robots" content="all">
+<style type="text/css"></style></head>
+
+<body>
+
+<div id="page_whole">
+<div id="page_body">
+
+<div class="title_main">
+<div style="float:left;width:40px;height:25px"><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/title.jpg" alt="Bar" height="25" width="35"></div>
+<div style="float:left;width:210px;height:25px;color:#000000;font-size:20px">SpaceWire UK</div>
+<div style="float:left;width:570px;height:20px;padding-top:5px;font-weight:lighter;font-size:12px;text-align:center">Specialist providers of VHDL Intellectual Property &amp; Design Services</div>
+<div style="float:right;width:140px;height:25px;text-align:right"><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/title.jpg" alt="Bar" height="25" width="35"><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/title.jpg" alt="Bar" height="25" width="35"><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/title.jpg" alt="Bar" height="25" width="35"><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/title.jpg" alt="Bar" height="25" width="35"></div>
+</div>
+
+<div id="nav_left1">
+<ul class="menu_ul">
+  <li class="menu_li"><a href="http://www.spacewire.co.uk/index.html">Home</a></li>
+  <li class="menu_li"><a href="http://www.spacewire.co.uk/about.html">About Us</a></li>
+  <li class="menu_li"><a href="http://www.spacewire.co.uk/auto_fifo.html#">Intellectual Property</a>
+    <ul class="menu_ul">
+      <li class="menu_li"><a href="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL).html">Autonomous FIFO</a></li>
+      <li class="menu_li"><a href="http://www.spacewire.co.uk/raptor16.html">Raptor-16 Micro</a></li>
+      <li class="menu_li"><a href="http://www.spacewire.co.uk/spacewire_codec.html">SpaceWire CODEC</a></li>
+      <li class="menu_li"><a href="http://www.spacewire.co.uk/spacewire.html">SpaceWire Switch</a></li>
+      <li class="menu_li"><a href="http://www.spacewire.co.uk/video.html">Video Pipeline</a></li>
+    </ul>
+  </li>
+  <li class="menu_li"><a href="http://www.spacewire.co.uk/contact.php">Contact</a></li>
+  <li class="menu_li"><a href="http://www.spacewire.co.uk/ind.html">Index</a></li>
+</ul>
+</div>
+
+
+<div class="title_main">Autonomous Cascadable Dual Port FIFO</div>
+<div class="section_main">
+
+The dual port FIFO is now a standard building block in most designs, especially in the area of communications where it is used frequently for packet work. Although very useful in its basic form, the standard FIFO does lack two attributes; autonomy and cascadability. Unfortunately you cannot simply connect two FIFO's together, as shown below, and expect them to automatically transfer data.
+
+<br><br>
+
+<table border="0" width="100%">
+<tbody align="center">
+<tr>
+<td><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/f1.gif" alt="" width="480" height="192"></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+The write side of a standard FIFO has a very subtle single-cycle handshake. When Wr_En is high the FIFO takes data if its Full flag is low. This is indeed a handshake, where data is transferred in the cycle during a high on Wr_En and a low on Full.
+
+<br><br>
+
+Unfortunately the read side of a standard FIFO does not posses the same handshake mechanism and hence cannot be directly connected to another standard FIFO. To perform a read operation two cycles are required, the first where Rd_En goes high and the second where the data is transferred.
+
+<br><br>
+
+If the need for a two-cycle read is eliminated and a pre-read circuit added, as shown below, then the standard FIFO design becomes both autonomous and cascadable.
+
+<br><br>
+
+<table border="0" width="100%">
+<tbody align="center">
+<tr>
+<td><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/f2.gif" alt="" width="573" height="279"></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+This new FIFO design is now fully symmetrical on both its read and write interface, as can be seen by the following timing diagrams.
+
+<br><br>
+
+<table align="center" cellpadding="2" cellspacing="0" border="0" width="585">
+<tbody>
+<tr>
+<td align="center"><b><u>Write Example</u></b></td>
+</tr>
+<tr>
+<td><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/f3.gif" alt="" width="548" height="157"></td>
+</tr>
+<tr>
+<td align="center"><font color="#000000">Data is transferred during the cycle when nWrite<br>and Full are both low, and at no other times.</font></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+<table align="center" cellpadding="2" cellspacing="0" border="0" width="585">
+<tbody>
+<tr>
+<td align="center"><b><u>Read Example</u></b></td>
+</tr>
+<tr>
+<td><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/f4.gif" alt="" width="547" height="157"></td>
+</tr>
+<tr>
+<td align="center"><font color="#000000">Data is transferred during the cycle when Empty<br>and nRead are both low, and at no other times.
+</font></td>
+</tr>
+</tbody>
+</table>
+
+<br>
+
+Cascading the new FIFO design is now extremely easy, as is shown below. The first FIFO's Empty output is used to drive the second FIFO's nWrite input, and likewise the second FIFO's Full output is use to drive the first FIFO's nRead input. Data will be transferred when both of these connecting lines are low, i.e. when the first FIFO is not empty (has data) and the second FIFO is not full (can take data).
+
+<br><br>
+
+<table border="0" width="100%">
+<tbody align="center">
+<tr>
+<td><img src="./Autonomous Cascadable Dual Port FIFO Intellectual Property (VHDL)_files/f5.gif" alt="" width="457" height="158"></td>
+</tr>
+</tbody>
+</table>
+
+<br><br><br>
+</div>
+
+<div class="title_main">Design Source</div>
+<div class="section_main">
+
+Details of two Autonomous Cascadable Dual Port FIFO designs are given below:-
+
+<ul>
+<li><b>ac_fifo_wrap.vhd</b> - Converts a standard dual port FIFO into an Autonomous Cascadable Dual Port FIFO. The module is simply a wrapper that adds the necessary handshake logic to a standard FIFO design.</li>
+</ul>
+
+<ul>
+<li><b>ac_fifo_2byte.vhd</b> - A standalone two byte Autonomous Cascadable Dual Port FIFO that has a single cycle latency. This modules IO's are registered which makes it ideal for use alongside other modules that do not have time to register their IO's.</li>
+</ul>
+
+The design source for the above two modules can be found in the following zip:-
+
+<ul>
+<li><a href="http://www.spacewire.co.uk/fifo.zip">fifo.zip</a></li>
+</ul>
+
+Although the VHDL source code (intellectual property) is targeted towards a Xilinx FPGA its low-level RTL implementation ensures an optimal result for any ASIC or FPGA architecture.
+
+
+
+
+<br><br>
+</div>
+
+
+
+<div class="footer_main">
+<div class="footer_left">
+Copyright © 2004-2013 SpaceWire UK. All rights reserved.
+</div>
+<div class="footer_right">
+BitCoin: <a href="bitcoin:1HqJiexed6DmazHMo8z962ZZU2bYDoCrD">1HqJiexed6DmazHMo8z962ZZU2bYDoCrD</a>
+</div>
+</div>
+
+
+
+
+
+</div>
+</div>
+
+
+
+</body></html>

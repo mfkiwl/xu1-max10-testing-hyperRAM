@@ -1,0 +1,854 @@
+ -- Copyright (C) 1991-2009 Altera Corporation
+ -- Your use of Altera Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Altera Program License 
+ -- Subscription Agreement, Altera MegaCore Function License 
+ -- Agreement, or other applicable license agreement, including, 
+ -- without limitation, that your use is for the sole purpose of 
+ -- programming logic devices manufactured by Altera and sold by 
+ -- Altera or its authorized distributors.  Please refer to the 
+ -- applicable agreement for further details.
+ -- 
+ -- This is a Quartus II output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus II input file. This file cannot be used
+ -- to make Quartus II pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus II help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --					Bank 1:		2.5V
+ --					Bank 2:		2.5V
+ --					Bank 3:		2.5V
+ --					Bank 4:		2.5V
+ --					Bank 5:		2.5V
+ --					Bank 6:		2.5V
+ --					Bank 7:		2.5V
+ --					Bank 8:		2.5V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --					It can also be used to report unused dedicated pins. The connection
+ --					on the board for unused dedicated pins depends on whether this will
+ --					be used in a future design. One example is device migration. When
+ --					using device migration, refer to the device pin-tables. If it is a
+ --					GND pin in the pin table or if it will not be used in a future design
+ --					for another purpose the it MUST be connected to GND. If it is an unused
+ --					dedicated pin, then it can be connected to a valid signal on the board
+ --					(low, high, or toggling) if that signal is required for a different
+ --					revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --					This pin should be connected to GND. It may also be connected  to a
+ --					valid signal  on the board  (low, high, or toggling)  if that signal
+ --					is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks (Bank 13, 14, 15, 16 and 17),
+ --           	    connect each pin marked GND* either individually through a 10k Ohm resistor
+ --           	    to GND or tie all pins together and connect through a single 10k Ohm resistor
+ --           	    to GND.
+ --           	    For non-transceiver I/O banks, connect each pin marked GND* directly to GND
+ --           	    or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+CHIP  "multiple_parallel_advanced_dds"  ASSIGNED TO AN: EP3C40F780C6
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+VCCIO8                       : A2        : power  :                   : 2.5V    : 8         :                
+phase_accumulator[3][1]      : A3        : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][7] : A4        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A5        : power  :                   : 2.5V    : 8         :                
+triangular_waveform_out[0][7] : A6        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[3][13]   : A7        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[4][1]    : A8        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A9        : power  :                   : 2.5V    : 8         :                
+cosine_waveform_out[7][6]    : A10       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[3][9]    : A11       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][6] : A12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : A13       : power  :                   : 2.5V    : 8         :                
+GND+                         : A14       :        :                   :         : 8         :                
+GND+                         : A15       :        :                   :         : 7         :                
+VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
+cosine_waveform_out[7][10]   : A17       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[2][4]      : A18       : output : 2.5 V             :         : 7         : N              
+phi_inc_i[6]                 : A19       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : A20       : power  :                   : 2.5V    : 7         :                
+phase_accumulator[2][7]      : A21       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[1][9]      : A22       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[2][12] : A23       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A24       : power  :                   : 2.5V    : 7         :                
+triangular_waveform_out[1][11] : A25       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[4][10] : A26       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : A27       : power  :                   : 2.5V    : 7         :                
+VCCIO2                       : AA1       : power  :                   : 2.5V    : 2         :                
+GND                          : AA2       : gnd    :                   :         :           :                
+phase_accumulator[5][4]      : AA3       : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[5][3] : AA4       : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[7][0]    : AA5       : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[5][4]    : AA6       : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[5][9] : AA7       : output : 2.5 V             :         : 2         : N              
+phase_accumulator[3][5]      : AA8       : output : 2.5 V             :         : 2         : N              
+GNDA1                        : AA9       : gnd    :                   :         :           :                
+phase_accumulator[4][10]     : AA10      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AA11      : power  :                   : 2.5V    : 3         :                
+phase_accumulator[6][1]      : AA12      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[3][8] : AA13      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[5][5] : AA14      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[4][11] : AA15      : output : 2.5 V             :         : 4         : N              
+phase_accumulator[5][5]      : AA16      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[7][3]      : AA17      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AA18      : power  :                   : 2.5V    : 4         :                
+sine_waveform_out[7][2]      : AA19      : output : 2.5 V             :         : 4         : N              
+GNDA4                        : AA20      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AA21      :        :                   :         : 5         :                
+sine_waveform_out[7][1]      : AA22      : output : 2.5 V             :         : 5         : N              
+phase_accumulator[5][9]      : AA23      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[2][11]     : AA24      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[5][2]      : AA25      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[0][8]      : AA26      : output : 2.5 V             :         : 5         : N              
+GND                          : AA27      : gnd    :                   :         :           :                
+VCCIO5                       : AA28      : power  :                   : 2.5V    : 5         :                
+triangular_waveform_out[3][13] : AB1       : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[5][4] : AB2       : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[3][9]      : AB3       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB4       :        :                   :         : 2         :                
+triangular_waveform_out[4][12] : AB5       : output : 2.5 V             :         : 2         : N              
+phase_accumulator[3][3]      : AB6       : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[3][1] : AB7       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB8       :        :                   :         : 2         :                
+phase_accumulator[0][3]      : AB9       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB10      : power  :                   : 2.5V    : 3         :                
+cosine_waveform_out[5][10]   : AB11      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[3][11]     : AB12      : output : 2.5 V             :         : 3         : N              
+phase_accumulator[4][1]      : AB13      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[3][10]     : AB14      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[6][3]      : AB15      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[0][10]     : AB16      : output : 2.5 V             :         : 4         : N              
+cosine_waveform_out[6][10]   : AB17      : output : 2.5 V             :         : 4         : N              
+phase_accumulator[1][4]      : AB18      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[2][10] : AB19      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[2][11] : AB20      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB21      :        :                   :         : 4         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB22      :        :                   :         : 5         :                
+sine_waveform_out[7][0]      : AB23      : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
+sine_waveform_out[5][7]      : AB25      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[4][2]      : AB26      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[6][9]      : AB27      : output : 2.5 V             :         : 5         : N              
+phase_accumulator[4][7]      : AB28      : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[5][7]    : AC1       : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[4][3]      : AC2       : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[2][5]    : AC3       : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[3][12]   : AC4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC5       :        :                   :         : 2         :                
+GND                          : AC6       : gnd    :                   :         :           :                
+triangular_waveform_out[3][12] : AC7       : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[3][7]    : AC8       : output : 2.5 V             :         : 3         : N              
+GND                          : AC9       : gnd    :                   :         :           :                
+phase_accumulator[3][9]      : AC10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC11      :        :                   :         : 3         :                
+triangular_waveform_out[3][7] : AC12      : output : 2.5 V             :         : 3         : N              
+GND                          : AC13      : gnd    :                   :         :           :                
+phase_accumulator[7][7]      : AC14      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[6][10]     : AC15      : output : 2.5 V             :         : 4         : N              
+GND                          : AC16      : gnd    :                   :         :           :                
+cosine_waveform_out[6][1]    : AC17      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[2][9]      : AC18      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[7][8]      : AC19      : output : 2.5 V             :         : 4         : N              
+GND                          : AC20      : gnd    :                   :         :           :                
+triangular_waveform_out[2][2] : AC21      : output : 2.5 V             :         : 4         : N              
+phase_accumulator[5][0]      : AC22      : output : 2.5 V             :         : 4         : N              
+GND                          : AC23      : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
+sine_waveform_out[2][10]     : AC25      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[4][13]     : AC26      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[4][5]      : AC27      : output : 2.5 V             :         : 5         : N              
+triangular_waveform_out[4][8] : AC28      : output : 2.5 V             :         : 5         : N              
+triangular_waveform_out[5][0] : AD1       : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[4][4]      : AD2       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD3       :        :                   :         : 2         :                
+phase_accumulator[5][1]      : AD4       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD5       :        :                   :         : 2         :                
+VCCIO3                       : AD6       : power  :                   : 2.5V    : 3         :                
+cosine_waveform_out[7][5]    : AD7       : output : 2.5 V             :         : 3         : N              
+phase_accumulator[3][10]     : AD8       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD9       : power  :                   : 2.5V    : 3         :                
+phase_accumulator[4][8]      : AD10      : output : 2.5 V             :         : 3         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD11      :        :                   :         : 3         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD12      :        :                   :         : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+phase_accumulator[7][12]     : AD14      : output : 2.5 V             :         : 3         : N              
+phase_accumulator[5][6]      : AD15      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD16      : power  :                   : 2.5V    : 4         :                
+sine_waveform_out[5][3]      : AD17      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[6][4] : AD18      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[7][7]      : AD19      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+sine_waveform_out[2][12]     : AD21      : output : 2.5 V             :         : 4         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AD22      :        :                   :         : 4         :                
+VCCIO4                       : AD23      : power  :                   : 2.5V    : 4         :                
+sine_waveform_out[4][9]      : AD24      : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[1][12]   : AD25      : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[7][4]    : AD26      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[2][4]      : AD27      : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[1][5]    : AD28      : output : 2.5 V             :         : 5         : N              
+triangular_waveform_out[3][0] : AE1       : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[3][4]    : AE2       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE3       :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : AE4       :        :                   :         : 2         :                
+phase_accumulator[1][0]      : AE5       : output : 2.5 V             :         : 3         : N              
+phase_accumulator[1][1]      : AE6       : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[5][10] : AE7       : output : 2.5 V             :         : 3         : N              
+phase_accumulator[0][2]      : AE8       : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[3][3]      : AE9       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[5][0]    : AE10      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[3][4]      : AE11      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[3][5]      : AE12      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[4][7] : AE13      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[4][13] : AE14      : output : 2.5 V             :         : 3         : N              
+phase_accumulator[5][13]     : AE15      : output : 2.5 V             :         : 4         : N              
+cosine_waveform_out[1][8]    : AE16      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[4][1]      : AE17      : output : 2.5 V             :         : 4         : N              
+cosine_waveform_out[1][7]    : AE18      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[0][4]      : AE19      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[2][13]     : AE20      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[6][0] : AE21      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[5][10]     : AE22      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[5][9]      : AE23      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[1][0] : AE24      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[2][3]      : AE25      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[7][12]     : AE26      : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[7][13]     : AE27      : output : 2.5 V             :         : 5         : N              
+phase_accumulator[6][8]      : AE28      : output : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+cosine_waveform_out[2][4]    : AF2       : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : AF3       :        :                   :         : 2         :                
+cosine_waveform_out[5][12]   : AF4       : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[3][2] : AF5       : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[3][9] : AF6       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[5][1]    : AF7       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[5][11]   : AF8       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[5][3]    : AF9       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[3][10]   : AF10      : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[5][6]    : AF11      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[3][1]      : AF12      : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[5][8]    : AF13      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[4][2] : AF14      : output : 2.5 V             :         : 3         : N              
+phase_accumulator[5][14]     : AF15      : output : 2.5 V             :         : 4         : N              
+phi_inc_i[4]                 : AF16      : input  : 2.5 V             :         : 4         : N              
+sine_waveform_out[4][8]      : AF17      : output : 2.5 V             :         : 4         : N              
+cosine_waveform_out[6][9]    : AF18      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[7][9]      : AF19      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[7][4]      : AF20      : output : 2.5 V             :         : 4         : N              
+cosine_waveform_out[6][3]    : AF21      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[1][9] : AF22      : output : 2.5 V             :         : 4         : N              
+phase_accumulator[6][13]     : AF23      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[4][0]      : AF24      : output : 2.5 V             :         : 4         : N              
+cosine_waveform_out[6][13]   : AF25      : output : 2.5 V             :         : 4         : N              
+phase_accumulator[5][12]     : AF26      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[2][1]      : AF27      : output : 2.5 V             :         : 5         : N              
+GND                          : AF28      : gnd    :                   :         :           :                
+VCCIO2                       : AG1       : power  :                   : 2.5V    : 2         :                
+GND                          : AG2       : gnd    :                   :         :           :                
+cosine_waveform_out[4][6]    : AG3       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[4][4]    : AG4       : output : 2.5 V             :         : 3         : N              
+GND                          : AG5       : gnd    :                   :         :           :                
+phase_accumulator[7][2]      : AG6       : output : 2.5 V             :         : 3         : N              
+phase_accumulator[3][6]      : AG7       : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[1][3]      : AG8       : output : 2.5 V             :         : 3         : N              
+GND                          : AG9       : gnd    :                   :         :           :                
+cosine_waveform_out[7][13]   : AG10      : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[3][0]      : AG11      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[4][6] : AG12      : output : 2.5 V             :         : 3         : N              
+GND                          : AG13      : gnd    :                   :         :           :                
+GND+                         : AG14      :        :                   :         : 3         :                
+GND+                         : AG15      :        :                   :         : 4         :                
+GND                          : AG16      : gnd    :                   :         :           :                
+sine_waveform_out[6][2]      : AG17      : output : 2.5 V             :         : 4         : N              
+phi_inc_i[8]                 : AG18      : input  : 2.5 V             :         : 4         : N              
+sine_waveform_out[4][7]      : AG19      : output : 2.5 V             :         : 4         : N              
+GND                          : AG20      : gnd    :                   :         :           :                
+cosine_waveform_out[6][11]   : AG21      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[5][1]      : AG22      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[1][10] : AG23      : output : 2.5 V             :         : 4         : N              
+GND                          : AG24      : gnd    :                   :         :           :                
+triangular_waveform_out[2][1] : AG25      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[6][5]      : AG26      : output : 2.5 V             :         : 4         : N              
+GND                          : AG27      : gnd    :                   :         :           :                
+VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
+VCCIO3                       : AH2       : power  :                   : 2.5V    : 3         :                
+phase_accumulator[2][1]      : AH3       : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[0][3] : AH4       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH5       : power  :                   : 2.5V    : 3         :                
+triangular_waveform_out[0][5] : AH6       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[2][9]    : AH7       : output : 2.5 V             :         : 3         : N              
+cosine_waveform_out[3][5]    : AH8       : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH9       : power  :                   : 2.5V    : 3         :                
+cosine_waveform_out[5][5]    : AH10      : output : 2.5 V             :         : 3         : N              
+triangular_waveform_out[5][11] : AH11      : output : 2.5 V             :         : 3         : N              
+phase_accumulator[4][14]     : AH12      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AH13      : power  :                   : 2.5V    : 3         :                
+GND+                         : AH14      :        :                   :         : 3         :                
+GND+                         : AH15      :        :                   :         : 4         :                
+VCCIO4                       : AH16      : power  :                   : 2.5V    : 4         :                
+sine_waveform_out[6][7]      : AH17      : output : 2.5 V             :         : 4         : N              
+cosine_waveform_out[1][2]    : AH18      : output : 2.5 V             :         : 4         : N              
+phase_accumulator[6][4]      : AH19      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH20      : power  :                   : 2.5V    : 4         :                
+phase_accumulator[6][15]     : AH21      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[0][9]      : AH22      : output : 2.5 V             :         : 4         : N              
+sine_waveform_out[0][7]      : AH23      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH24      : power  :                   : 2.5V    : 4         :                
+cosine_waveform_out[6][4]    : AH25      : output : 2.5 V             :         : 4         : N              
+triangular_waveform_out[6][1] : AH26      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AH27      : power  :                   : 2.5V    : 4         :                
+VCCIO1                       : B1        : power  :                   : 2.5V    : 1         :                
+GND                          : B2        : gnd    :                   :         :           :                
+triangular_waveform_out[0][2] : B3        : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][12] : B4        : output : 2.5 V             :         : 8         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+triangular_waveform_out[3][3] : B6        : output : 2.5 V             :         : 8         : N              
+phase_accumulator[0][15]     : B7        : output : 2.5 V             :         : 8         : N              
+sine_waveform_out[1][13]     : B8        : output : 2.5 V             :         : 8         : N              
+GND                          : B9        : gnd    :                   :         :           :                
+cosine_waveform_out[2][12]   : B10       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][0] : B11       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[4][8]    : B12       : output : 2.5 V             :         : 8         : N              
+GND                          : B13       : gnd    :                   :         :           :                
+GND+                         : B14       :        :                   :         : 8         :                
+GND+                         : B15       :        :                   :         : 7         :                
+GND                          : B16       : gnd    :                   :         :           :                
+cosine_waveform_out[7][8]    : B17       : output : 2.5 V             :         : 7         : N              
+phi_inc_i[10]                : B18       : input  : 2.5 V             :         : 7         : N              
+reset_n                      : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+cosine_waveform_out[6][7]    : B21       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[2][2]      : B22       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[1][5] : B23       : output : 2.5 V             :         : 7         : N              
+GND                          : B24       : gnd    :                   :         :           :                
+triangular_waveform_out[2][0] : B25       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[4][5] : B26       : output : 2.5 V             :         : 7         : N              
+GND                          : B27       : gnd    :                   :         :           :                
+VCCIO6                       : B28       : power  :                   : 2.5V    : 6         :                
+GND                          : C1        : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
+phase_accumulator[0][0]      : C3        : output : 2.5 V             :         : 8         : N              
+phase_accumulator[5][2]      : C4        : output : 2.5 V             :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+phase_accumulator[4][0]      : C6        : output : 2.5 V             :         : 8         : N              
+sine_waveform_out[3][12]     : C7        : output : 2.5 V             :         : 8         : N              
+phase_accumulator[4][6]      : C8        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[0][0]    : C9        : output : 2.5 V             :         : 8         : N              
+phase_accumulator[4][12]     : C10       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[0][10] : C11       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[4][2]    : C12       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][5] : C13       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[5][6] : C14       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[0][1]    : C15       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[5][10]     : C16       : output : 2.5 V             :         : 7         : N              
+phi_inc_i[11]                : C17       : input  : 2.5 V             :         : 7         : N              
+phase_accumulator[2][3]      : C18       : output : 2.5 V             :         : 7         : N              
+sine_waveform_out[7][10]     : C19       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[2][14]     : C20       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[6][8] : C21       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[2][13] : C22       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[2][7] : C23       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[1][6]      : C24       : output : 2.5 V             :         : 7         : N              
+cosine_waveform_out[0][2]    : C25       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C26       :        :                   :         : 6         :                
+phase_accumulator[4][5]      : C27       : output : 2.5 V             :         : 6         : N              
+GND                          : C28       : gnd    :                   :         :           :                
+cosine_waveform_out[2][0]    : D1        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D2        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D3        :        :                   :         : 1         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D4        :        :                   :         : 8         :                
+phase_accumulator[7][0]      : D5        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[0][13]   : D6        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[0][6]    : D7        : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[0][4] : D8        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[4][11]   : D9        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[3][11]   : D10       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[5][9]    : D11       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[7][12]   : D12       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][9] : D13       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][1] : D14       : output : 2.5 V             :         : 8         : N              
+phase_accumulator[4][3]      : D15       : output : 2.5 V             :         : 7         : N              
+sine_waveform_out[6][1]      : D16       : output : 2.5 V             :         : 7         : N              
+phi_inc_i[3]                 : D17       : input  : 2.5 V             :         : 7         : N              
+phase_accumulator[2][12]     : D18       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[1][10]     : D19       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[2][13]     : D20       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[2][5]      : D21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D22       :        :                   :         : 7         :                
+cosine_waveform_out[6][2]    : D23       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : D24       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D25       :        :                   :         : 6         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : D26       :        :                   :         : 6         :                
+cosine_waveform_out[0][4]    : D27       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[0][13]     : D28       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[7][1]      : E1        : output : 2.5 V             :         : 1         : N              
+~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : E2        : input  : 2.5 V             :         : 1         : N              
+phase_accumulator[1][13]     : E3        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[4][12]   : E4        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[6][0]      : E5        : output : 2.5 V             :         : 1         : N              
+VCCIO8                       : E6        : power  :                   : 2.5V    : 8         :                
+sine_waveform_out[1][7]      : E7        : output : 2.5 V             :         : 8         : N              
+sine_waveform_out[1][6]      : E8        : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : E9        : power  :                   : 2.5V    : 8         :                
+sine_waveform_out[1][2]      : E10       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[3][2]    : E11       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[3][0]    : E12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : E13       : power  :                   : 2.5V    : 8         :                
+cosine_waveform_out[5][13]   : E14       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][13] : E15       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E16       : power  :                   : 2.5V    : 7         :                
+cosine_waveform_out[1][11]   : E17       : output : 2.5 V             :         : 7         : N              
+cosine_waveform_out[6][12]   : E18       : output : 2.5 V             :         : 7         : N              
+sine_waveform_out[2][0]      : E19       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : E20       : power  :                   : 2.5V    : 7         :                
+phase_accumulator[6][7]      : E21       : output : 2.5 V             :         : 7         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E22       :        :                   :         : 7         :                
+VCCIO7                       : E23       : power  :                   : 2.5V    : 7         :                
+triangular_waveform_out[4][3] : E24       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[2][6]      : E25       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[1][5]      : E26       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[6][9] : E27       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[1][8] : E28       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[7][10] : F1        : output : 2.5 V             :         : 1         : N              
+triangular_waveform_out[7][3] : F2        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[7][11]   : F3        : output : 2.5 V             :         : 1         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : F4        : input  : 2.5 V             :         : 1         : N              
+sine_waveform_out[1][1]      : F5        : output : 2.5 V             :         : 1         : N              
+GND                          : F6        : gnd    :                   :         :           :                
+phase_accumulator[3][4]      : F7        : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[0][8] : F8        : output : 2.5 V             :         : 8         : N              
+GND                          : F9        : gnd    :                   :         :           :                
+cosine_waveform_out[2][6]    : F10       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[3][1]    : F11       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[2][11]   : F12       : output : 2.5 V             :         : 8         : N              
+GND                          : F13       : gnd    :                   :         :           :                
+cosine_waveform_out[4][13]   : F14       : output : 2.5 V             :         : 8         : N              
+sine_waveform_out[6][13]     : F15       : output : 2.5 V             :         : 7         : N              
+GND                          : F16       : gnd    :                   :         :           :                
+phase_accumulator[6][2]      : F17       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[1][12] : F18       : output : 2.5 V             :         : 7         : N              
+sine_waveform_out[3][7]      : F19       : output : 2.5 V             :         : 7         : N              
+GND                          : F20       : gnd    :                   :         :           :                
+triangular_waveform_out[1][3] : F21       : output : 2.5 V             :         : 7         : N              
+cosine_waveform_out[7][3]    : F22       : output : 2.5 V             :         : 7         : N              
+GND                          : F23       : gnd    :                   :         :           :                
+triangular_waveform_out[0][9] : F24       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[0][8]    : F25       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[6][3] : F26       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[4][9] : F27       : output : 2.5 V             :         : 6         : N              
+sine_waveform_out[2][6]      : F28       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[6][5] : G1        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[0][9]    : G2        : output : 2.5 V             :         : 1         : N              
+sine_waveform_out[1][8]      : G3        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[3][8]    : G4        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[7][1]    : G5        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : G6        :        :                   :         : 1         :                
+cosine_waveform_out[7][7]    : G7        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[4][10]   : G8        : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[0][1] : G9        : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[2][2]    : G10       : output : 2.5 V             :         : 8         : N              
+phase_accumulator[0][10]     : G11       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[0][6] : G12       : output : 2.5 V             :         : 8         : N              
+triangular_waveform_out[7][2] : G13       : output : 2.5 V             :         : 8         : N              
+cosine_waveform_out[4][3]    : G14       : output : 2.5 V             :         : 8         : N              
+sine_waveform_out[0][12]     : G15       : output : 2.5 V             :         : 7         : N              
+cosine_waveform_out[1][13]   : G16       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[2][11]     : G17       : output : 2.5 V             :         : 7         : N              
+phi_inc_i[15]                : G18       : input  : 2.5 V             :         : 7         : N              
+triangular_waveform_out[1][4] : G19       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[2][8] : G20       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[4][4] : G21       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[4][1] : G22       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[0][11]   : G23       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[1][6] : G24       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[7][11]     : G25       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[1][0]    : G26       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[6][6] : G27       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[1][7]      : G28       : output : 2.5 V             :         : 6         : N              
+VCCIO1                       : H1        : power  :                   : 2.5V    : 1         :                
+GND                          : H2        : gnd    :                   :         :           :                
+triangular_waveform_out[7][4] : H3        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[2][0]      : H4        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[6][9]      : H5        : output : 2.5 V             :         : 1         : N              
+sine_waveform_out[1][10]     : H6        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[3][0]      : H7        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : H8        :        :                   :         : 8         :                
+GNDA3                        : H9        : gnd    :                   :         :           :                
+triangular_waveform_out[0][11] : H10       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : H11       : power  :                   : 2.5V    : 8         :                
+cosine_waveform_out[3][6]    : H12       : output : 2.5 V             :         : 8         : N              
+sine_waveform_out[1][5]      : H13       : output : 2.5 V             :         : 8         : N              
+phase_accumulator[7][3]      : H14       : output : 2.5 V             :         : 7         : N              
+triangular_waveform_out[6][13] : H15       : output : 2.5 V             :         : 7         : N              
+sine_waveform_out[0][5]      : H16       : output : 2.5 V             :         : 7         : N              
+phase_accumulator[2][8]      : H17       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+triangular_waveform_out[2][9] : H19       : output : 2.5 V             :         : 7         : N              
+GNDA2                        : H20       : gnd    :                   :         :           :                
+triangular_waveform_out[6][11] : H21       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[1][9]    : H22       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[1][12]     : H23       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[2][6] : H24       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[6][2] : H25       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[2][8]    : H26       : output : 2.5 V             :         : 6         : N              
+GND                          : H27       : gnd    :                   :         :           :                
+VCCIO6                       : H28       : power  :                   : 2.5V    : 6         :                
+GND+                         : J1        :        :                   :         : 1         :                
+clk                          : J2        : input  : 2.5 V             :         : 1         : N              
+cosine_waveform_out[0][5]    : J3        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[2][10]   : J4        : output : 2.5 V             :         : 1         : N              
+triangular_waveform_out[7][11] : J5        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[0][6]      : J6        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[0][5]      : J7        : output : 2.5 V             :         : 1         : N              
+VCCA3                        : J8        : power  :                   : 2.5V    :           :                
+VCCD_PLL3                    : J9        : power  :                   : 1.2V    :           :                
+phase_accumulator[0][9]      : J10       : output : 2.5 V             :         : 8         : N              
+GND                          : J11       : gnd    :                   :         :           :                
+cosine_waveform_out[0][10]   : J12       : output : 2.5 V             :         : 8         : N              
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+cosine_waveform_out[0][3]    : J14       : output : 2.5 V             :         : 7         : N              
+VCCIO7                       : J15       : power  :                   : 2.5V    : 7         :                
+cosine_waveform_out[1][6]    : J16       : output : 2.5 V             :         : 7         : N              
+phi_inc_i[1]                 : J17       : input  : 2.5 V             :         : 7         : N              
+GND                          : J18       : gnd    :                   :         :           :                
+phase_accumulator[0][8]      : J19       : output : 2.5 V             :         : 7         : N              
+VCCD_PLL2                    : J20       : power  :                   : 1.2V    :           :                
+VCCA2                        : J21       : power  :                   : 2.5V    :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : J22       :        :                   :         : 6         :                
+phase_accumulator[2][9]      : J23       : output : 2.5 V             :         : 6         : N              
+clken                        : J24       : input  : 2.5 V             :         : 6         : N              
+triangular_waveform_out[1][7] : J25       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[6][10] : J26       : output : 2.5 V             :         : 6         : N              
+GND+                         : J27       :        :                   :         : 6         :                
+GND+                         : J28       :        :                   :         : 6         :                
+triangular_waveform_out[6][12] : K1        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[2][7]    : K2        : output : 2.5 V             :         : 1         : N              
+triangular_waveform_out[7][8] : K3        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[0][1]      : K4        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : K5        : power  :                   : 2.5V    : 1         :                
+GND                          : K6        : gnd    :                   :         :           :                
+phase_accumulator[0][4]      : K7        : output : 2.5 V             :         : 1         : N              
+VCCIO1                       : K8        : power  :                   : 2.5V    : 1         :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+GND                          : K10       : gnd    :                   :         :           :                
+VCCINT                       : K11       : power  :                   : 1.2V    :           :                
+GND                          : K12       : gnd    :                   :         :           :                
+cosine_waveform_out[2][1]    : K13       : output : 2.5 V             :         : 8         : N              
+GND                          : K14       : gnd    :                   :         :           :                
+phase_accumulator[0][7]      : K15       : output : 2.5 V             :         : 7         : N              
+GND                          : K16       : gnd    :                   :         :           :                
+VCCINT                       : K17       : power  :                   : 1.2V    :           :                
+GND                          : K18       : gnd    :                   :         :           :                
+VCCINT                       : K19       : power  :                   : 1.2V    :           :                
+GND                          : K20       : gnd    :                   :         :           :                
+phase_accumulator[4][15]     : K21       : output : 2.5 V             :         : 6         : N              
+phi_inc_i[0]                 : K22       : input  : 2.5 V             :         : 6         : N              
+GND                          : K23       : gnd    :                   :         :           :                
+VCCIO6                       : K24       : power  :                   : 2.5V    : 6         :                
+phase_accumulator[6][5]      : K25       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[6][12]     : K26       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[0][13] : K27       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[1][1]    : K28       : output : 2.5 V             :         : 6         : N              
+phi_inc_i[5]                 : L1        : input  : 2.5 V             :         : 1         : N              
+cosine_waveform_out[4][9]    : L2        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[4][0]    : L3        : output : 2.5 V             :         : 1         : N              
+triangular_waveform_out[0][0] : L4        : output : 2.5 V             :         : 1         : N              
+sine_waveform_out[1][0]      : L5        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[0][12]     : L6        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[0][14]     : L7        : output : 2.5 V             :         : 1         : N              
+triangular_waveform_out[1][2] : L8        : output : 2.5 V             :         : 1         : N              
+GND                          : L9        : gnd    :                   :         :           :                
+VCCINT                       : L10       : power  :                   : 1.2V    :           :                
+GND                          : L11       : gnd    :                   :         :           :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+GND                          : L15       : gnd    :                   :         :           :                
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+phase_accumulator[1][8]      : L20       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : L21       : power  :                   : 2.5V    : 6         :                
+sine_waveform_out[1][12]     : L22       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[6][7] : L23       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[1][11]     : L24       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[4][5]    : L25       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[6][3]      : L26       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[2][15]     : L27       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[0][7]    : L28       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[4][9]      : M1        : output : 2.5 V             :         : 1         : N              
+phi_inc_i[12]                : M2        : input  : 2.5 V             :         : 1         : N              
+phase_accumulator[1][15]     : M3        : output : 2.5 V             :         : 1         : N              
+cosine_waveform_out[4][7]    : M4        : output : 2.5 V             :         : 1         : N              
+phi_inc_i[2]                 : M5        : input  : 2.5 V             :         : 1         : N              
+nSTATUS                      : M6        :        :                   :         : 1         :                
+phase_accumulator[0][11]     : M7        : output : 2.5 V             :         : 1         : N              
+triangular_waveform_out[0][12] : M8        : output : 2.5 V             :         : 1         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : M9        :        :                   :         : 1         :                
+GND                          : M10       : gnd    :                   :         :           :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+triangular_waveform_out[2][5] : M21       : output : 2.5 V             :         : 6         : N              
+MSEL2                        : M22       :        :                   :         : 6         :                
+sine_waveform_out[1][11]     : M23       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[6][14]     : M24       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[2][3] : M25       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[1][3]      : M26       : output : 2.5 V             :         : 6         : N              
+phi_inc_i[13]                : M27       : input  : 2.5 V             :         : 6         : N              
+phi_inc_i[9]                 : M28       : input  : 2.5 V             :         : 6         : N              
+VCCIO1                       : N1        : power  :                   : 2.5V    : 1         :                
+GND                          : N2        : gnd    :                   :         :           :                
+phase_accumulator[4][13]     : N3        : output : 2.5 V             :         : 1         : N              
+phi_inc_i[14]                : N4        : input  : 2.5 V             :         : 1         : N              
+VCCIO1                       : N5        : power  :                   : 2.5V    : 1         :                
+GND                          : N6        : gnd    :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : N7        : input  : 2.5 V             :         : 1         : N              
+cosine_waveform_out[0][12]   : N8        : output : 2.5 V             :         : 1         : N              
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+triangular_waveform_out[1][1] : N21       : output : 2.5 V             :         : 6         : N              
+MSEL0                        : N22       :        :                   :         : 6         :                
+GND                          : N23       : gnd    :                   :         :           :                
+VCCIO6                       : N24       : power  :                   : 2.5V    : 6         :                
+triangular_waveform_out[1][13] : N25       : output : 2.5 V             :         : 6         : N              
+phi_inc_i[7]                 : N26       : input  : 2.5 V             :         : 6         : N              
+GND                          : N27       : gnd    :                   :         :           :                
+VCCIO6                       : N28       : power  :                   : 2.5V    : 6         :                
+cosine_waveform_out[1][3]    : P1        : output : 2.5 V             :         : 1         : N              
+phase_accumulator[7][15]     : P2        : output : 2.5 V             :         : 1         : N              
+~ALTERA_DCLK~                : P3        : output : 2.5 V             :         : 1         : N              
+nCONFIG                      : P4        :        :                   :         : 1         :                
+TCK                          : P5        : input  :                   :         : 1         :                
+TDO                          : P6        : output :                   :         : 1         :                
+TDI                          : P7        : input  :                   :         : 1         :                
+TMS                          : P8        : input  :                   :         : 1         :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+sine_waveform_out[3][8]      : P21       : output : 2.5 V             :         : 5         : N              
+MSEL3                        : P22       :        :                   :         : 6         :                
+MSEL1                        : P23       :        :                   :         : 6         :                
+CONF_DONE                    : P24       :        :                   :         : 6         :                
+phase_accumulator[4][11]     : P25       : output : 2.5 V             :         : 6         : N              
+phase_accumulator[2][10]     : P26       : output : 2.5 V             :         : 6         : N              
+triangular_waveform_out[2][4] : P27       : output : 2.5 V             :         : 6         : N              
+~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : P28       : output : 2.5 V             :         : 6         : N              
+cosine_waveform_out[6][0]    : R1        : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[1][10]   : R2        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[6][4]      : R3        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[6][11]     : R4        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[7][14]     : R5        : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[4][0] : R6        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[6][6]      : R7        : output : 2.5 V             :         : 2         : N              
+nCE                          : R8        :        :                   :         : 1         :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+sine_waveform_out[7][5]      : R21       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[2][7]      : R22       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[3][13]     : R23       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[6][6]      : R24       : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[7][2]    : R25       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[6][11]     : R26       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[1][14]     : R27       : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[6][6]    : R28       : output : 2.5 V             :         : 5         : N              
+VCCIO2                       : T1        : power  :                   : 2.5V    : 2         :                
+GND                          : T2        : gnd    :                   :         :           :                
+cosine_waveform_out[2][3]    : T3        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[7][4]      : T4        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : T5        : power  :                   : 2.5V    : 2         :                
+GND                          : T6        : gnd    :                   :         :           :                
+phase_accumulator[3][8]      : T7        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[7][6]      : T8        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[5][11]     : T9        : output : 2.5 V             :         : 2         : N              
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+phase_accumulator[7][5]      : T21       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[7][8]      : T22       : output : 2.5 V             :         : 5         : N              
+GND                          : T23       : gnd    :                   :         :           :                
+VCCIO5                       : T24       : power  :                   : 2.5V    : 5         :                
+sine_waveform_out[0][6]      : T25       : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[6][8]    : T26       : output : 2.5 V             :         : 5         : N              
+GND                          : T27       : gnd    :                   :         :           :                
+VCCIO5                       : T28       : power  :                   : 2.5V    : 5         :                
+cosine_waveform_out[3][3]    : U1        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[4][4]      : U2        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[7][11]     : U3        : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[2][13]   : U4        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[5][8]      : U5        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[4][10]     : U6        : output : 2.5 V             :         : 2         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : U7        :        :                   :         : 2         :                
+phase_accumulator[1][2]      : U8        : output : 2.5 V             :         : 2         : N              
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+phase_accumulator[7][9]      : U20       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U21       : power  :                   : 2.5V    : 5         :                
+triangular_waveform_out[5][2] : U22       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[2][8]      : U23       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[0][3]      : U24       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[6][8]      : U25       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[0][13]     : U26       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[6][10]     : U27       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[5][7]      : U28       : output : 2.5 V             :         : 5         : N              
+triangular_waveform_out[3][10] : V1        : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[5][1] : V2        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[5][3]      : V3        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[0][11]     : V4        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[5][4]      : V5        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[3][15]     : V6        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[4][2]      : V7        : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[3][6] : V8        : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[5][7] : V9        : output : 2.5 V             :         : 2         : N              
+GND                          : V10       : gnd    :                   :         :           :                
+VCCINT                       : V11       : power  :                   : 1.2V    :           :                
+GND                          : V12       : gnd    :                   :         :           :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+VCCINT                       : V15       : power  :                   : 1.2V    :           :                
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+sine_waveform_out[0][2]      : V20       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[6][12]     : V21       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[4][11]     : V22       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[5][15]     : V23       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[3][13]     : V24       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[5][0]      : V25       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[4][6]      : V26       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[5][6]      : V27       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[5][11]     : V28       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[3][14]     : W1        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[3][12]     : W2        : output : 2.5 V             :         : 2         : N              
+cosine_waveform_out[7][9]    : W3        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[3][7]      : W4        : output : 2.5 V             :         : 2         : N              
+VCCIO2                       : W5        : power  :                   : 2.5V    : 2         :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCIO2                       : W7        : power  :                   : 2.5V    : 2         :                
+sine_waveform_out[4][12]     : W8        : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[5][8] : W9        : output : 2.5 V             :         : 2         : N              
+phase_accumulator[3][2]      : W10       : output : 2.5 V             :         : 3         : N              
+GND                          : W11       : gnd    :                   :         :           :                
+VCCINT                       : W12       : power  :                   : 1.2V    :           :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+GND                          : W15       : gnd    :                   :         :           :                
+sine_waveform_out[0][1]      : W16       : output : 2.5 V             :         : 4         : N              
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+phase_accumulator[7][13]     : W20       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[5][13]     : W21       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[7][6]      : W22       : output : 2.5 V             :         : 5         : N              
+GND                          : W23       : gnd    :                   :         :           :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+sine_waveform_out[2][2]      : W25       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[6][0]      : W26       : output : 2.5 V             :         : 5         : N              
+triangular_waveform_out[5][12] : W27       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[3][2]      : W28       : output : 2.5 V             :         : 5         : N              
+GND+                         : Y1        :        :                   :         : 2         :                
+GND+                         : Y2        :        :                   :         : 2         :                
+triangular_waveform_out[3][5] : Y3        : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[3][4] : Y4        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[5][8]      : Y5        : output : 2.5 V             :         : 2         : N              
+sine_waveform_out[5][5]      : Y6        : output : 2.5 V             :         : 2         : N              
+triangular_waveform_out[3][11] : Y7        : output : 2.5 V             :         : 2         : N              
+VCCA1                        : Y8        : power  :                   : 2.5V    :           :                
+VCCD_PLL1                    : Y9        : power  :                   : 1.2V    :           :                
+cosine_waveform_out[5][2]    : Y10       : output : 2.5 V             :         : 3         : N              
+GND                          : Y11       : gnd    :                   :         :           :                
+sine_waveform_out[3][6]      : Y12       : output : 2.5 V             :         : 3         : N              
+phase_accumulator[3][11]     : Y13       : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[1][9]      : Y14       : output : 2.5 V             :         : 3         : N              
+sine_waveform_out[1][4]      : Y15       : output : 2.5 V             :         : 3         : N              
+VCCIO4                       : Y16       : power  :                   : 2.5V    : 4         :                
+cosine_waveform_out[1][4]    : Y17       : output : 2.5 V             :         : 4         : N              
+GND                          : Y18       : gnd    :                   :         :           :                
+sine_waveform_out[5][12]     : Y19       : output : 2.5 V             :         : 4         : N              
+VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                
+VCCA4                        : Y21       : power  :                   : 2.5V    :           :                
+sine_waveform_out[2][5]      : Y22       : output : 2.5 V             :         : 5         : N              
+cosine_waveform_out[6][5]    : Y23       : output : 2.5 V             :         : 5         : N              
+phase_accumulator[7][10]     : Y24       : output : 2.5 V             :         : 5         : N              
+triangular_waveform_out[5][13] : Y25       : output : 2.5 V             :         : 5         : N              
+sine_waveform_out[0][0]      : Y26       : output : 2.5 V             :         : 5         : N              
+GND+                         : Y27       :        :                   :         : 5         :                
+GND+                         : Y28       :        :                   :         : 5         :                

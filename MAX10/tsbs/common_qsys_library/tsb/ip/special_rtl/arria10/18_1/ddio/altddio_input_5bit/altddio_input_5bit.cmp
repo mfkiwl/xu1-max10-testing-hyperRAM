@@ -1,0 +1,9 @@
+	component altddio_input_5bit is
+		port (
+			ck        : in  std_logic                    := 'X';             -- export
+			dataout_h : out std_logic_vector(4 downto 0);                    -- fragment
+			dataout_l : out std_logic_vector(4 downto 0);                    -- fragment
+			datain    : in  std_logic_vector(4 downto 0) := (others => 'X')  -- export
+		);
+	end component altddio_input_5bit;
+

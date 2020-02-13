@@ -1,0 +1,29 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\payne\NuPRISM\MAX10\FunctionalTest\edevel00608_enclustra_max10_test\tsb\ip\rtl\internal_clk.qsys --block-symbol-file --output-directory=C:\payne\NuPRISM\MAX10\FunctionalTest\edevel00608_enclustra_max10_test\tsb\ip\rtl\internal_clk --family="MAX 10" --part=10M25DAF256C7G
+Progress: Loading rtl/internal_clk.qsys
+Progress: Reading input file
+Progress: Adding int_osc_0 [altera_int_osc 18.1]
+Progress: Parameterizing module int_osc_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\payne\NuPRISM\MAX10\FunctionalTest\edevel00608_enclustra_max10_test\tsb\ip\rtl\internal_clk.qsys --synthesis=VERILOG --output-directory=C:\payne\NuPRISM\MAX10\FunctionalTest\edevel00608_enclustra_max10_test\tsb\ip\rtl\internal_clk\synthesis --family="MAX 10" --part=10M25DAF256C7G
+Progress: Loading rtl/internal_clk.qsys
+Progress: Reading input file
+Progress: Adding int_osc_0 [altera_int_osc 18.1]
+Progress: Parameterizing module int_osc_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: internal_clk: Generating internal_clk "internal_clk" for QUARTUS_SYNTH
+Info: int_osc_0: Generating top-level entity altera_int_osc.
+Info: int_osc_0: "internal_clk" instantiated altera_int_osc "int_osc_0"
+Info: internal_clk: Done "internal_clk" with 2 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

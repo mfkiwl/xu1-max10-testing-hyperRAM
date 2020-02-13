@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri Nov 29 11:07:13 2013
+Quartus II 64-Bit Version : 12.1 Build 243 01/31/2013 SP 1.33 SJ Full Version
+Revision Name : uart_controlled_register_file_ver3
+Top-level Entity Name : uart_controlled_register_file_ver3
+Family : Stratix III
+Logic utilization : N/A
+    Combinational ALUTs : 1,466
+    Memory ALUTs : 0
+    Dedicated logic registers : 514
+Total registers : 514
+Total pins : 851
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 18-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 20 16:20:04 2015
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : test_multi_channel_generic_reframer
+Top-level Entity Name : test_multi_channel_generic_reframer
+Family : Cyclone III
+Total logic elements : 538
+    Total combinational functions : 507
+    Dedicated logic registers : 292
+Total registers : 292
+Total pins : 420
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Jul 28 16:31:09 2014
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : determine_avalon_st_packet_length
+Top-level Entity Name : determine_avalon_st_packet_length
+Family : Cyclone III
+Total logic elements : 155
+    Total combinational functions : 150
+    Dedicated logic registers : 152
+Total registers : 152
+Total pins : 186
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

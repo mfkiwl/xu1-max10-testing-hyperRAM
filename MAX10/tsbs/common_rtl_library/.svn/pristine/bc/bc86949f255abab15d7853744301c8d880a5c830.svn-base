@@ -1,0 +1,26 @@
+	component avalon_st_sc_fifo_only is
+		port (
+			almost_empty_data       : out std_logic;                                        -- data
+			almost_full_data        : out std_logic;                                        -- data
+			avalon_mm_slv_address   : in  std_logic_vector(2 downto 0)  := (others => 'X'); -- address
+			avalon_mm_slv_read      : in  std_logic                     := 'X';             -- read
+			avalon_mm_slv_write     : in  std_logic                     := 'X';             -- write
+			avalon_mm_slv_readdata  : out std_logic_vector(31 downto 0);                    -- readdata
+			avalon_mm_slv_writedata : in  std_logic_vector(31 downto 0) := (others => 'X'); -- writedata
+			clk_clk                 : in  std_logic                     := 'X';             -- clk
+			in_data_data            : in  std_logic_vector(31 downto 0) := (others => 'X'); -- data
+			in_data_valid           : in  std_logic                     := 'X';             -- valid
+			in_data_ready           : out std_logic;                                        -- ready
+			in_data_startofpacket   : in  std_logic                     := 'X';             -- startofpacket
+			in_data_endofpacket     : in  std_logic                     := 'X';             -- endofpacket
+			in_data_empty           : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- empty
+			out_data_data           : out std_logic_vector(31 downto 0);                    -- data
+			out_data_valid          : out std_logic;                                        -- valid
+			out_data_ready          : in  std_logic                     := 'X';             -- ready
+			out_data_startofpacket  : out std_logic;                                        -- startofpacket
+			out_data_endofpacket    : out std_logic;                                        -- endofpacket
+			out_data_empty          : out std_logic_vector(1 downto 0);                     -- empty
+			reset_reset_n           : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component avalon_st_sc_fifo_only;
+

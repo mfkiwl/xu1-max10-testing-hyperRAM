@@ -1,0 +1,51 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp.qsys --block-symbol-file --output-directory=D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp --family="Arria 10" --part=10AS066H2F34I1SG
+Progress: Loading fft/fft_1k_fp.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft_1k_fp.fft_ii_0: Radix-4 digit reverse implied
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp.qsys --synthesis=VERILOG --output-directory=D:\arria10\a10_prototype\tsbs\common_rtl_library\tsb\ip\rtl\fft\fft_1k_fp --family="Arria 10" --part=10AS066H2F34I1SG
+Progress: Loading fft/fft_1k_fp.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 18.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: fft_1k_fp.fft_ii_0: Radix-4 digit reverse implied
+Info: fft_1k_fp: "Transforming system: fft_1k_fp"
+Info: fft_1k_fp: Running transform generation_view_transform
+Info: fft_1k_fp: Running transform generation_view_transform took 0.000s
+Info: fft_ii_0: Running transform generation_view_transform
+Info: fft_ii_0: Running transform generation_view_transform took 0.000s
+Info: fft_1k_fp: Running transform merlin_avalon_transform
+Info: fft_1k_fp: Running transform merlin_avalon_transform took 0.030s
+Info: fft_1k_fp: "Naming system components in system: fft_1k_fp"
+Info: fft_1k_fp: "Processing generation queue"
+Info: fft_1k_fp: "Generating: fft_1k_fp"
+Info: fft_1k_fp: "Generating: fft_1k_fp_altera_fft_ii_181_6jovsdq"
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp1.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp2.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp1.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp2.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp3.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twifp4.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp3.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twrfp4.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp1.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp2.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp3.hex
+Info: fft_ii_0: --- add file: fft_1k_fp_altera_fft_ii_181_6jovsdq_twqfp4.hex
+Info: fft_1k_fp: Done "fft_1k_fp" with 2 modules, 71 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Common Scripts Library</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body { font:80% Verdana,Tahoma,Arial,sans-serif; }
+h1, h2, h3, h4 {  font-family: "Trebuchet MS",Georgia,"Times New Roman",serif; }
+ul.toc { padding: 4px; margin-left: 0; }
+ul.toc li { list-style-type:none; }
+ul.toc li.heading2 { margin-left: 1em; }
+ul.toc li.heading3 { margin-left: 2em; }
+a.wiki-anchor { display: none; margin-left: 6px; text-decoration: none; }
+a.wiki-anchor:hover { color: #aaa !important; text-decoration: none; }
+h1:hover a.wiki-anchor, h2:hover a.wiki-anchor, h3:hover a.wiki-anchor { display: inline; color: #ddd; }
+</style>
+</head>
+<body>
+
+<strong>Index by title</strong>
+<ul>
+    <li><a href="#List_of_Scripts">List of Scripts</a></li>
+    <li><a href="#The_Project_Parameter_File">The Project Parameter File</a></li>
+    <li><a href="#Wiki">Wiki</a></li>
+</ul>
+
+<hr />
+<a name="List_of_Scripts" />
+<a name="List_of_Scripts_List-of-Scripts"></a>
+<h1 >List of Scripts<a href="#List_of_Scripts_List-of-Scripts" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="List_of_Scripts_User-Scripts"></a>
+<h2 ><ins><strong>User Scripts</strong></ins><a href="#List_of_Scripts_User-Scripts" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Here is a brief description of some useful scripts. Further details can be easily obtained by opening the scripts in a text editor.</p>
+
+
+	<p>convert_pof_to_rbf.cmd - convert a POF file to an RBF file (base filename given as parameter)<br />convert_sof_to_rbf.cmd - convert a SOF file to an RBF file (base filename given as parameter)<br />do_altera_hardware_load.cmd - Load the hardware SOF file to the FPGA<br />do_app_nios_load.cmd - load the ELF file to the FPGA, for Cygwin<br />do_app_nios_load_linux.cmd - load the Nios ELF file to the FPGA, for Linux<br />do_app_nios_load_no_reset.cmd - load the Nios ELF file to the FPGA, for Linux, without resetting the processor<br />do_bootloader_nios_load.cmd - load the Nios bootloader ELF file<br />do_compile_altera_rtl.cmd - Compile the Altera Quartus project (currently the same as do_compile_altera_rtl_64bit.cmd)<br />do_compile_altera_rtl_64bit.cmd - Compile the Altera Quartus project using Quartus 64-bit tools<br />do_connect_to_jtag_uart.cmd - Connect to the JTAG UART of the main Nios processor, for Cygwin<br />do_connect_to_jtag_uart_linux.cmd  - Connect to the JTAG UART of the main Nios processor, for Linux<br />do_connect_to_jtag_uart1.cmd - Connect to the JTAG UART of the bootloader Nios processor, for Cygwin <br />do_connect_to_jtag_uart1_linux.cmd - Connect to the JTAG UART of the bootloader Nios processor, for Linux <br />do_convert_elf_to_rbf.cmd - convert ELF file to RBF file<br />do_convert_original_sof_to_rbf.cmd - converts the project SOF file, as defined by the project settings file<br />do_convert_pof_to_rbf.cmd - identical to convert_pof_to_rbf.cmd<br />do_get_project_settings.cmd - parses the project_settings.ini file; used by the various scripts and can be used to help write new scripts<br />do_open_main_qsys.cmd - opens the main QSYS file, as defined in the project settings file, with the QSYS heap size defined by the project settings file<br />do_open_qsys.cmd - opens a QSYS in the tsb/ip/rtl directory, but does not load a QSYS file<br />do_open_quartus.cmd - opens Quartus with the project as defined in the project settings file<br />do_program_aux_fpga_flash.cmd - programs the flash for the auxiliary FPGA devices (e.g. Spartans on the 3xFMC card), parameters defined in the project_settings.ini file<br />do_program_main_fpga_flash.cmd  - programs the flash for the main FPGA device (e.g. Stratix IV on the 3xFMC card), parameters defined in the project_settings.ini file<br />do_program_maxv_flash.cmd - programs the flash for the MAXV device, parameters defined in the project_settings.ini file<br />do_program_maxv_flash_w_alternate_file.cmd - programs the flash for the MAXV device, using an alternate file as defined in the project_settings.ini file<br />do_run_custom_system_console.cmd - runs Altera's system console tool with the custom TCL script custom_system_console_script.tcl that is present in the encompassing file's tsb/ip/scripts directory<br />do_run_simple_system_console.cmd  - runs Altera's system console tool, directory set to the tsb/ip/rtl directory<br />do_run_system_console.cmd - runs the <a href="https://edev.triumf.ca/projects/edevel00264/wiki" class="external">DASHING</a> system-console based tool<br />envchk.sh - run this as "./envchk.sh" (without sourcing): prints out the path to Quartus</p>
+
+
+	<a name="List_of_Scripts_Advanced-Scripts"></a>
+<h2 ><ins><strong>Advanced Scripts</strong></ins><a href="#List_of_Scripts_Advanced-Scripts" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Any scripts not listed as user scripts should be considered advanced scripts. See <a href="#Advanced_Scripts" class="wiki-page new">Advanced Scripts</a> for more information.</p>
+<hr />
+<a name="The_Project_Parameter_File" />
+<a name="The_Project_Parameter_File_The-Project-Parameter-File"></a>
+<h1 ><ins><strong>The Project Parameter File</strong></ins><a href="#The_Project_Parameter_File_The-Project-Parameter-File" class="wiki-anchor">&para;</a></h1>
+
+
+	<p>The project_settings.ini file is an easily editable INI file that is parsed by the common scripts library. In contains project-dependent settings that are used by the various scripts. In must be located in the tsb/ip/scripts directory of the encompassing module.</p>
+
+
+	<a name="The_Project_Parameter_File_Example-project_settingsini-FileAn-example-of-the-project_settingsini-file-is-show-here-for-DEAP-edevel00365"></a>
+<h2 ><ins><strong>Example project_settings.ini File</strong></ins><br />An example of the project_settings.ini file is show here for DEAP (edevel00365)<a href="#The_Project_Parameter_File_Example-project_settingsini-FileAn-example-of-the-project_settingsini-file-is-show-here-for-DEAP-edevel00365" class="wiki-anchor">&para;</a></h2>
+
+
+<pre>
+[project]
+main_fpga_project_filename_base=3xFMC_Generic
+main_fpga_project_programming_file_extension=sof
+main_fpga_project_elf_filename_base=allserver_sfp
+bootloader_filename_base=deap_boot_loader
+bootloader_elf_base=boot_loader
+daq_nios_filename_base=Application_new
+main_fpga_device_index=1
+main_fpga_memory_space_start_addr=0
+default_usb_cable_index=0
+application_nios_instance_index=0
+application_nios_associated_jtag_uart_instance_index=0
+bootloader_nios_instance_index=1
+bootloader_nios_associated_jtag_uart_instance_index=1
+quartus_project_location_directory=../../../tsb/ip/rtl
+quartus_project_postcompile_sof_location_directory=../../../tsb/ip/rtl/output_files
+quartus_project_nios_app_software_directory=../../../tsb/ip/rtl/software
+quartus_project_daq_nios_app_software_directory=../../../tsbs/deap_vme_and_daq/tsbs/trigger_and_daq/tsb/ip/rtl/software/
+cof_filename_for_programming_main_fpga_flash=configuration_file_for_programming_stratix_cfi_flash_with_sof_and_elf
+cdf_filename_for_programming_main_fpga_flash=program_stratix_cfi_flash
+rbf_filename_for_programming_main_fpga_flash=stratix_sof_and_elf_image
+cropped_rbf_filename_for_programming_main_fpga_flash=stratix_sof_and_elf_image_cropped
+map_filename_for_programming_main_fpga_flash=stratix_sof_and_elf_image
+map_row_header_for_max_address_in_main_fpga_flash=Page_0
+cdf_filename_for_programming_maxv_flash=program_maxv_flash_normal
+cdf_alternate_filename_for_programming_maxv_flash=program_maxv_flash_fallback
+cof_filename_for_programming_aux_fpga_flash=configuration_file_for_programming_flash_for_three_spartans_deap_fmc2_adc_fmc1_cgen_fmc0_trig
+cdf_filename_for_programming_aux_fpga_flash=program_spartan_hex_files
+pof_filename_for_programming_aux_fpga_flash=spartan_images_deap_fmc2_adc_fmc1_cgen_fmc0_trig
+
+[qsys]
+main_fpga_flash_base_addr=0x54000000
+main_fpga_flash_end_addr=0x58000000
+java_heap_size_for_qsys=2048M
+main_qsys_filename=NIOS_ApplicationProcessor.qsys
+</pre>
+
+	<p>DEAP is a rather complicated example with multiple FPGAs. A simpler example is for the MaxV project for DEAP (edevel00243). The project_settings.ini file for that project is:</p>
+
+
+<pre>
+[project]
+main_fpga_project_filename_base=maxv_3xfmc
+main_fpga_project_programming_file_extension=pof
+main_fpga_device_index=2
+main_fpga_memory_space_start_addr=0
+default_usb_cable_index=0
+quartus_project_location_directory=../../../tsb/ip/rtl
+quartus_project_postcompile_sof_location_directory=../../../tsb/ip/rtl/output_files
+cdf_filename_for_programming_maxv_flash=program_maxv_flash
+
+[qsys]
+java_heap_size_for_qsys=1024M
+main_qsys_filename=maxv_qsys_spi_bridge.qsys
+</pre>
+
+	<a name="The_Project_Parameter_File_Usage-of-the-project_settingsini-file-in-the-Common-Scripts-Library"></a>
+<h2 ><ins><strong>Usage of the project_settings.ini file in the Common Scripts Library</strong></ins><a href="#The_Project_Parameter_File_Usage-of-the-project_settingsini-file-in-the-Common-Scripts-Library" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>The usage of the project_settings.ini file in each script is done as follows. For example, let's take a look at the script do_altera_hardware_load.cmd, which loads the SOF file into the FPGA.</p>
+
+
+<pre>
+source do_get_project_settings.cmd
+nios2-configure-sof --device $main_fpga_device_index "$@" ../exe/$main_fpga_project_filename_base\.sof 
+</pre>
+
+	<p>The usage of the project_settings.ini file is done in two steps:</p>
+
+
+	<p>1. The command:</p>
+
+
+<pre>
+source do_get_project_settings.cmd
+</pre>
+
+	<p>calls the special script "do_get_project_settings.cmd" that parses in "project_settings.ini" file and puts all of the settings in BASH variables.</p>
+
+
+	<p>2. The script uses the various variable in the commands. For example the line:</p>
+
+
+<pre>
+nios2-configure-sof --device $main_fpga_device_index "$@" ../exe/$main_fpga_project_filename_base\.sof 
+</pre>
+
+	<p>Uses the variable "main_fpga_device_index" to define the device in the JTAG chain where the FPGA resides, and "main_fpga_project_filename_base" as the filename of the "sof" file.</p>
+
+
+	<p>Note that "$@" means the parameters passed to the script, so additional parameters can be passed via that construct.</p>
+<hr />
+<a name="Wiki" />
+<a name="Wiki_Wiki"></a>
+<h1 >Wiki<a href="#Wiki_Wiki" class="wiki-anchor">&para;</a></h1>
+
+
+	<a name="Wiki_Overview"></a>
+<h2 ><ins><strong>Overview</strong></ins><a href="#Wiki_Overview" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>The Common Scripts Library contains a parametrizeable, extensible, versatile collection of scripts to use with the Altera Nios Command Shell. These scripts can easily be integrated into projects in a matter of minutes, providing a powerful toolset.</p>
+
+
+	<a name="Wiki_Basic-Integration"></a>
+<h2 ><ins><strong>Basic Integration</strong></ins><a href="#Wiki_Basic-Integration" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Integration of the common scripts library is done as follows:</p>
+
+
+	<ol>
+	<li>The appropriate release of the Common Scripts Library <ins><strong>must</strong></ins> be located in the tsbs/common_scripts_library using the standardized <a href="https://edev.triumf.ca/projects/edevel00231/wiki" class="external">hierarchical design method</a></li>
+		<li>In the tsb/ip/scripts directory of the encompassing module, the file "project_settings.ini" needs to be defined (see <a href="#The_Project_Parameter_File" class="wiki-page">The Project Parameter File</a>)</li>
+		<li>In the tsb/ip/scripts directory, a script must be present for each script used in the Common Scripts Library, with the following contents:<br /><pre>
+#!/bin/bash
+script_name=$(basename $BASH_SOURCE)
+source ../../../tsbs/common_scripts_library/tsb/ip/scripts/${script_name} "$@" 
+</pre></li>
+	</ol>
+
+
+<blockquote>
+
+	<p>For example, if usage of the script do_altera_hardware_load.cmd is desired, a file with the name do_altera_hardware_load.cmd needs to be present in the tsb/ip/scripts directory with the above contents. Note that the content is script-independent.</p>
+
+
+</blockquote>
+
+	<a name="Wiki_Running-Scripts"></a>
+<h2 ><ins><strong>Running Scripts</strong></ins><a href="#Wiki_Running-Scripts" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>In general, running scripts is done via the "source" method, i.e.:</p>
+
+
+<pre>
+source do_altera_hardware_load.cmd 
+</pre>
+
+	<p>Parameters can also be passed to many scripts, e.g.</p>
+
+
+<pre>
+source do_altera_hardware_load.cmd  -g
+</pre>
+
+	<a name="Wiki_The-project_settingsini-file"></a>
+<h2 ><ins><strong>The project_settings.ini file</strong></ins><a href="#Wiki_The-project_settingsini-file" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>The project_settings.ini file is an easily editable INI file that is parsed by the common scripts library. In contains project-dependent settings that are used by the various scripts. See:<br /><a href="#The_Project_Parameter_File" class="wiki-page">The Project Parameter File</a></p>
+
+
+	<a name="Wiki_List-of-scripts"></a>
+<h2 ><ins><strong>List of scripts</strong></ins><a href="#Wiki_List-of-scripts" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>For a list of scripts with usage details, see the following:</p>
+
+
+	<a name="Wiki_Custom-scripts"></a>
+<h2 ><ins><strong>Custom scripts</strong></ins><a href="#Wiki_Custom-scripts" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>It is easy to build upon the common scripts library in order to easily construct project-specific custom scripts. These custom scripts should also reside in the tsb/ip.scripts directory. For example, in edevel00396, the script do_burn_firmware.cmd is:</p>
+
+
+<pre>
+source do_program_maxv_flash_w_writer.cmd
+source do_program_cfi_flash.cmd
+source do_program_maxv_flash_w_loader.cmd
+</pre>
+
+	<p>Where do_program_cfi_flash.cmd is:</p>
+
+
+<pre>
+#!/bin/bash
+source ../../../tsbs/common_scripts_library/tsb/ip/scripts/do_program_main_fpga_flash.cmd  "$@" 
+</pre>
+
+	<p>and do_program_maxv_flash_w_writer.cmd is:</p>
+
+
+<pre>
+#!/bin/bash
+source ../../../tsbs/common_scripts_library/tsb/ip/scripts/do_program_maxv_flash_w_alternate_file.cmd "$@" 
+</pre> 
+
+	<p>and  do_program_maxv_flash_w_loader.cmd is:</p>
+
+
+<pre>
+#!/bin/bash
+source ../../../tsbs/common_scripts_library/tsb/ip/scripts/do_program_maxv_flash.cmd "$@" 
+</pre> 
+
+	<p>Where the appropriate variables used by the common library scripts are, as usual, defined in the project_settings.ini file</p>
+
+
+	<a name="Wiki_Examples"></a>
+<h2 ><ins><strong>Examples</strong></ins><a href="#Wiki_Examples" class="wiki-anchor">&para;</a></h2>
+
+
+	<p>Examples of the usage of the scripts library can be found in:</p>
+
+
+	<p><a href="https://edev.triumf.ca/projects/edevel00365" class="external">edevel00365</a> - DEAP firmware on 3xFMC Stratix IV board - complicated example of script usage<br /><a href="https://edev.triumf.ca/projects/edevel00396" class="external">edevel00396</a> - 32 Channel ADC on Arria V development board - complicated example of script usage<br /><a href="https://edev.triumf.ca/projects/edevel00243" class="external">edevel00243</a> - MaxV firmware for 3xFMC board - simple example of script usage</p>
+
+
+	<p><a href="#List_of_Scripts" class="wiki-page">List of Scripts</a></p>
+
+</body>
+</html>

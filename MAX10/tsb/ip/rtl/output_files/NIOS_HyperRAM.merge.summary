@@ -1,0 +1,16 @@
+Partition Merge Status : Successful - Thu Jan 16 13:32:54 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Revision Name : NIOS_HyperRAM
+Top-level Entity Name : NIOS_HyperRAM
+Family : MAX 10
+Total logic elements : 625
+    Total combinational functions : 427
+    Dedicated logic registers : 453
+Total registers : 453
+Total pins : 157
+Total virtual pins : 0
+Total memory bits : 512
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

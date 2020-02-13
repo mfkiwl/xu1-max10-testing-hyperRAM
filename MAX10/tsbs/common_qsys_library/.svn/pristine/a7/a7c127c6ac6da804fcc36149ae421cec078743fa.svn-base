@@ -1,0 +1,9 @@
+	component arria10_altddio_1bit is
+		port (
+			ck       : in  std_logic                    := 'X';             -- export
+			datain_h : in  std_logic_vector(0 downto 0) := (others => 'X'); -- fragment
+			datain_l : in  std_logic_vector(0 downto 0) := (others => 'X'); -- fragment
+			dataout  : out std_logic_vector(0 downto 0)                     -- export
+		);
+	end component arria10_altddio_1bit;
+

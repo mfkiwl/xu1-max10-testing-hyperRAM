@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Oct 29 14:10:07 2015
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : multibit_serial_to_parallel_w_clk_gen_and_dirsel
+Top-level Entity Name : multibit_serial_to_parallel_w_clk_gen_and_dirsel
+Family : Cyclone III
+Total logic elements : 201
+    Total combinational functions : 105
+    Dedicated logic registers : 198
+Total registers : 198
+Total pins : 112
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

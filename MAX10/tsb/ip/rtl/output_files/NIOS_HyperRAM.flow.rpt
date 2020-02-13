@@ -1,0 +1,182 @@
+Flow report for NIOS_HyperRAM
+Wed Feb 12 14:01:19 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Wed Feb 12 14:01:15 2020           ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Standard Edition ;
+; Revision Name                      ; NIOS_HyperRAM                                   ;
+; Top-level Entity Name              ; NIOS_HyperRAM                                   ;
+; Family                             ; MAX 10                                          ;
+; Device                             ; 10M08DAF256C8G                                  ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 1,840 / 8,064 ( 23 % )                          ;
+;     Total combinational functions  ; 786 / 8,064 ( 10 % )                            ;
+;     Dedicated logic registers      ; 1,592 / 8,064 ( 20 % )                          ;
+; Total registers                    ; 1592                                            ;
+; Total pins                         ; 160 / 178 ( 90 % )                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 10,880 / 387,072 ( 3 % )                        ;
+; Embedded Multiplier 9-bit elements ; 0 / 48 ( 0 % )                                  ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
+; UFM blocks                         ; 0 / 1 ( 0 % )                                   ;
+; ADC blocks                         ; 0 / 1 ( 0 % )                                   ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 02/12/2020 14:00:29 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; NIOS_HyperRAM       ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                                                                                                                                                                                                                                                          ;
++--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-----------------------+------------------+
+; Assignment Name                      ; Value                                                                                                                                                                                                                                                                                                   ; Default Value ; Entity Name           ; Section Id       ;
++--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-----------------------+------------------+
+; COMPILER_SIGNATURE_ID                ; 48751573535320.158154482917236                                                                                                                                                                                                                                                                          ; --            ; --                    ; --               ;
+; EDA_OUTPUT_DATA_FORMAT               ; None                                                                                                                                                                                                                                                                                                    ; --            ; --                    ; eda_simulation   ;
+; ENABLE_SIGNALTAP                     ; On                                                                                                                                                                                                                                                                                                      ; --            ; --                    ; --               ;
+; FITTER_EFFORT                        ; Standard Fit                                                                                                                                                                                                                                                                                            ; Auto Fit      ; --                    ; --               ;
+; FLOW_ENABLE_POWER_ANALYZER           ; On                                                                                                                                                                                                                                                                                                      ; Off           ; --                    ; --               ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                                                                                                                                                                                                                                                                                      ; --            ; --                    ; --               ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                                                                                                                                                                                                                                                                                       ; --            ; --                    ; --               ;
+; MISC_FILE                            ; max10_nios_basetester/synthesis/../max10_nios_basetester.cmp                                                                                                                                                                                                                                            ; --            ; --                    ; --               ;
+; MISC_FILE                            ; max10_nios_basetester/synthesis/../../max10_nios_basetester.qsys                                                                                                                                                                                                                                        ; --            ; --                    ; --               ;
+; MISC_FILE                            ; clk_gen_inst.v                                                                                                                                                                                                                                                                                          ; --            ; --                    ; --               ;
+; MISC_FILE                            ; clk_gen_bb.v                                                                                                                                                                                                                                                                                            ; --            ; --                    ; --               ;
+; MISC_FILE                            ; clk_gen.ppf                                                                                                                                                                                                                                                                                             ; --            ; --                    ; --               ;
+; OPTIMIZATION_MODE                    ; High Performance Effort                                                                                                                                                                                                                                                                                 ; Balanced      ; --                    ; --               ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                                                                                                                                                                                                                                                                                       ; --            ; --                    ; --               ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                                                                                                                                                                                                                                                                                       ; --            ; --                    ; --               ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                                                                                                                                                                                                                                                                                              ; --            ; --                    ; --               ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                                                                                                                                                                                                                                                                                              ; --            ; --                    ; --               ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)                                                                                                                                                                                                                                                                  ; --            ; --                    ; Top              ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)                                                                                                                                                                                                                                                                  ; --            ; --                    ; Top              ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)                                                                                                                                                                                                                                                                  ; --            ; --                    ; Top              ;
+; PHYSICAL_SYNTHESIS_COMBO_LOGIC       ; On                                                                                                                                                                                                                                                                                                      ; Off           ; --                    ; --               ;
+; PHYSICAL_SYNTHESIS_REGISTER_RETIMING ; On                                                                                                                                                                                                                                                                                                      ; Off           ; --                    ; --               ;
+; PLACEMENT_EFFORT_MULTIPLIER          ; 4.0                                                                                                                                                                                                                                                                                                     ; 1.0           ; --                    ; --               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                                                                                                                                                                                                                                                                                     ; --            ; --                    ; --               ;
+; POWER_DEFAULT_INPUT_IO_TOGGLE_RATE   ; 12.5 %                                                                                                                                                                                                                                                                                                  ; 12.5%         ; --                    ; --               ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                                                                                                                                                                                                                                   ; --            ; --                    ; --               ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                                                                                                                                                                                                                                                                            ; --            ; --                    ; --               ;
+; ROUTER_TIMING_OPTIMIZATION_LEVEL     ; MAXIMUM                                                                                                                                                                                                                                                                                                 ; Normal        ; --                    ; --               ;
+; SLD_FILE                             ; max10_nios_basetester/synthesis/max10_nios_basetester.regmap                                                                                                                                                                                                                                            ; --            ; --                    ; --               ;
+; SLD_FILE                             ; max10_nios_basetester/synthesis/max10_nios_basetester.debuginfo                                                                                                                                                                                                                                         ; --            ; --                    ; --               ;
+; SLD_FILE                             ; db/stp3_auto_stripped.stp                                                                                                                                                                                                                                                                               ; --            ; --                    ; --               ;
+; SLD_INFO                             ; QSYS_NAME max10_nios_basetester HAS_SOPCINFO 1 GENERATION_ID 1580173232                                                                                                                                                                                                                                 ; --            ; max10_nios_basetester ; --               ;
+; SLD_NODE_CREATOR_ID                  ; 110                                                                                                                                                                                                                                                                                                     ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_ENTITY_NAME                 ; sld_signaltap                                                                                                                                                                                                                                                                                           ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_BLOCK_TYPE=AUTO                                                                                                                                                                                                                                                                                 ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_NODE_INFO=805334528                                                                                                                                                                                                                                                                                 ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_POWER_UP_TRIGGER=0                                                                                                                                                                                                                                                                                  ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_INVERSION_MASK_LENGTH=0                                                                                                                                                                                                                                                           ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SEGMENT_SIZE=128                                                                                                                                                                                                                                                                                    ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ATTRIBUTE_MEM_MODE=OFF                                                                                                                                                                                                                                                                              ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_FLOW_USE_GENERATED=0                                                                                                                                                                                                                                                                          ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STATE_BITS=11                                                                                                                                                                                                                                                                                       ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_BUFFER_FULL_STOP=1                                                                                                                                                                                                                                                                                  ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_CURRENT_RESOURCE_WIDTH=1                                                                                                                                                                                                                                                                            ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INCREMENTAL_ROUTING=1                                                                                                                                                                                                                                                                               ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL=1                                                                                                                                                                                                                                                                                     ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_SAMPLE_DEPTH=128                                                                                                                                                                                                                                                                                    ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_IN_ENABLED=0                                                                                                                                                                                                                                                                                ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_PIPELINE=0                                                                                                                                                                                                                                                                                  ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_COUNTER_PIPELINE=0                                                                                                                                                                                                                                                                                  ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ADVANCED_TRIGGER_ENTITY=basic,1,                                                                                                                                                                                                                                                                    ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_LEVEL_PIPELINE=1                                                                                                                                                                                                                                                                            ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_ENABLE_ADVANCED_TRIGGER=0                                                                                                                                                                                                                                                                           ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_RAM_PIPELINE=2                                                                                                                                                                                                                                                                                      ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_DATA_BITS=85                                                                                                                                                                                                                                                                                        ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_TRIGGER_BITS=85                                                                                                                                                                                                                                                                                     ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_STORAGE_QUALIFIER_BITS=85                                                                                                                                                                                                                                                                           ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK=000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 ; --            ; --                    ; auto_signaltap_0 ;
+; SLD_NODE_PARAMETER_ASSIGNMENT        ; SLD_INVERSION_MASK_LENGTH=276                                                                                                                                                                                                                                                                           ; --            ; --                    ; auto_signaltap_0 ;
+; SOPCINFO_FILE                        ; max10_nios_basetester/synthesis/../../max10_nios_basetester.sopcinfo                                                                                                                                                                                                                                    ; --            ; --                    ; --               ;
+; SYNTHESIS_ONLY_QIP                   ; On                                                                                                                                                                                                                                                                                                      ; --            ; --                    ; --               ;
+; USE_SIGNALTAP_FILE                   ; output_files/stp3.stp                                                                                                                                                                                                                                                                                   ; --            ; --                    ; --               ;
++--------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------+-----------------------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:24     ; 1.0                     ; 4902 MB             ; 00:00:43                           ;
+; Fitter               ; 00:00:12     ; 1.2                     ; 5691 MB             ; 00:00:17                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4714 MB             ; 00:00:01                           ;
+; Power Analyzer       ; 00:00:04     ; 1.2                     ; 4878 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.3                     ; 4843 MB             ; 00:00:04                           ;
+; Total                ; 00:00:44     ; --                      ; --                  ; 00:01:09                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; edev3            ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; edev3            ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; edev3            ; Windows 10 ; 10.0       ; x86_64         ;
+; Power Analyzer       ; edev3            ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; edev3            ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off NIOS_HyperRAM -c NIOS_HyperRAM
+quartus_fit --read_settings_files=off --write_settings_files=off NIOS_HyperRAM -c NIOS_HyperRAM
+quartus_asm --read_settings_files=off --write_settings_files=off NIOS_HyperRAM -c NIOS_HyperRAM
+quartus_pow --read_settings_files=off --write_settings_files=off NIOS_HyperRAM -c NIOS_HyperRAM
+quartus_sta NIOS_HyperRAM -c NIOS_HyperRAM
+
+
+

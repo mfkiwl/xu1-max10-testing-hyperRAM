@@ -1,0 +1,285 @@
+Simulator report for my_multibit_clock_crosser_optimized_for_altera
+Fri Dec 04 13:22:46 2015
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 108 nodes    ;
+; Simulation Coverage         ;      96.30 % ;
+; Total Number of Transitions ; 8041         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      96.30 % ;
+; Total nodes checked                                 ; 108          ;
+; Total output ports checked                          ; 108          ;
+; Total output ports with complete 1/0-value coverage ; 104          ;
+; Total output ports with no 1/0-value coverage       ; 4            ;
+; Total output ports with no 1-value coverage         ; 4            ;
+; Total output ports with no 0-value coverage         ; 4            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                                                                                                                      ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                                                     ; Output Port Name                                                                                                                                              ; Output Port Type ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~8                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~8                                                                                              ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~9                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~9                                                                                              ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~10                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~10                                                                                             ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~11                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~11                                                                                             ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~12                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~12                                                                                             ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~13                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~13                                                                                             ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~14                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~14                                                                                             ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~15                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data~15                                                                                             ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_valid~0                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_valid~0                                                                                             ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_valid                                                                                               ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_valid                                                                                               ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[0]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[0]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[1]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[1]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[2]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[2]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[3]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[3]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[4]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[4]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[5]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[5]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[6]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[6]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[7]~reg0                                                                                              ; |my_multibit_clock_crosser_optimized_for_altera|out_data[7]~reg0                                                                                              ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[0]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[0]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[1]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[1]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[2]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[2]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[3]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[3]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[4]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[4]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[5]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[5]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[6]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[6]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[7]                                                                                             ; |my_multibit_clock_crosser_optimized_for_altera|actual_in_data[7]                                                                                             ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_clk                                                                                                        ; |my_multibit_clock_crosser_optimized_for_altera|in_clk                                                                                                        ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_valid                                                                                                      ; |my_multibit_clock_crosser_optimized_for_altera|in_valid                                                                                                      ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[0]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[0]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[1]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[1]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[2]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[2]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[3]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[3]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[4]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[4]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[5]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[5]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[6]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[6]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|in_data[7]                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|in_data[7]                                                                                                    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_clk                                                                                                       ; |my_multibit_clock_crosser_optimized_for_altera|out_clk                                                                                                       ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[0]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[0]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[1]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[1]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[2]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[2]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[3]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[3]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[4]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[4]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[5]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[5]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[6]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[6]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|out_data[7]                                                                                                   ; |my_multibit_clock_crosser_optimized_for_altera|out_data[7]                                                                                                   ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_ready~0                                         ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_ready~0                                         ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|take_in_data                                       ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|take_in_data                                       ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_valid_internal                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_valid_internal                                 ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_taken                                     ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_taken                                     ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_toggle~0                                   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_toggle~0                                   ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[7]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[7]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[6]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[6]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[5]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[5]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[4]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[4]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[3]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[3]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[2]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[2]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[1]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[1]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[0]                                  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_buffer[0]                                  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_toggle_flopped~0                          ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_toggle_flopped~0                          ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_toggle                                     ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|in_data_toggle                                     ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_toggle_flopped                            ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_toggle_flopped                            ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[7]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[7]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[6]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[6]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[5]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[5]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[4]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[4]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[3]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[3]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[2]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[2]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[1]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[1]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[0]                                 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|out_data_buffer[0]                                 ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~0    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~0    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~1    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~1    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~2    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~2    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~3    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~3    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~4    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~4    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~5    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~5    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~6    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~6    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~7    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1~7    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[7]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[7]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[6]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[6]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[5]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[5]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[4]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[4]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[3]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[3]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[2]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[2]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[1]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[1]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[0]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data0[0]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[7]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[7]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[6]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[6]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[5]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[5]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[4]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[4]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[3]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[3]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[2]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[2]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[1]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[1]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~0  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~0  ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~0    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~0    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~1    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~1    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~1  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~1  ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~2    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~2    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~3    ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1~3    ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[0]   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|data1[0]   ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1      ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full1      ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:out_to_in_synchronizer|dreg[0] ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:out_to_in_synchronizer|dreg[0] ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:out_to_in_synchronizer|din_s1  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:out_to_in_synchronizer|din_s1  ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:in_to_out_synchronizer|dreg[0] ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:in_to_out_synchronizer|dreg[0] ; regout           ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:in_to_out_synchronizer|din_s1  ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_std_synchronizer:in_to_out_synchronizer|din_s1  ; regout           ;
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                                                    ; Output Port Name                                                                                                                                             ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |my_multibit_clock_crosser_optimized_for_altera|out_valid                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|out_valid                                                                                                    ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~4 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~4 ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0~3   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0~3   ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0     ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0     ; regout           ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                                                                                                                                       ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                                                                    ; Output Port Name                                                                                                                                             ; Output Port Type ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+; |my_multibit_clock_crosser_optimized_for_altera|out_valid                                                                                                    ; |my_multibit_clock_crosser_optimized_for_altera|out_valid                                                                                                    ; pin_out          ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~4 ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|always1~4 ; out0             ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0~3   ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0~3   ; out              ;
+; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0     ; |my_multibit_clock_crosser_optimized_for_altera|my_avalon_st_clock_crosser:my_avalon_st_clock_crosser_inst|my_avalon_st_pipeline_base:output_stage|full0     ; regout           ;
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Dec 04 13:22:46 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off my_multibit_clock_crosser_optimized_for_altera -c my_multibit_clock_crosser_optimized_for_altera
+Info: Using vector source file "D:/avsoc/edevel00396_adc32/tsbs/common_rtl_library/tsb/ip/sim/my_multibit_clock_crosser_optimized_for_altera.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of my_multibit_clock_crosser_optimized_for_altera.vwf called my_multibit_clock_crosser_optimized_for_altera.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 3.5 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[3]"
+Warning: Found clock-sensitive change during active clock edge at time 3.5 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[5]"
+Warning: Found clock-sensitive change during active clock edge at time 3.5 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[6]"
+Warning: Found clock-sensitive change during active clock edge at time 3.5 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[7]"
+Warning: Found clock-sensitive change during active clock edge at time 21.0 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[0]"
+Warning: Found clock-sensitive change during active clock edge at time 21.0 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[1]"
+Warning: Found clock-sensitive change during active clock edge at time 21.0 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[2]"
+Warning: Found clock-sensitive change during active clock edge at time 42.0 ns on register "|my_multibit_clock_crosser_optimized_for_altera|actual_in_data[4]"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      96.30 %
+Info: Number of transitions in simulation is 8041
+Info: Vector file my_multibit_clock_crosser_optimized_for_altera.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Fri Dec 04 13:22:46 2015
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

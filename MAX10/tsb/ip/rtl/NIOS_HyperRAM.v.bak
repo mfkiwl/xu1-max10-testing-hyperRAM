@@ -1,0 +1,103 @@
+// Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus Prime License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// PROGRAM		"Quartus Prime"
+// VERSION		"Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition"
+// CREATED		"Mon Mar 13 12:41:39 2017"
+
+module NIOS_HyperRAM(
+	c10_resetn,
+	c10_clk50m,
+	clk100,
+
+//PIO	
+	arduino_button,
+	button,
+	arduino_led,
+	led,
+  
+//Hyperbus Signals  
+	hbus_clk0n,
+	hbus_clk0p,
+	hbus_clk1p,
+	hbus_clk1n,
+	hbus_cs1n,
+	hbus_cs2n,
+	hbus_rwds,
+	hbus_rston,
+	hbus_intn,
+	hbus_dq
+);
+input      	 c10_clk50m;
+input     	 c10_resetn;
+input     	 clk100;
+
+//PIO
+input  [1:0] arduino_button;
+input  [1:0] button;
+output wire	[4:0] arduino_led;
+output wire	[7:0] led;
+
+//Hyperbus ignals
+output wire         hbus_clk0p  ; // Hyperbus signals : Clk diff (p)
+output wire         hbus_clk0n  ; // Hyperbus signals : Clk diff (n)
+output wire         hbus_clk1p  ; // Hyperbus signals : Clk diff (p)
+output wire         hbus_clk1n  ; // Hyperbus signals : Clk diff (n)
+output wire         hbus_cs1n   ; // Hyperbus signals : HyperFLash Chip select
+output wire         hbus_cs2n   ; // Hyperbus signals : HyperRAM Chip Select
+inout  tri          hbus_rwds   ; // Hyperbus signals : read strobe - write mask
+inout  tri  [7:0]   hbus_dq     ; // Hyperbus signals : Data
+input               hbus_rston  ; // Hyperbus signals : reset from HyperFlash
+input               hbus_intn   ; // Hyperbus signals : interrupt  from HyperFlash
+
+//---------------------------------------------------------
+//System
+//---------------------------------------------------------
+wire	[7:0] iled;
+
+  hypernios	b2v_inst(
+  	.clk_clk    (c10_clk50m),
+  	.rst_reset_n(c10_resetn),
+  
+  	.hyperbus_controller_top_HB_RSTOn (hbus_rston),
+  	.hyperbus_controller_top_HB_RSTn  (          ), //not used
+  	.hyperbus_controller_top_HB_WPn   (          ), //not used
+  	.hyperbus_controller_top_HB_INTn  (hbus_intn ),
+  	.hyperbus_controller_top_HB_RWDS  (hbus_rwds ),
+  	.hyperbus_controller_top_HB_dq    (hbus_dq   ),
+  	.hyperbus_controller_top_HB_CLK0  (hbus_clk0p),
+  	.hyperbus_controller_top_HB_CLK0n (hbus_clk0n),
+  	.hyperbus_controller_top_HB_CLK1  (hbus_clk1p),
+  	.hyperbus_controller_top_HB_CLK1n (hbus_clk1n),	
+  	.hyperbus_controller_top_HB_CS0n  (hbus_cs1n ),
+  	.hyperbus_controller_top_HB_CS1n  (hbus_cs2n ),
+  	
+  	.pio_0_external_connection_export(iled),
+  	.pio_1_external_connection_export(arduino_button),
+  	.pio_2_external_connection_export(arduino_led)
+  );
+
+
+assign	led[7] = iled[7] ? 1'b0 : 1'bz;
+assign	led[6] = iled[6] ? 1'b0 : 1'bz;
+assign	led[5] = iled[5] ? 1'b0 : 1'bz;
+assign	led[4] = iled[4] ? 1'b0 : 1'bz;
+assign	led[3] = iled[3] ? 1'b0 : 1'bz;
+assign	led[2] = iled[2] ? 1'b0 : 1'bz;
+assign	led[1] = iled[1] ? 1'b0 : 1'bz;
+assign	led[0] = iled[0] ? 1'b0 : 1'bz;
+
+
+endmodule

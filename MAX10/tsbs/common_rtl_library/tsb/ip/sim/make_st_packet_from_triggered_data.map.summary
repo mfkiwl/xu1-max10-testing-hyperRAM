@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Feb 24 15:13:42 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : make_st_packet_from_triggered_data
+Top-level Entity Name : make_st_packet_from_triggered_data
+Family : Cyclone III
+Total logic elements : 61
+    Total combinational functions : 45
+    Dedicated logic registers : 35
+Total registers : 35
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

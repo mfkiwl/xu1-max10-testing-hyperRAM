@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Apr 20 21:38:47 2019
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : sincos
+Top-level Entity Name : sincos
+Family : Cyclone III
+Total logic elements : 447
+    Total combinational functions : 290
+    Dedicated logic registers : 265
+Total registers : 265
+Total pins : 73
+Total virtual pins : 0
+Total memory bits : 35,896
+Embedded Multiplier 9-bit elements : 8
+Total PLLs : 0

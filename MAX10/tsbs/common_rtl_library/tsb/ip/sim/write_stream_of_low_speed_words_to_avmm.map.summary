@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 10 17:42:35 2017
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : write_stream_of_low_speed_words_to_avmm
+Top-level Entity Name : write_stream_of_low_speed_words_to_avmm
+Family : Cyclone III
+Total logic elements : 243
+    Total combinational functions : 187
+    Dedicated logic registers : 112
+Total registers : 112
+Total pins : 411
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

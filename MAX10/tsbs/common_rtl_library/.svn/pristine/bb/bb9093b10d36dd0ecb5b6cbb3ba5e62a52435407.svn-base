@@ -1,0 +1,928 @@
+Simulator report for avalon_master_state_machine_w_programmable_wait
+Tue Jun 02 13:08:23 2015
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 546 nodes    ;
+; Simulation Coverage         ;      50.37 % ;
+; Total Number of Transitions ; 3449         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      50.37 % ;
+; Total nodes checked                                 ; 546          ;
+; Total output ports checked                          ; 546          ;
+; Total output ports with complete 1/0-value coverage ; 275          ;
+; Total output ports with no 1/0-value coverage       ; 217          ;
+; Total output ports with no 1-value coverage         ; 229          ;
+; Total output ports with no 0-value coverage         ; 259          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[27]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[27]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[23]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[23]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[22]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[22]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[16]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[16]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[12]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[12]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[10]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[10]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[9]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[9]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[6]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[6]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[5]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[5]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[4]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[4]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[2]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[2]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~5       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~5       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~6       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~6       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~7       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~7       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~13      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~13      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~14      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~14      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~15      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~15      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[0]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[0]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state~6                   ; |avalon_master_state_machine_w_programmable_wait|state~6                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~7                   ; |avalon_master_state_machine_w_programmable_wait|state~7                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~8                   ; |avalon_master_state_machine_w_programmable_wait|state~8                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~9                   ; |avalon_master_state_machine_w_programmable_wait|state~9                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~10                  ; |avalon_master_state_machine_w_programmable_wait|state~10                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~11                  ; |avalon_master_state_machine_w_programmable_wait|state~11                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~12                  ; |avalon_master_state_machine_w_programmable_wait|state~12                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~13                  ; |avalon_master_state_machine_w_programmable_wait|state~13                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~14                  ; |avalon_master_state_machine_w_programmable_wait|state~14                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~15                  ; |avalon_master_state_machine_w_programmable_wait|state~15                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~22                  ; |avalon_master_state_machine_w_programmable_wait|state~22                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~23                  ; |avalon_master_state_machine_w_programmable_wait|state~23                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~24                  ; |avalon_master_state_machine_w_programmable_wait|state~24                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~25                  ; |avalon_master_state_machine_w_programmable_wait|state~25                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~28                  ; |avalon_master_state_machine_w_programmable_wait|state~28                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~29                  ; |avalon_master_state_machine_w_programmable_wait|state~29                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~30                  ; |avalon_master_state_machine_w_programmable_wait|state~30                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~31                  ; |avalon_master_state_machine_w_programmable_wait|state~31                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~38                  ; |avalon_master_state_machine_w_programmable_wait|state~38                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~39                  ; |avalon_master_state_machine_w_programmable_wait|state~39                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~40                  ; |avalon_master_state_machine_w_programmable_wait|state~40                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~41                  ; |avalon_master_state_machine_w_programmable_wait|state~41                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~43                  ; |avalon_master_state_machine_w_programmable_wait|state~43                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~44                  ; |avalon_master_state_machine_w_programmable_wait|state~44                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~45                  ; |avalon_master_state_machine_w_programmable_wait|state~45                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~46                  ; |avalon_master_state_machine_w_programmable_wait|state~46                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~47                  ; |avalon_master_state_machine_w_programmable_wait|state~47                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~48                  ; |avalon_master_state_machine_w_programmable_wait|state~48                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~49                  ; |avalon_master_state_machine_w_programmable_wait|state~49                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~50                  ; |avalon_master_state_machine_w_programmable_wait|state~50                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~51                  ; |avalon_master_state_machine_w_programmable_wait|state~51                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~52                  ; |avalon_master_state_machine_w_programmable_wait|state~52                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~53                  ; |avalon_master_state_machine_w_programmable_wait|state~53                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~55                  ; |avalon_master_state_machine_w_programmable_wait|state~55                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state[0]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[0]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state~59                  ; |avalon_master_state_machine_w_programmable_wait|state~59                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[0]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[0]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[9]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[9]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[8]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[8]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[7]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[7]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[6]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[6]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[5]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[5]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[4]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[4]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[3]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[3]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[2]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[2]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[1]~reg0             ; |avalon_master_state_machine_w_programmable_wait|state[1]~reg0             ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[1]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[1]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[2]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[2]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|clk                       ; |avalon_master_state_machine_w_programmable_wait|clk                       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|start                     ; |avalon_master_state_machine_w_programmable_wait|start                     ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|finish                    ; |avalon_master_state_machine_w_programmable_wait|finish                    ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|is_write                  ; |avalon_master_state_machine_w_programmable_wait|is_write                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[1]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[1]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[2]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[2]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[6]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[6]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[7]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[7]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[8]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[8]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[9]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[9]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[10]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[10]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[12]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[12]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[13]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[13]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[14]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[14]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[16]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[16]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[17]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[17]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[19]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[19]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[20]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[20]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[21]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[21]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[23]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[23]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[26]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[26]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[27]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[27]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[30]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[30]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[31]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[31]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[0]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[0]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[2]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[2]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[4]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[4]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[5]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[5]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[6]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[6]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[9]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[9]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[10]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[10]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[12]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[12]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[16]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[16]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[22]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[22]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[23]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[23]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[27]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[27]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[0]           ; |avalon_master_state_machine_w_programmable_wait|user_address[0]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[1]           ; |avalon_master_state_machine_w_programmable_wait|user_address[1]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[3]           ; |avalon_master_state_machine_w_programmable_wait|user_address[3]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[5]           ; |avalon_master_state_machine_w_programmable_wait|user_address[5]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[7]           ; |avalon_master_state_machine_w_programmable_wait|user_address[7]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[10]          ; |avalon_master_state_machine_w_programmable_wait|user_address[10]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[11]          ; |avalon_master_state_machine_w_programmable_wait|user_address[11]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[14]          ; |avalon_master_state_machine_w_programmable_wait|user_address[14]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[15]          ; |avalon_master_state_machine_w_programmable_wait|user_address[15]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[16]          ; |avalon_master_state_machine_w_programmable_wait|user_address[16]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[17]          ; |avalon_master_state_machine_w_programmable_wait|user_address[17]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[19]          ; |avalon_master_state_machine_w_programmable_wait|user_address[19]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[23]          ; |avalon_master_state_machine_w_programmable_wait|user_address[23]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[0]         ; |avalon_master_state_machine_w_programmable_wait|master_address[0]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[1]         ; |avalon_master_state_machine_w_programmable_wait|master_address[1]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[3]         ; |avalon_master_state_machine_w_programmable_wait|master_address[3]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[5]         ; |avalon_master_state_machine_w_programmable_wait|master_address[5]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[7]         ; |avalon_master_state_machine_w_programmable_wait|master_address[7]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[10]        ; |avalon_master_state_machine_w_programmable_wait|master_address[10]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[11]        ; |avalon_master_state_machine_w_programmable_wait|master_address[11]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[14]        ; |avalon_master_state_machine_w_programmable_wait|master_address[14]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[15]        ; |avalon_master_state_machine_w_programmable_wait|master_address[15]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[16]        ; |avalon_master_state_machine_w_programmable_wait|master_address[16]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[17]        ; |avalon_master_state_machine_w_programmable_wait|master_address[17]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[19]        ; |avalon_master_state_machine_w_programmable_wait|master_address[19]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[23]        ; |avalon_master_state_machine_w_programmable_wait|master_address[23]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_write              ; |avalon_master_state_machine_w_programmable_wait|master_write              ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_read               ; |avalon_master_state_machine_w_programmable_wait|master_read               ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[0]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[0]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[1]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[1]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[2]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[2]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[3]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[3]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[4]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[4]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[5]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[5]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[6]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[6]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[7]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[7]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[8]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[8]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[9]        ; |avalon_master_state_machine_w_programmable_wait|master_readdata[9]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[10]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[10]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[11]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[11]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[12]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[12]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[13]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[13]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[14]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[14]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[15]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[15]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[16]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[16]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[17]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[17]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[18]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[18]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[19]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[19]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[20]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[20]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[21]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[21]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[22]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[22]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[23]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[23]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[24]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[24]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[25]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[25]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[26]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[26]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[27]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[27]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[28]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[28]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[29]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[29]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[30]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[30]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_readdata[31]       ; |avalon_master_state_machine_w_programmable_wait|master_readdata[31]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[1]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[1]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[2]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[2]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[6]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[6]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[7]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[7]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[8]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[8]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[9]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[9]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[10]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[10]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[12]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[12]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[13]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[13]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[14]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[14]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[16]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[16]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[17]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[17]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[19]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[19]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[20]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[20]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[21]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[21]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[23]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[23]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[26]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[26]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[27]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[27]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[30]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[30]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[31]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[31]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[2]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[2]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_waitrequest        ; |avalon_master_state_machine_w_programmable_wait|master_waitrequest        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[0]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[0]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[1]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[1]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[2]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[2]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[0]                  ; |avalon_master_state_machine_w_programmable_wait|state[0]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[1]                  ; |avalon_master_state_machine_w_programmable_wait|state[1]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[2]                  ; |avalon_master_state_machine_w_programmable_wait|state[2]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[3]                  ; |avalon_master_state_machine_w_programmable_wait|state[3]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[4]                  ; |avalon_master_state_machine_w_programmable_wait|state[4]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[5]                  ; |avalon_master_state_machine_w_programmable_wait|state[5]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[6]                  ; |avalon_master_state_machine_w_programmable_wait|state[6]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[7]                  ; |avalon_master_state_machine_w_programmable_wait|state[7]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[8]                  ; |avalon_master_state_machine_w_programmable_wait|state[8]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[9]                  ; |avalon_master_state_machine_w_programmable_wait|state[9]                  ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|latch_read_now            ; |avalon_master_state_machine_w_programmable_wait|latch_read_now            ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|reset_waitstate_counter   ; |avalon_master_state_machine_w_programmable_wait|reset_waitstate_counter   ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|inc_waitstate_counter     ; |avalon_master_state_machine_w_programmable_wait|inc_waitstate_counter     ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~0               ; |avalon_master_state_machine_w_programmable_wait|Selector6~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~3               ; |avalon_master_state_machine_w_programmable_wait|Selector6~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~4               ; |avalon_master_state_machine_w_programmable_wait|Selector6~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~6               ; |avalon_master_state_machine_w_programmable_wait|Selector6~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~7               ; |avalon_master_state_machine_w_programmable_wait|Selector6~7               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~0               ; |avalon_master_state_machine_w_programmable_wait|Selector7~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~6               ; |avalon_master_state_machine_w_programmable_wait|Selector7~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~0               ; |avalon_master_state_machine_w_programmable_wait|Selector8~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~2               ; |avalon_master_state_machine_w_programmable_wait|Selector8~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~3               ; |avalon_master_state_machine_w_programmable_wait|Selector8~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~6               ; |avalon_master_state_machine_w_programmable_wait|Selector8~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~0               ; |avalon_master_state_machine_w_programmable_wait|Selector9~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~4               ; |avalon_master_state_machine_w_programmable_wait|Selector9~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~5               ; |avalon_master_state_machine_w_programmable_wait|Selector9~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~6               ; |avalon_master_state_machine_w_programmable_wait|Selector9~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~0              ; |avalon_master_state_machine_w_programmable_wait|Selector10~0              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~2              ; |avalon_master_state_machine_w_programmable_wait|Selector10~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~0              ; |avalon_master_state_machine_w_programmable_wait|Selector11~0              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~4              ; |avalon_master_state_machine_w_programmable_wait|Selector11~4              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~0              ; |avalon_master_state_machine_w_programmable_wait|Selector12~0              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~3              ; |avalon_master_state_machine_w_programmable_wait|Selector12~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~4              ; |avalon_master_state_machine_w_programmable_wait|Selector12~4              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~6              ; |avalon_master_state_machine_w_programmable_wait|Selector12~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~7              ; |avalon_master_state_machine_w_programmable_wait|Selector12~7              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~0              ; |avalon_master_state_machine_w_programmable_wait|Selector13~0              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~2              ; |avalon_master_state_machine_w_programmable_wait|Selector13~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~3              ; |avalon_master_state_machine_w_programmable_wait|Selector13~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~4              ; |avalon_master_state_machine_w_programmable_wait|Selector13~4              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~5              ; |avalon_master_state_machine_w_programmable_wait|Selector13~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~7              ; |avalon_master_state_machine_w_programmable_wait|Selector13~7              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~0              ; |avalon_master_state_machine_w_programmable_wait|Selector14~0              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~2              ; |avalon_master_state_machine_w_programmable_wait|Selector14~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~4              ; |avalon_master_state_machine_w_programmable_wait|Selector14~4              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~5              ; |avalon_master_state_machine_w_programmable_wait|Selector14~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~6              ; |avalon_master_state_machine_w_programmable_wait|Selector14~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~7              ; |avalon_master_state_machine_w_programmable_wait|Selector14~7              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~0              ; |avalon_master_state_machine_w_programmable_wait|Selector15~0              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~2              ; |avalon_master_state_machine_w_programmable_wait|Selector15~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~3              ; |avalon_master_state_machine_w_programmable_wait|Selector15~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~4              ; |avalon_master_state_machine_w_programmable_wait|Selector15~4              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~5              ; |avalon_master_state_machine_w_programmable_wait|Selector15~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~6              ; |avalon_master_state_machine_w_programmable_wait|Selector15~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~0               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~2               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~3               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~4               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~5               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~6               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~7               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~7               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~8               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~8               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~9               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~9               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~10              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~10              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~12              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~12              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~14              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~14              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~16              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~16              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~18              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~18              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~20              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~20              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~22              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~22              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~24              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~24              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~26              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~26              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~28              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~28              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~30              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~30              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~0                    ; |avalon_master_state_machine_w_programmable_wait|Add0~0                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~1                    ; |avalon_master_state_machine_w_programmable_wait|Add0~1                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~2                    ; |avalon_master_state_machine_w_programmable_wait|Add0~2                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal0~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal0~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal1~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal1~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal2~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal2~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal3~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal3~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal4~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal4~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal5~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal5~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal6~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal6~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal7~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal7~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal8~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal8~0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Equal9~0                  ; |avalon_master_state_machine_w_programmable_wait|Equal9~0                  ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                   ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[21]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[21]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[19]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[19]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[18]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[18]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[17]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[17]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[15]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[15]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[13]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[13]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[11]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[11]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[7]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[7]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[3]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[3]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[1]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[1]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~0       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~0       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~1       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~1       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~2       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~2       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~3       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~3       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~4       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~4       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~8       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~8       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~9       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~9       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~10      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~10      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~11      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~11      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~12      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~12      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~0                   ; |avalon_master_state_machine_w_programmable_wait|state~0                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~1                   ; |avalon_master_state_machine_w_programmable_wait|state~1                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~2                   ; |avalon_master_state_machine_w_programmable_wait|state~2                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~3                   ; |avalon_master_state_machine_w_programmable_wait|state~3                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~4                   ; |avalon_master_state_machine_w_programmable_wait|state~4                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~5                   ; |avalon_master_state_machine_w_programmable_wait|state~5                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~16                  ; |avalon_master_state_machine_w_programmable_wait|state~16                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~17                  ; |avalon_master_state_machine_w_programmable_wait|state~17                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~18                  ; |avalon_master_state_machine_w_programmable_wait|state~18                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~19                  ; |avalon_master_state_machine_w_programmable_wait|state~19                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~20                  ; |avalon_master_state_machine_w_programmable_wait|state~20                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~21                  ; |avalon_master_state_machine_w_programmable_wait|state~21                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~26                  ; |avalon_master_state_machine_w_programmable_wait|state~26                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~27                  ; |avalon_master_state_machine_w_programmable_wait|state~27                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~32                  ; |avalon_master_state_machine_w_programmable_wait|state~32                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~33                  ; |avalon_master_state_machine_w_programmable_wait|state~33                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~34                  ; |avalon_master_state_machine_w_programmable_wait|state~34                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~35                  ; |avalon_master_state_machine_w_programmable_wait|state~35                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~36                  ; |avalon_master_state_machine_w_programmable_wait|state~36                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~37                  ; |avalon_master_state_machine_w_programmable_wait|state~37                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~42                  ; |avalon_master_state_machine_w_programmable_wait|state~42                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~54                  ; |avalon_master_state_machine_w_programmable_wait|state~54                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|WideNor0                  ; |avalon_master_state_machine_w_programmable_wait|WideNor0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|state[15]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[15]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[14]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[14]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[13]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[13]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[12]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[12]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[11]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[11]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[10]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[10]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|reset_n                   ; |avalon_master_state_machine_w_programmable_wait|reset_n                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[0]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[0]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[3]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[3]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[4]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[4]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[5]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[5]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[11]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[11]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[15]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[15]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[18]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[18]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[22]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[22]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[24]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[24]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[25]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[25]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[28]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[28]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[29]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[29]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[1]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[1]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[3]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[3]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[7]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[7]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[11]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[11]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[13]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[13]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[15]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[15]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[17]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[17]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[18]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[18]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[19]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[19]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[21]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[21]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[13]          ; |avalon_master_state_machine_w_programmable_wait|user_address[13]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[22]          ; |avalon_master_state_machine_w_programmable_wait|user_address[22]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[24]          ; |avalon_master_state_machine_w_programmable_wait|user_address[24]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[26]          ; |avalon_master_state_machine_w_programmable_wait|user_address[26]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[27]          ; |avalon_master_state_machine_w_programmable_wait|user_address[27]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[29]          ; |avalon_master_state_machine_w_programmable_wait|user_address[29]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[30]          ; |avalon_master_state_machine_w_programmable_wait|user_address[30]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[31]          ; |avalon_master_state_machine_w_programmable_wait|user_address[31]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[0]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[0]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[1]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[1]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[2]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[2]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[3]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[3]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[13]        ; |avalon_master_state_machine_w_programmable_wait|master_address[13]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[22]        ; |avalon_master_state_machine_w_programmable_wait|master_address[22]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[24]        ; |avalon_master_state_machine_w_programmable_wait|master_address[24]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[26]        ; |avalon_master_state_machine_w_programmable_wait|master_address[26]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[27]        ; |avalon_master_state_machine_w_programmable_wait|master_address[27]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[29]        ; |avalon_master_state_machine_w_programmable_wait|master_address[29]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[30]        ; |avalon_master_state_machine_w_programmable_wait|master_address[30]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[31]        ; |avalon_master_state_machine_w_programmable_wait|master_address[31]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[0]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[0]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[1]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[1]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[2]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[2]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[3]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[3]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[0]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[0]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[3]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[3]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[4]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[4]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[5]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[5]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[11]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[11]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[15]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[15]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[18]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[18]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[22]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[22]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[24]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[24]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[25]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[25]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[28]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[28]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[29]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[29]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[0]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[0]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[1]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[1]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[3]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[3]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[4]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[4]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[5]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[5]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[6]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[6]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[7]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[7]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[10]                 ; |avalon_master_state_machine_w_programmable_wait|state[10]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[11]                 ; |avalon_master_state_machine_w_programmable_wait|state[11]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[12]                 ; |avalon_master_state_machine_w_programmable_wait|state[12]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[13]                 ; |avalon_master_state_machine_w_programmable_wait|state[13]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[14]                 ; |avalon_master_state_machine_w_programmable_wait|state[14]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[15]                 ; |avalon_master_state_machine_w_programmable_wait|state[15]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~0               ; |avalon_master_state_machine_w_programmable_wait|Selector0~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~1               ; |avalon_master_state_machine_w_programmable_wait|Selector0~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~2               ; |avalon_master_state_machine_w_programmable_wait|Selector0~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~3               ; |avalon_master_state_machine_w_programmable_wait|Selector0~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~4               ; |avalon_master_state_machine_w_programmable_wait|Selector0~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~5               ; |avalon_master_state_machine_w_programmable_wait|Selector0~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~6               ; |avalon_master_state_machine_w_programmable_wait|Selector0~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~0               ; |avalon_master_state_machine_w_programmable_wait|Selector1~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~1               ; |avalon_master_state_machine_w_programmable_wait|Selector1~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~2               ; |avalon_master_state_machine_w_programmable_wait|Selector1~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~3               ; |avalon_master_state_machine_w_programmable_wait|Selector1~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~4               ; |avalon_master_state_machine_w_programmable_wait|Selector1~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~5               ; |avalon_master_state_machine_w_programmable_wait|Selector1~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~6               ; |avalon_master_state_machine_w_programmable_wait|Selector1~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~0               ; |avalon_master_state_machine_w_programmable_wait|Selector2~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~1               ; |avalon_master_state_machine_w_programmable_wait|Selector2~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~2               ; |avalon_master_state_machine_w_programmable_wait|Selector2~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~3               ; |avalon_master_state_machine_w_programmable_wait|Selector2~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~4               ; |avalon_master_state_machine_w_programmable_wait|Selector2~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~5               ; |avalon_master_state_machine_w_programmable_wait|Selector2~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~6               ; |avalon_master_state_machine_w_programmable_wait|Selector2~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~0               ; |avalon_master_state_machine_w_programmable_wait|Selector3~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~1               ; |avalon_master_state_machine_w_programmable_wait|Selector3~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~2               ; |avalon_master_state_machine_w_programmable_wait|Selector3~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~3               ; |avalon_master_state_machine_w_programmable_wait|Selector3~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~4               ; |avalon_master_state_machine_w_programmable_wait|Selector3~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~5               ; |avalon_master_state_machine_w_programmable_wait|Selector3~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~6               ; |avalon_master_state_machine_w_programmable_wait|Selector3~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~0               ; |avalon_master_state_machine_w_programmable_wait|Selector4~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~1               ; |avalon_master_state_machine_w_programmable_wait|Selector4~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~2               ; |avalon_master_state_machine_w_programmable_wait|Selector4~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~3               ; |avalon_master_state_machine_w_programmable_wait|Selector4~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~4               ; |avalon_master_state_machine_w_programmable_wait|Selector4~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~5               ; |avalon_master_state_machine_w_programmable_wait|Selector4~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~6               ; |avalon_master_state_machine_w_programmable_wait|Selector4~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~0               ; |avalon_master_state_machine_w_programmable_wait|Selector5~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~1               ; |avalon_master_state_machine_w_programmable_wait|Selector5~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~2               ; |avalon_master_state_machine_w_programmable_wait|Selector5~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~3               ; |avalon_master_state_machine_w_programmable_wait|Selector5~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~4               ; |avalon_master_state_machine_w_programmable_wait|Selector5~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~5               ; |avalon_master_state_machine_w_programmable_wait|Selector5~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~6               ; |avalon_master_state_machine_w_programmable_wait|Selector5~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~1               ; |avalon_master_state_machine_w_programmable_wait|Selector6~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~2               ; |avalon_master_state_machine_w_programmable_wait|Selector6~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~5               ; |avalon_master_state_machine_w_programmable_wait|Selector6~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~8               ; |avalon_master_state_machine_w_programmable_wait|Selector6~8               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~1               ; |avalon_master_state_machine_w_programmable_wait|Selector7~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~2               ; |avalon_master_state_machine_w_programmable_wait|Selector7~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~3               ; |avalon_master_state_machine_w_programmable_wait|Selector7~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~4               ; |avalon_master_state_machine_w_programmable_wait|Selector7~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~5               ; |avalon_master_state_machine_w_programmable_wait|Selector7~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~1               ; |avalon_master_state_machine_w_programmable_wait|Selector8~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~4               ; |avalon_master_state_machine_w_programmable_wait|Selector8~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~5               ; |avalon_master_state_machine_w_programmable_wait|Selector8~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~1               ; |avalon_master_state_machine_w_programmable_wait|Selector9~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~2               ; |avalon_master_state_machine_w_programmable_wait|Selector9~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~3               ; |avalon_master_state_machine_w_programmable_wait|Selector9~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~1              ; |avalon_master_state_machine_w_programmable_wait|Selector10~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~3              ; |avalon_master_state_machine_w_programmable_wait|Selector10~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~4              ; |avalon_master_state_machine_w_programmable_wait|Selector10~4              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~5              ; |avalon_master_state_machine_w_programmable_wait|Selector10~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~6              ; |avalon_master_state_machine_w_programmable_wait|Selector10~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~1              ; |avalon_master_state_machine_w_programmable_wait|Selector11~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~2              ; |avalon_master_state_machine_w_programmable_wait|Selector11~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~3              ; |avalon_master_state_machine_w_programmable_wait|Selector11~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~5              ; |avalon_master_state_machine_w_programmable_wait|Selector11~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~6              ; |avalon_master_state_machine_w_programmable_wait|Selector11~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~1              ; |avalon_master_state_machine_w_programmable_wait|Selector12~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~2              ; |avalon_master_state_machine_w_programmable_wait|Selector12~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~5              ; |avalon_master_state_machine_w_programmable_wait|Selector12~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~8              ; |avalon_master_state_machine_w_programmable_wait|Selector12~8              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~1              ; |avalon_master_state_machine_w_programmable_wait|Selector13~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~6              ; |avalon_master_state_machine_w_programmable_wait|Selector13~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~1              ; |avalon_master_state_machine_w_programmable_wait|Selector14~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~3              ; |avalon_master_state_machine_w_programmable_wait|Selector14~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~1              ; |avalon_master_state_machine_w_programmable_wait|Selector15~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~7              ; |avalon_master_state_machine_w_programmable_wait|Selector15~7              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~1               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~11              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~11              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~13              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~13              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~15              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~15              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~17              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~17              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~19              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~19              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~21              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~21              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~23              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~23              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~25              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~25              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~27              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~27              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~29              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~29              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~3                    ; |avalon_master_state_machine_w_programmable_wait|Add0~3                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~4                    ; |avalon_master_state_machine_w_programmable_wait|Add0~4                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~5                    ; |avalon_master_state_machine_w_programmable_wait|Add0~5                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~6                    ; |avalon_master_state_machine_w_programmable_wait|Add0~6                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~7                    ; |avalon_master_state_machine_w_programmable_wait|Add0~7                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~8                    ; |avalon_master_state_machine_w_programmable_wait|Add0~8                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~9                    ; |avalon_master_state_machine_w_programmable_wait|Add0~9                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~10                   ; |avalon_master_state_machine_w_programmable_wait|Add0~10                   ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~11                   ; |avalon_master_state_machine_w_programmable_wait|Add0~11                   ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~12                   ; |avalon_master_state_machine_w_programmable_wait|Add0~12                   ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                   ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[31]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[31]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[30]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[30]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[29]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[29]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[28]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[28]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[26]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[26]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[25]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[25]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[24]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[24]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[20]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[20]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[18]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[18]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[15]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[15]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[14]     ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[14]     ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[8]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[8]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[3]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[3]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|latched_read_data[1]      ; |avalon_master_state_machine_w_programmable_wait|latched_read_data[1]      ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~0       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~0       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~1       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~1       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~2       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~2       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~3       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~3       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~4       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~4       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~8       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~8       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~9       ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~9       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~10      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~10      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~11      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~11      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~12      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter~12      ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~0                   ; |avalon_master_state_machine_w_programmable_wait|state~0                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~1                   ; |avalon_master_state_machine_w_programmable_wait|state~1                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~2                   ; |avalon_master_state_machine_w_programmable_wait|state~2                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~3                   ; |avalon_master_state_machine_w_programmable_wait|state~3                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~4                   ; |avalon_master_state_machine_w_programmable_wait|state~4                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~5                   ; |avalon_master_state_machine_w_programmable_wait|state~5                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~16                  ; |avalon_master_state_machine_w_programmable_wait|state~16                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~17                  ; |avalon_master_state_machine_w_programmable_wait|state~17                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~18                  ; |avalon_master_state_machine_w_programmable_wait|state~18                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~19                  ; |avalon_master_state_machine_w_programmable_wait|state~19                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~20                  ; |avalon_master_state_machine_w_programmable_wait|state~20                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~21                  ; |avalon_master_state_machine_w_programmable_wait|state~21                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~26                  ; |avalon_master_state_machine_w_programmable_wait|state~26                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~27                  ; |avalon_master_state_machine_w_programmable_wait|state~27                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~32                  ; |avalon_master_state_machine_w_programmable_wait|state~32                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~33                  ; |avalon_master_state_machine_w_programmable_wait|state~33                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~34                  ; |avalon_master_state_machine_w_programmable_wait|state~34                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~35                  ; |avalon_master_state_machine_w_programmable_wait|state~35                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~36                  ; |avalon_master_state_machine_w_programmable_wait|state~36                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~37                  ; |avalon_master_state_machine_w_programmable_wait|state~37                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~42                  ; |avalon_master_state_machine_w_programmable_wait|state~42                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|state~54                  ; |avalon_master_state_machine_w_programmable_wait|state~54                  ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|WideNor0                  ; |avalon_master_state_machine_w_programmable_wait|WideNor0                  ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|state[15]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[15]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[14]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[14]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[13]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[13]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[12]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[12]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[11]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[11]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|state[10]~reg0            ; |avalon_master_state_machine_w_programmable_wait|state[10]~reg0            ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]~reg0 ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]~reg0 ; regout           ;
+; |avalon_master_state_machine_w_programmable_wait|reset_n                   ; |avalon_master_state_machine_w_programmable_wait|reset_n                   ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[0]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[0]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[3]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[3]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[4]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[4]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[5]        ; |avalon_master_state_machine_w_programmable_wait|user_write_data[5]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[11]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[11]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[15]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[15]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[18]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[18]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[22]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[22]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[24]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[24]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[25]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[25]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[28]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[28]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_write_data[29]       ; |avalon_master_state_machine_w_programmable_wait|user_write_data[29]       ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[1]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[1]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[3]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[3]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[8]         ; |avalon_master_state_machine_w_programmable_wait|user_read_data[8]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[14]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[14]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[15]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[15]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[18]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[18]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[20]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[20]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[24]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[24]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[25]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[25]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[26]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[26]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[28]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[28]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[29]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[29]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[30]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[30]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_read_data[31]        ; |avalon_master_state_machine_w_programmable_wait|user_read_data[31]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[2]           ; |avalon_master_state_machine_w_programmable_wait|user_address[2]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[4]           ; |avalon_master_state_machine_w_programmable_wait|user_address[4]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[6]           ; |avalon_master_state_machine_w_programmable_wait|user_address[6]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[8]           ; |avalon_master_state_machine_w_programmable_wait|user_address[8]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[9]           ; |avalon_master_state_machine_w_programmable_wait|user_address[9]           ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[12]          ; |avalon_master_state_machine_w_programmable_wait|user_address[12]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[13]          ; |avalon_master_state_machine_w_programmable_wait|user_address[13]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[18]          ; |avalon_master_state_machine_w_programmable_wait|user_address[18]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[20]          ; |avalon_master_state_machine_w_programmable_wait|user_address[20]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[21]          ; |avalon_master_state_machine_w_programmable_wait|user_address[21]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[22]          ; |avalon_master_state_machine_w_programmable_wait|user_address[22]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[24]          ; |avalon_master_state_machine_w_programmable_wait|user_address[24]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[25]          ; |avalon_master_state_machine_w_programmable_wait|user_address[25]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[26]          ; |avalon_master_state_machine_w_programmable_wait|user_address[26]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[27]          ; |avalon_master_state_machine_w_programmable_wait|user_address[27]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[28]          ; |avalon_master_state_machine_w_programmable_wait|user_address[28]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[29]          ; |avalon_master_state_machine_w_programmable_wait|user_address[29]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[30]          ; |avalon_master_state_machine_w_programmable_wait|user_address[30]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_address[31]          ; |avalon_master_state_machine_w_programmable_wait|user_address[31]          ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[0]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[0]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[1]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[1]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[2]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[2]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|user_byteenable[3]        ; |avalon_master_state_machine_w_programmable_wait|user_byteenable[3]        ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[2]         ; |avalon_master_state_machine_w_programmable_wait|master_address[2]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[4]         ; |avalon_master_state_machine_w_programmable_wait|master_address[4]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[6]         ; |avalon_master_state_machine_w_programmable_wait|master_address[6]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[8]         ; |avalon_master_state_machine_w_programmable_wait|master_address[8]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[9]         ; |avalon_master_state_machine_w_programmable_wait|master_address[9]         ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[12]        ; |avalon_master_state_machine_w_programmable_wait|master_address[12]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[13]        ; |avalon_master_state_machine_w_programmable_wait|master_address[13]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[18]        ; |avalon_master_state_machine_w_programmable_wait|master_address[18]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[20]        ; |avalon_master_state_machine_w_programmable_wait|master_address[20]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[21]        ; |avalon_master_state_machine_w_programmable_wait|master_address[21]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[22]        ; |avalon_master_state_machine_w_programmable_wait|master_address[22]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[24]        ; |avalon_master_state_machine_w_programmable_wait|master_address[24]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[25]        ; |avalon_master_state_machine_w_programmable_wait|master_address[25]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[26]        ; |avalon_master_state_machine_w_programmable_wait|master_address[26]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[27]        ; |avalon_master_state_machine_w_programmable_wait|master_address[27]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[28]        ; |avalon_master_state_machine_w_programmable_wait|master_address[28]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[29]        ; |avalon_master_state_machine_w_programmable_wait|master_address[29]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[30]        ; |avalon_master_state_machine_w_programmable_wait|master_address[30]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_address[31]        ; |avalon_master_state_machine_w_programmable_wait|master_address[31]        ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[0]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[0]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[1]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[1]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[2]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[2]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_byteenable[3]      ; |avalon_master_state_machine_w_programmable_wait|master_byteenable[3]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[0]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[0]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[3]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[3]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[4]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[4]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[5]       ; |avalon_master_state_machine_w_programmable_wait|master_writedata[5]       ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[11]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[11]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[15]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[15]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[18]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[18]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[22]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[22]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[24]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[24]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[25]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[25]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[28]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[28]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|master_writedata[29]      ; |avalon_master_state_machine_w_programmable_wait|master_writedata[29]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[0]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[0]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[1]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[1]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[3]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[3]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[4]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[4]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[5]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[5]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[6]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[6]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|wait_cycles[7]            ; |avalon_master_state_machine_w_programmable_wait|wait_cycles[7]            ; out              ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[3]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[4]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[5]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[6]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]      ; |avalon_master_state_machine_w_programmable_wait|waitstate_counter[7]      ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[10]                 ; |avalon_master_state_machine_w_programmable_wait|state[10]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[11]                 ; |avalon_master_state_machine_w_programmable_wait|state[11]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[12]                 ; |avalon_master_state_machine_w_programmable_wait|state[12]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[13]                 ; |avalon_master_state_machine_w_programmable_wait|state[13]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[14]                 ; |avalon_master_state_machine_w_programmable_wait|state[14]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|state[15]                 ; |avalon_master_state_machine_w_programmable_wait|state[15]                 ; pin_out          ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~0               ; |avalon_master_state_machine_w_programmable_wait|Selector0~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~1               ; |avalon_master_state_machine_w_programmable_wait|Selector0~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~2               ; |avalon_master_state_machine_w_programmable_wait|Selector0~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~3               ; |avalon_master_state_machine_w_programmable_wait|Selector0~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~4               ; |avalon_master_state_machine_w_programmable_wait|Selector0~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~5               ; |avalon_master_state_machine_w_programmable_wait|Selector0~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector0~6               ; |avalon_master_state_machine_w_programmable_wait|Selector0~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~0               ; |avalon_master_state_machine_w_programmable_wait|Selector1~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~1               ; |avalon_master_state_machine_w_programmable_wait|Selector1~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~2               ; |avalon_master_state_machine_w_programmable_wait|Selector1~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~3               ; |avalon_master_state_machine_w_programmable_wait|Selector1~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~4               ; |avalon_master_state_machine_w_programmable_wait|Selector1~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~5               ; |avalon_master_state_machine_w_programmable_wait|Selector1~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector1~6               ; |avalon_master_state_machine_w_programmable_wait|Selector1~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~0               ; |avalon_master_state_machine_w_programmable_wait|Selector2~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~1               ; |avalon_master_state_machine_w_programmable_wait|Selector2~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~2               ; |avalon_master_state_machine_w_programmable_wait|Selector2~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~3               ; |avalon_master_state_machine_w_programmable_wait|Selector2~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~4               ; |avalon_master_state_machine_w_programmable_wait|Selector2~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~5               ; |avalon_master_state_machine_w_programmable_wait|Selector2~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector2~6               ; |avalon_master_state_machine_w_programmable_wait|Selector2~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~0               ; |avalon_master_state_machine_w_programmable_wait|Selector3~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~1               ; |avalon_master_state_machine_w_programmable_wait|Selector3~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~2               ; |avalon_master_state_machine_w_programmable_wait|Selector3~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~3               ; |avalon_master_state_machine_w_programmable_wait|Selector3~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~4               ; |avalon_master_state_machine_w_programmable_wait|Selector3~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~5               ; |avalon_master_state_machine_w_programmable_wait|Selector3~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector3~6               ; |avalon_master_state_machine_w_programmable_wait|Selector3~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~0               ; |avalon_master_state_machine_w_programmable_wait|Selector4~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~1               ; |avalon_master_state_machine_w_programmable_wait|Selector4~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~2               ; |avalon_master_state_machine_w_programmable_wait|Selector4~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~3               ; |avalon_master_state_machine_w_programmable_wait|Selector4~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~4               ; |avalon_master_state_machine_w_programmable_wait|Selector4~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~5               ; |avalon_master_state_machine_w_programmable_wait|Selector4~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector4~6               ; |avalon_master_state_machine_w_programmable_wait|Selector4~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~0               ; |avalon_master_state_machine_w_programmable_wait|Selector5~0               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~1               ; |avalon_master_state_machine_w_programmable_wait|Selector5~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~2               ; |avalon_master_state_machine_w_programmable_wait|Selector5~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~3               ; |avalon_master_state_machine_w_programmable_wait|Selector5~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~4               ; |avalon_master_state_machine_w_programmable_wait|Selector5~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~5               ; |avalon_master_state_machine_w_programmable_wait|Selector5~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector5~6               ; |avalon_master_state_machine_w_programmable_wait|Selector5~6               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~1               ; |avalon_master_state_machine_w_programmable_wait|Selector6~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~2               ; |avalon_master_state_machine_w_programmable_wait|Selector6~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~5               ; |avalon_master_state_machine_w_programmable_wait|Selector6~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector6~8               ; |avalon_master_state_machine_w_programmable_wait|Selector6~8               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~1               ; |avalon_master_state_machine_w_programmable_wait|Selector7~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~2               ; |avalon_master_state_machine_w_programmable_wait|Selector7~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~3               ; |avalon_master_state_machine_w_programmable_wait|Selector7~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~4               ; |avalon_master_state_machine_w_programmable_wait|Selector7~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector7~5               ; |avalon_master_state_machine_w_programmable_wait|Selector7~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~1               ; |avalon_master_state_machine_w_programmable_wait|Selector8~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~4               ; |avalon_master_state_machine_w_programmable_wait|Selector8~4               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector8~5               ; |avalon_master_state_machine_w_programmable_wait|Selector8~5               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~1               ; |avalon_master_state_machine_w_programmable_wait|Selector9~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~2               ; |avalon_master_state_machine_w_programmable_wait|Selector9~2               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector9~3               ; |avalon_master_state_machine_w_programmable_wait|Selector9~3               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~1              ; |avalon_master_state_machine_w_programmable_wait|Selector10~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~3              ; |avalon_master_state_machine_w_programmable_wait|Selector10~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~4              ; |avalon_master_state_machine_w_programmable_wait|Selector10~4              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~5              ; |avalon_master_state_machine_w_programmable_wait|Selector10~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector10~6              ; |avalon_master_state_machine_w_programmable_wait|Selector10~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~1              ; |avalon_master_state_machine_w_programmable_wait|Selector11~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~2              ; |avalon_master_state_machine_w_programmable_wait|Selector11~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~3              ; |avalon_master_state_machine_w_programmable_wait|Selector11~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~5              ; |avalon_master_state_machine_w_programmable_wait|Selector11~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector11~6              ; |avalon_master_state_machine_w_programmable_wait|Selector11~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~1              ; |avalon_master_state_machine_w_programmable_wait|Selector12~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~2              ; |avalon_master_state_machine_w_programmable_wait|Selector12~2              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~5              ; |avalon_master_state_machine_w_programmable_wait|Selector12~5              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector12~8              ; |avalon_master_state_machine_w_programmable_wait|Selector12~8              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~1              ; |avalon_master_state_machine_w_programmable_wait|Selector13~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector13~6              ; |avalon_master_state_machine_w_programmable_wait|Selector13~6              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~1              ; |avalon_master_state_machine_w_programmable_wait|Selector14~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector14~3              ; |avalon_master_state_machine_w_programmable_wait|Selector14~3              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~1              ; |avalon_master_state_machine_w_programmable_wait|Selector15~1              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Selector15~7              ; |avalon_master_state_machine_w_programmable_wait|Selector15~7              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~1               ; |avalon_master_state_machine_w_programmable_wait|LessThan0~1               ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~11              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~11              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~13              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~13              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~15              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~15              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~17              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~17              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~19              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~19              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~21              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~21              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~23              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~23              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~25              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~25              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~27              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~27              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|LessThan0~29              ; |avalon_master_state_machine_w_programmable_wait|LessThan0~29              ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~3                    ; |avalon_master_state_machine_w_programmable_wait|Add0~3                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~4                    ; |avalon_master_state_machine_w_programmable_wait|Add0~4                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~5                    ; |avalon_master_state_machine_w_programmable_wait|Add0~5                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~6                    ; |avalon_master_state_machine_w_programmable_wait|Add0~6                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~7                    ; |avalon_master_state_machine_w_programmable_wait|Add0~7                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~8                    ; |avalon_master_state_machine_w_programmable_wait|Add0~8                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~9                    ; |avalon_master_state_machine_w_programmable_wait|Add0~9                    ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~10                   ; |avalon_master_state_machine_w_programmable_wait|Add0~10                   ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~11                   ; |avalon_master_state_machine_w_programmable_wait|Add0~11                   ; out0             ;
+; |avalon_master_state_machine_w_programmable_wait|Add0~12                   ; |avalon_master_state_machine_w_programmable_wait|Add0~12                   ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jun 02 13:08:23 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off avalon_master_state_machine_w_programmable_wait -c avalon_master_state_machine_w_programmable_wait
+Info: Using vector source file "D:/deap/edevel00365_deap_14_1/tsbs/common_rtl_library/tsb/ip/sim/avalon_master_state_machine_w_programmable_wait.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of avalon_master_state_machine_w_programmable_wait.vwf called avalon_master_state_machine_w_programmable_wait.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      50.37 %
+Info: Number of transitions in simulation is 3449
+Info: Vector file avalon_master_state_machine_w_programmable_wait.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Tue Jun 02 13:08:23 2015
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

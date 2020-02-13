@@ -1,0 +1,29 @@
+BASE_PORT_WIDTH=1
+CBX_BLACKBOX_LIST=-lpm_mux
+ENABLE_CHL_ADDR_FOR_ANALOG_CTRL=TRUE
+ENABLE_EYE_MONITOR=ON
+ENABLE_SELF_RECOVERY=TRUE
+INTENDED_DEVICE_FAMILY="Stratix IV"
+NUMBER_OF_CHANNELS=1
+NUMBER_OF_RECONFIG_PORTS=1
+READ_BASE_PORT_WIDTH=1
+RECONFIG_MODE_SEL_WIDTH=4
+enable_buf_cal=true
+reconfig_fromgxb_width=17
+reconfig_togxb_width=4
+DEVICE_FAMILY="Stratix IV"
+ctrl_address
+ctrl_read
+ctrl_write
+ctrl_writedata
+reconfig_clk
+reconfig_fromgxb
+reconfig_mode_sel
+reconfig_reset
+tx_vodctrl
+write_all
+busy
+ctrl_readdata
+ctrl_waitrequest
+error
+reconfig_togxb

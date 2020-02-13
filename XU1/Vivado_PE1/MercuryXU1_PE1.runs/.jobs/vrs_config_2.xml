@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="MercuryPE1_synth" LaunchDir="c:/gitlab/NuPRISM/mercury_xu1_pmt/Vivado_PE1/MercuryXU1_PE1.runs/MercuryPE1_synth" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="MercuryPE1_impl" LaunchDir="c:/gitlab/NuPRISM/mercury_xu1_pmt/Vivado_PE1/MercuryXU1_PE1.runs/MercuryPE1_impl" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="MercuryPE1_synth"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

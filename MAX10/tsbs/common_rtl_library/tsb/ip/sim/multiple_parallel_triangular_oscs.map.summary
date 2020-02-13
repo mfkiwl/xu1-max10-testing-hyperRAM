@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Sep 17 12:04:37 2015
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : multiple_parallel_triangular_oscs
+Top-level Entity Name : multiple_parallel_triangular_oscs
+Family : Cyclone III
+Total logic elements : 238
+    Total combinational functions : 238
+    Dedicated logic registers : 53
+Total registers : 53
+Total pins : 123
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,300 @@
+Simulator report for to_slow_clk_interface_better
+Thu Apr 13 17:20:00 2017
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 us      ;
+; Simulation Netlist Size     ; 137 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 75465        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 137          ;
+; Total output ports checked                          ; 137          ;
+; Total output ports with complete 1/0-value coverage ; 137          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                                              ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                         ; Output Port Name                                                                                                  ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+------------------+
+; |to_slow_clk_interface_better|outdata[0]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[0]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[0]                                                                      ; |to_slow_clk_interface_better|raw_outdata[0]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|outdata[1]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[1]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[2]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[2]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[3]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[3]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[4]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[4]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[5]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[5]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[6]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[6]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[7]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[7]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[8]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[8]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[9]~reg0                                                                     ; |to_slow_clk_interface_better|outdata[9]~reg0                                                                     ; regout           ;
+; |to_slow_clk_interface_better|outdata[10]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[10]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[11]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[11]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[12]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[12]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[13]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[13]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[14]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[14]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[15]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[15]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[16]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[16]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[17]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[17]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[18]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[18]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[19]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[19]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[20]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[20]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[21]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[21]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[22]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[22]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[23]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[23]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[24]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[24]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[25]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[25]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[26]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[26]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[27]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[27]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[28]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[28]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[29]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[29]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[30]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[30]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|outdata[31]~reg0                                                                    ; |to_slow_clk_interface_better|outdata[31]~reg0                                                                    ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[1]                                                                      ; |to_slow_clk_interface_better|raw_outdata[1]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[2]                                                                      ; |to_slow_clk_interface_better|raw_outdata[2]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[3]                                                                      ; |to_slow_clk_interface_better|raw_outdata[3]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[4]                                                                      ; |to_slow_clk_interface_better|raw_outdata[4]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[5]                                                                      ; |to_slow_clk_interface_better|raw_outdata[5]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[6]                                                                      ; |to_slow_clk_interface_better|raw_outdata[6]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[7]                                                                      ; |to_slow_clk_interface_better|raw_outdata[7]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[8]                                                                      ; |to_slow_clk_interface_better|raw_outdata[8]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[9]                                                                      ; |to_slow_clk_interface_better|raw_outdata[9]                                                                      ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[10]                                                                     ; |to_slow_clk_interface_better|raw_outdata[10]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[11]                                                                     ; |to_slow_clk_interface_better|raw_outdata[11]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[12]                                                                     ; |to_slow_clk_interface_better|raw_outdata[12]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[13]                                                                     ; |to_slow_clk_interface_better|raw_outdata[13]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[14]                                                                     ; |to_slow_clk_interface_better|raw_outdata[14]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[15]                                                                     ; |to_slow_clk_interface_better|raw_outdata[15]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[16]                                                                     ; |to_slow_clk_interface_better|raw_outdata[16]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[17]                                                                     ; |to_slow_clk_interface_better|raw_outdata[17]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[18]                                                                     ; |to_slow_clk_interface_better|raw_outdata[18]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[19]                                                                     ; |to_slow_clk_interface_better|raw_outdata[19]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[20]                                                                     ; |to_slow_clk_interface_better|raw_outdata[20]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[21]                                                                     ; |to_slow_clk_interface_better|raw_outdata[21]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[22]                                                                     ; |to_slow_clk_interface_better|raw_outdata[22]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[23]                                                                     ; |to_slow_clk_interface_better|raw_outdata[23]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[24]                                                                     ; |to_slow_clk_interface_better|raw_outdata[24]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[25]                                                                     ; |to_slow_clk_interface_better|raw_outdata[25]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[26]                                                                     ; |to_slow_clk_interface_better|raw_outdata[26]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[27]                                                                     ; |to_slow_clk_interface_better|raw_outdata[27]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[28]                                                                     ; |to_slow_clk_interface_better|raw_outdata[28]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[29]                                                                     ; |to_slow_clk_interface_better|raw_outdata[29]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[30]                                                                     ; |to_slow_clk_interface_better|raw_outdata[30]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|raw_outdata[31]                                                                     ; |to_slow_clk_interface_better|raw_outdata[31]                                                                     ; regout           ;
+; |to_slow_clk_interface_better|indata[0]                                                                           ; |to_slow_clk_interface_better|indata[0]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[1]                                                                           ; |to_slow_clk_interface_better|indata[1]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[2]                                                                           ; |to_slow_clk_interface_better|indata[2]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[3]                                                                           ; |to_slow_clk_interface_better|indata[3]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[4]                                                                           ; |to_slow_clk_interface_better|indata[4]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[5]                                                                           ; |to_slow_clk_interface_better|indata[5]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[6]                                                                           ; |to_slow_clk_interface_better|indata[6]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[7]                                                                           ; |to_slow_clk_interface_better|indata[7]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[8]                                                                           ; |to_slow_clk_interface_better|indata[8]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[9]                                                                           ; |to_slow_clk_interface_better|indata[9]                                                                           ; out              ;
+; |to_slow_clk_interface_better|indata[10]                                                                          ; |to_slow_clk_interface_better|indata[10]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[11]                                                                          ; |to_slow_clk_interface_better|indata[11]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[12]                                                                          ; |to_slow_clk_interface_better|indata[12]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[13]                                                                          ; |to_slow_clk_interface_better|indata[13]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[14]                                                                          ; |to_slow_clk_interface_better|indata[14]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[15]                                                                          ; |to_slow_clk_interface_better|indata[15]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[16]                                                                          ; |to_slow_clk_interface_better|indata[16]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[17]                                                                          ; |to_slow_clk_interface_better|indata[17]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[18]                                                                          ; |to_slow_clk_interface_better|indata[18]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[19]                                                                          ; |to_slow_clk_interface_better|indata[19]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[20]                                                                          ; |to_slow_clk_interface_better|indata[20]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[21]                                                                          ; |to_slow_clk_interface_better|indata[21]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[22]                                                                          ; |to_slow_clk_interface_better|indata[22]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[23]                                                                          ; |to_slow_clk_interface_better|indata[23]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[24]                                                                          ; |to_slow_clk_interface_better|indata[24]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[25]                                                                          ; |to_slow_clk_interface_better|indata[25]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[26]                                                                          ; |to_slow_clk_interface_better|indata[26]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[27]                                                                          ; |to_slow_clk_interface_better|indata[27]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[28]                                                                          ; |to_slow_clk_interface_better|indata[28]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[29]                                                                          ; |to_slow_clk_interface_better|indata[29]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[30]                                                                          ; |to_slow_clk_interface_better|indata[30]                                                                          ; out              ;
+; |to_slow_clk_interface_better|indata[31]                                                                          ; |to_slow_clk_interface_better|indata[31]                                                                          ; out              ;
+; |to_slow_clk_interface_better|outdata[0]                                                                          ; |to_slow_clk_interface_better|outdata[0]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[1]                                                                          ; |to_slow_clk_interface_better|outdata[1]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[2]                                                                          ; |to_slow_clk_interface_better|outdata[2]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[3]                                                                          ; |to_slow_clk_interface_better|outdata[3]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[4]                                                                          ; |to_slow_clk_interface_better|outdata[4]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[5]                                                                          ; |to_slow_clk_interface_better|outdata[5]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[6]                                                                          ; |to_slow_clk_interface_better|outdata[6]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[7]                                                                          ; |to_slow_clk_interface_better|outdata[7]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[8]                                                                          ; |to_slow_clk_interface_better|outdata[8]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[9]                                                                          ; |to_slow_clk_interface_better|outdata[9]                                                                          ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[10]                                                                         ; |to_slow_clk_interface_better|outdata[10]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[11]                                                                         ; |to_slow_clk_interface_better|outdata[11]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[12]                                                                         ; |to_slow_clk_interface_better|outdata[12]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[13]                                                                         ; |to_slow_clk_interface_better|outdata[13]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[14]                                                                         ; |to_slow_clk_interface_better|outdata[14]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[15]                                                                         ; |to_slow_clk_interface_better|outdata[15]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[16]                                                                         ; |to_slow_clk_interface_better|outdata[16]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[17]                                                                         ; |to_slow_clk_interface_better|outdata[17]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[18]                                                                         ; |to_slow_clk_interface_better|outdata[18]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[19]                                                                         ; |to_slow_clk_interface_better|outdata[19]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[20]                                                                         ; |to_slow_clk_interface_better|outdata[20]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[21]                                                                         ; |to_slow_clk_interface_better|outdata[21]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[22]                                                                         ; |to_slow_clk_interface_better|outdata[22]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[23]                                                                         ; |to_slow_clk_interface_better|outdata[23]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[24]                                                                         ; |to_slow_clk_interface_better|outdata[24]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[25]                                                                         ; |to_slow_clk_interface_better|outdata[25]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[26]                                                                         ; |to_slow_clk_interface_better|outdata[26]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[27]                                                                         ; |to_slow_clk_interface_better|outdata[27]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[28]                                                                         ; |to_slow_clk_interface_better|outdata[28]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[29]                                                                         ; |to_slow_clk_interface_better|outdata[29]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[30]                                                                         ; |to_slow_clk_interface_better|outdata[30]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|outdata[31]                                                                         ; |to_slow_clk_interface_better|outdata[31]                                                                         ; pin_out          ;
+; |to_slow_clk_interface_better|inclk                                                                               ; |to_slow_clk_interface_better|inclk                                                                               ; out              ;
+; |to_slow_clk_interface_better|outclk                                                                              ; |to_slow_clk_interface_better|outclk                                                                              ; out              ;
+; |to_slow_clk_interface_better|actual_CE                                                                           ; |to_slow_clk_interface_better|actual_CE                                                                           ; pin_out          ;
+; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|actual_auto_reset_signal  ; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|actual_auto_reset_signal  ; regout           ;
+; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|unregistered_out_sync_sig ; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|unregistered_out_sync_sig ; out0             ;
+; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|async_trap                ; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|async_trap                ; regout           ;
+; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|sync2                     ; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|sync2                     ; regout           ;
+; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|sync1_raw                 ; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|sync1_raw                 ; regout           ;
+; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|sync1                     ; |to_slow_clk_interface_better|async_trap_and_reset_gen_1_pulse_robust:trap_output_clock|sync1                     ; regout           ;
++-------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Apr 13 17:19:59 2017
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off to_slow_clk_interface_better -c to_slow_clk_interface_better
+Info: Using vector source file "C:/rapidia/rapidia.common_rtl_library/tsb/ip/sim/to_slow_clk_interface_better.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of to_slow_clk_interface_better.vwf called to_slow_clk_interface_better.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is     100.00 %
+Info: Number of transitions in simulation is 75465
+Info: Vector file to_slow_clk_interface_better.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 165 megabytes
+    Info: Processing ended: Thu Apr 13 17:20:00 2017
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

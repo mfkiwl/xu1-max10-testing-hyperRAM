@@ -1,0 +1,931 @@
+Simulator report for hw_read_dma_controller
+Tue May 26 17:31:35 2015
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 535 nodes    ;
+; Simulation Coverage         ;      56.18 % ;
+; Total Number of Transitions ; 3439         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      56.18 % ;
+; Total nodes checked                                 ; 535          ;
+; Total output ports checked                          ; 534          ;
+; Total output ports with complete 1/0-value coverage ; 300          ;
+; Total output ports with no 1/0-value coverage       ; 232          ;
+; Total output ports with no 1-value coverage         ; 234          ;
+; Total output ports with no 0-value coverage         ; 232          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                  ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                           ; Output Port Name                                                                                    ; Output Port Type ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+; |hw_read_dma_controller|state~10                                                                    ; |hw_read_dma_controller|state~10                                                                    ; out              ;
+; |hw_read_dma_controller|state~11                                                                    ; |hw_read_dma_controller|state~11                                                                    ; out              ;
+; |hw_read_dma_controller|state~14                                                                    ; |hw_read_dma_controller|state~14                                                                    ; out              ;
+; |hw_read_dma_controller|state~15                                                                    ; |hw_read_dma_controller|state~15                                                                    ; out              ;
+; |hw_read_dma_controller|state~26                                                                    ; |hw_read_dma_controller|state~26                                                                    ; out              ;
+; |hw_read_dma_controller|state~27                                                                    ; |hw_read_dma_controller|state~27                                                                    ; out              ;
+; |hw_read_dma_controller|state~30                                                                    ; |hw_read_dma_controller|state~30                                                                    ; out              ;
+; |hw_read_dma_controller|state~31                                                                    ; |hw_read_dma_controller|state~31                                                                    ; out              ;
+; |hw_read_dma_controller|state[0]~reg0                                                               ; |hw_read_dma_controller|state[0]~reg0                                                               ; regout           ;
+; |hw_read_dma_controller|state[5]~reg0                                                               ; |hw_read_dma_controller|state[5]~reg0                                                               ; regout           ;
+; |hw_read_dma_controller|state[4]~reg0                                                               ; |hw_read_dma_controller|state[4]~reg0                                                               ; regout           ;
+; |hw_read_dma_controller|state[1]~reg0                                                               ; |hw_read_dma_controller|state[1]~reg0                                                               ; regout           ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_fixed_location                         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_fixed_location                         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_go                                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_go                                     ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_done                                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_done                                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_read_buffer                               ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_read_buffer                               ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[0]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[0]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[1]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[1]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[2]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[2]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[3]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[3]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[4]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[4]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[5]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[5]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[6]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[6]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[7]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[7]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[8]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[8]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[9]                     ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[9]                     ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[10]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[10]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[11]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[11]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[12]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[12]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[13]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[13]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[14]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[14]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[15]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[15]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[16]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[16]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[17]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[17]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[18]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[18]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[19]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[19]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[20]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[20]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[21]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[21]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[22]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[22]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[23]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[23]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[24]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[24]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[25]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[25]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[26]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[26]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[27]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[27]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[28]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[28]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[29]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[29]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[30]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[30]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[31]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[31]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[32]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[32]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[33]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[33]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[34]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[34]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[35]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[35]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[36]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[36]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[37]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[37]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[38]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[38]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[39]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[39]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[40]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[40]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[41]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[41]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[42]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[42]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[43]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[43]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[44]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[44]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[45]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[45]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[46]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[46]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[47]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[47]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[48]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[48]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[49]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[49]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[50]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[50]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[51]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[51]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[52]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[52]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[53]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[53]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[54]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[54]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[55]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[55]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[56]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[56]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[57]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[57]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[58]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[58]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[59]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[59]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[60]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[60]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[61]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[61]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[62]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[62]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[63]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[63]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[64]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[64]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[65]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[65]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[66]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[66]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[67]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[67]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[68]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[68]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[69]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[69]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[70]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[70]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[71]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[71]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[72]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[72]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[73]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[73]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[74]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[74]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[75]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[75]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[76]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[76]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[77]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[77]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[78]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[78]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[79]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[79]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[80]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[80]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[81]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[81]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[82]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[82]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[83]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[83]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[84]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[84]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[85]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[85]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[86]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[86]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[87]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[87]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[88]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[88]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[89]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[89]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[90]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[90]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[91]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[91]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[92]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[92]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[93]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[93]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[94]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[94]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[95]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[95]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[96]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[96]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[97]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[97]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[98]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[98]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[99]                    ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[99]                    ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[100]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[100]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[101]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[101]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[102]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[102]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[103]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[103]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[104]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[104]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[105]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[105]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[106]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[106]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[107]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[107]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[108]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[108]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[109]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[109]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[110]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[110]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[111]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[111]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[112]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[112]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[113]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[113]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[114]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[114]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[115]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[115]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[116]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[116]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[117]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[117]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[119]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[119]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[120]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[120]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[121]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[121]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[122]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[122]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[123]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[123]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[124]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[124]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[125]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[125]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[126]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[126]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[127]                   ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[127]                   ; out              ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_data_available                            ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_data_available                            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_fixed_location                               ; |hw_read_dma_controller|user_logic_read_master_control_fixed_location                               ; out              ;
+; |hw_read_dma_controller|user_read_master_user_read_buffer                                           ; |hw_read_dma_controller|user_read_master_user_read_buffer                                           ; out              ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[0]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[0]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[1]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[1]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[2]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[2]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[3]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[3]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[4]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[4]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[5]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[5]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[6]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[6]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[7]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[7]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[8]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[8]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[9]                                 ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[9]                                 ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[10]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[10]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[11]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[11]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[12]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[12]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[13]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[13]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[14]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[14]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[15]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[15]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[16]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[16]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[17]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[17]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[18]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[18]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[19]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[19]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[20]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[20]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[21]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[21]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[22]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[22]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[23]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[23]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[24]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[24]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[25]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[25]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[26]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[26]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[27]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[27]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[28]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[28]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[29]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[29]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[30]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[30]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[31]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[31]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[32]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[32]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[33]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[33]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[34]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[34]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[35]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[35]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[36]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[36]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[37]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[37]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[38]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[38]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[39]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[39]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[40]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[40]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[41]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[41]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[42]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[42]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[43]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[43]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[44]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[44]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[45]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[45]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[46]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[46]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[47]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[47]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[48]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[48]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[49]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[49]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[50]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[50]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[51]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[51]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[52]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[52]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[53]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[53]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[54]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[54]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[55]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[55]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[56]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[56]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[57]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[57]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[58]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[58]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[59]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[59]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[60]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[60]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[61]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[61]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[62]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[62]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[63]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[63]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[64]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[64]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[65]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[65]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[66]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[66]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[67]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[67]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[68]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[68]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[69]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[69]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[70]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[70]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[71]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[71]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[72]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[72]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[73]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[73]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[74]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[74]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[75]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[75]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[76]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[76]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[77]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[77]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[78]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[78]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[79]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[79]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[80]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[80]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[81]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[81]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[82]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[82]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[83]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[83]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[84]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[84]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[85]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[85]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[86]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[86]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[87]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[87]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[88]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[88]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[89]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[89]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[90]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[90]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[91]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[91]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[92]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[92]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[93]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[93]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[94]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[94]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[95]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[95]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[96]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[96]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[97]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[97]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[98]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[98]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[99]                                ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[99]                                ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[100]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[100]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[101]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[101]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[102]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[102]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[103]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[103]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[104]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[104]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[105]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[105]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[106]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[106]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[107]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[107]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[108]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[108]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[109]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[109]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[110]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[110]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[111]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[111]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[112]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[112]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[113]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[113]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[114]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[114]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[115]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[115]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[116]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[116]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[117]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[117]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[119]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[119]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[120]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[120]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[121]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[121]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[122]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[122]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[123]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[123]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[124]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[124]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[125]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[125]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[126]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[126]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[127]                               ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[127]                               ; pin_out          ;
+; |hw_read_dma_controller|user_read_master_user_data_available                                        ; |hw_read_dma_controller|user_read_master_user_data_available                                        ; pin_out          ;
+; |hw_read_dma_controller|async_start                                                                 ; |hw_read_dma_controller|async_start                                                                 ; out              ;
+; |hw_read_dma_controller|finish                                                                      ; |hw_read_dma_controller|finish                                                                      ; pin_out          ;
+; |hw_read_dma_controller|state[0]                                                                    ; |hw_read_dma_controller|state[0]                                                                    ; pin_out          ;
+; |hw_read_dma_controller|state[1]                                                                    ; |hw_read_dma_controller|state[1]                                                                    ; pin_out          ;
+; |hw_read_dma_controller|state[4]                                                                    ; |hw_read_dma_controller|state[4]                                                                    ; pin_out          ;
+; |hw_read_dma_controller|state[5]                                                                    ; |hw_read_dma_controller|state[5]                                                                    ; pin_out          ;
+; |hw_read_dma_controller|reset_n                                                                     ; |hw_read_dma_controller|reset_n                                                                     ; out              ;
+; |hw_read_dma_controller|clk                                                                         ; |hw_read_dma_controller|clk                                                                         ; out              ;
+; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|actual_auto_reset_signal ; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|actual_auto_reset_signal ; regout           ;
+; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|sync2~0                  ; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|sync2~0                  ; out0             ;
+; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|async_trap               ; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|async_trap               ; regout           ;
+; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|sync2                    ; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|sync2                    ; regout           ;
+; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|sync1                    ; |hw_read_dma_controller|async_trap_and_reset_gen_1_pulse:make_start_signal|sync1                    ; regout           ;
+; |hw_read_dma_controller|Selector10~0                                                                ; |hw_read_dma_controller|Selector10~0                                                                ; out0             ;
+; |hw_read_dma_controller|Selector10~2                                                                ; |hw_read_dma_controller|Selector10~2                                                                ; out0             ;
+; |hw_read_dma_controller|Selector11~0                                                                ; |hw_read_dma_controller|Selector11~0                                                                ; out0             ;
+; |hw_read_dma_controller|Selector11~3                                                                ; |hw_read_dma_controller|Selector11~3                                                                ; out0             ;
+; |hw_read_dma_controller|Selector14~0                                                                ; |hw_read_dma_controller|Selector14~0                                                                ; out0             ;
+; |hw_read_dma_controller|Selector14~2                                                                ; |hw_read_dma_controller|Selector14~2                                                                ; out0             ;
+; |hw_read_dma_controller|Selector15~0                                                                ; |hw_read_dma_controller|Selector15~0                                                                ; out0             ;
+; |hw_read_dma_controller|Selector15~2                                                                ; |hw_read_dma_controller|Selector15~2                                                                ; out0             ;
+; |hw_read_dma_controller|Selector15~3                                                                ; |hw_read_dma_controller|Selector15~3                                                                ; out0             ;
+; |hw_read_dma_controller|Equal0~0                                                                    ; |hw_read_dma_controller|Equal0~0                                                                    ; out0             ;
+; |hw_read_dma_controller|Equal1~0                                                                    ; |hw_read_dma_controller|Equal1~0                                                                    ; out0             ;
+; |hw_read_dma_controller|Equal2~0                                                                    ; |hw_read_dma_controller|Equal2~0                                                                    ; out0             ;
+; |hw_read_dma_controller|Equal3~0                                                                    ; |hw_read_dma_controller|Equal3~0                                                                    ; out0             ;
++-----------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                 ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; Node Name                                                                         ; Output Port Name                                                                  ; Output Port Type ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+; |hw_read_dma_controller|state~0                                                   ; |hw_read_dma_controller|state~0                                                   ; out              ;
+; |hw_read_dma_controller|state~1                                                   ; |hw_read_dma_controller|state~1                                                   ; out              ;
+; |hw_read_dma_controller|state~2                                                   ; |hw_read_dma_controller|state~2                                                   ; out              ;
+; |hw_read_dma_controller|state~3                                                   ; |hw_read_dma_controller|state~3                                                   ; out              ;
+; |hw_read_dma_controller|state~4                                                   ; |hw_read_dma_controller|state~4                                                   ; out              ;
+; |hw_read_dma_controller|state~5                                                   ; |hw_read_dma_controller|state~5                                                   ; out              ;
+; |hw_read_dma_controller|state~6                                                   ; |hw_read_dma_controller|state~6                                                   ; out              ;
+; |hw_read_dma_controller|state~7                                                   ; |hw_read_dma_controller|state~7                                                   ; out              ;
+; |hw_read_dma_controller|state~8                                                   ; |hw_read_dma_controller|state~8                                                   ; out              ;
+; |hw_read_dma_controller|state~9                                                   ; |hw_read_dma_controller|state~9                                                   ; out              ;
+; |hw_read_dma_controller|state~12                                                  ; |hw_read_dma_controller|state~12                                                  ; out              ;
+; |hw_read_dma_controller|state~13                                                  ; |hw_read_dma_controller|state~13                                                  ; out              ;
+; |hw_read_dma_controller|state~16                                                  ; |hw_read_dma_controller|state~16                                                  ; out              ;
+; |hw_read_dma_controller|state~17                                                  ; |hw_read_dma_controller|state~17                                                  ; out              ;
+; |hw_read_dma_controller|state~18                                                  ; |hw_read_dma_controller|state~18                                                  ; out              ;
+; |hw_read_dma_controller|state~19                                                  ; |hw_read_dma_controller|state~19                                                  ; out              ;
+; |hw_read_dma_controller|state~20                                                  ; |hw_read_dma_controller|state~20                                                  ; out              ;
+; |hw_read_dma_controller|state~21                                                  ; |hw_read_dma_controller|state~21                                                  ; out              ;
+; |hw_read_dma_controller|state~22                                                  ; |hw_read_dma_controller|state~22                                                  ; out              ;
+; |hw_read_dma_controller|state~23                                                  ; |hw_read_dma_controller|state~23                                                  ; out              ;
+; |hw_read_dma_controller|state~24                                                  ; |hw_read_dma_controller|state~24                                                  ; out              ;
+; |hw_read_dma_controller|state~25                                                  ; |hw_read_dma_controller|state~25                                                  ; out              ;
+; |hw_read_dma_controller|state~28                                                  ; |hw_read_dma_controller|state~28                                                  ; out              ;
+; |hw_read_dma_controller|state~29                                                  ; |hw_read_dma_controller|state~29                                                  ; out              ;
+; |hw_read_dma_controller|WideNor0                                                  ; |hw_read_dma_controller|WideNor0                                                  ; out0             ;
+; |hw_read_dma_controller|state[15]~reg0                                            ; |hw_read_dma_controller|state[15]~reg0                                            ; regout           ;
+; |hw_read_dma_controller|state[14]~reg0                                            ; |hw_read_dma_controller|state[14]~reg0                                            ; regout           ;
+; |hw_read_dma_controller|state[13]~reg0                                            ; |hw_read_dma_controller|state[13]~reg0                                            ; regout           ;
+; |hw_read_dma_controller|state[12]~reg0                                            ; |hw_read_dma_controller|state[12]~reg0                                            ; regout           ;
+; |hw_read_dma_controller|state[11]~reg0                                            ; |hw_read_dma_controller|state[11]~reg0                                            ; regout           ;
+; |hw_read_dma_controller|state[10]~reg0                                            ; |hw_read_dma_controller|state[10]~reg0                                            ; regout           ;
+; |hw_read_dma_controller|state[9]~reg0                                             ; |hw_read_dma_controller|state[9]~reg0                                             ; regout           ;
+; |hw_read_dma_controller|state[8]~reg0                                             ; |hw_read_dma_controller|state[8]~reg0                                             ; regout           ;
+; |hw_read_dma_controller|state[7]~reg0                                             ; |hw_read_dma_controller|state[7]~reg0                                             ; regout           ;
+; |hw_read_dma_controller|state[6]~reg0                                             ; |hw_read_dma_controller|state[6]~reg0                                             ; regout           ;
+; |hw_read_dma_controller|state[3]~reg0                                             ; |hw_read_dma_controller|state[3]~reg0                                             ; regout           ;
+; |hw_read_dma_controller|state[2]~reg0                                             ; |hw_read_dma_controller|state[2]~reg0                                             ; regout           ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[0]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[0]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[1]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[1]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[2]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[2]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[3]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[3]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[4]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[4]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[5]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[5]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[6]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[6]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[7]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[7]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[8]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[8]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[9]         ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[9]         ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[10]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[10]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[11]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[11]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[12]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[12]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[13]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[13]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[14]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[14]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[15]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[15]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[16]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[16]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[17]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[17]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[18]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[18]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[19]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[19]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[20]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[20]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[21]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[21]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[22]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[22]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[23]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[23]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[24]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[24]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[25]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[25]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[26]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[26]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[27]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[27]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[28]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[28]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[29]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[29]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[30]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[30]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[31]        ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[31]        ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[0]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[0]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[1]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[1]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[2]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[2]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[3]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[3]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[4]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[4]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[5]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[5]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[6]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[6]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[7]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[7]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[8]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[8]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[9]       ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[9]       ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[10]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[10]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[11]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[11]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[12]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[12]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[13]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[13]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[14]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[14]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[15]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[15]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[16]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[16]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[17]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[17]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[18]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[18]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[19]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[19]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[20]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[20]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[21]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[21]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[22]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[22]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[23]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[23]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[24]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[24]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[25]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[25]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[26]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[26]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[27]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[27]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[28]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[28]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[29]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[29]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[30]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[30]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[31]      ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[31]      ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[118] ; |hw_read_dma_controller|hw_triggered_dma_read_master_user_buffer_output_data[118] ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[0]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[0]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[1]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[1]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[2]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[2]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[3]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[3]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[4]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[4]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[5]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[5]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[6]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[6]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[7]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[7]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[8]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[8]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[9]               ; |hw_read_dma_controller|user_logic_read_master_control_read_base[9]               ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[10]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[10]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[11]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[11]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[12]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[12]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[13]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[13]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[14]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[14]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[15]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[15]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[16]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[16]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[17]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[17]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[18]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[18]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[19]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[19]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[20]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[20]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[21]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[21]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[22]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[22]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[23]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[23]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[24]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[24]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[25]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[25]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[26]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[26]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[27]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[27]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[28]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[28]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[29]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[29]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[30]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[30]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[31]              ; |hw_read_dma_controller|user_logic_read_master_control_read_base[31]              ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[0]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[0]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[1]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[1]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[2]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[2]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[3]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[3]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[4]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[4]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[5]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[5]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[6]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[6]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[7]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[7]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[8]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[8]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[9]             ; |hw_read_dma_controller|user_logic_read_master_control_read_length[9]             ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[10]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[10]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[11]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[11]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[12]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[12]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[13]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[13]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[14]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[14]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[15]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[15]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[16]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[16]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[17]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[17]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[18]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[18]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[19]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[19]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[20]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[20]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[21]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[21]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[22]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[22]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[23]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[23]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[24]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[24]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[25]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[25]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[26]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[26]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[27]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[27]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[28]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[28]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[29]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[29]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[30]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[30]            ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[31]            ; |hw_read_dma_controller|user_logic_read_master_control_read_length[31]            ; out              ;
+; |hw_read_dma_controller|user_read_master_user_buffer_output_data[118]             ; |hw_read_dma_controller|user_read_master_user_buffer_output_data[118]             ; pin_out          ;
+; |hw_read_dma_controller|state[2]                                                  ; |hw_read_dma_controller|state[2]                                                  ; pin_out          ;
+; |hw_read_dma_controller|state[3]                                                  ; |hw_read_dma_controller|state[3]                                                  ; pin_out          ;
+; |hw_read_dma_controller|state[6]                                                  ; |hw_read_dma_controller|state[6]                                                  ; pin_out          ;
+; |hw_read_dma_controller|state[7]                                                  ; |hw_read_dma_controller|state[7]                                                  ; pin_out          ;
+; |hw_read_dma_controller|state[8]                                                  ; |hw_read_dma_controller|state[8]                                                  ; pin_out          ;
+; |hw_read_dma_controller|state[9]                                                  ; |hw_read_dma_controller|state[9]                                                  ; pin_out          ;
+; |hw_read_dma_controller|state[10]                                                 ; |hw_read_dma_controller|state[10]                                                 ; pin_out          ;
+; |hw_read_dma_controller|state[11]                                                 ; |hw_read_dma_controller|state[11]                                                 ; pin_out          ;
+; |hw_read_dma_controller|state[12]                                                 ; |hw_read_dma_controller|state[12]                                                 ; pin_out          ;
+; |hw_read_dma_controller|state[13]                                                 ; |hw_read_dma_controller|state[13]                                                 ; pin_out          ;
+; |hw_read_dma_controller|state[14]                                                 ; |hw_read_dma_controller|state[14]                                                 ; pin_out          ;
+; |hw_read_dma_controller|state[15]                                                 ; |hw_read_dma_controller|state[15]                                                 ; pin_out          ;
+; |hw_read_dma_controller|Selector0~0                                               ; |hw_read_dma_controller|Selector0~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector0~1                                               ; |hw_read_dma_controller|Selector0~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector0~2                                               ; |hw_read_dma_controller|Selector0~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector0~3                                               ; |hw_read_dma_controller|Selector0~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector1~0                                               ; |hw_read_dma_controller|Selector1~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector1~1                                               ; |hw_read_dma_controller|Selector1~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector1~2                                               ; |hw_read_dma_controller|Selector1~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector1~3                                               ; |hw_read_dma_controller|Selector1~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector2~0                                               ; |hw_read_dma_controller|Selector2~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector2~1                                               ; |hw_read_dma_controller|Selector2~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector2~2                                               ; |hw_read_dma_controller|Selector2~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector2~3                                               ; |hw_read_dma_controller|Selector2~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector3~0                                               ; |hw_read_dma_controller|Selector3~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector3~1                                               ; |hw_read_dma_controller|Selector3~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector3~2                                               ; |hw_read_dma_controller|Selector3~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector3~3                                               ; |hw_read_dma_controller|Selector3~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector4~0                                               ; |hw_read_dma_controller|Selector4~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector4~1                                               ; |hw_read_dma_controller|Selector4~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector4~2                                               ; |hw_read_dma_controller|Selector4~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector4~3                                               ; |hw_read_dma_controller|Selector4~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector5~0                                               ; |hw_read_dma_controller|Selector5~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector5~1                                               ; |hw_read_dma_controller|Selector5~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector5~2                                               ; |hw_read_dma_controller|Selector5~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector5~3                                               ; |hw_read_dma_controller|Selector5~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector6~0                                               ; |hw_read_dma_controller|Selector6~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector6~1                                               ; |hw_read_dma_controller|Selector6~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector6~2                                               ; |hw_read_dma_controller|Selector6~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector6~3                                               ; |hw_read_dma_controller|Selector6~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector7~0                                               ; |hw_read_dma_controller|Selector7~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector7~1                                               ; |hw_read_dma_controller|Selector7~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector7~2                                               ; |hw_read_dma_controller|Selector7~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector7~3                                               ; |hw_read_dma_controller|Selector7~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector8~0                                               ; |hw_read_dma_controller|Selector8~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector8~1                                               ; |hw_read_dma_controller|Selector8~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector8~2                                               ; |hw_read_dma_controller|Selector8~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector8~3                                               ; |hw_read_dma_controller|Selector8~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector9~0                                               ; |hw_read_dma_controller|Selector9~0                                               ; out0             ;
+; |hw_read_dma_controller|Selector9~1                                               ; |hw_read_dma_controller|Selector9~1                                               ; out0             ;
+; |hw_read_dma_controller|Selector9~2                                               ; |hw_read_dma_controller|Selector9~2                                               ; out0             ;
+; |hw_read_dma_controller|Selector9~3                                               ; |hw_read_dma_controller|Selector9~3                                               ; out0             ;
+; |hw_read_dma_controller|Selector10~1                                              ; |hw_read_dma_controller|Selector10~1                                              ; out0             ;
+; |hw_read_dma_controller|Selector10~3                                              ; |hw_read_dma_controller|Selector10~3                                              ; out0             ;
+; |hw_read_dma_controller|Selector11~1                                              ; |hw_read_dma_controller|Selector11~1                                              ; out0             ;
+; |hw_read_dma_controller|Selector11~2                                              ; |hw_read_dma_controller|Selector11~2                                              ; out0             ;
+; |hw_read_dma_controller|Selector12~0                                              ; |hw_read_dma_controller|Selector12~0                                              ; out0             ;
+; |hw_read_dma_controller|Selector12~1                                              ; |hw_read_dma_controller|Selector12~1                                              ; out0             ;
+; |hw_read_dma_controller|Selector12~2                                              ; |hw_read_dma_controller|Selector12~2                                              ; out0             ;
+; |hw_read_dma_controller|Selector12~3                                              ; |hw_read_dma_controller|Selector12~3                                              ; out0             ;
+; |hw_read_dma_controller|Selector13~0                                              ; |hw_read_dma_controller|Selector13~0                                              ; out0             ;
+; |hw_read_dma_controller|Selector13~1                                              ; |hw_read_dma_controller|Selector13~1                                              ; out0             ;
+; |hw_read_dma_controller|Selector13~2                                              ; |hw_read_dma_controller|Selector13~2                                              ; out0             ;
+; |hw_read_dma_controller|Selector13~3                                              ; |hw_read_dma_controller|Selector13~3                                              ; out0             ;
+; |hw_read_dma_controller|Selector14~1                                              ; |hw_read_dma_controller|Selector14~1                                              ; out0             ;
+; |hw_read_dma_controller|Selector14~3                                              ; |hw_read_dma_controller|Selector14~3                                              ; out0             ;
+; |hw_read_dma_controller|Selector15~1                                              ; |hw_read_dma_controller|Selector15~1                                              ; out0             ;
++-----------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                       ;
++------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
+; Node Name                                                                    ; Output Port Name                                                             ; Output Port Type ;
++------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
+; |hw_read_dma_controller|state~0                                              ; |hw_read_dma_controller|state~0                                              ; out              ;
+; |hw_read_dma_controller|state~1                                              ; |hw_read_dma_controller|state~1                                              ; out              ;
+; |hw_read_dma_controller|state~2                                              ; |hw_read_dma_controller|state~2                                              ; out              ;
+; |hw_read_dma_controller|state~3                                              ; |hw_read_dma_controller|state~3                                              ; out              ;
+; |hw_read_dma_controller|state~4                                              ; |hw_read_dma_controller|state~4                                              ; out              ;
+; |hw_read_dma_controller|state~5                                              ; |hw_read_dma_controller|state~5                                              ; out              ;
+; |hw_read_dma_controller|state~6                                              ; |hw_read_dma_controller|state~6                                              ; out              ;
+; |hw_read_dma_controller|state~7                                              ; |hw_read_dma_controller|state~7                                              ; out              ;
+; |hw_read_dma_controller|state~8                                              ; |hw_read_dma_controller|state~8                                              ; out              ;
+; |hw_read_dma_controller|state~9                                              ; |hw_read_dma_controller|state~9                                              ; out              ;
+; |hw_read_dma_controller|state~12                                             ; |hw_read_dma_controller|state~12                                             ; out              ;
+; |hw_read_dma_controller|state~13                                             ; |hw_read_dma_controller|state~13                                             ; out              ;
+; |hw_read_dma_controller|state~16                                             ; |hw_read_dma_controller|state~16                                             ; out              ;
+; |hw_read_dma_controller|state~17                                             ; |hw_read_dma_controller|state~17                                             ; out              ;
+; |hw_read_dma_controller|state~18                                             ; |hw_read_dma_controller|state~18                                             ; out              ;
+; |hw_read_dma_controller|state~19                                             ; |hw_read_dma_controller|state~19                                             ; out              ;
+; |hw_read_dma_controller|state~20                                             ; |hw_read_dma_controller|state~20                                             ; out              ;
+; |hw_read_dma_controller|state~21                                             ; |hw_read_dma_controller|state~21                                             ; out              ;
+; |hw_read_dma_controller|state~22                                             ; |hw_read_dma_controller|state~22                                             ; out              ;
+; |hw_read_dma_controller|state~23                                             ; |hw_read_dma_controller|state~23                                             ; out              ;
+; |hw_read_dma_controller|state~24                                             ; |hw_read_dma_controller|state~24                                             ; out              ;
+; |hw_read_dma_controller|state~25                                             ; |hw_read_dma_controller|state~25                                             ; out              ;
+; |hw_read_dma_controller|state~28                                             ; |hw_read_dma_controller|state~28                                             ; out              ;
+; |hw_read_dma_controller|state~29                                             ; |hw_read_dma_controller|state~29                                             ; out              ;
+; |hw_read_dma_controller|WideNor0                                             ; |hw_read_dma_controller|WideNor0                                             ; out0             ;
+; |hw_read_dma_controller|state[15]~reg0                                       ; |hw_read_dma_controller|state[15]~reg0                                       ; regout           ;
+; |hw_read_dma_controller|state[14]~reg0                                       ; |hw_read_dma_controller|state[14]~reg0                                       ; regout           ;
+; |hw_read_dma_controller|state[13]~reg0                                       ; |hw_read_dma_controller|state[13]~reg0                                       ; regout           ;
+; |hw_read_dma_controller|state[12]~reg0                                       ; |hw_read_dma_controller|state[12]~reg0                                       ; regout           ;
+; |hw_read_dma_controller|state[11]~reg0                                       ; |hw_read_dma_controller|state[11]~reg0                                       ; regout           ;
+; |hw_read_dma_controller|state[10]~reg0                                       ; |hw_read_dma_controller|state[10]~reg0                                       ; regout           ;
+; |hw_read_dma_controller|state[9]~reg0                                        ; |hw_read_dma_controller|state[9]~reg0                                        ; regout           ;
+; |hw_read_dma_controller|state[8]~reg0                                        ; |hw_read_dma_controller|state[8]~reg0                                        ; regout           ;
+; |hw_read_dma_controller|state[7]~reg0                                        ; |hw_read_dma_controller|state[7]~reg0                                        ; regout           ;
+; |hw_read_dma_controller|state[6]~reg0                                        ; |hw_read_dma_controller|state[6]~reg0                                        ; regout           ;
+; |hw_read_dma_controller|state[3]~reg0                                        ; |hw_read_dma_controller|state[3]~reg0                                        ; regout           ;
+; |hw_read_dma_controller|state[2]~reg0                                        ; |hw_read_dma_controller|state[2]~reg0                                        ; regout           ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[0]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[0]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[1]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[1]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[2]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[2]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[3]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[3]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[4]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[4]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[5]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[5]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[6]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[6]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[7]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[7]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[8]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[8]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[9]    ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[9]    ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[10]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[10]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[11]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[11]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[12]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[12]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[13]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[13]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[14]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[14]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[15]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[15]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[16]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[16]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[17]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[17]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[18]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[18]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[19]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[19]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[20]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[20]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[21]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[21]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[22]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[22]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[23]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[23]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[24]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[24]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[25]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[25]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[26]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[26]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[27]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[27]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[28]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[28]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[29]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[29]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[30]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[30]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[31]   ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_base[31]   ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[0]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[0]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[1]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[1]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[2]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[2]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[3]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[3]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[4]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[4]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[5]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[5]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[6]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[6]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[7]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[7]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[8]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[8]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[9]  ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[9]  ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[10] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[10] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[11] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[11] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[12] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[12] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[13] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[13] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[14] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[14] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[15] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[15] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[16] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[16] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[17] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[17] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[18] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[18] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[19] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[19] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[20] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[20] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[21] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[21] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[22] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[22] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[23] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[23] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[24] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[24] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[25] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[25] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[26] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[26] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[27] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[27] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[28] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[28] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[29] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[29] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[30] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[30] ; pin_out          ;
+; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[31] ; |hw_read_dma_controller|hw_triggered_dma_read_master_control_read_length[31] ; pin_out          ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[0]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[0]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[1]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[1]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[2]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[2]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[3]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[3]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[4]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[4]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[5]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[5]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[6]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[6]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[7]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[7]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[8]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[8]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[9]          ; |hw_read_dma_controller|user_logic_read_master_control_read_base[9]          ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[10]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[10]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[11]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[11]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[12]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[12]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[13]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[13]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[14]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[14]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[15]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[15]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[16]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[16]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[17]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[17]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[18]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[18]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[19]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[19]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[20]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[20]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[21]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[21]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[22]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[22]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[23]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[23]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[24]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[24]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[25]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[25]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[26]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[26]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[27]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[27]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[28]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[28]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[29]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[29]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[30]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[30]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_base[31]         ; |hw_read_dma_controller|user_logic_read_master_control_read_base[31]         ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[0]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[0]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[1]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[1]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[2]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[2]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[3]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[3]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[4]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[4]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[5]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[5]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[6]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[6]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[7]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[7]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[8]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[8]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[9]        ; |hw_read_dma_controller|user_logic_read_master_control_read_length[9]        ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[10]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[10]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[11]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[11]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[12]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[12]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[13]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[13]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[14]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[14]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[15]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[15]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[16]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[16]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[17]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[17]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[18]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[18]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[19]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[19]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[20]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[20]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[21]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[21]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[22]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[22]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[23]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[23]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[24]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[24]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[25]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[25]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[26]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[26]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[27]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[27]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[28]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[28]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[29]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[29]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[30]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[30]       ; out              ;
+; |hw_read_dma_controller|user_logic_read_master_control_read_length[31]       ; |hw_read_dma_controller|user_logic_read_master_control_read_length[31]       ; out              ;
+; |hw_read_dma_controller|state[2]                                             ; |hw_read_dma_controller|state[2]                                             ; pin_out          ;
+; |hw_read_dma_controller|state[3]                                             ; |hw_read_dma_controller|state[3]                                             ; pin_out          ;
+; |hw_read_dma_controller|state[6]                                             ; |hw_read_dma_controller|state[6]                                             ; pin_out          ;
+; |hw_read_dma_controller|state[7]                                             ; |hw_read_dma_controller|state[7]                                             ; pin_out          ;
+; |hw_read_dma_controller|state[8]                                             ; |hw_read_dma_controller|state[8]                                             ; pin_out          ;
+; |hw_read_dma_controller|state[9]                                             ; |hw_read_dma_controller|state[9]                                             ; pin_out          ;
+; |hw_read_dma_controller|state[10]                                            ; |hw_read_dma_controller|state[10]                                            ; pin_out          ;
+; |hw_read_dma_controller|state[11]                                            ; |hw_read_dma_controller|state[11]                                            ; pin_out          ;
+; |hw_read_dma_controller|state[12]                                            ; |hw_read_dma_controller|state[12]                                            ; pin_out          ;
+; |hw_read_dma_controller|state[13]                                            ; |hw_read_dma_controller|state[13]                                            ; pin_out          ;
+; |hw_read_dma_controller|state[14]                                            ; |hw_read_dma_controller|state[14]                                            ; pin_out          ;
+; |hw_read_dma_controller|state[15]                                            ; |hw_read_dma_controller|state[15]                                            ; pin_out          ;
+; |hw_read_dma_controller|Selector0~0                                          ; |hw_read_dma_controller|Selector0~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector0~1                                          ; |hw_read_dma_controller|Selector0~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector0~2                                          ; |hw_read_dma_controller|Selector0~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector0~3                                          ; |hw_read_dma_controller|Selector0~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector1~0                                          ; |hw_read_dma_controller|Selector1~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector1~1                                          ; |hw_read_dma_controller|Selector1~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector1~2                                          ; |hw_read_dma_controller|Selector1~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector1~3                                          ; |hw_read_dma_controller|Selector1~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector2~0                                          ; |hw_read_dma_controller|Selector2~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector2~1                                          ; |hw_read_dma_controller|Selector2~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector2~2                                          ; |hw_read_dma_controller|Selector2~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector2~3                                          ; |hw_read_dma_controller|Selector2~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector3~0                                          ; |hw_read_dma_controller|Selector3~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector3~1                                          ; |hw_read_dma_controller|Selector3~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector3~2                                          ; |hw_read_dma_controller|Selector3~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector3~3                                          ; |hw_read_dma_controller|Selector3~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector4~0                                          ; |hw_read_dma_controller|Selector4~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector4~1                                          ; |hw_read_dma_controller|Selector4~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector4~2                                          ; |hw_read_dma_controller|Selector4~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector4~3                                          ; |hw_read_dma_controller|Selector4~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector5~0                                          ; |hw_read_dma_controller|Selector5~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector5~1                                          ; |hw_read_dma_controller|Selector5~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector5~2                                          ; |hw_read_dma_controller|Selector5~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector5~3                                          ; |hw_read_dma_controller|Selector5~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector6~0                                          ; |hw_read_dma_controller|Selector6~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector6~1                                          ; |hw_read_dma_controller|Selector6~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector6~2                                          ; |hw_read_dma_controller|Selector6~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector6~3                                          ; |hw_read_dma_controller|Selector6~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector7~0                                          ; |hw_read_dma_controller|Selector7~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector7~1                                          ; |hw_read_dma_controller|Selector7~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector7~2                                          ; |hw_read_dma_controller|Selector7~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector7~3                                          ; |hw_read_dma_controller|Selector7~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector8~0                                          ; |hw_read_dma_controller|Selector8~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector8~1                                          ; |hw_read_dma_controller|Selector8~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector8~2                                          ; |hw_read_dma_controller|Selector8~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector8~3                                          ; |hw_read_dma_controller|Selector8~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector9~0                                          ; |hw_read_dma_controller|Selector9~0                                          ; out0             ;
+; |hw_read_dma_controller|Selector9~1                                          ; |hw_read_dma_controller|Selector9~1                                          ; out0             ;
+; |hw_read_dma_controller|Selector9~2                                          ; |hw_read_dma_controller|Selector9~2                                          ; out0             ;
+; |hw_read_dma_controller|Selector9~3                                          ; |hw_read_dma_controller|Selector9~3                                          ; out0             ;
+; |hw_read_dma_controller|Selector10~1                                         ; |hw_read_dma_controller|Selector10~1                                         ; out0             ;
+; |hw_read_dma_controller|Selector10~3                                         ; |hw_read_dma_controller|Selector10~3                                         ; out0             ;
+; |hw_read_dma_controller|Selector11~1                                         ; |hw_read_dma_controller|Selector11~1                                         ; out0             ;
+; |hw_read_dma_controller|Selector11~2                                         ; |hw_read_dma_controller|Selector11~2                                         ; out0             ;
+; |hw_read_dma_controller|Selector12~0                                         ; |hw_read_dma_controller|Selector12~0                                         ; out0             ;
+; |hw_read_dma_controller|Selector12~1                                         ; |hw_read_dma_controller|Selector12~1                                         ; out0             ;
+; |hw_read_dma_controller|Selector12~2                                         ; |hw_read_dma_controller|Selector12~2                                         ; out0             ;
+; |hw_read_dma_controller|Selector12~3                                         ; |hw_read_dma_controller|Selector12~3                                         ; out0             ;
+; |hw_read_dma_controller|Selector13~0                                         ; |hw_read_dma_controller|Selector13~0                                         ; out0             ;
+; |hw_read_dma_controller|Selector13~1                                         ; |hw_read_dma_controller|Selector13~1                                         ; out0             ;
+; |hw_read_dma_controller|Selector13~2                                         ; |hw_read_dma_controller|Selector13~2                                         ; out0             ;
+; |hw_read_dma_controller|Selector13~3                                         ; |hw_read_dma_controller|Selector13~3                                         ; out0             ;
+; |hw_read_dma_controller|Selector14~1                                         ; |hw_read_dma_controller|Selector14~1                                         ; out0             ;
+; |hw_read_dma_controller|Selector14~3                                         ; |hw_read_dma_controller|Selector14~3                                         ; out0             ;
+; |hw_read_dma_controller|Selector15~1                                         ; |hw_read_dma_controller|Selector15~1                                         ; out0             ;
++------------------------------------------------------------------------------+------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue May 26 17:31:35 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off hw_dma_read_controller -c hw_read_dma_controller
+Info: Using vector source file "D:/deap/edevel00365_deap_14_1/tsbs/common_rtl_library/tsb/ip/sim/hw_read_dma_controller.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of hw_read_dma_controller.vwf called hw_read_dma_controller.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      56.18 %
+Info: Number of transitions in simulation is 3439
+Info: Vector file hw_read_dma_controller.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Tue May 26 17:31:35 2015
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

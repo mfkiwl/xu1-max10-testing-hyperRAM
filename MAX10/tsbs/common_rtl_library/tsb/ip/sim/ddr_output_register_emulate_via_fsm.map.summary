@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Feb 22 13:41:16 2016
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : ddr_output_register_emulate_via_fsm
+Top-level Entity Name : ddr_output_register_emulate_via_fsm
+Family : Cyclone III
+Total logic elements : 24
+    Total combinational functions : 18
+    Dedicated logic registers : 17
+Total registers : 17
+Total pins : 28
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

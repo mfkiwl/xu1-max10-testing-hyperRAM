@@ -1,0 +1,389 @@
+Analysis & Synthesis report for test_split_image_into_udp_packets
+Thu May 30 12:24:14 2019
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |test_split_image_into_udp_packets
+ 11. Parameter Settings for User Entity Instance: generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst
+ 12. Parameter Settings for User Entity Instance: split_image_into_udp_packets:split_image_into_udp_packets_inst
+ 13. Port Connectivity Checks: "split_image_into_udp_packets:split_image_into_udp_packets_inst"
+ 14. Port Connectivity Checks: "generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst"
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu May 30 12:24:14 2019        ;
+; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name                      ; test_split_image_into_udp_packets            ;
+; Top-level Entity Name              ; test_split_image_into_udp_packets            ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 1,085                                        ;
+;     Total combinational functions  ; 1,021                                        ;
+;     Dedicated logic registers      ; 376                                          ;
+; Total registers                    ; 376                                          ;
+; Total pins                         ; 495                                          ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                        ;
++--------------------------------------------------------------+-----------------------------------+-----------------------------------+
+; Option                                                       ; Setting                           ; Default Value                     ;
++--------------------------------------------------------------+-----------------------------------+-----------------------------------+
+; Top-level entity name                                        ; test_split_image_into_udp_packets ; test_split_image_into_udp_packets ;
+; Family name                                                  ; Cyclone III                       ; Stratix II                        ;
+; Preserve fewer node names                                    ; Off                               ; On                                ;
+; Verilog Show LMF Mapping Messages                            ; Off                               ;                                   ;
+; Verilog Version                                              ; SystemVerilog_2005                ; Verilog_2001                      ;
+; Power-Up Don't Care                                          ; Off                               ; On                                ;
+; Optimization Technique                                       ; Speed                             ; Balanced                          ;
+; Use Generated Physical Constraints File                      ; Off                               ;                                   ;
+; Use smart compilation                                        ; Off                               ; Off                               ;
+; Restructure Multiplexers                                     ; Auto                              ; Auto                              ;
+; Create Debugging Nodes for IP Cores                          ; Off                               ; Off                               ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                               ; Off                               ;
+; VHDL Version                                                 ; VHDL93                            ; VHDL93                            ;
+; State Machine Processing                                     ; Auto                              ; Auto                              ;
+; Safe State Machine                                           ; Off                               ; Off                               ;
+; Extract Verilog State Machines                               ; On                                ; On                                ;
+; Extract VHDL State Machines                                  ; On                                ; On                                ;
+; Ignore Verilog initial constructs                            ; Off                               ; Off                               ;
+; Iteration limit for constant Verilog loops                   ; 5000                              ; 5000                              ;
+; Iteration limit for non-constant Verilog loops               ; 250                               ; 250                               ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                                ; On                                ;
+; Parallel Synthesis                                           ; Off                               ; Off                               ;
+; DSP Block Balancing                                          ; Auto                              ; Auto                              ;
+; NOT Gate Push-Back                                           ; On                                ; On                                ;
+; Remove Redundant Logic Cells                                 ; Off                               ; Off                               ;
+; Remove Duplicate Registers                                   ; On                                ; On                                ;
+; Ignore CARRY Buffers                                         ; Off                               ; Off                               ;
+; Ignore CASCADE Buffers                                       ; Off                               ; Off                               ;
+; Ignore GLOBAL Buffers                                        ; Off                               ; Off                               ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                               ; Off                               ;
+; Ignore LCELL Buffers                                         ; Off                               ; Off                               ;
+; Ignore SOFT Buffers                                          ; On                                ; On                                ;
+; Limit AHDL Integers to 32 Bits                               ; Off                               ; Off                               ;
+; Carry Chain Length                                           ; 70                                ; 70                                ;
+; Auto Carry Chains                                            ; On                                ; On                                ;
+; Auto Open-Drain Pins                                         ; On                                ; On                                ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                               ; Off                               ;
+; Auto ROM Replacement                                         ; On                                ; On                                ;
+; Auto RAM Replacement                                         ; On                                ; On                                ;
+; Auto DSP Block Replacement                                   ; On                                ; On                                ;
+; Auto Shift Register Replacement                              ; Auto                              ; Auto                              ;
+; Auto Clock Enable Replacement                                ; On                                ; On                                ;
+; Strict RAM Replacement                                       ; Off                               ; Off                               ;
+; Allow Synchronous Control Signals                            ; On                                ; On                                ;
+; Force Use of Synchronous Clear Signals                       ; Off                               ; Off                               ;
+; Auto RAM Block Balancing                                     ; On                                ; On                                ;
+; Auto RAM to Logic Cell Conversion                            ; Off                               ; Off                               ;
+; Auto Resource Sharing                                        ; Off                               ; Off                               ;
+; Allow Any RAM Size For Recognition                           ; Off                               ; Off                               ;
+; Allow Any ROM Size For Recognition                           ; Off                               ; Off                               ;
+; Allow Any Shift Register Size For Recognition                ; Off                               ; Off                               ;
+; Use LogicLock Constraints during Resource Balancing          ; On                                ; On                                ;
+; Ignore translate_off and synthesis_off directives            ; Off                               ; Off                               ;
+; Timing-Driven Synthesis                                      ; Off                               ; Off                               ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                                ; On                                ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                               ; Off                               ;
+; Synchronization Register Chain Length                        ; 2                                 ; 2                                 ;
+; PowerPlay Power Optimization                                 ; Normal compilation                ; Normal compilation                ;
+; HDL message level                                            ; Level2                            ; Level2                            ;
+; Suppress Register Optimization Related Messages              ; Off                               ; Off                               ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                               ; 100                               ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                               ; 100                               ;
+; Clock MUX Protection                                         ; On                                ; On                                ;
+; Auto Gated Clock Conversion                                  ; Off                               ; Off                               ;
+; Block Design Naming                                          ; Auto                              ; Auto                              ;
+; SDC constraint protection                                    ; Off                               ; Off                               ;
+; Synthesis Effort                                             ; Auto                              ; Auto                              ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                                ; On                                ;
+; Analysis & Synthesis Message Level                           ; Medium                            ; Medium                            ;
++--------------------------------------------------------------+-----------------------------------+-----------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                    ;
++----------------------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path                   ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                              ;
++----------------------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+
+; ../rtl/math_func_package.v                         ; yes             ; User Verilog HDL File  ; C:/illusense/a10_prototype/tsbs/common_rtl_library/tsb/ip/rtl/math_func_package.v                         ;
+; ../rtl/illusense/split_image_into_udp_packets.v    ; yes             ; User Verilog HDL File  ; C:/illusense/a10_prototype/tsbs/common_rtl_library/tsb/ip/rtl/illusense/split_image_into_udp_packets.v    ;
+; ../rtl/generic_avalon_st_packet_emulator_w_ready.v ; yes             ; User Verilog HDL File  ; C:/illusense/a10_prototype/tsbs/common_rtl_library/tsb/ip/rtl/generic_avalon_st_packet_emulator_w_ready.v ;
+; test_split_image_into_udp_packets.v                ; yes             ; User Verilog HDL File  ; C:/illusense/a10_prototype/tsbs/common_rtl_library/tsb/ip/sim/test_split_image_into_udp_packets.v         ;
++----------------------------------------------------+-----------------+------------------------+-----------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 1,085     ;
+;                                             ;           ;
+; Total combinational functions               ; 1021      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 376       ;
+;     -- 3 input functions                    ; 230       ;
+;     -- <=2 input functions                  ; 415       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 569       ;
+;     -- arithmetic mode                      ; 452       ;
+;                                             ;           ;
+; Total registers                             ; 376       ;
+;     -- Dedicated logic registers            ; 376       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 495       ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 376       ;
+; Total fan-out                               ; 4999      ;
+; Average fan-out                             ; 2.09      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                    ;
++-----------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                                                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                         ; Library Name ;
++-----------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+--------------+
+; |test_split_image_into_udp_packets                                                            ; 1021 (0)          ; 376 (0)      ; 0           ; 0            ; 0       ; 0         ; 495  ; 0            ; |test_split_image_into_udp_packets                                                                                          ; work         ;
+;    |generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst| ; 232 (232)         ; 72 (72)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_split_image_into_udp_packets|generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst ; work         ;
+;    |split_image_into_udp_packets:split_image_into_udp_packets_inst|                           ; 789 (789)         ; 304 (304)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst                           ; work         ;
++-----------------------------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                           ;
++---------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+; Register name                                                                         ; Reason for Removal                                                                   ;
++---------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+; split_image_into_udp_packets:split_image_into_udp_packets_inst|delayed_indata[24..31] ; Stuck at GND due to stuck port data_in                                               ;
+; split_image_into_udp_packets:split_image_into_udp_packets_inst|state[9]               ; Merged with split_image_into_udp_packets:split_image_into_udp_packets_inst|state[16] ;
+; split_image_into_udp_packets:split_image_into_udp_packets_inst|state[1,8,12]          ; Merged with split_image_into_udp_packets:split_image_into_udp_packets_inst|state[15] ;
+; split_image_into_udp_packets:split_image_into_udp_packets_inst|state[10]              ; Merged with split_image_into_udp_packets:split_image_into_udp_packets_inst|state[13] ;
+; split_image_into_udp_packets:split_image_into_udp_packets_inst|state[3..7,21..23]     ; Merged with split_image_into_udp_packets:split_image_into_udp_packets_inst|state[11] ;
+; split_image_into_udp_packets:split_image_into_udp_packets_inst|state[11]              ; Stuck at GND due to stuck port data_in                                               ;
+; Total Number of Removed Registers = 22                                                ;                                                                                      ;
++---------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 376   ;
+; Number of registers using Synchronous Clear  ; 149   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 222   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|packet_count[20]                     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|index_of_packet_in_width[7]          ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|x1[0]                                ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|packet_word_counter[15]              ;
+; 5:1                ; 16 bits   ; 48 LEs        ; 16 LEs               ; 32 LEs                 ; Yes        ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|y1[10]                               ;
+; 11:1               ; 6 bits    ; 42 LEs        ; 18 LEs               ; 24 LEs                 ; Yes        ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|state[20]                            ;
+; 12:1               ; 5 bits    ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|state[18]                            ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|ShiftLeft0                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|ShiftLeft0                           ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|ShiftRight0                          ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; No         ; |test_split_image_into_udp_packets|generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst|outdata[7] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|ShiftRight0                          ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|ShiftRight0                          ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 40 LEs               ; 24 LEs                 ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|out_data_raw[31]                     ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|out_data_raw[15]                     ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|out_data_raw[19]                     ;
+; 13:1               ; 14 bits   ; 112 LEs       ; 84 LEs               ; 28 LEs                 ; No         ; |test_split_image_into_udp_packets|split_image_into_udp_packets:split_image_into_udp_packets_inst|out_data_raw[0]                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |test_split_image_into_udp_packets ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; DATA_WIDTH     ; 32    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                         ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+; data_width     ; 32    ; Signed Integer                                                                                               ;
+; counter_width  ; 24    ; Signed Integer                                                                                               ;
++----------------+-------+--------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: split_image_into_udp_packets:split_image_into_udp_packets_inst ;
++----------------------------------+----------------------------------+---------------------------------------+
+; Parameter Name                   ; Value                            ; Type                                  ;
++----------------------------------+----------------------------------+---------------------------------------+
+; DATA_WIDTH                       ; 32                               ; Signed Integer                        ;
+; counter_width                    ; 24                               ; Signed Integer                        ;
+; NUM_OF_USER_HEADER_PACKET_WORDS  ; 4                                ; Signed Integer                        ;
+; NUM_OF_FIXED_HEADER_PACKET_WORDS ; 7                                ; Signed Integer                        ;
+; HEADER_SIZE_IN_WORDS             ; 00000000000000000000000000001011 ; Unsigned Binary                       ;
+; NUM_BITS_PACKET_WORD_COUNTER     ; 5                                ; Signed Integer                        ;
++----------------------------------+----------------------------------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "split_image_into_udp_packets:split_image_into_udp_packets_inst"                                                                                                      ;
++------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                         ; Type   ; Severity ; Details                                                                                                                                      ;
++------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; delayed_in_eop               ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; delayed_in_valid             ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; user_packet_words            ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; found_in_sop                 ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
+; inc_index_of_packet_in_width ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++------------------------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst" ;
++--------------------------------+-------+----------+------------------------------------------------------------------+
+; Port                           ; Type  ; Severity ; Details                                                          ;
++--------------------------------+-------+----------+------------------------------------------------------------------+
+; packet_length_in_words[23..14] ; Input ; Info     ; Stuck at GND                                                     ;
++--------------------------------+-------+----------+------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu May 30 12:24:09 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test_split_image_into_udp_packets -c test_split_image_into_udp_packets
+Info: Found 1 design units, including 0 entities, in source file ../rtl/math_func_package.v
+    Info: Found design unit 1: math_func_package (SystemVerilog)
+Info: Found 1 design units, including 1 entities, in source file ../rtl/illusense/split_image_into_udp_packets.v
+    Info: Found entity 1: split_image_into_udp_packets
+Info: Found 1 design units, including 1 entities, in source file ../rtl/generic_avalon_st_packet_emulator_w_ready.v
+    Info: Found entity 1: generic_avalon_st_packet_emulator_w_ready
+Info: Found 1 design units, including 1 entities, in source file test_split_image_into_udp_packets.v
+    Info: Found entity 1: test_split_image_into_udp_packets
+Warning (10222): Verilog HDL Parameter Declaration warning at split_image_into_udp_packets.v(68): Parameter Declaration in module "split_image_into_udp_packets" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at split_image_into_udp_packets.v(69): Parameter Declaration in module "split_image_into_udp_packets" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at split_image_into_udp_packets.v(70): Parameter Declaration in module "split_image_into_udp_packets" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at split_image_into_udp_packets.v(71): Parameter Declaration in module "split_image_into_udp_packets" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at split_image_into_udp_packets.v(72): Parameter Declaration in module "split_image_into_udp_packets" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Warning (10222): Verilog HDL Parameter Declaration warning at split_image_into_udp_packets.v(73): Parameter Declaration in module "split_image_into_udp_packets" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List
+Info: Elaborating entity "test_split_image_into_udp_packets" for the top level hierarchy
+Warning (10034): Output port "found_in_sop" at test_split_image_into_udp_packets.v(47) has no driver
+Info: Elaborating entity "generic_avalon_st_packet_emulator_w_ready" for hierarchy "generic_avalon_st_packet_emulator_w_ready:generic_avalon_st_packet_emulator_w_ready_inst"
+Warning (10230): Verilog HDL assignment warning at generic_avalon_st_packet_emulator_w_ready.v(26): truncated value with size 32 to match size of target (24)
+Warning (10230): Verilog HDL assignment warning at generic_avalon_st_packet_emulator_w_ready.v(31): truncated value with size 32 to match size of target (24)
+Warning (10230): Verilog HDL assignment warning at generic_avalon_st_packet_emulator_w_ready.v(33): truncated value with size 32 to match size of target (24)
+Info: Elaborating entity "split_image_into_udp_packets" for hierarchy "split_image_into_udp_packets:split_image_into_udp_packets_inst"
+Warning (10036): Verilog HDL or VHDL warning at split_image_into_udp_packets.v(65): object "NUM_PIXELS_PER_PACKET" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at split_image_into_udp_packets.v(66): object "size_of_packet_in_bytes" assigned a value but never read
+Warning (10036): Verilog HDL or VHDL warning at split_image_into_udp_packets.v(80): object "reset_pixel" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(62): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(63): truncated value with size 32 to match size of target (14)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(65): truncated value with size 33 to match size of target (32)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(106): truncated value with size 32 to match size of target (24)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(111): truncated value with size 32 to match size of target (24)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(167): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(168): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(242): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(259): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at split_image_into_udp_packets.v(292): truncated value with size 32 to match size of target (8)
+Warning: 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "in_data[24]" is stuck at GND
+    Warning (13410): Pin "in_data[25]" is stuck at GND
+    Warning (13410): Pin "in_data[26]" is stuck at GND
+    Warning (13410): Pin "in_data[27]" is stuck at GND
+    Warning (13410): Pin "in_data[28]" is stuck at GND
+    Warning (13410): Pin "in_data[29]" is stuck at GND
+    Warning (13410): Pin "in_data[30]" is stuck at GND
+    Warning (13410): Pin "in_data[31]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[24]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[25]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[26]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[27]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[28]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[29]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[30]" is stuck at GND
+    Warning (13410): Pin "delayed_indata[31]" is stuck at GND
+    Warning (13410): Pin "state[3]" is stuck at GND
+    Warning (13410): Pin "state[4]" is stuck at GND
+    Warning (13410): Pin "state[5]" is stuck at GND
+    Warning (13410): Pin "state[6]" is stuck at GND
+    Warning (13410): Pin "state[7]" is stuck at GND
+    Warning (13410): Pin "state[11]" is stuck at GND
+    Warning (13410): Pin "state[21]" is stuck at GND
+    Warning (13410): Pin "state[22]" is stuck at GND
+    Warning (13410): Pin "state[23]" is stuck at GND
+    Warning (13410): Pin "found_in_sop" is stuck at GND
+Info: Implemented 1604 device resources after synthesis - the final resource count might be different
+    Info: Implemented 79 input pins
+    Info: Implemented 416 output pins
+    Info: Implemented 1109 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 51 warnings
+    Info: Peak virtual memory: 224 megabytes
+    Info: Processing ended: Thu May 30 12:24:14 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
+
+

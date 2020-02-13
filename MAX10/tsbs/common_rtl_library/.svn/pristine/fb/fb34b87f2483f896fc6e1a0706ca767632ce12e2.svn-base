@@ -1,0 +1,290 @@
+Analysis & Synthesis report for wait_and_check_for_lock_and_do_staged_reset
+Tue Jul 14 16:45:31 2015
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: Top-level Entity: |wait_and_check_for_lock_and_do_staged_reset
+ 10. Parameter Settings for User Entity Instance: programmable_wait:programmable_wait_inst
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Jul 14 16:45:31 2015        ;
+; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name                      ; wait_and_check_for_lock_and_do_staged_reset  ;
+; Top-level Entity Name              ; wait_and_check_for_lock_and_do_staged_reset  ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 164                                          ;
+;     Total combinational functions  ; 164                                          ;
+;     Dedicated logic registers      ; 46                                           ;
+; Total registers                    ; 46                                           ;
+; Total pins                         ; 122                                          ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                                            ;
++--------------------------------------------------------------+---------------------------------------------+---------------------------------------------+
+; Option                                                       ; Setting                                     ; Default Value                               ;
++--------------------------------------------------------------+---------------------------------------------+---------------------------------------------+
+; Top-level entity name                                        ; wait_and_check_for_lock_and_do_staged_reset ; wait_and_check_for_lock_and_do_staged_reset ;
+; Family name                                                  ; Cyclone III                                 ; Stratix II                                  ;
+; Verilog Show LMF Mapping Messages                            ; Off                                         ;                                             ;
+; Verilog Version                                              ; SystemVerilog_2005                          ; Verilog_2001                                ;
+; Use Generated Physical Constraints File                      ; Off                                         ;                                             ;
+; Use smart compilation                                        ; Off                                         ; Off                                         ;
+; Restructure Multiplexers                                     ; Auto                                        ; Auto                                        ;
+; Create Debugging Nodes for IP Cores                          ; Off                                         ; Off                                         ;
+; Preserve fewer node names                                    ; On                                          ; On                                          ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                                         ; Off                                         ;
+; VHDL Version                                                 ; VHDL93                                      ; VHDL93                                      ;
+; State Machine Processing                                     ; Auto                                        ; Auto                                        ;
+; Safe State Machine                                           ; Off                                         ; Off                                         ;
+; Extract Verilog State Machines                               ; On                                          ; On                                          ;
+; Extract VHDL State Machines                                  ; On                                          ; On                                          ;
+; Ignore Verilog initial constructs                            ; Off                                         ; Off                                         ;
+; Iteration limit for constant Verilog loops                   ; 5000                                        ; 5000                                        ;
+; Iteration limit for non-constant Verilog loops               ; 250                                         ; 250                                         ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                                          ; On                                          ;
+; Parallel Synthesis                                           ; Off                                         ; Off                                         ;
+; DSP Block Balancing                                          ; Auto                                        ; Auto                                        ;
+; NOT Gate Push-Back                                           ; On                                          ; On                                          ;
+; Power-Up Don't Care                                          ; On                                          ; On                                          ;
+; Remove Redundant Logic Cells                                 ; Off                                         ; Off                                         ;
+; Remove Duplicate Registers                                   ; On                                          ; On                                          ;
+; Ignore CARRY Buffers                                         ; Off                                         ; Off                                         ;
+; Ignore CASCADE Buffers                                       ; Off                                         ; Off                                         ;
+; Ignore GLOBAL Buffers                                        ; Off                                         ; Off                                         ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                                         ; Off                                         ;
+; Ignore LCELL Buffers                                         ; Off                                         ; Off                                         ;
+; Ignore SOFT Buffers                                          ; On                                          ; On                                          ;
+; Limit AHDL Integers to 32 Bits                               ; Off                                         ; Off                                         ;
+; Optimization Technique                                       ; Balanced                                    ; Balanced                                    ;
+; Carry Chain Length                                           ; 70                                          ; 70                                          ;
+; Auto Carry Chains                                            ; On                                          ; On                                          ;
+; Auto Open-Drain Pins                                         ; On                                          ; On                                          ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                                         ; Off                                         ;
+; Auto ROM Replacement                                         ; On                                          ; On                                          ;
+; Auto RAM Replacement                                         ; On                                          ; On                                          ;
+; Auto DSP Block Replacement                                   ; On                                          ; On                                          ;
+; Auto Shift Register Replacement                              ; Auto                                        ; Auto                                        ;
+; Auto Clock Enable Replacement                                ; On                                          ; On                                          ;
+; Strict RAM Replacement                                       ; Off                                         ; Off                                         ;
+; Allow Synchronous Control Signals                            ; On                                          ; On                                          ;
+; Force Use of Synchronous Clear Signals                       ; Off                                         ; Off                                         ;
+; Auto RAM Block Balancing                                     ; On                                          ; On                                          ;
+; Auto RAM to Logic Cell Conversion                            ; Off                                         ; Off                                         ;
+; Auto Resource Sharing                                        ; Off                                         ; Off                                         ;
+; Allow Any RAM Size For Recognition                           ; Off                                         ; Off                                         ;
+; Allow Any ROM Size For Recognition                           ; Off                                         ; Off                                         ;
+; Allow Any Shift Register Size For Recognition                ; Off                                         ; Off                                         ;
+; Use LogicLock Constraints during Resource Balancing          ; On                                          ; On                                          ;
+; Ignore translate_off and synthesis_off directives            ; Off                                         ; Off                                         ;
+; Timing-Driven Synthesis                                      ; Off                                         ; Off                                         ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                                          ; On                                          ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                                         ; Off                                         ;
+; Synchronization Register Chain Length                        ; 2                                           ; 2                                           ;
+; PowerPlay Power Optimization                                 ; Normal compilation                          ; Normal compilation                          ;
+; HDL message level                                            ; Level2                                      ; Level2                                      ;
+; Suppress Register Optimization Related Messages              ; Off                                         ; Off                                         ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                                         ; 100                                         ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                                         ; 100                                         ;
+; Clock MUX Protection                                         ; On                                          ; On                                          ;
+; Auto Gated Clock Conversion                                  ; Off                                         ; Off                                         ;
+; Block Design Naming                                          ; Auto                                        ; Auto                                        ;
+; SDC constraint protection                                    ; Off                                         ; Off                                         ;
+; Synthesis Effort                                             ; Auto                                        ; Auto                                        ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                                          ; On                                          ;
+; Analysis & Synthesis Message Level                           ; Medium                                      ; Medium                                      ;
++--------------------------------------------------------------+---------------------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                              ;
++------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path                     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                ;
++------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+
+; ../rtl/wait_and_check_for_lock_and_do_staged_reset.v ; yes             ; User Verilog HDL File        ; D:/avsoc/edevel00331/trunk/tsbs/common_rtl_library/tsb/ip/rtl/wait_and_check_for_lock_and_do_staged_reset.v ;
+; programmable_wait.v                                  ; yes             ; Auto-Found Verilog HDL File  ; D:/avsoc/edevel00331/trunk/tsbs/common_rtl_library/tsb/ip/rtl/programmable_wait.v                           ;
++------------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 164       ;
+;                                             ;           ;
+; Total combinational functions               ; 164       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 49        ;
+;     -- 3 input functions                    ; 75        ;
+;     -- <=2 input functions                  ; 40        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 103       ;
+;     -- arithmetic mode                      ; 61        ;
+;                                             ;           ;
+; Total registers                             ; 46        ;
+;     -- Dedicated logic registers            ; 46        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 122       ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 46        ;
+; Total fan-out                               ; 838       ;
+; Average fan-out                             ; 1.85      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                              ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                    ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Library Name ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
+; |wait_and_check_for_lock_and_do_staged_reset  ; 164 (88)          ; 46 (9)       ; 0           ; 0            ; 0       ; 0         ; 122  ; 0            ; |wait_and_check_for_lock_and_do_staged_reset                                          ; work         ;
+;    |programmable_wait:programmable_wait_inst| ; 76 (76)           ; 37 (37)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |wait_and_check_for_lock_and_do_staged_reset|programmable_wait:programmable_wait_inst ; work         ;
++-----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                ;
++---------------------------------------------------+---------------------------------------------------------------+
+; Register name                                     ; Reason for Removal                                            ;
++---------------------------------------------------+---------------------------------------------------------------+
+; state[13]~reg0                                    ; Merged with state[15]~reg0                                    ;
+; state[12]~reg0                                    ; Merged with state[15]~reg0                                    ;
+; state[5]~reg0                                     ; Merged with state[15]~reg0                                    ;
+; state[11]~reg0                                    ; Merged with state[15]~reg0                                    ;
+; state[14]~reg0                                    ; Merged with state[15]~reg0                                    ;
+; state[10]~reg0                                    ; Merged with state[15]~reg0                                    ;
+; programmable_wait:programmable_wait_inst|state[2] ; Merged with programmable_wait:programmable_wait_inst|state[5] ;
+; state[15]~reg0                                    ; Stuck at GND due to stuck port data_in                        ;
+; Total Number of Removed Registers = 8             ;                                                               ;
++---------------------------------------------------+---------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 46    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 46    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 31    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |wait_and_check_for_lock_and_do_staged_reset ;
++-----------------------------------+------------------+------------------------------------------------------+
+; Parameter Name                    ; Value            ; Type                                                 ;
++-----------------------------------+------------------+------------------------------------------------------+
+; wait_counter_bits                 ; 32               ; Signed Integer                                       ;
+; idle                              ; 0000000000000000 ; Unsigned Binary                                      ;
+; start_wait_between_lock_checks    ; 0000000010000001 ; Unsigned Binary                                      ;
+; wait_for_wait_between_lock_checks ; 0000000000000010 ; Unsigned Binary                                      ;
+; check_lock                        ; 0000000000000101 ; Unsigned Binary                                      ;
+; assert_outer_reset                ; 0000000111010110 ; Unsigned Binary                                      ;
+; wait_assert_outer_reset           ; 0000000100010111 ; Unsigned Binary                                      ;
+; assert_inner_reset                ; 0000001110011000 ; Unsigned Binary                                      ;
+; wait_assert_inner_reset           ; 0000001100011001 ; Unsigned Binary                                      ;
+; deassert_inner_reset              ; 0000000110011010 ; Unsigned Binary                                      ;
+; wait_deassert_inner_reset         ; 0000000100011011 ; Unsigned Binary                                      ;
+; deassert_outer_reset              ; 0000000010011100 ; Unsigned Binary                                      ;
+; wait_deassert_outer_reset         ; 0000000000011101 ; Unsigned Binary                                      ;
++-----------------------------------+------------------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: programmable_wait:programmable_wait_inst ;
++--------------------+--------+---------------------------------------------------------+
+; Parameter Name     ; Value  ; Type                                                    ;
++--------------------+--------+---------------------------------------------------------+
+; width              ; 32     ; Signed Integer                                          ;
+; idle               ; 000000 ; Unsigned Binary                                         ;
+; reset_counter_now  ; 001001 ; Unsigned Binary                                         ;
+; wait_counter_reset ; 000010 ; Unsigned Binary                                         ;
+; count_now          ; 010011 ; Unsigned Binary                                         ;
+; finished           ; 100100 ; Unsigned Binary                                         ;
++--------------------+--------+---------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Jul 14 16:45:30 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off wait_and_check_for_lock_and_do_staged_reset -c wait_and_check_for_lock_and_do_staged_reset
+Info: Found 1 design units, including 1 entities, in source file ../rtl/wait_and_check_for_lock_and_do_staged_reset.v
+    Info: Found entity 1: wait_and_check_for_lock_and_do_staged_reset
+Info: Elaborating entity "wait_and_check_for_lock_and_do_staged_reset" for the top level hierarchy
+Warning: Using design file ../rtl/programmable_wait.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: programmable_wait
+Info: Elaborating entity "programmable_wait" for hierarchy "programmable_wait:programmable_wait_inst"
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "state[5]" is stuck at GND
+    Warning (13410): Pin "state[10]" is stuck at GND
+    Warning (13410): Pin "state[11]" is stuck at GND
+    Warning (13410): Pin "state[12]" is stuck at GND
+    Warning (13410): Pin "state[13]" is stuck at GND
+    Warning (13410): Pin "state[14]" is stuck at GND
+    Warning (13410): Pin "state[15]" is stuck at GND
+Info: Implemented 286 device resources after synthesis - the final resource count might be different
+    Info: Implemented 68 input pins
+    Info: Implemented 54 output pins
+    Info: Implemented 164 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 221 megabytes
+    Info: Processing ended: Tue Jul 14 16:45:31 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

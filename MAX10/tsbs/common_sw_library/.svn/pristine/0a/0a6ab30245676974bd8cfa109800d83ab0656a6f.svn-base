@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//Dtd html 4.0 transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<!-- saved from url=(0060)http://www.firstobject.com/easy-zlib-c++-xml-compression.htm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>easy zlib C/C++ compress and XML compression</title>
+<meta name="keywords" content="compress XML,data compression,zlib,easy zlib">
+<meta name="description" content="Convenient XML compression (HTML and text too), image compression, data compression, with zlib 1.2.3 compress/uncompress in a single C/C++ source file">
+<meta http-equiv="Last-Update" content="2009-06-01T09:09:00-05:00">
+<meta name="dc.date.created" content="2008-11-03T15:15:00-05:00">
+<meta name="copyright" content="Copyright (c) 2013 First Objective Software, Inc.">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.firstobject.com/dn_news.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.firstobject.com/discussion.xml">
+<link rel="stylesheet" type="text/css" href="./easy zlib C_C++ compress and XML compression_files/_style.css">
+<style type="text/css"></style></head>
+<body>
+<div id="header">
+<div id="header_main">
+<p><img src="./easy zlib C_C++ compress and XML compression_files/title_doc.gif" alt="firstobject Documentation - firstobject developer network" border="0"></p>
+<table cellpadding="0" cellspacing="0" height="38" width="100%"><tbody><tr><td valign="bottom"><ul>
+<li><a href="http://www.firstobject.com/">Home</a></li>
+<li><a href="http://www.firstobject.com/xml.htm">Products</a></li>
+<li><a href="http://www.firstobject.com/search.htm">Search</a></li>
+</ul></td><td valign="bottom" align="right">
+<p class="devnetrev">dev&nbsp;net&nbsp;revision<br>2&nbsp;March&nbsp;2014</p>
+</td></tr></tbody></table>
+</div>
+</div>
+<div id="wrap">
+<div id="main">
+
+<h1>easy zlib C/C++ compress and XML compression</h1>
+
+
+<p><table width="100%" cellspacing="0" cellpadding="0"><tbody><tr>
+<td valign="top" width="44%">
+
+<p>This free easy zlib C/C++ source code download makes it painless if you want simple in-memory XML compression (or any text, HTML, image or data compression) and decompression and don't want to spend time learning about zlib.</p>
+
+</td><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td valign="top">
+
+<p><a class="bigdownloadlink" href="http://www.firstobject.com/easyzlib10.zip">Download</a> Release 1.0 zip (85k)<br>easyzlib C/C++ source code for most compilers</p>
+
+<p>The zlib compression library is amalgamated in a single file easyzlib.c so you can easily add it to your C or C++ project without hassles.</p>
+</td>
+</tr></tbody></table></p>
+
+<h4>How to use easy zlib</h4>
+
+<p>Download the zip file, open it, copy easyzlib.c and easyzlib.h and add them to your project. Use the <code>ezcompress</code> and <code>ezuncompress</code> functions to compress or decompress your source buffer to your destination buffer.</p>
+
+<pre><font color="blue">int</font> ezcompress( <font color="blue">unsigned char</font>* pDest, <font color="blue">long</font>* pnDestLen,
+                <font color="blue">const unsigned char</font>* pSrc, <font color="blue">long</font> nSrcLen );
+<font color="blue">int</font> ezuncompress( <font color="blue">unsigned char</font>* pDest, <font color="blue">long</font>* pnDestLen,
+                  <font color="blue">const unsigned char</font>* pSrc, <font color="blue">long</font> nSrcLen );</pre>
+
+<p>These are the return codes:</p>
+
+<table>
+<tbody><tr><th align="left">Return code</th><th align="left" width="60">Value</th><th align="left">Likely reason</th></tr>
+<tr><td><code>EZ_STREAM_ERROR</code></td><td><code>-2</code></td><td><code>pDest</code> is <code>NULL</code></td></tr>
+<tr><td><code>EZ_DATA_ERROR</code></td><td><code>-3</code></td><td>corrupted <code>pSrc</code> passed to <code>ezuncompress</code></td></tr>
+<tr><td><code>EZ_MEM_ERROR</code></td><td><code>-4</code></td><td>out of memory</td></tr>
+<tr><td><code>EZ_BUF_ERROR</code></td><td><code>-5</code></td><td><code>pDest</code> length is not enough</td></tr>
+</tbody></table>
+
+<h4>Determining buffer size for the result</h4>
+
+<p>The hard part of using compression functions is guessing or determining buffer sizes. With zlib, you are guaranteed the compressed result will be at most the size of the source plus 12 plus 0.1%. The easyzlib.h header defines EZ_COMPRESSMAXDESTLENGTH to do this calculation for you.</p>
+
+<pre><font color="blue">#define</font> EZ_COMPRESSMAXDESTLENGTH(n) (n+(((n)/1000)+1)+12)</pre>
+
+<p>That is the maximum memory length of your compressed result. The actual compressed length will be returned from <code>ezcompress</code> in <code>pnDestLen</code>.</p>
+
+<p>If you store the original size with your compressed result, you can allocate exactly the memory you need to decompress it later. However, if you don't know the decompressed size, or you don't want to allocate the maximum compress size, easy zlib provides another option...</p>
+
+<h4>Getting the exact result size beforehand</h4>
+
+<p>In the core functions <code>ezcompress</code> and <code>ezuncompress</code>, I've added a feature that the regular zlib <code>compress</code> and <code>uncompress</code> functions don't have. If the destination buffer is too small, the functions still continue on to discover the required memory to complete the operation (which is returned in the <code>pnDestLen</code> parameter).</p>
+
+<p>This way you can pass a small buffer in order to find out the exact size and then allocate only the size you need, whether compressing or decompressing. Here is an example that allocates <code>8192</code> bytes up front and then allocates the actual size if <code>8192</code> wasn't enough.</p>
+
+<pre><font color="blue">long</font> nDestLen = 8192;
+<font color="blue">unsigned char</font>* pDest = <font color="blue">new</font> <font color="blue">unsigned char</font>[nDestLen];
+<font color="blue">int</font> nErr = ezuncompress( pDest, &amp;nDestLen, pSrcBuf, nSrcLen );
+<font color="blue">if</font> ( nErr == EZ_BUF_ERROR )
+{
+  <font color="blue">delete</font>[] pDest;
+  pDest = <font color="blue">new</font> <font color="blue">unsigned char</font>[nDestLen]; <font color="green">// enough room now</font>
+  nErr = ezuncompress( pDest, &amp;nDestLen, pSrcBuf, nSrcLen );
+}</pre>
+
+<h4>Help with allocating buffers</h4>
+
+<p>If you are using C++, there are additional overloaded functions implemented in easyzlib.h to make compression even easier. First of all there is a simple buffer class called <code>ezbuffer</code> to streamline your code. By encapsulating the buffer pointer and length in a structure, your code is simpler, plus these functions automatically allocate the destination buffer to accomodate the result.</p>
+
+<pre><font color="blue">int</font> ezcompress( ezbuffer&amp; bufDest, <font color="blue">const</font> ezbuffer&amp; bufSrc );
+<font color="blue">int</font> ezuncompress( ezbuffer&amp; bufDest, <font color="blue">const</font> ezbuffer&amp; bufSrc );</pre>
+
+<p>The resulting destination length is returned in <code>bufDest.nLen</code>. Here are the public members of <code>ezbuffer</code>:</p>
+
+<pre><font color="blue">struct</font> ezbuffer
+{
+  ezbuffer(); <font color="green">// constructor</font>
+  ezbuffer( int n ); <font color="green">// constructor allocates n bytes</font>
+  ~ezbuffer(); <font color="green">// destructor</font>
+  <font color="blue">unsigned char</font>* Alloc( int n );
+  <font color="blue">void</font> Release();
+  <font color="blue">unsigned char</font>* pBuf;
+  <font color="blue">long</font> nLen; <font color="green">// data length</font>
+};</pre>
+
+<p>Here is an example reading <code>nBytes</code> from a file into an <code>ezbuffer</code> and compressing it into another <code>ezbuffer</code> that is allocated automatically.</p>
+
+<pre>ezbuffer bufSrc( nBytes );
+fread( bufSrc.pBuf, nBytes, 1, fp );
+ezbuffer bufDest;
+ezcompress( bufDest, bufSrc );</pre>
+
+<h4>String and XML compression</h4>
+
+<p>C++ string functions are provided if you are using CMarkup and you include easylib.h <i>after</i> Markup.h since the necessary string types and functions are defined in Markup.h. Again, you do not need to estimate the size or do buffer allocations.</p>
+
+<pre><font color="blue">int</font> ezcompress( ezbuffer&amp; bufDest, <font color="blue">const</font> MCD_STR&amp; strSrc );
+<font color="blue">int</font> ezuncompress( MCD_STR&amp; strDest, <font color="blue">const</font> ezbuffer&amp; bufSrc );</pre>
+
+<p>To compress a string such as an XML document, just do the following:</p>
+
+<pre>ezbuffer buf;
+ezcompress( buf, xml.GetDoc() );</pre>
+
+<p>The <code>buf</code> object now contains the compressed document. Use <code>buf.pBuf</code> and <code>buf.nLen</code> to access the compression data.</p>
+
+<h4>Why easy zlib?</h4>
+
+<p>The zlib compression library is widely used compression software written by Jean-loup Gailly and Mark Adler which is free at <a href="http://www.zlib.net/">zlib.net</a>. If you download it there you will find 28 source code files (plus another 167 supporting files in 34 subfolders).</p>
+
+<p>I've used zlib in numerous projects, and every time I've had to go through the hassle of adding 28 source files to my project. Plus I need to sort out exactly which functions I need, <code>deflate</code> or <code>compress</code>, <code>inflate</code> or <code>uncompress</code>, and which arguments, headers and settings. And there is jargon I have to familiarize myself with everytime I look through zlib.</p>
+
+<p>Also, all of the headers create opportunities for compiling and naming conflicts. There is no reason for every piece of code that needs to compress and uncompress to compile gobs of zlib headers. Headers should provide only the prototypes you need.</p>
+
+<p class="commentplace"><a name="20090908132400" dateposted="2009-09-08T13:24:00-05:00" author="Dusan Stevanovic"></a>&nbsp;</p>
+<div class="commentbox">
+<div class="commenttitle"><p><img border="0" src="./easy zlib C_C++ compress and XML compression_files/letter.gif" alt="comment posted"> multiply defined symbol errors in easy zlib</p></div>
+<div class="commentposted"><p>Dusan Stevanovic 08-Sep-2009</p></div>
+<div class="commentcontent">
+<p>First of all thank you for developing and sharing this extremely useful lib. It has all I ever wanted from zlib, but in much smaller and easier to use package. :) I wanted you to know that I compiled it under mac OS X using xcode 3.1 (intel mac). I found only one issue, the linker was reporting duplicate symbols for function (since multiple source files have easy zlib included).</p>
+
+<pre><font color="blue">int</font> ezcompress( ezbuffer&amp; bufDest, <font color="blue">const</font> ezbuffer&amp; bufSrc )
+and similar...</pre>
+
+<p>I solved it by declaring the functions inline:</p>
+
+<pre><font style="color:blue;background:#ffff00;">inline</font> <font color="blue">int</font> ezcompress( ezbuffer&amp; bufDest, <font color="blue">const</font> ezbuffer&amp; bufSrc )
+<font style="color:blue;background:#ffff00;">inline</font> <font color="blue">int</font> ezuncompress( ezbuffer&amp; bufDest, <font color="blue">const</font> ezbuffer&amp; bufSrc )
+<font style="color:blue;background:#ffff00;">inline</font> <font color="blue">int</font> ezcompress( ezbuffer&amp; bufDest, <font color="blue">const</font> MCD_STR&amp; strSrc )
+<font style="color:blue;background:#ffff00;">inline</font> <font color="blue">int</font> ezuncompress( MCD_STR&amp; strDest, <font color="blue">const</font> ezbuffer&amp; bufSrc )</pre>
+</div></div>
+
+<p>Thank you so much. Release 1.1 will incorporate this fix. In the meantime, all C++ users including easyzlib.h in multiple places will need to add the <code><font color="blue">inline</font></code> keyword as described.</p>
+
+<p class="commentplace"><a name="20081113093300" dateposted="2008-11-13T09:33:00-05:00" author="Lars Olsson"></a>&nbsp;</p>
+<div class="commentbox">
+<div class="commenttitle"><p><img border="0" src="./easy zlib C_C++ compress and XML compression_files/letter.gif" alt="comment posted"> easy zlib written permission</p></div>
+<div class="commentposted"><p>Lars Olsson 13-Nov-2008</p></div>
+<div class="commentcontent">
+<p>I want written permission to use easy zlib in our streaming server application. I needed a simple way to compress/decompress the payload of a certain message sent by UDP and it would be an incredible relief to just have to use your two files instead of the whole zlib.</p>
+</div></div>
+
+<p>You only need written permission if you want to redistribute easyzlib.c on the web or as part of a source code distribution. You can freely compile it in your commercial product, use it and modify it however you like. Best wishes with your project.</p>
+
+<p class="commentplace"><a name="20090601090900" dateposted="2009-06-01T09:09:00-05:00" author="Mortaza Doulaty"></a>&nbsp;</p>
+<div class="commentbox">
+<div class="commenttitle"><p><img border="0" src="./easy zlib C_C++ compress and XML compression_files/letter.gif" alt="comment posted"> easy zlib checksum question</p></div>
+<div class="commentposted"><p>Mortaza Doulaty 01-Jun-2009</p></div>
+<div class="commentcontent">
+<p>I've downloaded and used your easy zlib, it is really easy to use! But when I compress and decompress files using your library, the checksum of files are different.
+Here is my sample source code:</p>
+</div></div>
+
+<p>The reason the checksum was different on the saved file from the original was that the <code>fopen</code> read mode was <code>"r"</code> while the write mode was <code>"wb"</code>. The read mode needed to be binary too, i.e. <code>"rb"</code>. I'm putting the corrected code below as example C code to read a binary file, compress and decompress it, and write it back out.</p>
+
+<pre>FILE *f = fopen("C:\\sunset.bmp",<font style="background:#ffff00;">"rb"</font>);
+fseek(f,0,SEEK_END);
+<font color="blue">long</font> bufferSize=ftell(f);
+fseek(f,0,SEEK_SET);
+<font color="blue">unsigned</font> <font color="blue">char</font> *buffer = <font color="blue">new</font> <font color="blue">unsigned</font> <font color="blue">char</font>[bufferSize];
+ezbuffer b1(bufferSize),b2,b3;
+fread(b1.pBuf,bufferSize,1,f);
+fclose(f);
+ezcompress(b2,b1);
+ezuncompress(b3,b2);
+FILE *f2 = fopen("C:\\mrt.bmp","wb");
+fwrite(b3.pBuf,1,b3.nLen,f2);
+fclose(f2);</pre>
+
+<div id="footer"><p class="endarticle">Posted 03 Nov 2008 updated 01 Jun 2009.
+Questions, comments? Contact <a href="mailto:info@firstobject.com">info@firstobject.com</a>.</p>
+<p class="endcopyright">©Copyright 2014 First Objective Software, Inc. All rights reserved. &nbsp; <a href="http://www.firstobject.com/about.htm">about firstobject</a></p></div>
+</div>
+<div id="sidebar">
+
+<p><table class="sidebox" width="100%" cellpadding="5" cellspacing="0"><tbody><tr><td valign="center" align="left" bgcolor="#f8f8f8">
+<p><b><a href="http://www.firstobject.com/dn_editor.htm"><font color="red">Free</font> XML Editor download</a></b><br>foxe 2.4.2</p>
+</td></tr></tbody></table></p>
+<p><b>XML Editor users:</b>
+<br><a href="http://www.firstobject.com/format-xml-indent-align-beautify-xml.htm">XML formatter formats large XML</a>
+<br><a href="http://www.firstobject.com/simple-xml-editor-memory-stick.htm">memory stick portable XML editor</a>
+<br><a href="http://www.firstobject.com/video-demo-editing-rss-xml-in-tree-of-xml-editor.htm"><img border="0" src="./easy zlib C_C++ compress and XML compression_files/play.gif"></a> <a href="http://www.firstobject.com/video-demo-editing-rss-xml-in-tree-of-xml-editor.htm">edit XML in tree</a>
+<br><a href="http://www.firstobject.com/xml-editor-format-xml-customize-treeview-program.htm"><img border="0" src="./easy zlib C_C++ compress and XML compression_files/play.gif"></a> <a href="http://www.firstobject.com/xml-editor-format-xml-customize-treeview-program.htm">video intro to XML editor</a>
+<br><a href="http://www.firstobject.com/xml-splitter-script-video.htm"><img border="0" src="./easy zlib C_C++ compress and XML compression_files/play.gif"></a> <a href="http://www.firstobject.com/xml-splitter-script-video.htm">video of XML splitter script</a>
+</p><p><table style="border-width:2px;border-style:solid;border-color:#e07226;" width="100%" cellpadding="5" cellspacing="0">
+<tbody><tr><td valign="center" align="left" bgcolor="#ffefbf">
+<p align="center"><b><a style="color:#e07226;" href="http://www.firstobject.com/c++-guys-who-rocked-xml.htm">C++ guys who rocked XML</a></b><br>
+<span style="font-size:7pt;line-height:normal">didn't become XML parser experts<br>
+they chose a simpler way</span></p>
+</td></tr></tbody></table></p>
+
+<p><table class="sidebox" width="100%" cellpadding="5" cellspacing="0"><tbody><tr><td valign="center" align="left" bgcolor="#f8f8f8">
+<p><b><a href="http://www.firstobject.com/dn_markup.htm">C++ XML parser download</a></b><br>CMarkup 11.5</p>
+</td></tr></tbody></table></p>
+
+<p><b>C++ Developers:</b>
+<br><a href="http://www.firstobject.com/dn_markupmethods.htm">CMarkup Methods</a>
+<br><a href="http://www.firstobject.com/fast-start-to-xml-in-c++.htm">Fast start to XML in C++</a>
+<br><a href="http://www.firstobject.com/split-xml-file-into-smaller-pieces.htm">Split XML file into smaller pieces</a>
+<br><a href="http://www.firstobject.com/parse-huge-xml-file-in-c++.htm">Parse huge XML file in C++</a>
+<br><a href="http://www.firstobject.com/visual-c++-2008-express-xml-demo-cmarkup.htm"><img border="0" src="./easy zlib C_C++ compress and XML compression_files/play.gif"></a> <a href="http://www.firstobject.com/visual-c++-2008-express-xml-demo-cmarkup.htm">video of XML in VC++ 2008</a>
+<br><a href="http://www.firstobject.com/visual-c++-6-xml-demo-adds-cmarkup.htm"><img border="0" src="./easy zlib C_C++ compress and XML compression_files/play.gif"></a> <a href="http://www.firstobject.com/visual-c++-6-xml-demo-adds-cmarkup.htm">video of XML in VC++ 6.0</a>
+</p>
+<p><b>Latest Updates</b>
+<table width="100%" cellpadding="0" cellspacing="0"><tbody><tr>
+<td align="left"><a href="http://www.firstobject.com/newsfeed.htm">News</a></td>
+<td align="right"><a href="http://www.firstobject.com/dn_news.xml">news rss</a> <a href="http://www.firstobject.com/dn_news.xml"><img border="0" src="./easy zlib C_C++ compress and XML compression_files/feed-icon16x16.png" alt="RSS for firstobject News"></a></td>
+</tr>
+<tr>
+<td align="left"><a href="http://www.firstobject.com/discussionfeed.htm">Discussion</a></td>
+<td align="right"><a href="http://www.firstobject.com/discussion.xml">discussion rss</a> <a href="http://www.firstobject.com/discussion.xml"><img border="0" src="./easy zlib C_C++ compress and XML compression_files/feed-icon16x16.png" alt="RSS for dicussion"></a></td>
+</tr>
+</tbody></table>
+</p><p><b>Product Information</b>
+<br><a href="http://www.firstobject.com/dn_markdev.htm">CMarkup Developer Version</a>
+<br><a href="http://www.firstobject.com/documentation.htm">Documentation</a>
+<br><a href="http://www.firstobject.com/xmlcomments.htm">Comments and Testimonials</a>
+<br><a href="http://www.firstobject.com/purchase.htm">Buy Now</a>
+
+</p><div class="commentbox" dateposted="2009-04-18" author="Steve Cann" loc="Australia">
+<div class="commentsigonly"><p><img border="0" src="./easy zlib C_C++ compress and XML compression_files/letter.gif" alt="comment posted"> Steve Cann, Australia</p></div>
+<div class="commentcontent">
+<p>Just wanted to say a big thank you for making the EasyZLib available. It lives up to it's name and saved much time and energy. I was just thinking why do we keep reinventing the wheel when your site suddenly leapt out of the Google page. In case you're wondering, I'm using it for blob compression in a Firebird database.</p>
+</div></div>
+
+
+</div>
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./easy zlib C_C++ compress and XML compression_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-4472487-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+
+</body></html>

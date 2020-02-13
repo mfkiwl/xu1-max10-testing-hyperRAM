@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Apr 10 16:42:57 2017
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : read_ltc2380
+Top-level Entity Name : read_ltc2380
+Family : Cyclone III
+Total logic elements : 99
+    Total combinational functions : 95
+    Dedicated logic registers : 46
+Total registers : 46
+Total pins : 63
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

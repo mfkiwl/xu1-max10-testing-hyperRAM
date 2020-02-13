@@ -1,0 +1,166 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp --output-directory=D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp --report-file=bsf:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\tse_w_sfp.bsf --system-info=DEVICE_FAMILY="Arria V" --system-info=DEVICE=5AGXFB3H4F35C4 --system-info=DEVICE_SPEEDGRADE=4_H4 --component-file=D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp.qsys --remove-qsys-generate-warning
+Progress: Loading sfp/tse_w_sfp.qsys
+Progress: Reading input file
+Progress: Adding clk_100 [clock_source 14.1]
+Progress: Parameterizing module clk_100
+Progress: Adding clk_125 [clock_source 14.1]
+Progress: Parameterizing module clk_125
+Progress: Adding clk_125_enet_base [altera_clock_bridge 14.1]
+Progress: Parameterizing module clk_125_enet_base
+Progress: Adding clk_50 [clock_source 14.1]
+Progress: Parameterizing module clk_50
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 14.1]
+Progress: Parameterizing module mm_bridge_0
+Progress: Adding tse [tse_w_sgdma 1.0]
+Progress: Parameterizing module tse
+Progress: Adding xcvr [av_sfp_xcvr_w_reconfig 1.0]
+Progress: Parameterizing module xcvr
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: tse_w_sfp.tse.tse_mac: MII/GMII is automatically selected in 10/100/1000 Mb Ethernet MAC with 1000BASE-X/SGMII PCS core variations
+Info: tse_w_sfp.tse.tse_mac.receive/sgdma_rx.in: Ready latency is 2 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Warning: tse_w_sfp.xcvr.reset_for_125_mhz_control: No synchronous edges, but has associated clock
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp --output-directory=D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\synthesis --file-set=QUARTUS_SYNTH --report-file=html:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\tse_w_sfp.html --report-file=sopcinfo:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp.sopcinfo --report-file=cmp:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\tse_w_sfp.cmp --report-file=qip:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\synthesis\tse_w_sfp.qip --report-file=svd:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\synthesis\tse_w_sfp.svd --report-file=regmap:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\synthesis\tse_w_sfp.regmap --report-file=xml:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\tse_w_sfp.xml --report-file=debuginfo:D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp\synthesis\tse_w_sfp.debuginfo --system-info=DEVICE_FAMILY="Arria V" --system-info=DEVICE=5AGXFB3H4F35C4 --system-info=DEVICE_SPEEDGRADE=4_H4 --component-file=D:\deap\edevel00419_adc24_grif16_test\tsbs\common_qsys_library\tsb\ip\rtl\arriav\sfp\tse_w_sfp.qsys --remove-qsys-generate-warning --language=VERILOG
+Progress: Loading sfp/tse_w_sfp.qsys
+Progress: Reading input file
+Progress: Adding clk_100 [clock_source 14.1]
+Progress: Parameterizing module clk_100
+Progress: Adding clk_125 [clock_source 14.1]
+Progress: Parameterizing module clk_125
+Progress: Adding clk_125_enet_base [altera_clock_bridge 14.1]
+Progress: Parameterizing module clk_125_enet_base
+Progress: Adding clk_50 [clock_source 14.1]
+Progress: Parameterizing module clk_50
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 14.1]
+Progress: Parameterizing module mm_bridge_0
+Progress: Adding tse [tse_w_sgdma 1.0]
+Progress: Parameterizing module tse
+Progress: Adding xcvr [av_sfp_xcvr_w_reconfig 1.0]
+Progress: Parameterizing module xcvr
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: tse_w_sfp.tse.tse_mac: MII/GMII is automatically selected in 10/100/1000 Mb Ethernet MAC with 1000BASE-X/SGMII PCS core variations
+Info: tse_w_sfp.tse.tse_mac.receive/sgdma_rx.in: Ready latency is 2 for source and 0 for sink. Avalon-ST Adapter will be inserted..
+Warning: tse_w_sfp.xcvr.reset_for_125_mhz_control: No synchronous edges, but has associated clock
+Info: tse_w_sfp: Generating tse_w_sfp "tse_w_sfp" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: mm_bridge_0: "tse_w_sfp" instantiated altera_avalon_mm_bridge "mm_bridge_0"
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between cmd_demux.src2 and cmd_mux_002.sink0
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux_002.src0 and rsp_mux.sink2
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: tse: "tse_w_sfp" instantiated tse_w_sgdma "tse"
+Info: xcvr: "tse_w_sfp" instantiated av_sfp_xcvr_w_reconfig "xcvr"
+Info: mm_interconnect_0: "tse_w_sfp" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "tse_w_sfp" instantiated altera_reset_controller "rst_controller"
+Info: descriptor_memory: Starting RTL generation for module 'tse_w_sfp_tse_descriptor_memory'
+Info: descriptor_memory:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=tse_w_sfp_tse_descriptor_memory --dir=D:/temp/alt6919_8226724500051902700.dir/0038_descriptor_memory_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=D:/temp/alt6919_8226724500051902700.dir/0038_descriptor_memory_gen//tse_w_sfp_tse_descriptor_memory_component_configuration.pl  --do_build_sim=0  ]
+Info: descriptor_memory: Done RTL generation for module 'tse_w_sfp_tse_descriptor_memory'
+Info: descriptor_memory: "tse" instantiated altera_avalon_onchip_memory2 "descriptor_memory"
+Info: sgdma_rx: Starting RTL generation for module 'tse_w_sfp_tse_sgdma_rx'
+Info: sgdma_rx:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=tse_w_sfp_tse_sgdma_rx --dir=D:/temp/alt6919_8226724500051902700.dir/0039_sgdma_rx_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=D:/temp/alt6919_8226724500051902700.dir/0039_sgdma_rx_gen//tse_w_sfp_tse_sgdma_rx_component_configuration.pl  --do_build_sim=0  ]
+Info: sgdma_rx: Done RTL generation for module 'tse_w_sfp_tse_sgdma_rx'
+Info: sgdma_rx: "tse" instantiated altera_avalon_sgdma "sgdma_rx"
+Info: sgdma_tx: Starting RTL generation for module 'tse_w_sfp_tse_sgdma_tx'
+Info: sgdma_tx:   Generation command is [exec D:/altera/14.1/quartus/bin64/perl/bin/perl.exe -I D:/altera/14.1/quartus/bin64/perl/lib -I D:/altera/14.1/quartus/sopc_builder/bin/europa -I D:/altera/14.1/quartus/sopc_builder/bin/perl_lib -I D:/altera/14.1/quartus/sopc_builder/bin -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma -- D:/altera/14.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_sgdma/generate_rtl.pl --name=tse_w_sfp_tse_sgdma_tx --dir=D:/temp/alt6919_8226724500051902700.dir/0040_sgdma_tx_gen/ --quartus_dir=D:/altera/14.1/quartus --verilog --config=D:/temp/alt6919_8226724500051902700.dir/0040_sgdma_tx_gen//tse_w_sfp_tse_sgdma_tx_component_configuration.pl  --do_build_sim=0  ]
+Info: sgdma_tx: Done RTL generation for module 'tse_w_sfp_tse_sgdma_tx'
+Info: sgdma_tx: "tse" instantiated altera_avalon_sgdma "sgdma_tx"
+Info: tse_mac: "tse" instantiated altera_eth_tse "tse_mac"
+Info: mm_interconnect_0: "tse" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: mm_interconnect_1: "tse" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: "tse" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: mm_bridge_0_m0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "mm_bridge_0_m0_translator"
+Info: xcvr_avalon_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "xcvr_avalon_slave_translator"
+Info: mm_bridge_0_m0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "mm_bridge_0_m0_agent"
+Info: xcvr_avalon_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "xcvr_avalon_slave_agent"
+Info: xcvr_avalon_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "xcvr_avalon_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: mm_bridge_0_m0_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "mm_bridge_0_m0_limiter"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: i_tse_mac: "tse_mac" instantiated altera_eth_tse_mac "i_tse_mac"
+Info: avalon_arbiter: "tse_mac" instantiated altera_eth_tse_avalon_arbiter "avalon_arbiter"
+Info: i_tse_pcs_0: "tse_mac" instantiated altera_eth_tse_pcs "i_tse_pcs_0"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_false_path_marker.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_reset_synchronizer.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_clock_crosser.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_a_fifo_13.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_a_fifo_24.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_a_fifo_34.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_a_fifo_opt_1246.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_a_fifo_opt_14_44.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_a_fifo_opt_36_10.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_gray_cnt.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_sdpm_altsyncram.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_altsyncram_dpm_fifo.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_bin_cnt.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ph_calculator.sv
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_sdpm_gen.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_dec_x10.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x10.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x10_wrapper.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_dec_x14.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x14.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x14_wrapper.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_dec_x2.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x2.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x2_wrapper.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_dec_x23.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x23.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x23_wrapper.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_dec_x36.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x36.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x36_wrapper.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_dec_x40.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x40.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x40_wrapper.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_dec_x30.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x30.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_enc_x30_wrapper.v
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_tse_ecc_status_crosser.v
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_004: "mm_interconnect_0" instantiated altera_merlin_router "router_004"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: agent_pipeline: "mm_interconnect_0" instantiated altera_avalon_st_pipeline_stage "agent_pipeline"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_1" instantiated altera_merlin_router "router_001"
+Info: tse_mac_control_port_burst_adapter: "mm_interconnect_1" instantiated altera_merlin_burst_adapter "tse_mac_control_port_burst_adapter"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/deap/edevel00419_adc24_grif16_test/tsbs/common_qsys_library/tsb/ip/rtl/arriav/sfp/tse_w_sfp/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: async_fifo: "mm_interconnect_1" instantiated altera_avalon_dc_fifo "async_fifo"
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: tse_w_sfp: Done "tse_w_sfp" with 47 modules, 215 files
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

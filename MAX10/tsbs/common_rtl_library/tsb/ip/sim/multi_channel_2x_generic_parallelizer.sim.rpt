@@ -1,0 +1,803 @@
+Simulator report for multi_channel_2x_generic_parallelizer
+Tue Oct 20 17:38:33 2015
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 556 nodes    ;
+; Simulation Coverage         ;      93.33 % ;
+; Total Number of Transitions ; 177634       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      93.33 % ;
+; Total nodes checked                                 ; 556          ;
+; Total output ports checked                          ; 555          ;
+; Total output ports with complete 1/0-value coverage ; 518          ;
+; Total output ports with no 1/0-value coverage       ; 37           ;
+; Total output ports with no 1-value coverage         ; 37           ;
+; Total output ports with no 0-value coverage         ; 37           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                            ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                ; Output Port Name                                                                         ; Output Port Type ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~0                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~0                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~1                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~1                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~2                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~2                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~3                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~3                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~4                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~4                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~5                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~5                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~6                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~6                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~0              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~0              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~1              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~1              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~2              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~2              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~3              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~3              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~4              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~4              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~5              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~5              ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][0]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][0]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~0                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~0                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~1                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~1                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~2                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~2                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~3                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~3                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~4                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~4                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~5                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~5                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~6                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~6                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~7                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~7                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~8                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~8                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~9                               ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~9                               ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~10                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~10                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~11                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~11                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~12                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~12                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~13                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~13                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][0]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][0]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][0]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][0]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~0           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~0           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~1           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~1           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~2           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~2           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~3           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~3           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~4           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~4           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~5           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~5           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~6           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~6           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~7           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~7           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~8           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~8           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~9           ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~9           ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~10          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~10          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~11          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~11          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~12          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~12          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~13          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~13          ; out              ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][0]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][0]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~0                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~0                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~1                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~1                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~2                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~2                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~3                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~3                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~4                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~4                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~5                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~5                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~6                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~6                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~7                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~7                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~8                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~8                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~9                                     ; |multi_channel_2x_generic_parallelizer|outdata_raw~9                                     ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~10                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~10                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~11                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~11                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~12                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~12                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~13                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~13                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~0                                         ; |multi_channel_2x_generic_parallelizer|outdata~0                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~1                                         ; |multi_channel_2x_generic_parallelizer|outdata~1                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~2                                         ; |multi_channel_2x_generic_parallelizer|outdata~2                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~3                                         ; |multi_channel_2x_generic_parallelizer|outdata~3                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~4                                         ; |multi_channel_2x_generic_parallelizer|outdata~4                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~5                                         ; |multi_channel_2x_generic_parallelizer|outdata~5                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~6                                         ; |multi_channel_2x_generic_parallelizer|outdata~6                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~7                                         ; |multi_channel_2x_generic_parallelizer|outdata~7                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~8                                         ; |multi_channel_2x_generic_parallelizer|outdata~8                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~9                                         ; |multi_channel_2x_generic_parallelizer|outdata~9                                         ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~10                                        ; |multi_channel_2x_generic_parallelizer|outdata~10                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~11                                        ; |multi_channel_2x_generic_parallelizer|outdata~11                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~12                                        ; |multi_channel_2x_generic_parallelizer|outdata~12                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~13                                        ; |multi_channel_2x_generic_parallelizer|outdata~13                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][0]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][0]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~7                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~7                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~8                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~8                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~9                                  ; |multi_channel_2x_generic_parallelizer|raw_frame_data~9                                  ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~10                                 ; |multi_channel_2x_generic_parallelizer|raw_frame_data~10                                 ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~11                                 ; |multi_channel_2x_generic_parallelizer|raw_frame_data~11                                 ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~12                                 ; |multi_channel_2x_generic_parallelizer|raw_frame_data~12                                 ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data~13                                 ; |multi_channel_2x_generic_parallelizer|raw_frame_data~13                                 ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][0]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][0]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~6              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~6              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~7              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~7              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~8              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~8              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~9              ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~9              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~10             ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~10             ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~11             ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data~11             ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][6]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][6]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][5]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][5]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][4]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][4]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][0]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][0]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~14                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~14                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~15                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~15                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~16                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~16                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~17                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~17                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~18                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~18                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~19                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~19                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~20                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~20                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~21                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~21                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~22                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~22                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~23                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~23                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~24                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~24                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~25                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~25                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~26                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~26                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~27                              ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit~27                              ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][0]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][0]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][0]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][0]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~14          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~14          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~15          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~15          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~16          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~16          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~17          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~17          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~18          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~18          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~19          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~19          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~20          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~20          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~21          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~21          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~22          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~22          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~23          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~23          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~24          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~24          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~25          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~25          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~26          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~26          ; out              ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~27          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit~27          ; out              ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][0]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][0]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~14                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~14                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~15                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~15                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~16                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~16                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~17                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~17                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~18                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~18                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~19                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~19                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~20                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~20                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~21                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~21                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~22                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~22                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~23                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~23                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~24                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~24                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~25                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~25                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~26                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~26                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw~27                                    ; |multi_channel_2x_generic_parallelizer|outdata_raw~27                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][3]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][3]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][2]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][2]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][1]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][1]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][6]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][6]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][5]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][5]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][4]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][4]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][3]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][3]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][2]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][2]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][1]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][1]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][13]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][13]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][12]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][12]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][11]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][11]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][10]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][10]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][9]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][9]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][8]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][8]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][7]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][7]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][6]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][6]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][5]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][5]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][4]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][4]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][3]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][3]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][2]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][2]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][1]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][1]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][13]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][13]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][12]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][12]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][11]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][11]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][10]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][10]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][9]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][9]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][8]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][8]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][7]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][7]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][6]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][6]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][5]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][5]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][4]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][4]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][3]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][3]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][2]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][2]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][1]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][1]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][13]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][13]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][12]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][12]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][11]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][11]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][10]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][10]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][9]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][9]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][8]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][8]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][7]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][7]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][6]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][6]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][5]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][5]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][4]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][4]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][3]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][3]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][2]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][2]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][1]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][1]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][13]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[0][13]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][12]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[0][12]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][11]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[0][11]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][10]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[0][10]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][9]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][9]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][8]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][8]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][7]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][7]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][6]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][6]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][5]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][5]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][4]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][4]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][3]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][3]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][2]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][2]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][1]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[0][1]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][6]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][6]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][5]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][5]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][4]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][4]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata~14                                        ; |multi_channel_2x_generic_parallelizer|outdata~14                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~15                                        ; |multi_channel_2x_generic_parallelizer|outdata~15                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~16                                        ; |multi_channel_2x_generic_parallelizer|outdata~16                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~17                                        ; |multi_channel_2x_generic_parallelizer|outdata~17                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~18                                        ; |multi_channel_2x_generic_parallelizer|outdata~18                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~19                                        ; |multi_channel_2x_generic_parallelizer|outdata~19                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~20                                        ; |multi_channel_2x_generic_parallelizer|outdata~20                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~21                                        ; |multi_channel_2x_generic_parallelizer|outdata~21                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~22                                        ; |multi_channel_2x_generic_parallelizer|outdata~22                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~23                                        ; |multi_channel_2x_generic_parallelizer|outdata~23                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~24                                        ; |multi_channel_2x_generic_parallelizer|outdata~24                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~25                                        ; |multi_channel_2x_generic_parallelizer|outdata~25                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~26                                        ; |multi_channel_2x_generic_parallelizer|outdata~26                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata~27                                        ; |multi_channel_2x_generic_parallelizer|outdata~27                                        ; out              ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][3]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][3]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][2]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][2]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][1]~reg0                         ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][1]~reg0                         ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][6]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][6]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][5]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][5]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][4]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][4]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][3]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][3]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][2]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][2]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][1]~reg0     ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][1]~reg0     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][13]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][13]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][12]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][12]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][11]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][11]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][10]~reg0                     ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][10]~reg0                     ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][9]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][9]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][8]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][8]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][7]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][7]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][6]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][6]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][5]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][5]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][4]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][4]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][3]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][3]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][2]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][2]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][1]~reg0                      ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][1]~reg0                      ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][13]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][13]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][12]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][12]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][11]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][11]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][10]~reg0              ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][10]~reg0              ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][9]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][9]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][8]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][8]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][7]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][7]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][6]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][6]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][5]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][5]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][4]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][4]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][3]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][3]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][2]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][2]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][1]~reg0               ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][1]~reg0               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][13]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][13]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][12]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][12]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][11]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][11]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][10]~reg0 ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][10]~reg0 ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][9]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][9]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][8]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][8]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][7]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][7]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][6]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][6]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][5]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][5]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][4]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][4]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][3]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][3]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][2]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][2]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][1]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][1]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][13]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[1][13]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][12]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[1][12]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][11]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[1][11]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][10]~reg0                               ; |multi_channel_2x_generic_parallelizer|outdata[1][10]~reg0                               ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][9]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][9]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][8]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][8]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][7]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][7]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][6]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][6]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][5]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][5]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][4]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][4]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][3]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][3]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][2]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][2]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][1]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][1]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][0]~reg0                                ; |multi_channel_2x_generic_parallelizer|outdata[1][0]~reg0                                ; regout           ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][0]~reg0  ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][0]~reg0  ; regout           ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][0]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][0]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][1]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][1]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][2]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][2]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][3]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][3]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][4]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][4]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][5]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][5]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][6]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[1][6]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][0]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][0]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][1]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][1]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][2]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][2]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][3]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][3]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][4]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][4]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][5]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][5]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][6]                          ; |multi_channel_2x_generic_parallelizer|half_frame_data_in[0][6]                          ; out              ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][0]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][0]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][1]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][1]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][2]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][2]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][3]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][3]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][4]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][4]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][5]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][5]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][6]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][6]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][7]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][7]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][8]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][8]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][9]                                     ; |multi_channel_2x_generic_parallelizer|outdata[1][9]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][10]                                    ; |multi_channel_2x_generic_parallelizer|outdata[1][10]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][11]                                    ; |multi_channel_2x_generic_parallelizer|outdata[1][11]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][12]                                    ; |multi_channel_2x_generic_parallelizer|outdata[1][12]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[1][13]                                    ; |multi_channel_2x_generic_parallelizer|outdata[1][13]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][0]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][0]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][1]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][1]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][2]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][2]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][3]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][3]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][4]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][4]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][5]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][5]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][6]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][6]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][7]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][7]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][8]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][8]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][9]                                     ; |multi_channel_2x_generic_parallelizer|outdata[0][9]                                     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][10]                                    ; |multi_channel_2x_generic_parallelizer|outdata[0][10]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][11]                                    ; |multi_channel_2x_generic_parallelizer|outdata[0][11]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][12]                                    ; |multi_channel_2x_generic_parallelizer|outdata[0][12]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata[0][13]                                    ; |multi_channel_2x_generic_parallelizer|outdata[0][13]                                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|half_frame_clk                                    ; |multi_channel_2x_generic_parallelizer|half_frame_clk                                    ; out              ;
+; |multi_channel_2x_generic_parallelizer|frame_clk                                         ; |multi_channel_2x_generic_parallelizer|frame_clk                                         ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][0]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][0]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][1]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][1]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][2]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][2]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][3]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][3]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][4]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][4]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][5]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][5]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][6]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[1][6]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][0]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][0]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][1]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][1]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][2]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][2]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][3]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][3]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][4]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][4]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][5]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][5]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][6]                              ; |multi_channel_2x_generic_parallelizer|raw_frame_data[0][6]                              ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][0]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][0]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][1]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][1]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][2]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][2]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][3]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][3]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][4]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][4]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][5]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][5]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][6]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[1][6]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][0]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][0]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][1]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][1]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][2]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][2]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][3]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][3]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][4]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][4]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][5]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][5]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][6]          ; |multi_channel_2x_generic_parallelizer|possibly_transposed_raw_frame_data[0][6]          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][0]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][0]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][1]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][1]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][2]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][2]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][3]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][3]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][4]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][4]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][5]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][5]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][6]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][6]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][7]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][7]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][8]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][8]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][9]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][9]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][10]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][10]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][11]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][11]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][12]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][12]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][13]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[1][13]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][0]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][0]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][1]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][1]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][2]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][2]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][3]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][3]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][4]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][4]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][5]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][5]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][6]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][6]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][7]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][7]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][8]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][8]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][9]                           ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][9]                           ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][10]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][10]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][11]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][11]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][12]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][12]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][13]                          ; |multi_channel_2x_generic_parallelizer|frame_data_2X_bit[0][13]                          ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][0]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][0]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][1]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][1]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][2]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][2]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][3]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][3]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][4]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][4]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][5]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][5]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][6]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][6]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][7]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][7]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][8]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][8]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][9]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][9]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][10]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][10]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][11]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][11]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][12]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][12]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][13]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[1][13]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][0]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][0]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][1]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][1]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][2]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][2]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][3]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][3]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][4]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][4]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][5]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][5]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][6]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][6]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][7]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][7]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][8]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][8]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][9]                    ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][9]                    ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][10]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][10]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][11]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][11]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][12]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][12]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][13]                   ; |multi_channel_2x_generic_parallelizer|actual_frame_data_2X_bit[0][13]                   ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][0]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][0]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][1]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][1]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][2]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][2]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][3]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][3]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][4]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][4]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][5]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][5]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][6]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][6]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][7]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][7]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][8]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][8]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][9]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][9]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][10]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][10]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][11]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][11]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][12]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][12]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][13]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[1][13]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][0]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][0]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][1]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][1]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][2]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][2]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][3]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][3]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][4]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][4]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][5]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][5]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][6]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][6]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][7]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][7]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][8]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][8]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][9]                 ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][9]                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][10]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][10]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][11]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][11]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][12]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][12]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][13]                ; |multi_channel_2x_generic_parallelizer|reconstituted_frame_samples[0][13]                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][0]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][0]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][1]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][1]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][2]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][2]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][3]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][3]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][4]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][4]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][5]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][5]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][6]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][6]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][7]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][7]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][8]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][8]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][9]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][9]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][10]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][10]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][11]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][11]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][12]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][12]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][13]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[1][13]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][0]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][0]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][1]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][1]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][2]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][2]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][3]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][3]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][4]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][4]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][5]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][5]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][6]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][6]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][7]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][7]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][8]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][8]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][9]      ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][9]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][10]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][10]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][11]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][11]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][12]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][12]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][13]     ; |multi_channel_2x_generic_parallelizer|transposed_reconstituted_frame_samples[0][13]     ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][0]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][0]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][1]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][1]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][2]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][2]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][3]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][3]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][4]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][4]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][5]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][5]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][6]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][6]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][7]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][7]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][8]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][8]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][9]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][9]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][10]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][10]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][11]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][11]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][12]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][12]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][13]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[1][13]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][0]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][0]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][1]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][1]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][2]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][2]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][3]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][3]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][4]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][4]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][5]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][5]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][6]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][6]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][7]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][7]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][8]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][8]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][9]       ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][9]       ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][10]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][10]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][11]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][11]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][12]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][12]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][13]      ; |multi_channel_2x_generic_parallelizer|possibly_transposed_frame_data_2X_bit[0][13]      ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][0]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][0]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][1]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][1]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][2]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][2]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][3]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][3]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][4]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][4]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][5]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][5]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][6]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][6]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][7]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][7]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][8]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][8]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][9]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][9]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][10]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][10]                                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][11]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][11]                                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][12]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][12]                                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[1][13]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[1][13]                                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][0]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][0]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][1]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][1]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][2]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][2]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][3]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][3]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][4]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][4]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][5]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][5]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][6]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][6]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][7]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][7]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][8]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][8]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][9]                                 ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][9]                                 ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][10]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][10]                                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][11]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][11]                                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][12]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][12]                                ; pin_out          ;
+; |multi_channel_2x_generic_parallelizer|outdata_raw[0][13]                                ; |multi_channel_2x_generic_parallelizer|outdata_raw[0][13]                                ; pin_out          ;
++------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                             ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                       ; Output Port Name                                                                ; Output Port Type ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |multi_channel_2x_generic_parallelizer|WideOr0                                  ; |multi_channel_2x_generic_parallelizer|WideOr0                                  ; out0             ;
+; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[0]   ; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[0]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[1]   ; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[1]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[0]    ; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[0]    ; out              ;
+; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[1]    ; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[1]    ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][0] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][0] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][1] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][1] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][2] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][2] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][3] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][3] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][4] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][4] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][5] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][5] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][6] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][6] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][0] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][0] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][1] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][1] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][2] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][2] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][3] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][3] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][4] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][4] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][5] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][5] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][6] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][6] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][0]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][0]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][1]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][1]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][2]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][2]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][3]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][3]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][4]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][4]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][5]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][5]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][6]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][6]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][0]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][0]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][1]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][1]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][2]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][2]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][3]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][3]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][4]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][4]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][5]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][5]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][6]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][6]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|transpose_frame_rx_out_bits              ; |multi_channel_2x_generic_parallelizer|transpose_frame_rx_out_bits              ; out              ;
+; |multi_channel_2x_generic_parallelizer|transpose_frame_halves                   ; |multi_channel_2x_generic_parallelizer|transpose_frame_halves                   ; out              ;
+; |multi_channel_2x_generic_parallelizer|xpose_frame_filling_direction            ; |multi_channel_2x_generic_parallelizer|xpose_frame_filling_direction            ; out              ;
+; |multi_channel_2x_generic_parallelizer|BitReverseOutput                         ; |multi_channel_2x_generic_parallelizer|BitReverseOutput                         ; out              ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                             ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; Node Name                                                                       ; Output Port Name                                                                ; Output Port Type ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+; |multi_channel_2x_generic_parallelizer|WideOr0                                  ; |multi_channel_2x_generic_parallelizer|WideOr0                                  ; out0             ;
+; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[0]   ; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[0]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[1]   ; |multi_channel_2x_generic_parallelizer|choose_output_frame_simulation_data[1]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[0]    ; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[0]    ; out              ;
+; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[1]    ; |multi_channel_2x_generic_parallelizer|choose_input_frame_simulation_data[1]    ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][0] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][0] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][1] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][1] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][2] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][2] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][3] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][3] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][4] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][4] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][5] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][5] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][6] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[1][6] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][0] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][0] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][1] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][1] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][2] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][2] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][3] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][3] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][4] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][4] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][5] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][5] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][6] ; |multi_channel_2x_generic_parallelizer|simulated_input_half_frame_data_in[0][6] ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][0]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][0]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][1]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][1]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][2]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][2]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][3]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][3]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][4]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][4]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][5]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][5]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][6]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[1][6]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][0]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][0]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][1]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][1]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][2]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][2]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][3]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][3]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][4]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][4]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][5]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][5]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][6]   ; |multi_channel_2x_generic_parallelizer|simulated_output_full_frame_data[0][6]   ; out              ;
+; |multi_channel_2x_generic_parallelizer|transpose_frame_rx_out_bits              ; |multi_channel_2x_generic_parallelizer|transpose_frame_rx_out_bits              ; out              ;
+; |multi_channel_2x_generic_parallelizer|transpose_frame_halves                   ; |multi_channel_2x_generic_parallelizer|transpose_frame_halves                   ; out              ;
+; |multi_channel_2x_generic_parallelizer|xpose_frame_filling_direction            ; |multi_channel_2x_generic_parallelizer|xpose_frame_filling_direction            ; out              ;
+; |multi_channel_2x_generic_parallelizer|BitReverseOutput                         ; |multi_channel_2x_generic_parallelizer|BitReverseOutput                         ; out              ;
++---------------------------------------------------------------------------------+---------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Oct 20 17:38:32 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off multi_channel_2x_generic_parallelizer -c multi_channel_2x_generic_parallelizer
+Info: Using vector source file "D:/avsoc/edevel00396_adc32/tsbs/common_rtl_library/tsb/ip/sim/multi_channel_2x_generic_parallelizer.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of multi_channel_2x_generic_parallelizer.vwf called multi_channel_2x_generic_parallelizer.sim_ori.vwf has been created in the db folder
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata[1][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata[1][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata[0][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata[0][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "raw_frame_data[1][7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "raw_frame_data[0][7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "possibly_transposed_raw_frame_data[1][7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "possibly_transposed_raw_frame_data[0][7]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "frame_data_2X_bit[1][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "frame_data_2X_bit[1][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "frame_data_2X_bit[0][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "frame_data_2X_bit[0][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "actual_frame_data_2X_bit[1][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "actual_frame_data_2X_bit[1][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "actual_frame_data_2X_bit[0][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "actual_frame_data_2X_bit[0][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "reconstituted_frame_samples[1][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "reconstituted_frame_samples[1][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "reconstituted_frame_samples[0][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "reconstituted_frame_samples[0][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "transposed_reconstituted_frame_samples[1][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "transposed_reconstituted_frame_samples[1][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "transposed_reconstituted_frame_samples[0][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "transposed_reconstituted_frame_samples[0][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "possibly_transposed_frame_data_2X_bit[1][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "possibly_transposed_frame_data_2X_bit[1][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "possibly_transposed_frame_data_2X_bit[0][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "possibly_transposed_frame_data_2X_bit[0][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata_raw[1][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata_raw[1][15]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata_raw[0][14]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "outdata_raw[0][15]" in design.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[0][4]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[1][0]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[0][2]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[0][1]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[1][6]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[1][4]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[1][2]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 1.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[1][1]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 2.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[0][5]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 2.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[0][3]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 3.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[1][3]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 4.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[1][5]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 5.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[0][6]~reg0"
+Warning: Found clock-sensitive change during active clock edge at time 8.0 ns on register "|multi_channel_2x_generic_parallelizer|raw_frame_data[0][0]~reg0"
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      93.33 %
+Info: Number of transitions in simulation is 177634
+Info: Vector file multi_channel_2x_generic_parallelizer.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 46 warnings
+    Info: Peak virtual memory: 160 megabytes
+    Info: Processing ended: Tue Oct 20 17:38:33 2015
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

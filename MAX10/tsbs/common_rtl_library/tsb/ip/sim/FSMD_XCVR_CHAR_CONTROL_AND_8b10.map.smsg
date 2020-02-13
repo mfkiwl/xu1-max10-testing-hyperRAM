@@ -1,0 +1,8 @@
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "A" differs only in case from object "a" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "B" differs only in case from object "b" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "C" differs only in case from object "c" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "D" differs only in case from object "d" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "E" differs only in case from object "e" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "F" differs only in case from object "f" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "G" differs only in case from object "g" in the same scope
+Info (10281): Verilog HDL Declaration information at encoder_8b10b.v(103): object "H" differs only in case from object "h" in the same scope

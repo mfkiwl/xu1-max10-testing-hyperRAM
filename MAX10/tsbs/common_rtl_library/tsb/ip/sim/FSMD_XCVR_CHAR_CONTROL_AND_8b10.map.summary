@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Mar 19 20:09:38 2017
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : FSMD_XCVR_CHAR_CONTROL_AND_8b10
+Top-level Entity Name : FSMD_XCVR_CHAR_CONTROL_AND_8b10
+Family : Cyclone III
+Total logic elements : 232
+    Total combinational functions : 152
+    Dedicated logic registers : 151
+Total registers : 151
+Total pins : 108
+Total virtual pins : 0
+Total memory bits : 640
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

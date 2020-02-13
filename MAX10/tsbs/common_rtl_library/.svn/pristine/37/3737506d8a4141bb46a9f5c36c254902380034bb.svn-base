@@ -1,0 +1,691 @@
+Simulator report for multibit_serial_to_parallel_same_clk_with_valid
+Tue Nov 17 17:43:25 2015
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 521 nodes    ;
+; Simulation Coverage         ;      99.04 % ;
+; Total Number of Transitions ; 170172       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      99.04 % ;
+; Total nodes checked                                 ; 521          ;
+; Total output ports checked                          ; 521          ;
+; Total output ports with complete 1/0-value coverage ; 516          ;
+; Total output ports with no 1/0-value coverage       ; 5            ;
+; Total output ports with no 1-value coverage         ; 5            ;
+; Total output ports with no 0-value coverage         ; 5            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; Node Name                                                                  ; Output Port Name                                                           ; Output Port Type ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~1             ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~1             ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~2             ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~2             ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~3             ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~3             ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~4             ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~4             ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~0        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~0        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~1        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~1        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~2        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~2        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~3        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~3        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~4        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~4        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~5        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~5        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~6        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~6        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~7        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~7        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~8        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~8        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~9        ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~9        ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~10       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~10       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~11       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~11       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~12       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~12       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~13       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~13       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~14       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~14       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~15       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~15       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~16       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~16       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~17       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~17       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~18       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~18       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~19       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~19       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~20       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~20       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~21       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~21       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~22       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~22       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~23       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~23       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~24       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~24       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~25       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~25       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~26       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~26       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~27       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~27       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~28       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~28       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~29       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~29       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~30       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~30       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~31       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~31       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~32       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~32       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~33       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~33       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~34       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~34       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~35       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~35       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~36       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~36       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~37       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~37       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~38       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~38       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~39       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~39       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~40       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~40       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~41       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~41       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~42       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~42       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~43       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~43       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~44       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~44       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~45       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~45       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~46       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~46       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~47       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~47       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~48       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~48       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~49       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~49       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~50       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~50       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~51       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~51       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~52       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~52       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~53       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~53       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~54       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~54       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~55       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~55       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~56       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~56       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~57       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~57       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~58       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~58       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~59       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~59       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~60       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~60       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~61       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~61       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~62       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~62       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~63       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~63       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~64       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~64       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~65       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~65       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~66       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~66       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~67       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~67       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~68       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~68       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~69       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~69       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~70       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~70       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~71       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~71       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~72       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~72       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~73       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~73       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~74       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~74       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~75       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~75       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~76       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~76       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~77       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~77       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~78       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~78       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~79       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~79       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~80       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~80       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~81       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~81       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~82       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~82       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~83       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~83       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~84       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~84       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~85       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~85       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~86       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~86       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~87       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~87       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~88       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~88       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~89       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~89       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~90       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~90       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~91       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~91       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~92       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~92       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~93       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~93       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~94       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~94       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~95       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw~95       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|out_valid~reg0            ; |multibit_serial_to_parallel_same_clk_with_valid|out_valid~reg0            ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[0]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[0]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[0]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[0]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[1]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[1]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[2]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[2]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[3]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[3]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[4]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[4]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[5]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[5]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[6]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[6]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[7]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[7]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[8]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[8]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[9]~reg0      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[9]~reg0      ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[10]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[10]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[11]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[11]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[12]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[12]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[13]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[13]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[14]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[14]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[15]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[15]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[16]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[16]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[17]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[17]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[18]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[18]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[19]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[19]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[20]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[20]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[21]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[21]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[22]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[22]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[23]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[23]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[24]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[24]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[25]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[25]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[26]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[26]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[27]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[27]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[28]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[28]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[29]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[29]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[30]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[30]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[31]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[31]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[32]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[32]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[33]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[33]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[34]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[34]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[35]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[35]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[36]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[36]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[37]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[37]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[38]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[38]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[39]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[39]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[40]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[40]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[41]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[41]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[42]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[42]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[43]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[43]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[44]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[44]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[45]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[45]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[46]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[46]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[47]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[47]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[48]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[48]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[49]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[49]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[50]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[50]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[51]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[51]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[52]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[52]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[53]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[53]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[54]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[54]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[55]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[55]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[56]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[56]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[57]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[57]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[58]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[58]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[59]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[59]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[60]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[60]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[61]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[61]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[62]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[62]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[63]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[63]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[64]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[64]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[65]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[65]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[66]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[66]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[67]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[67]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[68]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[68]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[69]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[69]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[70]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[70]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[71]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[71]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[72]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[72]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[73]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[73]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[74]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[74]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[75]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[75]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[76]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[76]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[77]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[77]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[78]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[78]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[79]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[79]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[80]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[80]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[81]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[81]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[82]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[82]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[83]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[83]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[84]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[84]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[85]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[85]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[86]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[86]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[87]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[87]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[88]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[88]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[89]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[89]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[90]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[90]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[91]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[91]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[92]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[92]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[93]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[93]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[94]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[94]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[95]~reg0     ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[95]~reg0     ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[1]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[1]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[2]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[2]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[3]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[3]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[4]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[4]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[5]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[5]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[6]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[6]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[7]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[7]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[8]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[8]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[9]~reg0  ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[9]~reg0  ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[10]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[10]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[11]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[11]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[12]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[12]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[13]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[13]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[14]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[14]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[15]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[15]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[16]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[16]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[17]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[17]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[18]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[18]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[19]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[19]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[20]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[20]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[21]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[21]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[22]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[22]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[23]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[23]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[24]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[24]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[25]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[25]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[26]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[26]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[27]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[27]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[28]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[28]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[29]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[29]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[30]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[30]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[31]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[31]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[32]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[32]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[33]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[33]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[34]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[34]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[35]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[35]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[36]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[36]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[37]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[37]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[38]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[38]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[39]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[39]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[40]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[40]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[41]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[41]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[42]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[42]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[43]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[43]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[44]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[44]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[45]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[45]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[46]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[46]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[47]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[47]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[48]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[48]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[49]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[49]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[50]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[50]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[51]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[51]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[52]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[52]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[53]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[53]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[54]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[54]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[55]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[55]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[56]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[56]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[57]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[57]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[58]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[58]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[59]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[59]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[60]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[60]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[61]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[61]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[62]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[62]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[63]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[63]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[64]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[64]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[65]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[65]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[66]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[66]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[67]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[67]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[68]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[68]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[69]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[69]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[70]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[70]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[71]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[71]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[72]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[72]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[73]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[73]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[74]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[74]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[75]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[75]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[76]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[76]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[77]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[77]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[78]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[78]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[79]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[79]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[80]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[80]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[81]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[81]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[82]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[82]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[83]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[83]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[84]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[84]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[85]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[85]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[86]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[86]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[87]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[87]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[88]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[88]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[89]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[89]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[90]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[90]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[91]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[91]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[92]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[92]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[93]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[93]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[94]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[94]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[95]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[95]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[0]~reg0       ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[0]~reg0       ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[1]~reg0       ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[1]~reg0       ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[2]~reg0       ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[2]~reg0       ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[3]~reg0       ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[3]~reg0       ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[0]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[0]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[1]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[1]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[2]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[2]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[3]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[3]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[4]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[4]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[5]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[5]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[6]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[6]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[7]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[7]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[8]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[8]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[9]           ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[9]           ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[10]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[10]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[11]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[11]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[12]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[12]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[13]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[13]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[14]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[14]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[15]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[15]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[16]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[16]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[17]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[17]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[18]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[18]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[19]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[19]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[20]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[20]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[21]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[21]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[22]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[22]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[23]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[23]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[24]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[24]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[25]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[25]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[26]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[26]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[27]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[27]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[28]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[28]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[29]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[29]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[30]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[30]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[31]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[31]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[32]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[32]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[33]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[33]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[34]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[34]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[35]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[35]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[36]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[36]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[37]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[37]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[38]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[38]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[39]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[39]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[40]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[40]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[41]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[41]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[42]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[42]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[43]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[43]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[44]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[44]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[45]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[45]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[46]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[46]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[47]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[47]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[48]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[48]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[49]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[49]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[50]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[50]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[51]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[51]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[52]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[52]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[53]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[53]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[54]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[54]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[55]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[55]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[56]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[56]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[57]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[57]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[58]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[58]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[59]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[59]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[60]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[60]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[61]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[61]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[62]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[62]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[63]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[63]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[64]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[64]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[65]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[65]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[66]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[66]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[67]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[67]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[68]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[68]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[69]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[69]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[70]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[70]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[71]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[71]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[72]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[72]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[73]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[73]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[74]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[74]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[75]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[75]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[76]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[76]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[77]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[77]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[78]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[78]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[79]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[79]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[80]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[80]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[81]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[81]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[82]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[82]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[83]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[83]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[84]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[84]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[85]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[85]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[86]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[86]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[87]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[87]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[88]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[88]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[89]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[89]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[90]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[90]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[91]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[91]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[92]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[92]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[93]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[93]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[94]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[94]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[95]          ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out[95]          ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|out_valid                 ; |multibit_serial_to_parallel_same_clk_with_valid|out_valid                 ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[0]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[0]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[1]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[1]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[2]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[2]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[3]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[3]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[4]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[4]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[5]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[5]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[6]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[6]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[7]              ; |multibit_serial_to_parallel_same_clk_with_valid|serial_in[7]              ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|in_valid                  ; |multibit_serial_to_parallel_same_clk_with_valid|in_valid                  ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clock                     ; |multibit_serial_to_parallel_same_clk_with_valid|clock                     ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[0]            ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[0]            ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[1]            ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[1]            ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[2]            ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[2]            ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[3]            ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[3]            ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|dir                       ; |multibit_serial_to_parallel_same_clk_with_valid|dir                       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[0]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[0]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[1]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[1]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[2]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[2]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[3]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[3]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[4]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[4]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[5]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[5]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[6]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[6]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[7]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[7]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[8]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[8]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[9]       ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[9]       ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[10]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[10]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[11]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[11]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[12]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[12]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[13]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[13]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[14]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[14]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[15]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[15]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[16]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[16]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[17]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[17]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[18]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[18]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[19]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[19]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[20]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[20]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[21]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[21]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[22]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[22]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[23]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[23]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[24]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[24]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[25]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[25]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[26]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[26]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[27]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[27]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[28]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[28]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[29]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[29]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[30]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[30]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[31]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[31]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[32]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[32]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[33]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[33]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[34]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[34]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[35]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[35]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[36]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[36]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[37]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[37]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[38]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[38]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[39]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[39]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[40]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[40]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[41]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[41]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[42]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[42]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[43]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[43]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[44]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[44]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[45]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[45]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[46]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[46]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[47]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[47]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[48]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[48]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[49]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[49]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[50]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[50]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[51]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[51]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[52]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[52]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[53]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[53]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[54]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[54]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[55]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[55]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[56]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[56]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[57]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[57]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[58]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[58]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[59]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[59]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[60]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[60]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[61]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[61]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[62]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[62]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[63]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[63]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[64]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[64]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[65]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[65]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[66]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[66]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[67]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[67]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[68]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[68]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[69]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[69]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[70]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[70]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[71]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[71]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[72]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[72]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[73]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[73]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[74]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[74]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[75]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[75]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[76]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[76]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[77]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[77]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[78]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[78]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[79]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[79]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[80]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[80]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[81]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[81]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[82]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[82]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[83]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[83]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[84]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[84]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[85]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[85]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[86]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[86]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[87]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[87]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[88]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[88]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[89]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[89]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[90]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[90]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[91]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[91]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[92]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[92]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[93]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[93]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[94]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[94]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[95]      ; |multibit_serial_to_parallel_same_clk_with_valid|parallel_out_raw[95]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~0               ; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~0               ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~1               ; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~1               ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~2               ; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~2               ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~3               ; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~3               ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~4               ; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~4               ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~5               ; |multibit_serial_to_parallel_same_clk_with_valid|LessThan0~5               ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~0                    ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~0                    ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~1                    ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~1                    ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~2                    ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~2                    ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~3                    ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~3                    ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~4                    ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~4                    ; out0             ;
++----------------------------------------------------------------------------+----------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                       ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~0       ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~0       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]      ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~5              ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~5              ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~6              ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~6              ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                       ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; Node Name                                                            ; Output Port Name                                                     ; Output Port Type ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~0       ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter~0       ; out              ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]~reg0 ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]~reg0 ; regout           ;
+; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]      ; |multibit_serial_to_parallel_same_clk_with_valid|clk_counter[4]      ; pin_out          ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~5              ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~5              ; out0             ;
+; |multibit_serial_to_parallel_same_clk_with_valid|Add0~6              ; |multibit_serial_to_parallel_same_clk_with_valid|Add0~6              ; out0             ;
++----------------------------------------------------------------------+----------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Nov 17 17:43:25 2015
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off multibit_serial_to_parallel_same_clk_with_valid -c multibit_serial_to_parallel_same_clk_with_valid
+Info: Using vector source file "D:/avsoc/edevel00396_adc32/tsbs/common_rtl_library/tsb/ip/sim/multibit_serial_to_parallel_same_clk_with_valid.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of multibit_serial_to_parallel_same_clk_with_valid.vwf called multibit_serial_to_parallel_same_clk_with_valid.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      99.04 %
+Info: Number of transitions in simulation is 170172
+Info: Vector file multibit_serial_to_parallel_same_clk_with_valid.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 158 megabytes
+    Info: Processing ended: Tue Nov 17 17:43:25 2015
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

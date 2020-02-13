@@ -1,0 +1,340 @@
+Simulator report for make_embargo_per_event
+Mon Jul 18 16:05:04 2016
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 142 nodes    ;
+; Simulation Coverage         ;      75.35 % ;
+; Total Number of Transitions ; 4157         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      75.35 % ;
+; Total nodes checked                                 ; 142          ;
+; Total output ports checked                          ; 142          ;
+; Total output ports with complete 1/0-value coverage ; 107          ;
+; Total output ports with no 1/0-value coverage       ; 35           ;
+; Total output ports with no 1-value coverage         ; 35           ;
+; Total output ports with no 0-value coverage         ; 35           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                      ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; Node Name                                     ; Output Port Name                              ; Output Port Type ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+; |make_embargo_per_event|count[3]~reg0         ; |make_embargo_per_event|count[3]~reg0         ; regout           ;
+; |make_embargo_per_event|count[2]~reg0         ; |make_embargo_per_event|count[2]~reg0         ; regout           ;
+; |make_embargo_per_event|count[1]~reg0         ; |make_embargo_per_event|count[1]~reg0         ; regout           ;
+; |make_embargo_per_event|count[0]~reg0         ; |make_embargo_per_event|count[0]~reg0         ; regout           ;
+; |make_embargo_per_event|count~0               ; |make_embargo_per_event|count~0               ; out              ;
+; |make_embargo_per_event|count~1               ; |make_embargo_per_event|count~1               ; out              ;
+; |make_embargo_per_event|count~2               ; |make_embargo_per_event|count~2               ; out              ;
+; |make_embargo_per_event|count~3               ; |make_embargo_per_event|count~3               ; out              ;
+; |make_embargo_per_event|count~4               ; |make_embargo_per_event|count~4               ; out              ;
+; |make_embargo_per_event|count~5               ; |make_embargo_per_event|count~5               ; out              ;
+; |make_embargo_per_event|count~6               ; |make_embargo_per_event|count~6               ; out              ;
+; |make_embargo_per_event|count~7               ; |make_embargo_per_event|count~7               ; out              ;
+; |make_embargo_per_event|count~8               ; |make_embargo_per_event|count~8               ; out              ;
+; |make_embargo_per_event|count~9               ; |make_embargo_per_event|count~9               ; out              ;
+; |make_embargo_per_event|count~10              ; |make_embargo_per_event|count~10              ; out              ;
+; |make_embargo_per_event|count~11              ; |make_embargo_per_event|count~11              ; out              ;
+; |make_embargo_per_event|count~12              ; |make_embargo_per_event|count~12              ; out              ;
+; |make_embargo_per_event|count~13              ; |make_embargo_per_event|count~13              ; out              ;
+; |make_embargo_per_event|count~14              ; |make_embargo_per_event|count~14              ; out              ;
+; |make_embargo_per_event|count~15              ; |make_embargo_per_event|count~15              ; out              ;
+; |make_embargo_per_event|count~16              ; |make_embargo_per_event|count~16              ; out              ;
+; |make_embargo_per_event|count~17              ; |make_embargo_per_event|count~17              ; out              ;
+; |make_embargo_per_event|count~18              ; |make_embargo_per_event|count~18              ; out              ;
+; |make_embargo_per_event|count~19              ; |make_embargo_per_event|count~19              ; out              ;
+; |make_embargo_per_event|count~20              ; |make_embargo_per_event|count~20              ; out              ;
+; |make_embargo_per_event|count~21              ; |make_embargo_per_event|count~21              ; out              ;
+; |make_embargo_per_event|count~22              ; |make_embargo_per_event|count~22              ; out              ;
+; |make_embargo_per_event|count~23              ; |make_embargo_per_event|count~23              ; out              ;
+; |make_embargo_per_event|count~24              ; |make_embargo_per_event|count~24              ; out              ;
+; |make_embargo_per_event|count~25              ; |make_embargo_per_event|count~25              ; out              ;
+; |make_embargo_per_event|count~26              ; |make_embargo_per_event|count~26              ; out              ;
+; |make_embargo_per_event|count~27              ; |make_embargo_per_event|count~27              ; out              ;
+; |make_embargo_per_event|count~28              ; |make_embargo_per_event|count~28              ; out              ;
+; |make_embargo_per_event|count~29              ; |make_embargo_per_event|count~29              ; out              ;
+; |make_embargo_per_event|count~30              ; |make_embargo_per_event|count~30              ; out              ;
+; |make_embargo_per_event|count~31              ; |make_embargo_per_event|count~31              ; out              ;
+; |make_embargo_per_event|embargo_active~reg0   ; |make_embargo_per_event|embargo_active~reg0   ; regout           ;
+; |make_embargo_per_event|embargo_causing_event ; |make_embargo_per_event|embargo_causing_event ; out              ;
+; |make_embargo_per_event|embargo_active        ; |make_embargo_per_event|embargo_active        ; pin_out          ;
+; |make_embargo_per_event|clk                   ; |make_embargo_per_event|clk                   ; out              ;
+; |make_embargo_per_event|count[0]              ; |make_embargo_per_event|count[0]              ; pin_out          ;
+; |make_embargo_per_event|count[1]              ; |make_embargo_per_event|count[1]              ; pin_out          ;
+; |make_embargo_per_event|count[2]              ; |make_embargo_per_event|count[2]              ; pin_out          ;
+; |make_embargo_per_event|count[3]              ; |make_embargo_per_event|count[3]              ; pin_out          ;
+; |make_embargo_per_event|LessThan0~0           ; |make_embargo_per_event|LessThan0~0           ; out0             ;
+; |make_embargo_per_event|LessThan0~1           ; |make_embargo_per_event|LessThan0~1           ; out0             ;
+; |make_embargo_per_event|LessThan0~2           ; |make_embargo_per_event|LessThan0~2           ; out0             ;
+; |make_embargo_per_event|LessThan0~3           ; |make_embargo_per_event|LessThan0~3           ; out0             ;
+; |make_embargo_per_event|LessThan0~4           ; |make_embargo_per_event|LessThan0~4           ; out0             ;
+; |make_embargo_per_event|LessThan0~5           ; |make_embargo_per_event|LessThan0~5           ; out0             ;
+; |make_embargo_per_event|LessThan0~6           ; |make_embargo_per_event|LessThan0~6           ; out0             ;
+; |make_embargo_per_event|LessThan0~7           ; |make_embargo_per_event|LessThan0~7           ; out0             ;
+; |make_embargo_per_event|LessThan0~8           ; |make_embargo_per_event|LessThan0~8           ; out0             ;
+; |make_embargo_per_event|LessThan0~9           ; |make_embargo_per_event|LessThan0~9           ; out0             ;
+; |make_embargo_per_event|LessThan0~10          ; |make_embargo_per_event|LessThan0~10          ; out0             ;
+; |make_embargo_per_event|LessThan0~11          ; |make_embargo_per_event|LessThan0~11          ; out0             ;
+; |make_embargo_per_event|LessThan0~12          ; |make_embargo_per_event|LessThan0~12          ; out0             ;
+; |make_embargo_per_event|LessThan0~13          ; |make_embargo_per_event|LessThan0~13          ; out0             ;
+; |make_embargo_per_event|LessThan0~14          ; |make_embargo_per_event|LessThan0~14          ; out0             ;
+; |make_embargo_per_event|LessThan0~15          ; |make_embargo_per_event|LessThan0~15          ; out0             ;
+; |make_embargo_per_event|LessThan0~16          ; |make_embargo_per_event|LessThan0~16          ; out0             ;
+; |make_embargo_per_event|LessThan0~17          ; |make_embargo_per_event|LessThan0~17          ; out0             ;
+; |make_embargo_per_event|LessThan0~18          ; |make_embargo_per_event|LessThan0~18          ; out0             ;
+; |make_embargo_per_event|LessThan0~19          ; |make_embargo_per_event|LessThan0~19          ; out0             ;
+; |make_embargo_per_event|LessThan0~20          ; |make_embargo_per_event|LessThan0~20          ; out0             ;
+; |make_embargo_per_event|LessThan0~21          ; |make_embargo_per_event|LessThan0~21          ; out0             ;
+; |make_embargo_per_event|LessThan0~22          ; |make_embargo_per_event|LessThan0~22          ; out0             ;
+; |make_embargo_per_event|LessThan0~23          ; |make_embargo_per_event|LessThan0~23          ; out0             ;
+; |make_embargo_per_event|LessThan0~24          ; |make_embargo_per_event|LessThan0~24          ; out0             ;
+; |make_embargo_per_event|LessThan0~25          ; |make_embargo_per_event|LessThan0~25          ; out0             ;
+; |make_embargo_per_event|LessThan0~26          ; |make_embargo_per_event|LessThan0~26          ; out0             ;
+; |make_embargo_per_event|LessThan0~27          ; |make_embargo_per_event|LessThan0~27          ; out0             ;
+; |make_embargo_per_event|LessThan0~28          ; |make_embargo_per_event|LessThan0~28          ; out0             ;
+; |make_embargo_per_event|LessThan0~29          ; |make_embargo_per_event|LessThan0~29          ; out0             ;
+; |make_embargo_per_event|Add0~0                ; |make_embargo_per_event|Add0~0                ; out0             ;
+; |make_embargo_per_event|Add0~1                ; |make_embargo_per_event|Add0~1                ; out0             ;
+; |make_embargo_per_event|Add0~2                ; |make_embargo_per_event|Add0~2                ; out0             ;
+; |make_embargo_per_event|Add0~3                ; |make_embargo_per_event|Add0~3                ; out0             ;
+; |make_embargo_per_event|Add0~4                ; |make_embargo_per_event|Add0~4                ; out0             ;
+; |make_embargo_per_event|Add0~5                ; |make_embargo_per_event|Add0~5                ; out0             ;
+; |make_embargo_per_event|Add0~6                ; |make_embargo_per_event|Add0~6                ; out0             ;
+; |make_embargo_per_event|Add0~7                ; |make_embargo_per_event|Add0~7                ; out0             ;
+; |make_embargo_per_event|Add0~8                ; |make_embargo_per_event|Add0~8                ; out0             ;
+; |make_embargo_per_event|Add0~9                ; |make_embargo_per_event|Add0~9                ; out0             ;
+; |make_embargo_per_event|Add0~10               ; |make_embargo_per_event|Add0~10               ; out0             ;
+; |make_embargo_per_event|Add0~12               ; |make_embargo_per_event|Add0~12               ; out0             ;
+; |make_embargo_per_event|Add0~13               ; |make_embargo_per_event|Add0~13               ; out0             ;
+; |make_embargo_per_event|Add0~15               ; |make_embargo_per_event|Add0~15               ; out0             ;
+; |make_embargo_per_event|Add0~16               ; |make_embargo_per_event|Add0~16               ; out0             ;
+; |make_embargo_per_event|Add0~18               ; |make_embargo_per_event|Add0~18               ; out0             ;
+; |make_embargo_per_event|Add0~19               ; |make_embargo_per_event|Add0~19               ; out0             ;
+; |make_embargo_per_event|Add0~21               ; |make_embargo_per_event|Add0~21               ; out0             ;
+; |make_embargo_per_event|Add0~22               ; |make_embargo_per_event|Add0~22               ; out0             ;
+; |make_embargo_per_event|Add0~24               ; |make_embargo_per_event|Add0~24               ; out0             ;
+; |make_embargo_per_event|Add0~25               ; |make_embargo_per_event|Add0~25               ; out0             ;
+; |make_embargo_per_event|Add0~27               ; |make_embargo_per_event|Add0~27               ; out0             ;
+; |make_embargo_per_event|Add0~28               ; |make_embargo_per_event|Add0~28               ; out0             ;
+; |make_embargo_per_event|Add0~30               ; |make_embargo_per_event|Add0~30               ; out0             ;
+; |make_embargo_per_event|Add0~31               ; |make_embargo_per_event|Add0~31               ; out0             ;
+; |make_embargo_per_event|Add0~33               ; |make_embargo_per_event|Add0~33               ; out0             ;
+; |make_embargo_per_event|Add0~34               ; |make_embargo_per_event|Add0~34               ; out0             ;
+; |make_embargo_per_event|Add0~36               ; |make_embargo_per_event|Add0~36               ; out0             ;
+; |make_embargo_per_event|Add0~37               ; |make_embargo_per_event|Add0~37               ; out0             ;
+; |make_embargo_per_event|Add0~39               ; |make_embargo_per_event|Add0~39               ; out0             ;
+; |make_embargo_per_event|Add0~40               ; |make_embargo_per_event|Add0~40               ; out0             ;
+; |make_embargo_per_event|Add0~42               ; |make_embargo_per_event|Add0~42               ; out0             ;
+; |make_embargo_per_event|Equal0~0              ; |make_embargo_per_event|Equal0~0              ; out0             ;
++-----------------------------------------------+-----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |make_embargo_per_event|count[15]~reg0 ; |make_embargo_per_event|count[15]~reg0 ; regout           ;
+; |make_embargo_per_event|count[14]~reg0 ; |make_embargo_per_event|count[14]~reg0 ; regout           ;
+; |make_embargo_per_event|count[13]~reg0 ; |make_embargo_per_event|count[13]~reg0 ; regout           ;
+; |make_embargo_per_event|count[12]~reg0 ; |make_embargo_per_event|count[12]~reg0 ; regout           ;
+; |make_embargo_per_event|count[11]~reg0 ; |make_embargo_per_event|count[11]~reg0 ; regout           ;
+; |make_embargo_per_event|count[10]~reg0 ; |make_embargo_per_event|count[10]~reg0 ; regout           ;
+; |make_embargo_per_event|count[9]~reg0  ; |make_embargo_per_event|count[9]~reg0  ; regout           ;
+; |make_embargo_per_event|count[8]~reg0  ; |make_embargo_per_event|count[8]~reg0  ; regout           ;
+; |make_embargo_per_event|count[7]~reg0  ; |make_embargo_per_event|count[7]~reg0  ; regout           ;
+; |make_embargo_per_event|count[6]~reg0  ; |make_embargo_per_event|count[6]~reg0  ; regout           ;
+; |make_embargo_per_event|count[5]~reg0  ; |make_embargo_per_event|count[5]~reg0  ; regout           ;
+; |make_embargo_per_event|count[4]~reg0  ; |make_embargo_per_event|count[4]~reg0  ; regout           ;
+; |make_embargo_per_event|count[4]       ; |make_embargo_per_event|count[4]       ; pin_out          ;
+; |make_embargo_per_event|count[5]       ; |make_embargo_per_event|count[5]       ; pin_out          ;
+; |make_embargo_per_event|count[6]       ; |make_embargo_per_event|count[6]       ; pin_out          ;
+; |make_embargo_per_event|count[7]       ; |make_embargo_per_event|count[7]       ; pin_out          ;
+; |make_embargo_per_event|count[8]       ; |make_embargo_per_event|count[8]       ; pin_out          ;
+; |make_embargo_per_event|count[9]       ; |make_embargo_per_event|count[9]       ; pin_out          ;
+; |make_embargo_per_event|count[10]      ; |make_embargo_per_event|count[10]      ; pin_out          ;
+; |make_embargo_per_event|count[11]      ; |make_embargo_per_event|count[11]      ; pin_out          ;
+; |make_embargo_per_event|count[12]      ; |make_embargo_per_event|count[12]      ; pin_out          ;
+; |make_embargo_per_event|count[13]      ; |make_embargo_per_event|count[13]      ; pin_out          ;
+; |make_embargo_per_event|count[14]      ; |make_embargo_per_event|count[14]      ; pin_out          ;
+; |make_embargo_per_event|count[15]      ; |make_embargo_per_event|count[15]      ; pin_out          ;
+; |make_embargo_per_event|Add0~11        ; |make_embargo_per_event|Add0~11        ; out0             ;
+; |make_embargo_per_event|Add0~14        ; |make_embargo_per_event|Add0~14        ; out0             ;
+; |make_embargo_per_event|Add0~17        ; |make_embargo_per_event|Add0~17        ; out0             ;
+; |make_embargo_per_event|Add0~20        ; |make_embargo_per_event|Add0~20        ; out0             ;
+; |make_embargo_per_event|Add0~23        ; |make_embargo_per_event|Add0~23        ; out0             ;
+; |make_embargo_per_event|Add0~26        ; |make_embargo_per_event|Add0~26        ; out0             ;
+; |make_embargo_per_event|Add0~29        ; |make_embargo_per_event|Add0~29        ; out0             ;
+; |make_embargo_per_event|Add0~32        ; |make_embargo_per_event|Add0~32        ; out0             ;
+; |make_embargo_per_event|Add0~35        ; |make_embargo_per_event|Add0~35        ; out0             ;
+; |make_embargo_per_event|Add0~38        ; |make_embargo_per_event|Add0~38        ; out0             ;
+; |make_embargo_per_event|Add0~41        ; |make_embargo_per_event|Add0~41        ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                           ;
++----------------------------------------+----------------------------------------+------------------+
+; Node Name                              ; Output Port Name                       ; Output Port Type ;
++----------------------------------------+----------------------------------------+------------------+
+; |make_embargo_per_event|count[15]~reg0 ; |make_embargo_per_event|count[15]~reg0 ; regout           ;
+; |make_embargo_per_event|count[14]~reg0 ; |make_embargo_per_event|count[14]~reg0 ; regout           ;
+; |make_embargo_per_event|count[13]~reg0 ; |make_embargo_per_event|count[13]~reg0 ; regout           ;
+; |make_embargo_per_event|count[12]~reg0 ; |make_embargo_per_event|count[12]~reg0 ; regout           ;
+; |make_embargo_per_event|count[11]~reg0 ; |make_embargo_per_event|count[11]~reg0 ; regout           ;
+; |make_embargo_per_event|count[10]~reg0 ; |make_embargo_per_event|count[10]~reg0 ; regout           ;
+; |make_embargo_per_event|count[9]~reg0  ; |make_embargo_per_event|count[9]~reg0  ; regout           ;
+; |make_embargo_per_event|count[8]~reg0  ; |make_embargo_per_event|count[8]~reg0  ; regout           ;
+; |make_embargo_per_event|count[7]~reg0  ; |make_embargo_per_event|count[7]~reg0  ; regout           ;
+; |make_embargo_per_event|count[6]~reg0  ; |make_embargo_per_event|count[6]~reg0  ; regout           ;
+; |make_embargo_per_event|count[5]~reg0  ; |make_embargo_per_event|count[5]~reg0  ; regout           ;
+; |make_embargo_per_event|count[4]~reg0  ; |make_embargo_per_event|count[4]~reg0  ; regout           ;
+; |make_embargo_per_event|count[4]       ; |make_embargo_per_event|count[4]       ; pin_out          ;
+; |make_embargo_per_event|count[5]       ; |make_embargo_per_event|count[5]       ; pin_out          ;
+; |make_embargo_per_event|count[6]       ; |make_embargo_per_event|count[6]       ; pin_out          ;
+; |make_embargo_per_event|count[7]       ; |make_embargo_per_event|count[7]       ; pin_out          ;
+; |make_embargo_per_event|count[8]       ; |make_embargo_per_event|count[8]       ; pin_out          ;
+; |make_embargo_per_event|count[9]       ; |make_embargo_per_event|count[9]       ; pin_out          ;
+; |make_embargo_per_event|count[10]      ; |make_embargo_per_event|count[10]      ; pin_out          ;
+; |make_embargo_per_event|count[11]      ; |make_embargo_per_event|count[11]      ; pin_out          ;
+; |make_embargo_per_event|count[12]      ; |make_embargo_per_event|count[12]      ; pin_out          ;
+; |make_embargo_per_event|count[13]      ; |make_embargo_per_event|count[13]      ; pin_out          ;
+; |make_embargo_per_event|count[14]      ; |make_embargo_per_event|count[14]      ; pin_out          ;
+; |make_embargo_per_event|count[15]      ; |make_embargo_per_event|count[15]      ; pin_out          ;
+; |make_embargo_per_event|Add0~11        ; |make_embargo_per_event|Add0~11        ; out0             ;
+; |make_embargo_per_event|Add0~14        ; |make_embargo_per_event|Add0~14        ; out0             ;
+; |make_embargo_per_event|Add0~17        ; |make_embargo_per_event|Add0~17        ; out0             ;
+; |make_embargo_per_event|Add0~20        ; |make_embargo_per_event|Add0~20        ; out0             ;
+; |make_embargo_per_event|Add0~23        ; |make_embargo_per_event|Add0~23        ; out0             ;
+; |make_embargo_per_event|Add0~26        ; |make_embargo_per_event|Add0~26        ; out0             ;
+; |make_embargo_per_event|Add0~29        ; |make_embargo_per_event|Add0~29        ; out0             ;
+; |make_embargo_per_event|Add0~32        ; |make_embargo_per_event|Add0~32        ; out0             ;
+; |make_embargo_per_event|Add0~35        ; |make_embargo_per_event|Add0~35        ; out0             ;
+; |make_embargo_per_event|Add0~38        ; |make_embargo_per_event|Add0~38        ; out0             ;
+; |make_embargo_per_event|Add0~41        ; |make_embargo_per_event|Add0~41        ; out0             ;
++----------------------------------------+----------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Jul 18 16:05:04 2016
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off make_embargo_per_event -c make_embargo_per_event
+Info: Using vector source file "D:/deap/edevel00430_maxv_grif16_rev1/tsbs/common_rtl_library/tsb/ip/sim/make_embargo_per_event.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of make_embargo_per_event.vwf called make_embargo_per_event.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      75.35 %
+Info: Number of transitions in simulation is 4157
+Info: Vector file make_embargo_per_event.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 155 megabytes
+    Info: Processing ended: Mon Jul 18 16:05:04 2016
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

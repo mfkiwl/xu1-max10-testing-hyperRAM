@@ -1,0 +1,1109 @@
+Analysis & Synthesis report for uart_controlled_wishbone_master
+Wed Aug 27 12:17:54 2014
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Protected by Synthesis
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Source assignments for Top-level Entity: |uart_controlled_wishbone_master
+ 13. Source assignments for uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_rx:uart_rx_1
+ 14. Source assignments for uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1
+ 15. Source assignments for uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst
+ 16. Parameter Settings for User Entity Instance: Top-level Entity: |uart_controlled_wishbone_master
+ 17. Parameter Settings for User Entity Instance: hw_watchdog_timer:hw_watchdog_timer_inst
+ 18. Parameter Settings for User Entity Instance: uart2bus_top_for_wishbone:uart2bus_top_inst
+ 19. Parameter Settings for User Entity Instance: uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1
+ 20. Parameter Settings for User Entity Instance: basic_bus_to_wishbone_bridge:basic_bus_to_wishbone_bridge_inst
+ 21. Parameter Settings for User Entity Instance: uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst
+ 22. Parameter Settings for User Entity Instance: uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|generate_one_shot_pulse:generate_auto_reset
+ 23. Port Connectivity Checks: "uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst"
+ 24. Port Connectivity Checks: "basic_bus_to_wishbone_bridge:basic_bus_to_wishbone_bridge_inst"
+ 25. Port Connectivity Checks: "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1"
+ 26. Port Connectivity Checks: "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst"
+ 27. Port Connectivity Checks: "uart2bus_top_for_wishbone:uart2bus_top_inst"
+ 28. Port Connectivity Checks: "hw_watchdog_timer:hw_watchdog_timer_inst"
+ 29. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed Aug 27 12:17:54 2014        ;
+; Quartus II Version                 ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name                      ; uart_controlled_wishbone_master              ;
+; Top-level Entity Name              ; uart_controlled_wishbone_master              ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 1,160                                        ;
+;     Total combinational functions  ; 1,071                                        ;
+;     Dedicated logic registers      ; 408                                          ;
+; Total registers                    ; 408                                          ;
+; Total pins                         ; 503                                          ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                    ;
++--------------------------------------------------------------+---------------------------------+---------------------------------+
+; Option                                                       ; Setting                         ; Default Value                   ;
++--------------------------------------------------------------+---------------------------------+---------------------------------+
+; Device                                                       ; EP3C120F780C7                   ;                                 ;
+; Top-level entity name                                        ; uart_controlled_wishbone_master ; uart_controlled_wishbone_master ;
+; Family name                                                  ; Cyclone III                     ; Stratix II                      ;
+; Verilog Show LMF Mapping Messages                            ; Off                             ;                                 ;
+; Verilog Version                                              ; SystemVerilog_2005              ; Verilog_2001                    ;
+; Optimization Technique                                       ; Speed                           ; Balanced                        ;
+; Use Generated Physical Constraints File                      ; Off                             ;                                 ;
+; Use smart compilation                                        ; Off                             ; Off                             ;
+; Restructure Multiplexers                                     ; Auto                            ; Auto                            ;
+; Create Debugging Nodes for IP Cores                          ; Off                             ; Off                             ;
+; Preserve fewer node names                                    ; On                              ; On                              ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                             ; Off                             ;
+; VHDL Version                                                 ; VHDL93                          ; VHDL93                          ;
+; State Machine Processing                                     ; Auto                            ; Auto                            ;
+; Safe State Machine                                           ; Off                             ; Off                             ;
+; Extract Verilog State Machines                               ; On                              ; On                              ;
+; Extract VHDL State Machines                                  ; On                              ; On                              ;
+; Ignore Verilog initial constructs                            ; Off                             ; Off                             ;
+; Iteration limit for constant Verilog loops                   ; 5000                            ; 5000                            ;
+; Iteration limit for non-constant Verilog loops               ; 250                             ; 250                             ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                              ; On                              ;
+; Parallel Synthesis                                           ; Off                             ; Off                             ;
+; DSP Block Balancing                                          ; Auto                            ; Auto                            ;
+; NOT Gate Push-Back                                           ; On                              ; On                              ;
+; Power-Up Don't Care                                          ; On                              ; On                              ;
+; Remove Redundant Logic Cells                                 ; Off                             ; Off                             ;
+; Remove Duplicate Registers                                   ; On                              ; On                              ;
+; Ignore CARRY Buffers                                         ; Off                             ; Off                             ;
+; Ignore CASCADE Buffers                                       ; Off                             ; Off                             ;
+; Ignore GLOBAL Buffers                                        ; Off                             ; Off                             ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                             ; Off                             ;
+; Ignore LCELL Buffers                                         ; Off                             ; Off                             ;
+; Ignore SOFT Buffers                                          ; On                              ; On                              ;
+; Limit AHDL Integers to 32 Bits                               ; Off                             ; Off                             ;
+; Carry Chain Length                                           ; 70                              ; 70                              ;
+; Auto Carry Chains                                            ; On                              ; On                              ;
+; Auto Open-Drain Pins                                         ; On                              ; On                              ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                             ; Off                             ;
+; Auto ROM Replacement                                         ; On                              ; On                              ;
+; Auto RAM Replacement                                         ; On                              ; On                              ;
+; Auto DSP Block Replacement                                   ; On                              ; On                              ;
+; Auto Shift Register Replacement                              ; Auto                            ; Auto                            ;
+; Auto Clock Enable Replacement                                ; On                              ; On                              ;
+; Strict RAM Replacement                                       ; Off                             ; Off                             ;
+; Allow Synchronous Control Signals                            ; On                              ; On                              ;
+; Force Use of Synchronous Clear Signals                       ; Off                             ; Off                             ;
+; Auto RAM Block Balancing                                     ; On                              ; On                              ;
+; Auto RAM to Logic Cell Conversion                            ; Off                             ; Off                             ;
+; Auto Resource Sharing                                        ; Off                             ; Off                             ;
+; Allow Any RAM Size For Recognition                           ; Off                             ; Off                             ;
+; Allow Any ROM Size For Recognition                           ; Off                             ; Off                             ;
+; Allow Any Shift Register Size For Recognition                ; Off                             ; Off                             ;
+; Use LogicLock Constraints during Resource Balancing          ; On                              ; On                              ;
+; Ignore translate_off and synthesis_off directives            ; Off                             ; Off                             ;
+; Timing-Driven Synthesis                                      ; Off                             ; Off                             ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                              ; On                              ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                             ; Off                             ;
+; Synchronization Register Chain Length                        ; 2                               ; 2                               ;
+; PowerPlay Power Optimization                                 ; Normal compilation              ; Normal compilation              ;
+; HDL message level                                            ; Level2                          ; Level2                          ;
+; Suppress Register Optimization Related Messages              ; Off                             ; Off                             ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                             ; 100                             ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                             ; 100                             ;
+; Clock MUX Protection                                         ; On                              ; On                              ;
+; Auto Gated Clock Conversion                                  ; Off                             ; Off                             ;
+; Block Design Naming                                          ; Auto                            ; Auto                            ;
+; SDC constraint protection                                    ; Off                             ; Off                             ;
+; Synthesis Effort                                             ; Auto                            ; Auto                            ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                              ; On                              ;
+; Analysis & Synthesis Message Level                           ; Medium                          ; Medium                          ;
++--------------------------------------------------------------+---------------------------------+---------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
++------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path         ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ;
++------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+
+; ../rtl/uart_bridge_to_wishbone_master.v  ; yes             ; User Verilog HDL File        ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/uart_bridge_to_wishbone_master.v  ;
+; ../rtl/uart_controlled_wishbone_master.v ; yes             ; User Verilog HDL File        ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/uart_controlled_wishbone_master.v ;
+; ../rtl/basic_bus_to_wishbone_bridge.v    ; yes             ; User Verilog HDL File        ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/basic_bus_to_wishbone_bridge.v    ;
+; ../rtl/interface_defs.v                  ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/interface_defs.v                  ;
+; hw_watchdog_timer.v                      ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/hw_watchdog_timer.v               ;
+; doublesync_no_reset.v                    ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/doublesync_no_reset.v             ;
+; edge_detector.v                          ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/edge_detector.v                   ;
+; uart2bus_top_for_wishbone.v              ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/uart2bus_top_for_wishbone.v       ;
+; uart_top.v                               ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/uart_top.v                        ;
+; baud_gen.v                               ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/baud_gen.v                        ;
+; uart_rx.v                                ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/uart_rx.v                         ;
+; uart_tx.v                                ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/uart_tx.v                         ;
+; uart_parser_for_wishbone.v               ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/uart_parser_for_wishbone.v        ;
+; generate_one_shot_pulse.v                ; yes             ; Auto-Found Verilog HDL File  ; D:/griffin/edevel00249_grifc_slave/tsbs/cabfare/tsbs/common_rtl_library/tsb/ip/rtl/generate_one_shot_pulse.v         ;
++------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 1,160     ;
+;                                             ;           ;
+; Total combinational functions               ; 1071      ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 565       ;
+;     -- 3 input functions                    ; 213       ;
+;     -- <=2 input functions                  ; 293       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 871       ;
+;     -- arithmetic mode                      ; 200       ;
+;                                             ;           ;
+; Total registers                             ; 408       ;
+;     -- Dedicated logic registers            ; 408       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 503       ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 408       ;
+; Total fan-out                               ; 5763      ;
+; Average fan-out                             ; 2.32      ;
++---------------------------------------------+-----------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                  ;
++-------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                             ; Library Name ;
++-------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |uart_controlled_wishbone_master                                        ; 1071 (125)        ; 408 (16)     ; 0           ; 0            ; 0       ; 0         ; 503  ; 0            ; |uart_controlled_wishbone_master                                                                                                                ; work         ;
+;    |doublesync_no_reset:sync_and_delay_watchdog_reset|                  ; 0 (0)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|doublesync_no_reset:sync_and_delay_watchdog_reset                                                              ; work         ;
+;    |edge_detector:watchdog_reset_pulse_edge_detector|                   ; 1 (1)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|edge_detector:watchdog_reset_pulse_edge_detector                                                               ; work         ;
+;    |hw_watchdog_timer:hw_watchdog_timer_inst|                           ; 141 (141)         ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|hw_watchdog_timer:hw_watchdog_timer_inst                                                                       ; work         ;
+;    |uart2bus_top_for_wishbone:uart2bus_top_inst|                        ; 430 (0)           ; 288 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst                                                                    ; work         ;
+;       |uart_parser_for_wishbone:uart_parser1|                           ; 352 (352)         ; 224 (224)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1                              ; work         ;
+;       |uart_top:uart_inst|                                              ; 78 (0)            ; 64 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst                                                 ; work         ;
+;          |baud_gen:baud_gen_1|                                          ; 32 (32)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|baud_gen:baud_gen_1                             ; work         ;
+;          |uart_rx:uart_rx_1|                                            ; 18 (18)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_rx:uart_rx_1                               ; work         ;
+;          |uart_tx:uart_tx_1|                                            ; 28 (28)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1                               ; work         ;
+;    |uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst| ; 374 (374)         ; 65 (64)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst                                             ; work         ;
+;       |generate_one_shot_pulse:generate_auto_reset|                     ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_controlled_wishbone_master|uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|generate_one_shot_pulse:generate_auto_reset ; work         ;
++-------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Protected by Synthesis                                                                                                                                                               ;
++--------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; Register Name                                                                  ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
++--------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[0]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[40] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[24] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[56] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[8]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[20] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[36] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[52] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[4]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[44] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[28] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[60] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[12] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[16] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[32] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[48] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[37] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[41] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[45] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[33] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[25] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[21] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[29] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[17] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[53] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[57] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[61] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[49] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[9]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[5]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[13] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[1]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[38] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[22] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[54] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[6]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[26] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[42] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[58] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[10] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[30] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[46] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[62] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[14] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[34] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[18] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[50] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[2]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[23] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[27] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[31] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[19] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[43] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[39] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[47] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[35] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[59] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[55] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[63] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[51] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[7]  ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[11] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[15] ; yes                                                              ; yes                                        ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[3]  ; yes                                                              ; yes                                        ;
++--------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                              ;
++--------------------------------------------------------------------------------------------------------+----------------------------------------+
+; Register name                                                                                          ; Reason for Removal                     ;
++--------------------------------------------------------------------------------------------------------+----------------------------------------+
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|RD_ERROR                            ; Stuck at GND due to stuck port data_in ;
+; uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[8..31] ; Lost fanout                            ;
+; Total Number of Removed Registers = 25                                                                 ;                                        ;
++--------------------------------------------------------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 408   ;
+; Number of registers using Synchronous Clear  ; 68    ;
+; Number of registers using Synchronous Load   ; 110   ;
+; Number of registers using Asynchronous Clear ; 393   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 278   ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Inverted Register Statistics                                                                                                               ;
++----------------------------------------------------------------------------------------------------------------------------------+---------+
+; Inverted Register                                                                                                                ; Fan out ;
++----------------------------------------------------------------------------------------------------------------------------------+---------+
+; uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1|ser_out                                         ; 1       ;
+; uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_rx:uart_rx_1|in_sync[1]                                      ; 4       ;
+; uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_rx:uart_rx_1|in_sync0                                        ; 1       ;
+; uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|generate_one_shot_pulse:generate_auto_reset|start_shiftreg[0] ; 1       ;
+; Total number of inverted registers = 4                                                                                           ;         ;
++----------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|int_wr_data[14]   ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|int_wr_data[5]    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|bin_byte_count[3] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|int_address[8]    ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|data_param[10]    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 0 LEs                ; 8 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|data_param[0]     ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|addr_param[12]    ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1|bit_count[3]       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1|count16[3]         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1|data_buf[1]        ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|addr_param[7]     ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|addr_param[0]     ;
+; 5:1                ; 32 bits   ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |uart_controlled_wishbone_master|hw_watchdog_timer:hw_watchdog_timer_inst|current_count[4]                                           ;
+; 6:1                ; 32 bits   ; 128 LEs       ; 64 LEs               ; 64 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[62]                      ;
+; 6:1                ; 24 bits   ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[13]                      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|is_ctrl_name_op   ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 8 LEs                ; 56 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|tx_nib_counter[0] ;
+; 13:1               ; 2 bits    ; 16 LEs        ; 6 LEs                ; 10 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|tx_data[4]        ;
+; 15:1               ; 5 bits    ; 50 LEs        ; 20 LEs               ; 30 LEs                 ; Yes        ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|tx_data[3]        ;
+; 43:1               ; 2 bits    ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[7]                       ;
+; 44:1               ; 2 bits    ; 58 LEs        ; 56 LEs               ; 2 LEs                  ; Yes        ; |uart_controlled_wishbone_master|uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|READ_LD[3]                       ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |uart_controlled_wishbone_master|uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|Mux27             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Source assignments for Top-level Entity: |uart_controlled_wishbone_master ;
++------------------------------+-------+------+-----------------------------+
+; Assignment                   ; Value ; From ; To                          ;
++------------------------------+-------+------+-----------------------------+
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; is_regular_control_op       ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; is_regular_control_op       ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; actual_transaction_ack      ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; actual_transaction_ack      ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[31]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[31]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[30]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[30]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[29]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[29]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[28]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[28]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[27]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[27]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[26]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[26]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[25]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[25]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[24]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[24]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[23]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[23]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[22]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[22]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[21]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[21]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[20]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[20]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[19]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[19]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[18]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[18]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[17]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[17]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[16]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[16]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[15]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[15]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[14]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[14]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[13]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[13]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[12]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[12]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[11]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[11]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[10]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[10]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[9]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[9]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[8]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[8]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[7]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[7]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[6]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[6]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[5]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[5]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[4]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[4]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[3]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[3]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[2]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[2]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[1]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[1]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_i[0]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_i[0]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_ack_i~buf0              ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_ack_i~buf0              ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_rty_i~buf0              ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_rty_i~buf0              ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_err_i~buf0              ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_err_i~buf0              ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[31]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[31]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[30]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[30]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[29]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[29]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[28]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[28]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[27]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[27]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[26]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[26]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[25]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[25]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[24]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[24]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[23]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[23]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[22]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[22]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[21]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[21]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[20]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[20]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[19]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[19]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[18]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[18]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[17]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[17]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[16]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[16]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[15]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[15]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[14]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[14]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[13]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[13]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[12]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[12]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[11]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[11]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[10]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[10]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[9]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[9]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[8]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[8]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[7]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[7]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[6]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[6]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[5]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[5]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[4]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[4]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[3]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[3]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[2]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[2]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[1]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[1]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_adr_o[0]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_adr_o[0]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[31]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[31]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[30]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[30]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[29]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[29]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[28]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[28]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[27]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[27]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[26]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[26]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[25]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[25]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[24]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[24]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[23]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[23]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[22]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[22]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[21]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[21]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[20]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[20]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[19]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[19]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[18]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[18]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[17]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[17]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[16]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[16]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[15]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[15]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[14]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[14]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[13]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[13]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[12]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[12]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[11]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[11]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[10]~buf0          ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[10]~buf0          ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[9]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[9]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[8]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[8]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[7]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[7]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[6]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[6]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[5]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[5]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[4]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[4]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[3]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[3]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[2]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[2]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[1]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[1]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_dat_o[0]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_dat_o[0]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_sel_o[3]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_sel_o[3]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_sel_o[2]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_sel_o[2]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_sel_o[1]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_sel_o[1]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_sel_o[0]~buf0           ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_sel_o[0]~buf0           ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_cyc_o~buf0              ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_cyc_o~buf0              ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_stb_o~buf0              ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_stb_o~buf0              ;
+; IGNORE_LCELL_BUFFERS         ; off   ; -    ; wbm_we_o~buf0               ;
+; REMOVE_REDUNDANT_LOGIC_CELLS ; off   ; -    ; wbm_we_o~buf0               ;
++------------------------------+-------+------+-----------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_rx:uart_rx_1 ;
++------------+-------+------+-----------------------------------------------------------------------------+
+; Assignment ; Value ; From ; To                                                                          ;
++------------+-------+------+-----------------------------------------------------------------------------+
+; CUT        ; ON    ; *    ; ser_in                                                                      ;
+; CUT        ; ON    ; *    ; in_sync0                                                                    ;
++------------+-------+------+-----------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Source assignments for uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1 ;
++------------+-------+--------------+---------------------------------------------------------------------+
+; Assignment ; Value ; From         ; To                                                                  ;
++------------+-------+--------------+---------------------------------------------------------------------+
+; CUT        ; ON    ; ser_out      ; *                                                                   ;
+; CUT        ; ON    ; ser_out~reg0 ; *                                                                   ;
++------------+-------+--------------+---------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Source assignments for uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst ;
++-------------------+-------+------+--------------------------------------------------------+
+; Assignment        ; Value ; From ; To                                                     ;
++-------------------+-------+------+--------------------------------------------------------+
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[63]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[62]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[61]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[60]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[59]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[58]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[57]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[56]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[55]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[54]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[53]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[52]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[51]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[50]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[49]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[48]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[47]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[46]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[45]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[44]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[43]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[42]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[41]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[40]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[39]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[38]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[37]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[36]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[35]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[34]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[33]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[32]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[31]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[30]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[29]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[28]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[27]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[26]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[25]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[24]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[23]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[22]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[21]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[20]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[19]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[18]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[17]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[16]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[15]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[14]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[13]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[12]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[11]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[10]~reg0                                       ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[9]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[8]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[7]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[6]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[5]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[4]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[3]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[2]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[1]~reg0                                        ;
+; PRESERVE_REGISTER ; on    ; -    ; READ_LD[0]~reg0                                        ;
++-------------------+-------+------+--------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |uart_controlled_wishbone_master ;
++--------------------------------------------+----------------------------------+-----------------+
+; Parameter Name                             ; Value                            ; Type            ;
++--------------------------------------------+----------------------------------+-----------------+
+; DATA_WIDTH_IN_BYTES                        ; 0000000000000100                 ; Unsigned Binary ;
+; DESC_WIDTH_IN_BYTES                        ; 0000000000001000                 ; Unsigned Binary ;
+; ADDRESS_WIDTH_IN_BITS                      ; 0000000000010000                 ; Unsigned Binary ;
+; DATA_WIDTH                                 ; 0000000000100000                 ; Unsigned Binary ;
+; DESC_WIDTH                                 ; 0000000001000000                 ; Unsigned Binary ;
+; NUM_OF_CONTROL_REGS                        ; 0000000000000010                 ; Unsigned Binary ;
+; USE_AUTO_RESET                             ; 00000001                         ; Unsigned Binary ;
+; ACTUAL_DATA_WIDTH_IN_BYTES                 ; 0000000000001000                 ; Unsigned Binary ;
+; DW                                         ; 00000000000000000000000001000000 ; Unsigned Binary ;
+; CLOCK_SPEED_IN_HZ                          ; 50000000                         ; Signed Integer  ;
+; UART_BAUD_RATE_IN_HZ                       ; 115200                           ; Signed Integer  ;
+; DISABLE_AUTO_CROPPING_OF_CONTROL_REGISTERS ; 00000000                         ; Unsigned Binary ;
+; DISABLE_ERROR_MONITORING                   ; 1                                ; Unsigned Binary ;
+; D_BAUD_FREQ                                ; 576                              ; Signed Integer  ;
+; D_BAUD_LIMIT                               ; 15049                            ; Signed Integer  ;
++--------------------------------------------+----------------------------------+-----------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: hw_watchdog_timer:hw_watchdog_timer_inst ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; numbits        ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart2bus_top_for_wishbone:uart2bus_top_inst ;
++----------------------------+----------------------------------+--------------------------+
+; Parameter Name             ; Value                            ; Type                     ;
++----------------------------+----------------------------------+--------------------------+
+; AW                         ; 0000000000010000                 ; Unsigned Binary          ;
+; DATA_WIDTH_IN_BYTES        ; 0000000000000100                 ; Unsigned Binary          ;
+; DESC_WIDTH_IN_BYTES        ; 0000000000001000                 ; Unsigned Binary          ;
+; DESC_WIDTH                 ; 00000000000000000000000001000000 ; Unsigned Binary          ;
+; ACTUAL_DATA_WIDTH_IN_BYTES ; 0000000000001000                 ; Unsigned Binary          ;
+; DW                         ; 00000000000000000000000001000000 ; Unsigned Binary          ;
+; D_BAUD_FREQ                ; 576                              ; Signed Integer           ;
+; D_BAUD_LIMIT               ; 15049                            ; Signed Integer           ;
++----------------------------+----------------------------------+--------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1 ;
++---------------------+----------------------------------+-----------------------------------------------------------------------+
+; Parameter Name      ; Value                            ; Type                                                                  ;
++---------------------+----------------------------------+-----------------------------------------------------------------------+
+; AW                  ; 0000000000010000                 ; Unsigned Binary                                                       ;
+; DATA_WIDTH_IN_BYTES ; 0000000000001000                 ; Unsigned Binary                                                       ;
+; DW                  ; 00000000000000000000000001000000 ; Unsigned Binary                                                       ;
++---------------------+----------------------------------+-----------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: basic_bus_to_wishbone_bridge:basic_bus_to_wishbone_bridge_inst ;
++-----------------------+------------------+------------------------------------------------------------------+
+; Parameter Name        ; Value            ; Type                                                             ;
++-----------------------+------------------+------------------------------------------------------------------+
+; ADDRESS_WIDTH_IN_BITS ; 0000000000010000 ; Unsigned Binary                                                  ;
+; DATA_WIDTH_IN_BITS    ; 32               ; Signed Integer                                                   ;
+; SEL_WIDTH_IN_BITS     ; 4                ; Signed Integer                                                   ;
++-----------------------+------------------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst ;
++--------------------------------------------+------------------+-------------------------------------------------+
+; Parameter Name                             ; Value            ; Type                                            ;
++--------------------------------------------+------------------+-------------------------------------------------+
+; DATA_WIDTH                                 ; 0000000000100000 ; Unsigned Binary                                 ;
+; DESC_WIDTH                                 ; 0000000001000000 ; Unsigned Binary                                 ;
+; ACTUAL_DATA_WIDTH                          ; 0000000001000000 ; Unsigned Binary                                 ;
+; NUM_OF_CONTROL_REGS                        ; 0000000000000010 ; Unsigned Binary                                 ;
+; NUM_OF_STATUS_REGS                         ; 0000000000000000 ; Unsigned Binary                                 ;
+; ADDRESS_WIDTH                              ; 0000000000010000 ; Unsigned Binary                                 ;
+; STATUS_ADDRESS_START                       ; 0000000000000010 ; Unsigned Binary                                 ;
+; USE_AUTO_RESET                             ; 00000001         ; Unsigned Binary                                 ;
+; ENABLE_CONTROL_WISHBONE_INTERFACE          ; 00000000         ; Unsigned Binary                                 ;
+; ENABLE_STATUS_WISHBONE_INTERFACE           ; 00000000         ; Unsigned Binary                                 ;
+; DISABLE_AUTO_CROPPING_OF_CONTROL_REGISTERS ; 00000000         ; Unsigned Binary                                 ;
+; DISABLE_ERROR_MONITORING                   ; 1                ; Unsigned Binary                                 ;
+; VERSION                                    ; 00000011         ; Unsigned Binary                                 ;
++--------------------------------------------+------------------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|generate_one_shot_pulse:generate_auto_reset ;
++------------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Name   ; Value ; Type                                                                                                                             ;
++------------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+; num_clks_to_wait ; 1     ; Signed Integer                                                                                                                   ;
++------------------+-------+----------------------------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst" ;
++-----------------------+-------+----------+-----------------------------------------------------+
+; Port                  ; Type  ; Severity ; Details                                             ;
++-----------------------+-------+----------+-----------------------------------------------------+
+; CLOCK_FREQ_HZ[23..19] ; Input ; Info     ; Stuck at VCC                                        ;
+; CLOCK_FREQ_HZ[15..12] ; Input ; Info     ; Stuck at VCC                                        ;
+; CLOCK_FREQ_HZ[31..26] ; Input ; Info     ; Stuck at GND                                        ;
+; CLOCK_FREQ_HZ[11..8]  ; Input ; Info     ; Stuck at GND                                        ;
+; CLOCK_FREQ_HZ[6..0]   ; Input ; Info     ; Stuck at GND                                        ;
+; CLOCK_FREQ_HZ[25]     ; Input ; Info     ; Stuck at VCC                                        ;
+; CLOCK_FREQ_HZ[24]     ; Input ; Info     ; Stuck at GND                                        ;
+; CLOCK_FREQ_HZ[18]     ; Input ; Info     ; Stuck at GND                                        ;
+; CLOCK_FREQ_HZ[17]     ; Input ; Info     ; Stuck at VCC                                        ;
+; CLOCK_FREQ_HZ[16]     ; Input ; Info     ; Stuck at GND                                        ;
+; CLOCK_FREQ_HZ[7]      ; Input ; Info     ; Stuck at VCC                                        ;
++-----------------------+-------+----------+-----------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "basic_bus_to_wishbone_bridge:basic_bus_to_wishbone_bridge_inst"                                                                                                                            ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; int_wr_data ; Input  ; Warning  ; Input port expression (64 bits) is wider than the input port (32 bits) it drives.  The 32 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; wbm_adr_o   ; Output ; Warning  ; Output or bidir port (16 bits) is smaller than the port expression (32 bits) it drives.  The 16 most-significant bit(s) in the port expression will be connected to GND.            ;
++-------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1"                              ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                  ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; error_count ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst"                                   ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port               ; Type   ; Severity ; Details                                                                             ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; baud_freq[11..10]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_freq[8..7]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_freq[5..0]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_freq[9]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; baud_freq[6]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; baud_limit[13..11] ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; baud_limit[7..6]   ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; baud_limit[15..14] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_limit[5..4]   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_limit[2..1]   ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_limit[10]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_limit[9]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; baud_limit[8]      ; Input  ; Info     ; Stuck at GND                                                                        ;
+; baud_limit[3]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; baud_limit[0]      ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; baud_clk           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "uart2bus_top_for_wishbone:uart2bus_top_inst"                                                                                                ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                            ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
+; int_req       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                ;
+; int_gnt       ; Input  ; Info     ; Stuck at VCC                                                                                                                       ;
+; command_count ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (8 bits) it drives; bit(s) "command_count[31..8]" have no fanouts ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "hw_watchdog_timer:hw_watchdog_timer_inst"                                                                                                                             ;
++------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                                                                                                                                    ;
++------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; num_reset_cycles ; Input ; Warning  ; Input port expression (8 bits) is smaller than the input port (32 bits) it drives.  Extra input bit(s) "num_reset_cycles[31..8]" will be connected to GND. ;
++------------------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Wed Aug 27 12:17:49 2014
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart_controlled_wishbone_master -c uart_controlled_wishbone_master
+Info: Found 6 design units, including 6 entities, in source file ../rtl/uart_bridge_to_wishbone_master.v
+    Info: Found entity 1: avalon_st_32_bit_packet_interface
+    Info: Found entity 2: atlantic_32_bit_packet_interface
+    Info: Found entity 3: wishbone_interface
+    Info: Found entity 4: avalon_mm_pipeline_bridge_interface
+    Info: Found entity 5: fifo_bank_interface
+    Info: Found entity 6: uart_bridge_to_wishbone_master
+Info: Found 1 design units, including 1 entities, in source file ../rtl/uart_controlled_wishbone_master.v
+    Info: Found entity 1: uart_controlled_wishbone_master
+Info: Found 1 design units, including 1 entities, in source file ../rtl/basic_bus_to_wishbone_bridge.v
+    Info: Found entity 1: basic_bus_to_wishbone_bridge
+Info: Elaborating entity "uart_controlled_wishbone_master" for the top level hierarchy
+Warning (10230): Verilog HDL assignment warning at uart_controlled_wishbone_master.v(53): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at uart_controlled_wishbone_master.v(52): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at uart_controlled_wishbone_master.v(221): truncated value with size 32 to match size of target (16)
+Warning: Using design file ../rtl/hw_watchdog_timer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: hw_watchdog_timer
+Info: Elaborating entity "hw_watchdog_timer" for hierarchy "hw_watchdog_timer:hw_watchdog_timer_inst"
+Warning: Using design file ../rtl/doublesync_no_reset.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: doublesync_no_reset
+Info: Elaborating entity "doublesync_no_reset" for hierarchy "doublesync_no_reset:sync_and_delay_watchdog_reset"
+Warning (10036): Verilog HDL or VHDL warning at doublesync_no_reset.v(12): object "clock_enable" assigned a value but never read
+Warning: Using design file ../rtl/edge_detector.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: edge_detector
+Info: Elaborating entity "edge_detector" for hierarchy "edge_detector:watchdog_reset_pulse_edge_detector"
+Warning: Using design file ../rtl/uart2bus_top_for_wishbone.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: uart2bus_top_for_wishbone
+Info: Elaborating entity "uart2bus_top_for_wishbone" for hierarchy "uart2bus_top_for_wishbone:uart2bus_top_inst"
+Warning (10230): Verilog HDL assignment warning at uart2bus_top_for_wishbone.v(116): truncated value with size 32 to match size of target (12)
+Warning (10230): Verilog HDL assignment warning at uart2bus_top_for_wishbone.v(117): truncated value with size 32 to match size of target (16)
+Warning: Using design file ../rtl/uart_top.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: uart_top
+Info: Elaborating entity "uart_top" for hierarchy "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst"
+Warning: Using design file ../rtl/baud_gen.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: baud_gen
+Info: Elaborating entity "baud_gen" for hierarchy "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|baud_gen:baud_gen_1"
+Warning: Using design file ../rtl/uart_rx.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: uart_rx
+Info: Elaborating entity "uart_rx" for hierarchy "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_rx:uart_rx_1"
+Warning: Using design file ../rtl/uart_tx.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: uart_tx
+Info: Elaborating entity "uart_tx" for hierarchy "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_top:uart_inst|uart_tx:uart_tx_1"
+Warning: Using design file ../rtl/uart_parser_for_wishbone.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: uart_parser_for_wishbone
+Info: Elaborating entity "uart_parser_for_wishbone" for hierarchy "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1"
+Warning (10230): Verilog HDL assignment warning at uart_parser_for_wishbone.v(627): truncated value with size 68 to match size of target (64)
+Warning (10230): Verilog HDL assignment warning at uart_parser_for_wishbone.v(658): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at uart_parser_for_wishbone.v(767): truncated value with size 32 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at uart_parser_for_wishbone.v(841): truncated value with size 64 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at uart_parser_for_wishbone.v(849): truncated value with size 32 to match size of target (8)
+Warning (10230): Verilog HDL assignment warning at uart_parser_for_wishbone.v(891): truncated value with size 32 to match size of target (8)
+Warning (10034): Output port "error_count[31]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[30]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[29]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[28]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[27]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[26]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[25]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[24]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[23]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[22]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[21]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[20]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[19]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[18]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[17]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[16]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[15]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[14]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[13]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[12]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[11]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[10]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[9]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[8]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[7]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[6]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[5]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[4]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[3]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[2]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[1]" at uart_parser_for_wishbone.v(59) has no driver
+Warning (10034): Output port "error_count[0]" at uart_parser_for_wishbone.v(59) has no driver
+Info: Elaborating entity "basic_bus_to_wishbone_bridge" for hierarchy "basic_bus_to_wishbone_bridge:basic_bus_to_wishbone_bridge_inst"
+Warning (10230): Verilog HDL assignment warning at basic_bus_to_wishbone_bridge.v(85): truncated value with size 32 to match size of target (4)
+Info: Elaborating entity "uart_bridge_to_wishbone_master" for hierarchy "uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst"
+Warning (10230): Verilog HDL assignment warning at uart_bridge_to_wishbone_master.v(51): truncated value with size 8 to match size of target (1)
+Warning (10034): Output port "TRANSACTION_ERROR" at uart_bridge_to_wishbone_master.v(91) has no driver
+Warning: Using design file ../rtl/generate_one_shot_pulse.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: generate_one_shot_pulse
+Info: Elaborating entity "generate_one_shot_pulse" for hierarchy "uart_bridge_to_wishbone_master:uart_bridge_to_wishbone_master_inst|generate_one_shot_pulse:generate_auto_reset"
+Info: Ignored 1 buffer(s)
+    Info: Ignored 1 SOFT buffer(s)
+Warning: 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Registers with preset signals will power-up high
+Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "TRANSACTION_ERROR" is stuck at GND
+    Warning (13410): Pin "WR_ERROR" is stuck at GND
+    Warning (13410): Pin "RD_ERROR" is stuck at GND
+Info: 24 registers lost all their fanouts during netlist optimizations. The first 24 are displayed below.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[8]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[9]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[10]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[11]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[12]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[13]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[14]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[15]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[16]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[17]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[18]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[19]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[20]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[21]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[22]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[23]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[24]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[25]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[26]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[27]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[28]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[29]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[30]" lost all its fanouts during netlist optimizations.
+    Info: Register "uart2bus_top_for_wishbone:uart2bus_top_inst|uart_parser_for_wishbone:uart_parser1|command_count[31]" lost all its fanouts during netlist optimizations.
+Info: Found the following redundant logic cells in design
+    Info (17048): Logic cell "wbm_adr_o[0]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[1]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[2]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[3]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[4]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[5]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[6]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[7]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[8]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[9]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[10]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[11]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[12]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[13]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[14]~buf0"
+    Info (17048): Logic cell "wbm_adr_o[15]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[0]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[1]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[2]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[3]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[4]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[5]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[6]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[7]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[8]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[9]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[10]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[11]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[12]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[13]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[14]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[15]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[16]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[17]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[18]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[19]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[20]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[21]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[22]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[23]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[24]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[25]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[26]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[27]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[28]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[29]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[30]~buf0"
+    Info (17048): Logic cell "wbm_dat_o[31]~buf0"
+    Info (17048): Logic cell "wbm_sel_o[0]~buf0"
+    Info (17048): Logic cell "wbm_sel_o[1]~buf0"
+    Info (17048): Logic cell "wbm_sel_o[2]~buf0"
+    Info (17048): Logic cell "wbm_sel_o[3]~buf0"
+    Info (17048): Logic cell "wbm_we_o~buf0"
+    Info (17048): Logic cell "wbm_ack_i~buf0"
+    Info (17048): Logic cell "wbm_dat_i[0]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[24]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[8]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[20]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[4]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[28]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[12]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[16]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[25]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[21]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[29]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[17]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[9]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[5]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[13]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[1]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[22]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[6]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[26]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[10]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[30]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[14]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[18]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[2]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[23]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[27]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[31]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[19]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[7]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[11]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[15]~buf0"
+    Info (17048): Logic cell "wbm_dat_i[3]~buf0"
+Warning: Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "wbm_rty_i"
+    Warning (15610): No output dependent on input pin "wbm_err_i"
+Info: Implemented 1673 device resources after synthesis - the final resource count might be different
+    Info: Implemented 362 input pins
+    Info: Implemented 141 output pins
+    Info: Implemented 1170 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 65 warnings
+    Info: Peak virtual memory: 224 megabytes
+    Info: Processing ended: Wed Aug 27 12:17:54 2014
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+

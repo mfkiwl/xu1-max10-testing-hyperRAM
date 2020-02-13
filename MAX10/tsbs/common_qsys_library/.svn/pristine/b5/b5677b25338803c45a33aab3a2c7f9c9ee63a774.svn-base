@@ -1,0 +1,44 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\arria10\triumf.reflexa10\tsbs\common_qsys_library\tsb\ip\special_rtl\arria10\18_1\ddio\altddio_input_3bit.qsys --block-symbol-file --output-directory=D:\arria10\triumf.reflexa10\tsbs\common_qsys_library\tsb\ip\special_rtl\arria10\18_1\ddio\altddio_input_3bit --family="Arria 10" --part=10AS066H2F34I1SG
+Progress: Loading ddio/altddio_input_3bit.qsys
+Progress: Reading input file
+Progress: Adding gpio_0 [altera_gpio 18.1]
+Progress: Parameterizing module gpio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: altddio_input_3bit.gpio_0: Altera GPIO supports a maximum interface frequency of 300 MHZ.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\arria10\triumf.reflexa10\tsbs\common_qsys_library\tsb\ip\special_rtl\arria10\18_1\ddio\altddio_input_3bit.qsys --synthesis=VERILOG --output-directory=D:\arria10\triumf.reflexa10\tsbs\common_qsys_library\tsb\ip\special_rtl\arria10\18_1\ddio\altddio_input_3bit --family="Arria 10" --part=10AS066H2F34I1SG
+Progress: Loading ddio/altddio_input_3bit.qsys
+Progress: Reading input file
+Progress: Adding gpio_0 [altera_gpio 18.1]
+Progress: Parameterizing module gpio_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: altddio_input_3bit.gpio_0: Altera GPIO supports a maximum interface frequency of 300 MHZ.
+Info: altddio_input_3bit: "Transforming system: altddio_input_3bit"
+Info: altddio_input_3bit: Running transform generation_view_transform
+Info: altddio_input_3bit: Running transform generation_view_transform took 0.000s
+Info: gpio_0: Running transform generation_view_transform
+Info: gpio_0: Running transform generation_view_transform took 0.000s
+Info: core: Running transform generation_view_transform
+Info: core: Running transform generation_view_transform took 0.000s
+Info: altddio_input_3bit: Running transform merlin_avalon_transform
+Info: altddio_input_3bit: Running transform merlin_avalon_transform took 0.028s
+Info: gpio_0: Running transform merlin_avalon_transform
+Info: gpio_0: Running transform merlin_avalon_transform took 0.007s
+Info: altddio_input_3bit: "Naming system components in system: altddio_input_3bit"
+Info: altddio_input_3bit: "Processing generation queue"
+Info: altddio_input_3bit: "Generating: altddio_input_3bit"
+Info: altddio_input_3bit: "Generating: altddio_input_3bit_altera_gpio_181_ejew3yq"
+Info: altddio_input_3bit: "Generating: altera_gpio"
+Info: altddio_input_3bit: Done "altddio_input_3bit" with 3 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

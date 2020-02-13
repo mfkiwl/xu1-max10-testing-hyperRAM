@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Aug 27 12:17:54 2014
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : uart_controlled_wishbone_master
+Top-level Entity Name : uart_controlled_wishbone_master
+Family : Cyclone III
+Total logic elements : 1,160
+    Total combinational functions : 1,071
+    Dedicated logic registers : 408
+Total registers : 408
+Total pins : 503
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

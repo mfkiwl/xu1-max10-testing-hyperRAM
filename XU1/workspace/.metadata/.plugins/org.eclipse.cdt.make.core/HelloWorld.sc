@@ -751,6 +751,7 @@
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/7.3.1/../../../../aarch64-none-elf/include"/>
 <includePath path="#undef _ILP32" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+<includePath path="#undef __ARM_FEATURE_FP16_SCALAR_ARITHMETIC" removed="true"/>
 <includePath path="#undef __ILP32__" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201112L"/>

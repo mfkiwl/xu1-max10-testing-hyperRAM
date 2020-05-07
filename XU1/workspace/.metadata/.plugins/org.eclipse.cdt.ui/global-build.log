@@ -12214,3 +12214,752 @@ make: Nothing to be done for 'all'.
 15:33:43 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 make: Nothing to be done for 'all'.
+13:54:02 **** Auto Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_0/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_3/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/emacps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_4/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpio_v4_3/src"
+make -C psu_cortexa53_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_4/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_8/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/scugic_v3_10/src"
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/standalone_v6_8/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmon_v7_5/src"
+make -C psu_cortexa53_0/libsrc/sysmon_v7_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ttcps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/xilffs_v4_0/src"
+make -C psu_cortexa53_0/libsrc/xilffs_v4_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/xilpm_v2_4/src"
+make -C psu_cortexa53_0/libsrc/xilpm_v2_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Include files for this library have already been copied."
+"Running Make include in psu_cortexa53_0/libsrc/xilsecure_v3_2/src"
+make -C psu_cortexa53_0/libsrc/xilsecure_v3_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_6/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling axipmon"
+"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_0/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling clockps"
+"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling cpu_cortexa53"
+"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_3/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling csudma"
+"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ddrcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_4/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in psu_cortexa53_0/libsrc/gpio_v4_3/src"
+make -C psu_cortexa53_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_4/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ipipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_8/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling qspipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling resetps"
+"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling rtcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/scugic_v3_10/src"
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in psu_cortexa53_0/libsrc/standalone_v6_8/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling standalone A53"
+In file included from sleep.c:59:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:52:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+translation_table.S:145:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sysmonpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/sysmon_v7_5/src"
+make -C psu_cortexa53_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sysmon"
+"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling usbpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/xilffs_v4_0/src"
+make -C psu_cortexa53_0/libsrc/xilffs_v4_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling XilFFs Library"
+"Running Make libs in psu_cortexa53_0/libsrc/xilpm_v2_4/src"
+make -C psu_cortexa53_0/libsrc/xilpm_v2_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling xilpm library"
+"Running Make libs in psu_cortexa53_0/libsrc/xilsecure_v3_2/src"
+make -C psu_cortexa53_0/libsrc/xilsecure_v3_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling XilSecure Library"
+"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_6/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling zdma"
+'Finished building libraries'
+13:55:05 **** Clean-only build of configuration Debug for project FlashTest ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+13:55:05 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+13:55:06 **** Clean-only build of configuration Debug for project MemoryTest ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+13:55:06 **** Clean-only build of configuration Debug for project fsbl ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+13:55:06 **** Clean-only build of configuration Debug for project i2c_example ****
+make clean 
+make: *** No rule to make target 'clean'.  Stop.
+13:55:07 **** Clean-only build of project standalone_bsp_0 ****
+make -k clean 
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s clean 
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s clean 
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/gpio_v4_3/src -s clean 
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s clean 
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s clean 
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s clean 
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s clean 
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s clean 
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/sysmon_v7_5/src -s clean 
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s clean 
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/xilffs_v4_0/src -s clean 
+make -C psu_cortexa53_0/libsrc/xilpm_v2_4/src -s clean 
+make -C psu_cortexa53_0/libsrc/xilsecure_v3_2/src -s clean 
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s clean 
+rm -f psu_cortexa53_0/lib/libxil.a
+13:55:11 **** Build of project standalone_bsp_0 ****
+make -k all 
+"Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/clockps_v1_0/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/csudma_v1_3/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/emacps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_4/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/gpio_v4_3/src"
+make -C psu_cortexa53_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/iicps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_4/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_8/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/scugic_v3_10/src"
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sdps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/standalone_v6_8/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/sysmon_v7_5/src"
+make -C psu_cortexa53_0/libsrc/sysmon_v7_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/ttcps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/xilffs_v4_0/src"
+make -C psu_cortexa53_0/libsrc/xilffs_v4_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/xilpm_v2_4/src"
+make -C psu_cortexa53_0/libsrc/xilpm_v2_4/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Include files for this library have already been copied."
+"Running Make include in psu_cortexa53_0/libsrc/xilsecure_v3_2/src"
+make -C psu_cortexa53_0/libsrc/xilsecure_v3_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make include in psu_cortexa53_0/libsrc/zdma_v1_6/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_7/src"
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling axipmon"
+aarch64-none-elf-ar: creating ../../../lib/libxil.a
+"Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_0/src"
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling clockps"
+"Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src"
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src"
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling cpu_cortexa53"
+"Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_3/src"
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling csudma"
+"Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src"
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ddrcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_4/src"
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in psu_cortexa53_0/libsrc/gpio_v4_3/src"
+make -C psu_cortexa53_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_8/src"
+make -C psu_cortexa53_0/libsrc/iicps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_4/src"
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ipipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_8/src"
+make -C psu_cortexa53_0/libsrc/qspipsu_v1_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling qspipsu"
+"Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_2/src"
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling resetps"
+"Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src"
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling rtcpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/scugic_v3_10/src"
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in psu_cortexa53_0/libsrc/sdps_v3_6/src"
+make -C psu_cortexa53_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in psu_cortexa53_0/libsrc/standalone_v6_8/src"
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling standalone A53"
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:52:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:59:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+translation_table.S:145:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+"Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src"
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sysmonpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/sysmon_v7_5/src"
+make -C psu_cortexa53_0/libsrc/sysmon_v7_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling sysmon"
+"Running Make libs in psu_cortexa53_0/libsrc/ttcps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_7/src"
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_4/src"
+make -C psu_cortexa53_0/libsrc/usbpsu_v1_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling usbpsu"
+"Running Make libs in psu_cortexa53_0/libsrc/xilffs_v4_0/src"
+make -C psu_cortexa53_0/libsrc/xilffs_v4_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling XilFFs Library"
+"Running Make libs in psu_cortexa53_0/libsrc/xilpm_v2_4/src"
+make -C psu_cortexa53_0/libsrc/xilpm_v2_4/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling xilpm library"
+aarch64-none-elf-ar: creating ../../../lib/libxilpm.a
+"Running Make libs in psu_cortexa53_0/libsrc/xilsecure_v3_2/src"
+make -C psu_cortexa53_0/libsrc/xilsecure_v3_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling XilSecure Library"
+"Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_6/src"
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+"Compiling zdma"
+'Finished building libraries'
+13:56:09 **** Build of configuration Debug for project i2c_example ****
+make all 
+'Building file: ../src/AtmelAtsha204a.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AtmelAtsha204a.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/AtmelAtsha204a.d" -MT"src/AtmelAtsha204a.o" -o "src/AtmelAtsha204a.o" "../src/AtmelAtsha204a.c"
+In file included from ../src/AtmelAtsha204a.c:18:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/AtmelAtsha204a.c'
+' '
+'Building file: ../src/CurrentMonitor.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/CurrentMonitor.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/CurrentMonitor.d" -MT"src/CurrentMonitor.o" -o "src/CurrentMonitor.o" "../src/CurrentMonitor.c"
+In file included from ../src/CurrentMonitor.c:14:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/CurrentMonitor.c'
+' '
+'Building file: ../src/I2cExample.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2cExample.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/I2cExample.d" -MT"src/I2cExample.o" -o "src/I2cExample.o" "../src/I2cExample.c"
+'Finished building: ../src/I2cExample.c'
+' '
+'Building file: ../src/I2cInterface.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2cInterface.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/I2cInterface.d" -MT"src/I2cInterface.o" -o "src/I2cInterface.o" "../src/I2cInterface.c"
+In file included from ../src/I2cInterface.c:14:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/I2cInterface.c'
+' '
+'Building file: ../src/InterruptController.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/InterruptController.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/InterruptController.d" -MT"src/InterruptController.o" -o "src/InterruptController.o" "../src/InterruptController.c"
+'Finished building: ../src/InterruptController.c'
+' '
+'Building file: ../src/ModuleConfigConstants.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ModuleConfigConstants.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/ModuleConfigConstants.d" -MT"src/ModuleConfigConstants.o" -o "src/ModuleConfigConstants.o" "../src/ModuleConfigConstants.c"
+'Finished building: ../src/ModuleConfigConstants.c'
+' '
+'Building file: ../src/ModuleConfigValueKeys.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ModuleConfigValueKeys.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/ModuleConfigValueKeys.d" -MT"src/ModuleConfigValueKeys.o" -o "src/ModuleConfigValueKeys.o" "../src/ModuleConfigValueKeys.c"
+'Finished building: ../src/ModuleConfigValueKeys.c'
+' '
+'Building file: ../src/ModuleEeprom.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ModuleEeprom.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/ModuleEeprom.d" -MT"src/ModuleEeprom.o" -o "src/ModuleEeprom.o" "../src/ModuleEeprom.c"
+In file included from ../src/ModuleEeprom.c:15:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/ModuleEeprom.c'
+' '
+'Building file: ../src/ReadSystemMonitor.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ReadSystemMonitor.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/ReadSystemMonitor.d" -MT"src/ReadSystemMonitor.o" -o "src/ReadSystemMonitor.o" "../src/ReadSystemMonitor.c"
+In file included from ../src/ReadSystemMonitor.c:14:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/ReadSystemMonitor.c'
+' '
+'Building file: ../src/RealtimeClock.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/RealtimeClock.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/RealtimeClock.d" -MT"src/RealtimeClock.o" -o "src/RealtimeClock.o" "../src/RealtimeClock.c"
+'Finished building: ../src/RealtimeClock.c'
+' '
+'Building file: ../src/SystemController.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SystemController.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/SystemController.d" -MT"src/SystemController.o" -o "src/SystemController.o" "../src/SystemController.c"
+../src/SystemController.c: In function 'SystemController_SetVmonSel':
+../src/SystemController.c:75:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from ../src/SystemController.c:13:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/SystemController.c'
+' '
+'Building file: ../src/SystemMonitor.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/SystemMonitor.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/SystemMonitor.d" -MT"src/SystemMonitor.o" -o "src/SystemMonitor.o" "../src/SystemMonitor.c"
+In file included from ../src/SystemMonitor.c:13:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/SystemMonitor.c'
+' '
+'Building file: ../src/TimerInterface.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/TimerInterface.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/TimerInterface.d" -MT"src/TimerInterface.o" -o "src/TimerInterface.o" "../src/TimerInterface.c"
+'Finished building: ../src/TimerInterface.c'
+' '
+'Building target: i2c_example.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "i2c_example.elf"  ./src/AtmelAtsha204a.o ./src/CurrentMonitor.o ./src/I2cExample.o ./src/I2cInterface.o ./src/InterruptController.o ./src/ModuleConfigConstants.o ./src/ModuleConfigValueKeys.o ./src/ModuleEeprom.o ./src/ReadSystemMonitor.o ./src/RealtimeClock.o ./src/SystemController.o ./src/SystemMonitor.o ./src/TimerInterface.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: i2c_example.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size i2c_example.elf  |tee "i2c_example.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  61460	   6520	  20816	  88796	  15adc	i2c_example.elf
+'Finished building: i2c_example.elf.size'
+' '
+13:56:16 **** Build of configuration Debug for project fsbl ****
+make all 
+'Building file: C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/psu_init.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/psu_init.d" -MT"src/psu_init.o" -o "src/psu_init.o" "C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.c"
+'Finished building: C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.c'
+' '
+'Building file: ../src/xfsbl_authentication.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_authentication.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_authentication.d" -MT"src/xfsbl_authentication.o" -o "src/xfsbl_authentication.o" "../src/xfsbl_authentication.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_bs.h:61,
+                 from ../src/xfsbl_authentication.c:63:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_authentication.c'
+' '
+'Building file: ../src/xfsbl_board.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_board.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_board.d" -MT"src/xfsbl_board.o" -o "src/xfsbl_board.o" "../src/xfsbl_board.c"
+'Finished building: ../src/xfsbl_board.c'
+' '
+'Building file: ../src/xfsbl_bs.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_bs.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_bs.d" -MT"src/xfsbl_bs.o" -o "src/xfsbl_bs.o" "../src/xfsbl_bs.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_bs.h:61,
+                 from ../src/xfsbl_bs.c:55:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_bs.c'
+' '
+'Building file: ../src/xfsbl_csu_dma.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_csu_dma.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_csu_dma.d" -MT"src/xfsbl_csu_dma.o" -o "src/xfsbl_csu_dma.o" "../src/xfsbl_csu_dma.c"
+'Finished building: ../src/xfsbl_csu_dma.c'
+' '
+'Building file: ../src/xfsbl_ddr_init.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_ddr_init.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_ddr_init.d" -MT"src/xfsbl_ddr_init.o" -o "src/xfsbl_ddr_init.o" "../src/xfsbl_ddr_init.c"
+'Finished building: ../src/xfsbl_ddr_init.c'
+' '
+'Building file: ../src/xfsbl_dfu_util.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_dfu_util.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_dfu_util.d" -MT"src/xfsbl_dfu_util.o" -o "src/xfsbl_dfu_util.o" "../src/xfsbl_dfu_util.c"
+'Finished building: ../src/xfsbl_dfu_util.c'
+' '
+'Building file: ../src/xfsbl_exit.S'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_exit.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_exit.d" -MT"src/xfsbl_exit.o" -o "src/xfsbl_exit.o" "../src/xfsbl_exit.S"
+'Finished building: ../src/xfsbl_exit.S'
+' '
+'Building file: ../src/xfsbl_handoff.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_handoff.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_handoff.d" -MT"src/xfsbl_handoff.o" -o "src/xfsbl_handoff.o" "../src/xfsbl_handoff.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_handoff.c:59:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_handoff.c'
+' '
+'Building file: ../src/xfsbl_hooks.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_hooks.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_hooks.d" -MT"src/xfsbl_hooks.o" -o "src/xfsbl_hooks.o" "../src/xfsbl_hooks.c"
+'Finished building: ../src/xfsbl_hooks.c'
+' '
+'Building file: ../src/xfsbl_image_header.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_image_header.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_image_header.d" -MT"src/xfsbl_image_header.o" -o "src/xfsbl_image_header.o" "../src/xfsbl_image_header.c"
+'Finished building: ../src/xfsbl_image_header.c'
+' '
+'Building file: ../src/xfsbl_initialization.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_initialization.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_initialization.d" -MT"src/xfsbl_initialization.o" -o "src/xfsbl_initialization.o" "../src/xfsbl_initialization.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_initialization.c:69:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_initialization.c'
+' '
+'Building file: ../src/xfsbl_main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_main.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_main.d" -MT"src/xfsbl_main.o" -o "src/xfsbl_main.o" "../src/xfsbl_main.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_main.c:54:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_main.c'
+' '
+'Building file: ../src/xfsbl_misc.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_misc.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_misc.d" -MT"src/xfsbl_misc.o" -o "src/xfsbl_misc.o" "../src/xfsbl_misc.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_misc.c:53:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_misc.c'
+' '
+'Building file: ../src/xfsbl_misc_drivers.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_misc_drivers.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_misc_drivers.d" -MT"src/xfsbl_misc_drivers.o" -o "src/xfsbl_misc_drivers.o" "../src/xfsbl_misc_drivers.c"
+'Finished building: ../src/xfsbl_misc_drivers.c'
+' '
+'Building file: ../src/xfsbl_nand.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_nand.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_nand.d" -MT"src/xfsbl_nand.o" -o "src/xfsbl_nand.o" "../src/xfsbl_nand.c"
+'Finished building: ../src/xfsbl_nand.c'
+' '
+'Building file: ../src/xfsbl_partition_load.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_partition_load.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_partition_load.d" -MT"src/xfsbl_partition_load.o" -o "src/xfsbl_partition_load.o" "../src/xfsbl_partition_load.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_partition_load.c:70:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_partition_load.c'
+' '
+'Building file: ../src/xfsbl_plpartition_valid.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_plpartition_valid.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_plpartition_valid.d" -MT"src/xfsbl_plpartition_valid.o" -o "src/xfsbl_plpartition_valid.o" "../src/xfsbl_plpartition_valid.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_authentication.h:64,
+                 from ../src/xfsbl_plpartition_valid.h:58,
+                 from ../src/xfsbl_plpartition_valid.c:73:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_plpartition_valid.c'
+' '
+'Building file: ../src/xfsbl_qspi.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_qspi.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_qspi.d" -MT"src/xfsbl_qspi.o" -o "src/xfsbl_qspi.o" "../src/xfsbl_qspi.c"
+'Finished building: ../src/xfsbl_qspi.c'
+' '
+'Building file: ../src/xfsbl_rsa_sha.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_rsa_sha.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_rsa_sha.d" -MT"src/xfsbl_rsa_sha.o" -o "src/xfsbl_rsa_sha.o" "../src/xfsbl_rsa_sha.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_authentication.h:64,
+                 from ../src/xfsbl_rsa_sha.c:54:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_rsa_sha.c'
+' '
+'Building file: ../src/xfsbl_sd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_sd.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_sd.d" -MT"src/xfsbl_sd.o" -o "src/xfsbl_sd.o" "../src/xfsbl_sd.c"
+In file included from ../src/xfsbl_main.h:63:0,
+                 from ../src/xfsbl_sd.c:51:
+../../standalone_bsp_0/psu_cortexa53_0/include/xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+'Finished building: ../src/xfsbl_sd.c'
+' '
+'Building file: ../src/xfsbl_translation_table.S'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_translation_table.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_translation_table.d" -MT"src/xfsbl_translation_table.o" -o "src/xfsbl_translation_table.o" "../src/xfsbl_translation_table.S"
+../src/xfsbl_translation_table.S:107:2: warning: #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined" [-Wcpp]
+ #warning "There's no DDR_1 in the HW design. MMU translation table marks 32 GB DDR address space as undefined"
+  ^~~~~~~
+'Finished building: ../src/xfsbl_translation_table.S'
+' '
+'Building file: ../src/xfsbl_usb.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -DARMA53_64 -Wall -O0 -g3 -I"C:\triumf\max\xu1-max10-testing\XU1\workspace\hw_platform_0" -c -fmessage-length=0 -MT"src/xfsbl_usb.o" -Os -flto -ffat-lto-objects -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xfsbl_usb.d" -MT"src/xfsbl_usb.o" -o "src/xfsbl_usb.o" "../src/xfsbl_usb.c"
+'Finished building: ../src/xfsbl_usb.c'
+' '
+'Building target: fsbl.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "fsbl.elf"  ./src/psu_init.o ./src/xfsbl_authentication.o ./src/xfsbl_board.o ./src/xfsbl_bs.o ./src/xfsbl_csu_dma.o ./src/xfsbl_ddr_init.o ./src/xfsbl_dfu_util.o ./src/xfsbl_exit.o ./src/xfsbl_handoff.o ./src/xfsbl_hooks.o ./src/xfsbl_image_header.o ./src/xfsbl_initialization.o ./src/xfsbl_main.o ./src/xfsbl_misc.o ./src/xfsbl_misc_drivers.o ./src/xfsbl_nand.o ./src/xfsbl_partition_load.o ./src/xfsbl_plpartition_valid.o ./src/xfsbl_qspi.o ./src/xfsbl_rsa_sha.o ./src/xfsbl_sd.o ./src/xfsbl_translation_table.o ./src/xfsbl_usb.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group -n
+'Finished building target: fsbl.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size fsbl.elf  |tee "fsbl.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125164	   4848	  87480	 217492	  35194	fsbl.elf
+'Finished building: fsbl.elf.size'
+' '
+13:56:36 **** Build of configuration Debug for project MemoryTest ****
+make all 
+'Building file: ../src/ENC_memtester.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ENC_memtester.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/ENC_memtester.d" -MT"src/ENC_memtester.o" -o "src/ENC_memtester.o" "../src/ENC_memtester.c"
+'Finished building: ../src/ENC_memtester.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:49:6: warning: unused variable 'SdramSizePS2' [-Wunused-variable]
+  int SdramSizePS2 = 0;
+      ^~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/tests.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tests.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/tests.d" -MT"src/tests.o" -o "src/tests.o" "../src/tests.c"
+'Finished building: ../src/tests.c'
+' '
+'Building target: MemoryTest.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "MemoryTest.elf"  ./src/ENC_memtester.o ./src/main.o ./src/tests.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MemoryTest.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size MemoryTest.elf  |tee "MemoryTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  49096	   4888	  20792	  74776	  12418	MemoryTest.elf
+'Finished building: MemoryTest.elf.size'
+' '
+13:56:39 **** Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:55:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:75:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:81:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:145:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:166:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HelloWorld.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size HelloWorld.elf  |tee "HelloWorld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51864	   4504	  20928	  77296	  12df0	HelloWorld.elf
+'Finished building: HelloWorld.elf.size'
+' '
+13:56:40 **** Build of configuration Debug for project FlashTest ****
+make all 
+'Building file: ../src/xqspipsu_generic_flash_interrupt_example.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xqspipsu_generic_flash_interrupt_example.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/xqspipsu_generic_flash_interrupt_example.d" -MT"src/xqspipsu_generic_flash_interrupt_example.o" -o "src/xqspipsu_generic_flash_interrupt_example.o" "../src/xqspipsu_generic_flash_interrupt_example.c"
+'Finished building: ../src/xqspipsu_generic_flash_interrupt_example.c'
+' '
+'Building target: FlashTest.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "FlashTest.elf"  ./src/xqspipsu_generic_flash_interrupt_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: FlashTest.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size FlashTest.elf  |tee "FlashTest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  59236	   6384	  86856	 152476	  2539c	FlashTest.elf
+'Finished building: FlashTest.elf.size'
+' '
+15:42:43 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+15:43:47 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+15:55:28 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.

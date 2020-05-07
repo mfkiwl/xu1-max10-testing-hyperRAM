@@ -92,9 +92,9 @@ mnt/boot/*
 !*.sh
 !*.dtsi
 !*.dts
-workspace\.metadata\
-workspace\.sdk\
-workspace\webtalk\
-workspace\RemoteSystemsTempFiles\
-Vivado_PE1\MercuryXU1_PE1.cache\
-Vivado_PE1\MercuryXU1_PE1.runs\
+workspace\.metadata\*
+workspace\.sdk\*
+workspace\webtalk\*
+workspace\RemoteSystemsTempFiles\*
+Vivado_PE1\MercuryXU1_PE1.cache\*
+Vivado_PE1\MercuryXU1_PE1.runs\*

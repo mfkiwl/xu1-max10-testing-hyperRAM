@@ -1,3 +1,0 @@
-
-source do_compile_rtl.cmd
-source do_generate_and_compile_software.cmd

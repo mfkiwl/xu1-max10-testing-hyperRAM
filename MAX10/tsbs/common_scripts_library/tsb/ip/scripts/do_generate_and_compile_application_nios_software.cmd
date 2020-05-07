@@ -1,2 +1,0 @@
-source do_generate_application_bsp.cmd
-source do_compile_application_nios_software.cmd

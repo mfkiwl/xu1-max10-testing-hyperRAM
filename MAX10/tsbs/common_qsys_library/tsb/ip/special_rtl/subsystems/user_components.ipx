@@ -1,5 +1,0 @@
-<library>
-	<path path="../University_Program_13_1/**/*" />
-	<path path="../../rtl/**/*" />
-	<path path="./**/*" />
-</library>

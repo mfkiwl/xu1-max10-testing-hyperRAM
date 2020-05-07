@@ -1,2 +1,0 @@
-cleancablelock
-quit

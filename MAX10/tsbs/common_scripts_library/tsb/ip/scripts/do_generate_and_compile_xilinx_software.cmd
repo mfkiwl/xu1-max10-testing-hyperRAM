@@ -1,3 +1,0 @@
-source do_compile_xilinx_fmc0_software.cmd
-source do_compile_xilinx_fmc1_software.cmd
-source do_compile_xilinx_fmc2_software.cmd

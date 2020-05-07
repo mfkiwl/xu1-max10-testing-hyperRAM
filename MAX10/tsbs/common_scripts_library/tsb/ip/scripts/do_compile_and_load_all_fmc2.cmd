@@ -1,2 +1,0 @@
-source do_compile_hw_and_sw_fmc2.cmd
-source do_load_all_fmc2.cmd

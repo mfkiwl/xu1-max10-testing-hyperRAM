@@ -1,5 +1,0 @@
-13:51:51 INFO  : Registering command handlers for SDK TCF services
-13:51:54 INFO  : Launching XSCT server: xsct.bat -interactive C:\triumf\max\xu1-max10-testing\XU1\software\temp_xsdb_launch_script.tcl
-13:52:01 INFO  : XSCT server has started successfully.
-13:52:01 INFO  : Successfully done setting XSCT server connection channel  
-13:52:12 INFO  : Successfully done setting SDK workspace  

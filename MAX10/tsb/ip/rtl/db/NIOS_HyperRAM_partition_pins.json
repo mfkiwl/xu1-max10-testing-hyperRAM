@@ -1,0 +1,213 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "FPGA_UART_TX",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_UART_RX",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_UART_SEL0",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART19",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART1",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART3",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART2",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART3",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART2",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART9",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART15",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART0",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART7",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART0",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART6",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART7",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART5",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART6",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART5",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART4",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART4",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART11",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART10",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART8",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART10",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART8",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART14",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART1",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART12",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART11",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART9",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART15",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART13",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART19",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART14",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART17",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART16",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART18",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART17",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART12",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART18",
+					"strict" : false
+				},
+				{
+					"name" : "TX_UART13",
+					"strict" : false
+				},
+				{
+					"name" : "RX_UART16",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_UART_SEL3",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_UART_SEL2",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_UART_SEL1",
+					"strict" : false
+				},
+				{
+					"name" : "FPGA_UART_SEL4",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

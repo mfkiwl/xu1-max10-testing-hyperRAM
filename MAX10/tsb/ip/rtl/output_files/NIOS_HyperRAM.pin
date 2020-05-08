@@ -1,0 +1,327 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 1A:       3.3V
+ --                  Bank 1B:       3.3V
+ --                  Bank 2:       2.5V
+ --                  Bank 3:       1.8V
+ --                  Bank 4:       1.8V
+ --                  Bank 5:       1.8V
+ --                  Bank 6:       3.3V
+ --                  Bank 7:       3.3V
+ --                  Bank 8:       3.3V
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin. Connect each pin marked GND* directly to GND
+ --                  or leave it unconnected.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+CHIP  "NIOS_HyperRAM"  ASSIGNED TO AN: 10M08DAF256C8G
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+GND                          : A1        : gnd    :                   :         :           :                
+SMA_RJ45_CLK_SEL             : A2        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SMA_NIM_SYNC                 : A3        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SMA_NIM_CLK                  : A4        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+FPGA_I2C_SDA                 : A5        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SFP_ModDet                   : A6        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+CLNR_GPIO1                   : A7        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+CLNR_GPIO3                   : A8        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+CLNR_RESETn                  : A9        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+TX_UART17                    : A10       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+TX_UART13                    : A11       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+RX_UART16                    : A12       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+RX_UART19                    : A13       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+RX_UART12                    : A14       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+RX_UART14                    : A15       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+GND                          : A16       : gnd    :                   :         :           :                
+ModPwrEn                     : B1        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : B2        :        :                   :         : 1A        :                
+SMA_TTL_SYNC                 : B3        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SMA_TTL_CLK                  : B4        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SFP_TX_Fault                 : B5        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+FPGA_I2C_SCL                 : B6        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+SFP_LOS                      : B7        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+CLNR_GPIO0                   : B8        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+CLNR_GPIO2                   : B9        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+TX_UART18                    : B10       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+RX_UART17                    : B11       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+RX_UART18                    : B12       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+RX_UART13                    : B13       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+GND                          : B14       : gnd    :                   :         :           :                
+TX_UART14                    : B15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART19                    : B16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+FPGA_UART_TX                 : C1        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+B1A_C2                       : C2        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+B1A_C3                       : C3        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+B1A_C4                       : C4        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C5        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : C6        :        :                   :         : 8         :                
+VCCIO8                       : C7        : power  :                   : 3.3V    : 8         :                
+GND                          : C8        : gnd    :                   :         :           :                
+TX_UART16                    : C9        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+TX_UART12                    : C10       : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+GND                          : C11       : gnd    :                   :         :           :                
+RX_UART15                    : C12       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+RX_UART9                     : C13       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+RX_UART8                     : C14       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART8                     : C15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART15                    : C16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+FPGA_UART_RX                 : D1        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+ANAIN1                       : D2        :        :                   :         :           :                
+GND                          : D3        : gnd    :                   :         :           :                
+NC                           : D4        :        :                   :         :           :                
+VCCA3                        : D5        : power  :                   : 2.5V    :           :                
+GND                          : D6        : gnd    :                   :         :           :                
+VCCIO8                       : D7        : power  :                   : 3.3V    : 8         :                
+VCCIO8                       : D8        : power  :                   : 3.3V    : 8         :                
+CLNR_nINT                    : D9        : bidir  : 3.3-V LVTTL       :         : 8         : Y              
+VCCIO7                       : D10       : power  :                   : 3.3V    : 7         :                
+VCCIO7                       : D11       : power  :                   : 3.3V    : 7         :                
+RX_UART11                    : D12       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
+RX_UART10                    : D14       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART10                    : D15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART9                     : D16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+SRSTn                        : E1        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+REFGND                       : E2        :        :                   :         :           :                
+B1A_E3                       : E3        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+ADC_VREF                     : E4        :        :                   :         :           :                
+VCCA_ADC                     : E5        : power  :                   : 2.5V    :           :                
+GND                          : E6        : gnd    :                   :         :           :                
+~ALTERA_CONF_DONE~ / RESERVED_INPUT : E7        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+~ALTERA_nCONFIG~ / RESERVED_INPUT : E8        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : E9        :        :                   :         : 8         :                
+B7_E10                       : E10       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+B7_E11                       : E11       : bidir  : 3.3-V LVTTL       :         : 7         : Y              
+VCCA2                        : E12       : power  :                   : 2.5V    :           :                
+GND                          : E13       : gnd    :                   :         :           :                
+RX_UART4                     : E14       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART4                     : E15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART11                    : E16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+FPGA_I2C_INTn                : F1        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+B1A_F2                       : F2        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+NC                           : F3        :        :                   :         :           :                
+B1A_F4                       : F4        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+B1A_F5                       : F5        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+VCCINT                       : F6        : power  :                   : 1.2V    :           :                
+~ALTERA_nSTATUS~ / RESERVED_INPUT : F7        : input  : 3.3 V Schmitt Trigger :         : 8         : N              
+~ALTERA_CONFIG_SEL~ / RESERVED_INPUT : F8        : input  : 3.3-V LVTTL       :         : 8         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : F9        :        :                   :         : 8         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F10       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F11       :        :                   :         : 7         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : F12       :        :                   :         : 7         :                
+VCCIO6                       : F13       : power  :                   : 3.3V    : 6         :                
+RX_UART5                     : F14       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GND                          : F15       : gnd    :                   :         :           :                
+TX_UART5                     : F16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+altera_reserved_tdi          : G1        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+B1A_G2                       : G2        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+GND                          : G3        : gnd    :                   :         :           :                
+VCCIO1A                      : G4        : power  :                   : 3.3V    : 1A        :                
+B1A_G5                       : G5        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+JTAGEN                       : G6        : bidir  : 3.3-V LVTTL       :         : 1B        : Y              
+VCC                          : G7        : power  :                   : 1.2V    :           :                
+GND                          : G8        : gnd    :                   :         :           :                
+VCC                          : G9        : power  :                   : 1.2V    :           :                
+GND                          : G10       : gnd    :                   :         :           :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : G11       :        :                   :         : 6         :                
+RX_UART6                     : G12       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+VCCIO6                       : G13       : power  :                   : 3.3V    : 6         :                
+TX_UART0                     : G14       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART6                     : G15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART7                     : G16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+altera_reserved_tdo          : H1        : output : 3.3-V LVTTL       :         : 1B        : N              
+altera_reserved_tms          : H2        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+altera_reserved_tck          : H3        : input  : 3.3 V Schmitt Trigger :         : 1B        : N              
+VCCIO1A                      : H4        : power  :                   : 3.3V    : 1A        :                
+B1A_H5                       : H5        : bidir  : 3.3-V LVTTL       :         : 1A        : Y              
+B1A_B2                       : H6        : bidir  : 3.3-V LVTTL       :         : 1B        : Y              
+GND                          : H7        : gnd    :                   :         :           :                
+VCC                          : H8        : power  :                   : 1.2V    :           :                
+VCC                          : H9        : power  :                   : 1.2V    :           :                
+VCC                          : H10       : power  :                   : 1.2V    :           :                
+RX_UART0                     : H11       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+RX_UART7                     : H12       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+VCCIO6                       : H13       : power  :                   : 3.3V    : 6         :                
+GND                          : H14       : gnd    :                   :         :           :                
+TX_UART2                     : H15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART1                     : H16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+POR_N_LOAD_N                 : J1        : bidir  : 3.3-V LVTTL       :         : 1B        : Y              
+FPGA_DONE                    : J2        : bidir  : 3.3-V LVTTL       :         : 1B        : Y              
+ModPwrGood                   : J3        : bidir  : 3.3-V LVTTL       :         : 1B        : Y              
+VCCIO1B                      : J4        : power  :                   : 3.3V    : 1B        :                
+B1_1B_J5                     : J5        : bidir  : 3.3-V LVTTL       :         : 1B        : Y              
+MAX10_CLK_p(n)               : J6        : input  : LVDS              :         : 2         : Y              
+VCC                          : J7        : power  :                   : 1.2V    :           :                
+VCC                          : J8        : power  :                   : 1.2V    :           :                
+VCC                          : J9        : power  :                   : 1.2V    :           :                
+GND                          : J10       : gnd    :                   :         :           :                
+RX_UART1                     : J11       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+RX_UART3                     : J12       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+VCCIO6                       : J13       : power  :                   : 3.3V    : 6         :                
+RX_UART2                     : J14       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+SFP_MAC_SCL                  : J15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+TX_UART3                     : J16       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GND                          : K1        : gnd    :                   :         :           :                
+B2_K2                        : K2        : bidir  : 2.5 V             :         : 2         : Y              
+GND                          : K3        : gnd    :                   :         :           :                
+VCCIO2                       : K4        : power  :                   : 2.5V    : 2         :                
+B2_K5                        : K5        : bidir  : 2.5 V             :         : 2         : Y              
+MAX10_CLK_p                  : K6        : input  : LVDS              :         : 2         : Y              
+GND                          : K7        : gnd    :                   :         :           :                
+VCC                          : K8        : power  :                   : 1.2V    :           :                
+GND                          : K9        : gnd    :                   :         :           :                
+VCC                          : K10       : power  :                   : 1.2V    :           :                
+B5_K11                       : K11       : bidir  : 1.8 V             :         : 5         : Y              
+B5_K12                       : K12       : bidir  : 1.8 V             :         : 5         : Y              
+VCCIO5                       : K13       : power  :                   : 1.8V    : 5         :                
+B5_K14                       : K14       : bidir  : 1.8 V             :         : 5         : Y              
+SFP_MAX_SDA                  : K15       : bidir  : 3.3-V LVTTL       :         : 6         : Y              
+GND                          : K16       : gnd    :                   :         :           :                
+B2_L1                        : L1        : bidir  : 2.5 V             :         : 2         : Y              
+B2_L2                        : L2        : bidir  : 2.5 V             :         : 2         : Y              
+B2_L3                        : L3        : bidir  : 2.5 V             :         : 2         : Y              
+VCCIO2                       : L4        : power  :                   : 2.5V    : 2         :                
+VCCA1                        : L5        : power  :                   : 2.5V    :           :                
+B2_L6                        : L6        : bidir  : 2.5 V             :         : 2         : Y              
+B3_L7                        : L7        : bidir  : 1.8 V             :         : 3         : Y              
+B3_L8                        : L8        : bidir  : 1.8 V             :         : 3         : Y              
+B4_L9                        : L9        : bidir  : 1.8 V             :         : 4         : Y              
+B4_L10                       : L10       : bidir  : 1.8 V             :         : 4         : Y              
+B5_L11                       : L11       : bidir  : 1.8 V             :         : 5         : Y              
+B5_L12                       : L12       : bidir  : 1.8 V             :         : 5         : Y              
+VCCIO5                       : L13       : power  :                   : 1.8V    : 5         :                
+GND                          : L14       : gnd    :                   :         :           :                
+B5_L15                       : L15       : bidir  : 1.8 V             :         : 5         : Y              
+B5_L16                       : L16       : bidir  : 1.8 V             :         : 5         : Y              
+B2_M1                        : M1        : bidir  : 2.5 V             :         : 2         : Y              
+B2_M2                        : M2        : bidir  : 2.5 V             :         : 2         : Y              
+CLK_50MHz                    : M3        : input  : 2.5 V             :         : 2         : Y              
+GND                          : M4        : gnd    :                   :         :           :                
+VCCD_PLL1                    : M5        : power  :                   : 1.2V    :           :                
+B3_M6                        : M6        : bidir  : 1.8 V             :         : 3         : Y              
+B3_M7                        : M7        : bidir  : 1.8 V             :         : 3         : Y              
+B3_M8                        : M8        : bidir  : 1.8 V             :         : 3         : Y              
+B3_M9                        : M9        : bidir  : 1.8 V             :         : 3         : Y              
+B4_M10                       : M10       : bidir  : 1.8 V             :         : 4         : Y              
+B4_M11                       : M11       : bidir  : 1.8 V             :         : 4         : Y              
+VCCA4                        : M12       : power  :                   : 2.5V    :           :                
+VCCIO5                       : M13       : power  :                   : 1.8V    : 5         :                
+B5_M14                       : M14       : bidir  : 1.8 V             :         : 5         : Y              
+B5_M15                       : M15       : bidir  : 1.8 V             :         : 5         : Y              
+B5_M16                       : M16       : bidir  : 1.8 V             :         : 5         : Y              
+B2_N1                        : N1        : bidir  : 2.5 V             :         : 2         : Y              
+SMA_CLK_p(n)                 : N2        : output : LVDS_E_3R         :         : 2         : N              
+ADC_SYSREF_p(n)              : N3        : output : LVDS_E_3R         :         : 2         : N              
+ADC_SYSREF_p                 : N4        : output : LVDS_E_3R         :         : 2         : Y              
+B3_N5                        : N5        : bidir  : 1.8 V             :         : 3         : Y              
+VCCIO3                       : N6        : power  :                   : 1.8V    : 3         :                
+VCCIO3                       : N7        : power  :                   : 1.8V    : 3         :                
+VCCIO3                       : N8        : power  :                   : 1.8V    : 3         :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCIO4                       : N10       : power  :                   : 1.8V    : 4         :                
+VCCIO4                       : N11       : power  :                   : 1.8V    : 4         :                
+GND                          : N12       : gnd    :                   :         :           :                
+NC                           : N13       :        :                   :         :           :                
+B5_N14                       : N14       : bidir  : 1.8 V             :         : 5         : Y              
+GND                          : N15       : gnd    :                   :         :           :                
+B5_N16                       : N16       : bidir  : 1.8 V             :         : 5         : Y              
+SMA_CLK_p                    : P1        : output : LVDS_E_3R         :         : 2         : Y              
+FPGA_SMA_TRIG                : P2        : bidir  : 1.8 V             :         : 3         : Y              
+GND                          : P3        : gnd    :                   :         :           :                
+B3_P4                        : P4        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SCLK                : P5        : bidir  : 1.8 V             :         : 3         : Y              
+B3_P6                        : P6        : bidir  : 1.8 V             :         : 3         : Y              
+GND                          : P7        : gnd    :                   :         :           :                
+B3_P8                        : P8        : bidir  : 1.8 V             :         : 3         : Y              
+B3_P9                        : P9        : bidir  : 1.8 V             :         : 3         : Y              
+B4_P10                       : P10       : bidir  : 1.8 V             :         : 4         : Y              
+B4_P11                       : P11       : bidir  : 1.8 V             :         : 4         : Y              
+B4_P12                       : P12       : bidir  : 1.8 V             :         : 4         : Y              
+MAX10_SPARE8                 : P13       : bidir  : 1.8 V             :         : 4         : Y              
+B5_P14                       : P14       : bidir  : 1.8 V             :         : 5         : Y              
+B5_P15                       : P15       : bidir  : 1.8 V             :         : 5         : Y              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
+FPGA_SMA_CLK                 : R1        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_UART_SEL4               : R2        : input  : 1.8 V             :         : 3         : Y              
+FPGA_UART_SEL2               : R3        : input  : 1.8 V             :         : 3         : Y              
+FPGA_UART_SEL0               : R4        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SEL0                : R5        : input  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SEL2                : R6        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SEL4                : R7        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SEL6                : R8        : bidir  : 1.8 V             :         : 3         : Y              
+MAX10_SPARE1                 : R9        : bidir  : 1.8 V             :         : 3         : Y              
+MAX10_SPARE2                 : R10       : bidir  : 1.8 V             :         : 3         : Y              
+MAX10_SPARE4                 : R11       : bidir  : 1.8 V             :         : 4         : Y              
+MAX10_SPARE6                 : R12       : bidir  : 1.8 V             :         : 4         : Y              
+GND                          : R13       : gnd    :                   :         :           :                
+MAX10_SPARE10                : R14       : bidir  : 1.8 V             :         : 5         : Y              
+MAX10_SPARE12                : R15       : bidir  : 1.8 V             :         : 5         : Y              
+MAX10_SPARE13                : R16       : bidir  : 1.8 V             :         : 5         : Y              
+GND                          : T1        : gnd    :                   :         :           :                
+FPGA_UART_SEL3               : T2        : input  : 1.8 V             :         : 3         : Y              
+FPGA_UART_SEL1               : T3        : input  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SDOUT               : T4        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SDATA               : T5        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SEL1                : T6        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SEL3                : T7        : bidir  : 1.8 V             :         : 3         : Y              
+FPGA_SPI_SEL5                : T8        : bidir  : 1.8 V             :         : 3         : Y              
+MAX10_SPARE0                 : T9        : bidir  : 1.8 V             :         : 3         : Y              
+GND                          : T10       : gnd    :                   :         :           :                
+MAX10_SPARE3                 : T11       : bidir  : 1.8 V             :         : 3         : Y              
+MAX10_SPARE5                 : T12       : bidir  : 1.8 V             :         : 4         : Y              
+MAX10_SPARE7                 : T13       : bidir  : 1.8 V             :         : 4         : Y              
+MAX10_SPARE9                 : T14       : bidir  : 1.8 V             :         : 5         : Y              
+MAX10_SPARE11                : T15       : bidir  : 1.8 V             :         : 5         : Y              
+GND                          : T16       : gnd    :                   :         :           :                

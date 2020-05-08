@@ -1,0 +1,6 @@
+<library>
+	<path path="../../special_rtl/fifoed_avalon_uart_13_1/**/*" />
+	<path path="../../rtl/**/*" />
+	<path path="../../special_rtl/cyclonev/14_1/**/*" />
+	<path path="../../special_rtl/University_Program/**/*" />
+</library>

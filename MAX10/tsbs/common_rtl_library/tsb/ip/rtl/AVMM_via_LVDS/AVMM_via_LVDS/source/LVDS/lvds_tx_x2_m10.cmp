@@ -1,0 +1,12 @@
+	component lvds_tx_x2_m10 is
+		port (
+			pll_areset   : in  std_logic_vector(1 downto 0) := (others => 'X'); -- pll_areset
+			tx_inclock   : in  std_logic                    := 'X';             -- tx_inclock
+			tx_in        : in  std_logic_vector(9 downto 0) := (others => 'X'); -- tx_in
+			tx_out       : out std_logic_vector(1 downto 0);                    -- tx_out
+			tx_outclock  : out std_logic;                                       -- tx_outclock
+			tx_locked    : out std_logic;                                       -- tx_locked
+			tx_coreclock : out std_logic                                        -- tx_coreclock
+		);
+	end component lvds_tx_x2_m10;
+

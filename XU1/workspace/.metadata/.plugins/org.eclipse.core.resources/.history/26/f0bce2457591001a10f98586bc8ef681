@@ -1,0 +1,44 @@
+/*
+ * nuprism_cmd.c
+ *
+ *  Created on: May 8, 2020
+ *      Author: rypay
+ */
+
+#include <stdio.h>
+#include "StandardIncludes.h"
+#include "UtilityFunctions.h"
+
+#include "xparameters.h"
+#include <stdlib.h>
+#include <string.h>
+#include "xil_types.h"
+
+#include "nuprism_cmd.h"
+
+u8 command_handler(char* command){
+
+	char * token;
+	token = strtok(command, " ");
+    // loop through the string to extract all other tokens
+//    while( token != NULL ) {
+//	   printf( " %s\n", token ); //printing each token
+//	   token = strtok(NULL, " ");
+//    }
+
+	switch(token){
+	case "help":
+		return display_help_info();
+	case "adc":
+		return adc_command_parser(token);
+	case "clc"
+		return clock_cleaner_command_parser(token);
+	default:
+		display error message
+	}
+
+	return NUPRISM_CMD_SUCCESS;
+}
+
+
+

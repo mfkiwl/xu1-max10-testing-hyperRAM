@@ -177,6 +177,67 @@ output   SMA_CLK_p              ,
 output   ADC_SYSREF_p
 );
 
+//********************************* Signal Tap Clock ******************************//
+logic stp_sample_clk;
+
+
+clk_gen Stp_clk (
+	.areset(1'b0),
+	.inclk0(CLK_50MHz),
+	.c0(stp_sample_clk),
+	.locked(B5_L15)
+	);
+
+assign B5_L12 = stp_sample_clk;
+
+//*********************************** Clock Cleaner *******************************//
+assign SMA_CLK_p = SMA_TTL_CLK | SMA_NIM_CLK;
+assign CLNR_RESETn = SRSTn;
+logic signal_tap_clock;
+logic clock_1MHz;
+assign ADC_SYSREF_p = 1;
+
+logic divided_clk;
+logic divided_ref_clk;
+
+Divisor_frecuencia
+#(.Bits_counter(4))
+Generate_divided_clk
+ (
+  .CLOCK(MAX10_CLK_p),
+  .TIMER_OUT(divided_clk),
+  .Comparator(3)
+ );
+
+
+assign B3_P9 = divided_clk;
+
+Divisor_frecuencia
+#(.Bits_counter(4))
+Generate_divided_ref_clk
+ (
+  .CLOCK(SMA_CLK_p),
+  .TIMER_OUT(divided_ref_clk),
+  .Comparator(1)
+ );
+
+assign B3_L8 = divided_ref_clk;
+
+
+Divisor_frecuencia
+#(.Bits_counter(16))
+Generate_1MHZ_clk
+ (
+  .CLOCK(CLK_50MHz),
+  .TIMER_OUT(clock_1MHz),
+  .Comparator(24)
+ );
+
+assign B3_L7 = clock_1MHz;
+
+
+//*************************************** UART ************************************//
+
 logic [19:0] PMT_TX_UART;
 logic [19:0] PMT_RX_UART;
 
@@ -193,16 +254,7 @@ assign PMT_RX_UART = {RX_UART19, RX_UART18, RX_UART17, RX_UART16, RX_UART15,
 														};
 
 
-/* ASSIGN UART MUX SEL BITS */
-// This signal should be controlled by pins coming from the enlustra module
-// The signal should be limited to values between 0 and 19
-// 	... If the value exceeds 19, no uart will be available
-
-/* UART SIGNALS */
-logic MAIN_UART_RX;
-logic MAIN_UART_TX;
-
-logic [4:0] UART_SEL;
+logic [4:0] UART_SEL; // This signal should be controlled by pins coming from the enlustra module with accepted vales: [0,19]
 assign UART_SEL = {FPGA_UART_SEL4,FPGA_UART_SEL3,FPGA_UART_SEL2,FPGA_UART_SEL1,FPGA_UART_SEL0};
 
 

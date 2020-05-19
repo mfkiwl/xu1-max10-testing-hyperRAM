@@ -1,35 +1,6 @@
-13:56:36 **** Build of configuration Debug for project MemoryTest ****
+09:21:41 **** Incremental Build of configuration Debug for project MemoryTest ****
 make all 
-'Building file: ../src/ENC_memtester.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ENC_memtester.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/ENC_memtester.d" -MT"src/ENC_memtester.o" -o "src/ENC_memtester.o" "../src/ENC_memtester.c"
-'Finished building: ../src/ENC_memtester.c'
-' '
-'Building file: ../src/main.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:49:6: warning: unused variable 'SdramSizePS2' [-Wunused-variable]
-  int SdramSizePS2 = 0;
-      ^~~~~~~~~~~~
-'Finished building: ../src/main.c'
-' '
-'Building file: ../src/tests.c'
-'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/tests.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/tests.d" -MT"src/tests.o" -o "src/tests.o" "../src/tests.c"
-'Finished building: ../src/tests.c'
-' '
-'Building target: MemoryTest.elf'
-'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "MemoryTest.elf"  ./src/ENC_memtester.o ./src/main.o ./src/tests.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
-'Finished building target: MemoryTest.elf'
-' '
-'Invoking: ARM v8 Print Size'
-aarch64-none-elf-size MemoryTest.elf  |tee "MemoryTest.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  49096	   4888	  20792	  74776	  12418	MemoryTest.elf
-'Finished building: MemoryTest.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-13:56:39 Build Finished (took 2s.407ms)
+09:21:41 Build Finished (took 212ms)
 

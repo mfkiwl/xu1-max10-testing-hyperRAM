@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Wed Feb 12 14:00:54 2020
-Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+Analysis & Synthesis Status : Successful - Thu May 14 14:46:55 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : NIOS_HyperRAM
 Top-level Entity Name : NIOS_HyperRAM
 Family : MAX 10
-Total logic elements : 1,948
-    Total combinational functions : 784
-    Dedicated logic registers : 1,592
-Total registers : 1592
+Total logic elements : 790
+    Total combinational functions : 508
+    Dedicated logic registers : 565
+Total registers : 565
 Total pins : 157
 Total virtual pins : 0
-Total memory bits : 10,880
+Total memory bits : 768
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1
 UFM blocks : 0
 ADC blocks : 0

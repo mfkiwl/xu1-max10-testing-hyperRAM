@@ -4,6 +4,10 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "SMA_CLK_p",
+					"strict" : false
+				},
+				{
 					"name" : "FPGA_UART_TX",
 					"strict" : false
 				},
@@ -12,7 +16,23 @@
 					"strict" : false
 				},
 				{
+					"name" : "SRSTn",
+					"strict" : false
+				},
+				{
+					"name" : "B3_L7",
+					"strict" : false
+				},
+				{
 					"name" : "FPGA_UART_SEL0",
+					"strict" : false
+				},
+				{
+					"name" : "B3_L8",
+					"strict" : false
+				},
+				{
+					"name" : "B3_P9",
 					"strict" : false
 				},
 				{
@@ -176,6 +196,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "SMA_TTL_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "SMA_NIM_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CLNR_RESETn",
+					"strict" : false
+				},
+				{
 					"name" : "FPGA_UART_SEL3",
 					"strict" : false
 				},
@@ -189,6 +221,14 @@
 				},
 				{
 					"name" : "FPGA_UART_SEL4",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_50MHz",
+					"strict" : false
+				},
+				{
+					"name" : "MAX10_CLK_p",
 					"strict" : false
 				},
 				{

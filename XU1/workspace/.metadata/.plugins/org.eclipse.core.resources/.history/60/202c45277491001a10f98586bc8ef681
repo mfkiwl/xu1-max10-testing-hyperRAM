@@ -1,0 +1,19 @@
+/*
+ * nuprism_cmd.c
+ *
+ *  Created on: May 8, 2020
+ *      Author: rypay
+ */
+
+#include <stdio.h>
+#include "StandardIncludes.h"
+#include "UtilityFunctions.h"
+
+#include "xparameters.h"
+#include <stdlib.h>
+#include <string.h>
+
+u8 do_command(* char command);
+
+
+

@@ -3268,3 +3268,356 @@ con
 
 15:57:11 INFO  : Launch script is exported to file 'C:\triumf\max\xu1-max10-testing\XU1\workspace\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
 16:09:01 INFO  : Disconnected from the channel tcfchan#2.
+09:32:14 INFO  : Launching XSCT server: xsct.bat -interactive C:\triumf\max\xu1-max10-testing\XU1\workspace\temp_xsdb_launch_script.tcl
+09:32:15 INFO  : Registering command handlers for SDK TCF services
+09:32:21 INFO  : XSCT server has started successfully.
+09:32:21 INFO  : Successfully done setting XSCT server connection channel  
+09:32:31 INFO  : Successfully done setting SDK workspace  
+09:33:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:33:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:33:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:33:45 INFO  : Jtag cable 'Platform Cable USB II 00001631dbc501' is selected.
+09:33:45 INFO  : 'jtag frequency' command is executed.
+09:33:45 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+09:33:45 INFO  : Context for 'APU' is selected.
+09:33:46 INFO  : System reset is completed.
+09:33:49 INFO  : 'after 3000' command is executed.
+09:33:49 INFO  : Context for 'APU' is selected.
+09:33:50 INFO  : Cleared APU and A53 resets
+09:33:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0' command is executed.
+09:35:05 INFO  : FPGA configured successfully with bitstream "C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit"
+09:35:05 INFO  : Context for 'APU' is selected.
+09:35:06 INFO  : Hardware design information is loaded from 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf'.
+09:35:06 INFO  : 'configparams force-mem-access 1' command is executed.
+09:35:06 INFO  : Context for 'APU' is selected.
+09:35:06 INFO  : Sourcing of 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl' is done.
+09:35:09 INFO  : 'psu_init' command is executed.
+09:35:09 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl' is done.
+09:35:10 INFO  : 'catch {XFsbl_DdrEccInit}' command is executed.
+09:35:11 INFO  : 'after 1000' command is executed.
+09:35:11 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+09:35:12 INFO  : 'after 1000' command is executed.
+09:35:12 INFO  : 'psu_ps_pl_reset_config' command is executed.
+09:35:12 INFO  : 'catch {psu_protection}' command is executed.
+09:35:12 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+09:35:12 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+09:35:15 INFO  : The application 'C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'psu_cortexa53_0'.
+09:35:15 INFO  : 'configparams force-mem-access 0' command is executed.
+09:35:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0
+fpga -file C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+loadhw -hw C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+source C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl
+catch {XFsbl_DdrEccInit}
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -processor
+dow C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:35:16 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+09:35:16 INFO  : 'con' command is executed.
+09:35:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+con
+----------------End of Script----------------
+
+09:35:16 INFO  : Launch script is exported to file 'C:\triumf\max\xu1-max10-testing\XU1\workspace\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+09:43:58 INFO  : Disconnected from the channel tcfchan#1.
+09:43:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:44:08 INFO  : Jtag cable 'Platform Cable USB II 00001631dbc501' is selected.
+09:44:08 INFO  : 'jtag frequency' command is executed.
+09:44:08 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+09:44:08 INFO  : Context for 'APU' is selected.
+09:44:09 INFO  : System reset is completed.
+09:44:12 INFO  : 'after 3000' command is executed.
+09:44:12 INFO  : Context for 'APU' is selected.
+09:44:13 INFO  : Cleared APU and A53 resets
+09:44:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0' command is executed.
+09:45:28 INFO  : FPGA configured successfully with bitstream "C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit"
+09:45:28 INFO  : Context for 'APU' is selected.
+09:45:28 INFO  : Hardware design information is loaded from 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf'.
+09:45:28 INFO  : 'configparams force-mem-access 1' command is executed.
+09:45:28 INFO  : Context for 'APU' is selected.
+09:45:28 INFO  : Sourcing of 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl' is done.
+09:45:31 INFO  : 'psu_init' command is executed.
+09:45:31 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl' is done.
+09:45:32 INFO  : 'catch {XFsbl_DdrEccInit}' command is executed.
+09:45:33 INFO  : 'after 1000' command is executed.
+09:45:33 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+09:45:34 INFO  : 'after 1000' command is executed.
+09:45:34 INFO  : 'psu_ps_pl_reset_config' command is executed.
+09:45:34 INFO  : 'catch {psu_protection}' command is executed.
+09:45:34 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+09:45:35 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+09:45:37 INFO  : The application 'C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'psu_cortexa53_0'.
+09:45:37 INFO  : 'configparams force-mem-access 0' command is executed.
+09:45:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0
+fpga -file C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+loadhw -hw C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+source C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl
+catch {XFsbl_DdrEccInit}
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -processor
+dow C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:45:37 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+09:45:37 INFO  : 'con' command is executed.
+09:45:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+con
+----------------End of Script----------------
+
+09:45:37 INFO  : Launch script is exported to file 'C:\triumf\max\xu1-max10-testing\XU1\workspace\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+15:00:02 INFO  : Disconnected from the channel tcfchan#2.
+15:00:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:00:12 INFO  : Jtag cable 'Platform Cable USB II 00001631dbc501' is selected.
+15:00:12 INFO  : 'jtag frequency' command is executed.
+15:00:12 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+15:00:12 INFO  : Context for 'APU' is selected.
+15:00:13 INFO  : System reset is completed.
+15:00:16 INFO  : 'after 3000' command is executed.
+15:00:16 INFO  : Context for 'APU' is selected.
+15:00:17 INFO  : Cleared APU and A53 resets
+15:00:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0' command is executed.
+15:01:32 INFO  : FPGA configured successfully with bitstream "C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit"
+15:01:32 INFO  : Context for 'APU' is selected.
+15:01:32 INFO  : Hardware design information is loaded from 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf'.
+15:01:32 INFO  : 'configparams force-mem-access 1' command is executed.
+15:01:32 INFO  : Context for 'APU' is selected.
+15:01:32 INFO  : Sourcing of 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl' is done.
+15:01:35 INFO  : 'psu_init' command is executed.
+15:01:35 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl' is done.
+15:01:36 INFO  : 'catch {XFsbl_DdrEccInit}' command is executed.
+15:01:37 INFO  : 'after 1000' command is executed.
+15:01:37 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+15:01:38 INFO  : 'after 1000' command is executed.
+15:01:38 INFO  : 'psu_ps_pl_reset_config' command is executed.
+15:01:38 INFO  : 'catch {psu_protection}' command is executed.
+15:01:38 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:01:38 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+15:01:41 INFO  : The application 'C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'psu_cortexa53_0'.
+15:01:41 INFO  : 'configparams force-mem-access 0' command is executed.
+15:01:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+reset_apu
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0
+fpga -file C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+loadhw -hw C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+source C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl
+catch {XFsbl_DdrEccInit}
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -processor
+dow C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:01:41 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+15:01:41 INFO  : 'con' command is executed.
+15:01:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+con
+----------------End of Script----------------
+
+15:01:41 INFO  : Launch script is exported to file 'C:\triumf\max\xu1-max10-testing\XU1\workspace\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+17:43:40 INFO  : Disconnected from the channel tcfchan#3.
+09:19:34 INFO  : Launching XSCT server: xsct.bat -interactive C:\triumf\max\xu1-max10-testing\XU1\workspace\temp_xsdb_launch_script.tcl
+09:19:35 INFO  : Registering command handlers for SDK TCF services
+09:19:42 INFO  : XSCT server has started successfully.
+09:19:42 INFO  : Successfully done setting XSCT server connection channel  
+09:19:54 INFO  : Successfully done setting SDK workspace  
+09:22:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:22:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:22:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:22:57 INFO  : Jtag cable 'Platform Cable USB II 00001631dbc501' is selected.
+09:22:57 INFO  : 'jtag frequency' command is executed.
+09:22:57 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+09:22:57 INFO  : Context for 'APU' is selected.
+09:22:59 INFO  : System reset is completed.
+09:23:02 INFO  : 'after 3000' command is executed.
+09:23:02 INFO  : Context for 'APU' is selected.
+09:23:02 INFO  : Cleared APU and A53 resets
+09:23:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0' command is executed.
+09:24:20 ERROR : fpga configuration failed. DONE PIN is not HIGH
+09:24:20 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: fpga configuration failed. DONE PIN is not HIGH
+09:24:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+reset_apu
+----------------End of Script----------------
+
+09:24:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:24:35 INFO  : Jtag cable 'Platform Cable USB II 00001631dbc501' is selected.
+09:24:35 INFO  : 'jtag frequency' command is executed.
+09:24:35 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+09:24:35 INFO  : Context for 'APU' is selected.
+09:24:37 INFO  : System reset is completed.
+09:24:40 INFO  : 'after 3000' command is executed.
+09:24:40 INFO  : Context for 'APU' is selected.
+09:24:40 INFO  : Cleared APU and A53 resets
+09:24:40 INFO  : Context for 'RPU' is selected.
+09:24:41 INFO  : Cleared RPU and R5 resets
+09:24:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0' command is executed.
+09:25:59 ERROR : fpga configuration failed. DONE PIN is not HIGH
+09:25:59 ERROR : Exception occured while running Program FPGA.
+java.lang.RuntimeException: fpga configuration failed. DONE PIN is not HIGH
+09:25:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+clear_rpu_reset
+----------------End of Script----------------
+
+09:27:15 INFO  : Launching XSCT server: xsct.bat -interactive C:\triumf\max\xu1-max10-testing\XU1\workspace\temp_xsdb_launch_script.tcl
+09:27:15 INFO  : Registering command handlers for SDK TCF services
+09:27:18 INFO  : XSCT server has started successfully.
+09:27:18 INFO  : Successfully done setting XSCT server connection channel  
+09:27:18 INFO  : Successfully done setting SDK workspace  
+09:27:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:27:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:27:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:28:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:28:46 INFO  : Jtag cable 'Platform Cable USB II 00001631dbc501' is selected.
+09:28:46 INFO  : 'jtag frequency' command is executed.
+09:28:46 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+09:28:46 INFO  : Context for 'APU' is selected.
+09:28:47 INFO  : System reset is completed.
+09:28:50 INFO  : 'after 3000' command is executed.
+09:28:50 INFO  : Context for 'APU' is selected.
+09:28:51 INFO  : Cleared APU and A53 resets
+09:28:51 INFO  : Context for 'RPU' is selected.
+09:28:51 INFO  : Cleared RPU and R5 resets
+09:28:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0' command is executed.
+09:30:07 INFO  : FPGA configured successfully with bitstream "C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit"
+09:30:07 INFO  : Context for 'APU' is selected.
+09:30:08 INFO  : Hardware design information is loaded from 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf'.
+09:30:08 INFO  : 'configparams force-mem-access 1' command is executed.
+09:30:08 INFO  : Context for 'APU' is selected.
+09:30:08 INFO  : Sourcing of 'C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl' is done.
+09:30:11 INFO  : 'psu_init' command is executed.
+09:30:12 INFO  : Sourcing of 'C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl' is done.
+09:30:12 INFO  : 'catch {XFsbl_DdrEccInit}' command is executed.
+09:30:13 INFO  : 'after 1000' command is executed.
+09:30:14 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+09:30:15 INFO  : 'after 1000' command is executed.
+09:30:15 INFO  : 'psu_ps_pl_reset_config' command is executed.
+09:30:15 INFO  : 'catch {psu_protection}' command is executed.
+09:30:15 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+09:30:15 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+09:30:18 INFO  : The application 'C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf' is downloaded to processor 'psu_cortexa53_0'.
+09:30:18 INFO  : 'configparams force-mem-access 0' command is executed.
+09:30:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0
+fpga -file C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+loadhw -hw C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+source C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/psu_init.tcl
+psu_init
+source C:/Xilinx/SDK/2018.3/scripts/sdk/util/fsbl.tcl
+catch {XFsbl_DdrEccInit}
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+rst -processor
+dow C:/triumf/max/xu1-max10-testing/XU1/workspace/HelloWorld/Debug/HelloWorld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:30:18 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+09:30:18 INFO  : 'con' command is executed.
+09:30:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+con
+----------------End of Script----------------
+
+09:30:18 INFO  : Launch script is exported to file 'C:\triumf\max\xu1-max10-testing\XU1\workspace\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_on_local.tcl'
+09:32:22 INFO  : Disconnected from the channel tcfchan#1.

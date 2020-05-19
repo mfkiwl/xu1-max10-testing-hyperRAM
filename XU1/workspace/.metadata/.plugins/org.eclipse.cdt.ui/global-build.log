@@ -12963,3 +12963,1607 @@ make: Nothing to be done for 'all'.
 15:55:28 **** Incremental Build of configuration Debug for project HelloWorld ****
 make all 
 make: Nothing to be done for 'all'.
+09:33:03 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:33:43 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:43:52 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+14:31:10 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+14:31:21 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+'Finished building: ../src/nuprism_cmd.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HelloWorld.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size HelloWorld.elf  |tee "HelloWorld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  51864	   4504	  20928	  77296	  12df0	HelloWorld.elf
+'Finished building: HelloWorld.elf.size'
+' '
+14:32:20 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+14:32:45 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c:16:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:36:33 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:34 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:35 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:36 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c:16:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:36:36 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:36:46 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c:16:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:37:45 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command){
+               ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:37:45 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:37:46 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:37:46 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:37:47 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command){
+               ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:37:47 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:39:29 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:40:28 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:40:53 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:40:57 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:40:57 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:40:58 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:40:59 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:40:59 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:12 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:41:13 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:14 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:15 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:15 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:16:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:18:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:41:16 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:52 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:19:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:41:55 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:56 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:57 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:41:57 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c:19:20: error: expected declaration specifiers or '...' before '*' token
+ u8 command_handler(* char command){
+                    ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:41:58 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:15 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:22:17: error: 'string' undeclared (first use in this function); did you mean 'stdin'?
+  token = strtok(string, " ");
+                 ^~~~~~
+                 stdin
+../src/nuprism_cmd.c:22:17: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:42:16 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:16 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:17 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:17 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:22:17: error: 'string' undeclared (first use in this function); did you mean 'stdin'?
+  token = strtok(string, " ");
+                 ^~~~~~
+                 stdin
+../src/nuprism_cmd.c:22:17: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:42:18 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:42:22 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:45:33 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:29:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:30:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:31:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:33:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:35:3: error: expected ':' or '...' before 'return'
+   return clock_cleaner_command_parser(token);
+   ^~~~~~
+../src/nuprism_cmd.c:35:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:37:3: error: a label can only be part of a statement and a declaration is not a statement
+   display error message
+   ^~~~~~~
+../src/nuprism_cmd.c:37:3: error: unknown type name 'display'
+../src/nuprism_cmd.c:37:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'message'
+   display error message
+                 ^~~~~~~
+../src/nuprism_cmd.c:41:1: error: expected declaration or statement at end of input
+ }
+ ^
+../src/nuprism_cmd.c:41:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:45:45 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:29:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:30:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:31:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:33:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:35:3: error: expected ':' or '...' before 'return'
+   return clock_cleaner_command_parser(token);
+   ^~~~~~
+../src/nuprism_cmd.c:35:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:37:3: error: a label can only be part of a statement and a declaration is not a statement
+   display error message();
+   ^~~~~~~
+../src/nuprism_cmd.c:37:3: error: unknown type name 'display'
+../src/nuprism_cmd.c:37:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'message'
+   display error message();
+                 ^~~~~~~
+../src/nuprism_cmd.c:36:2: error: label at end of compound statement
+  default:
+  ^~~~~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:45:53 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:29:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:30:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:31:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:33:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:35:3: error: expected ':' or '...' before 'return'
+   return clock_cleaner_command_parser(token);
+   ^~~~~~
+../src/nuprism_cmd.c:35:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:37:3: warning: implicit declaration of function 'display_error_message' [-Wimplicit-function-declaration]
+   display_error_message();
+   ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:46:08 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:29:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:30:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:31:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:33:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:34:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+../src/nuprism_cmd.c:35:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:37:3: warning: implicit declaration of function 'display_error_message' [-Wimplicit-function-declaration]
+   display_error_message();
+   ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:47:37 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:26:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:28:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+../src/nuprism_cmd.c:30:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:3: warning: implicit declaration of function 'display_error_message' [-Wimplicit-function-declaration]
+   display_error_message();
+   ^~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c: At top level:
+../src/nuprism_cmd.c:39:4: error: conflicting types for 'adc_command_parser'
+ u8 adc_command_parser(char* command){
+    ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:28:10: note: previous implicit declaration of 'adc_command_parser' was here
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c: In function 'adc_command_parser':
+../src/nuprism_cmd.c:40:11: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+  printf("%s\n")
+          ~^
+../src/nuprism_cmd.c:42:1: error: expected ';' before '}' token
+ }
+ ^
+../src/nuprism_cmd.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:47:51 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:26:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:28:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+../src/nuprism_cmd.c:30:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:3: warning: implicit declaration of function 'display_error_message' [-Wimplicit-function-declaration]
+   display_error_message();
+   ^~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c: At top level:
+../src/nuprism_cmd.c:39:4: error: conflicting types for 'adc_command_parser'
+ u8 adc_command_parser(char* command){
+    ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:28:10: note: previous implicit declaration of 'adc_command_parser' was here
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c: In function 'adc_command_parser':
+../src/nuprism_cmd.c:40:11: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+  printf("%s\n");
+          ~^
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:49:31 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:26:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:28:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+../src/nuprism_cmd.c:30:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:3: warning: implicit declaration of function 'display_error_message' [-Wimplicit-function-declaration]
+   display_error_message();
+   ^~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c: At top level:
+../src/nuprism_cmd.c:39:4: error: conflicting types for 'adc_command_parser'
+ u8 adc_command_parser(char* command){
+    ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:28:10: note: previous implicit declaration of 'adc_command_parser' was here
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:44:4: error: conflicting types for 'display_help_info'
+ u8 display_help_info(char* command){
+    ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:26:10: note: previous implicit declaration of 'display_help_info' was here
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:49:4: error: conflicting types for 'clock_cleaner_command_parser'
+ u8 clock_cleaner_command_parser(char* command){
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:30:10: note: previous implicit declaration of 'clock_cleaner_command_parser' was here
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:05 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:26:10: warning: implicit declaration of function 'display_help_info' [-Wimplicit-function-declaration]
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:28:10: warning: implicit declaration of function 'adc_command_parser'; did you mean 'command_handler'? [-Wimplicit-function-declaration]
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+          command_handler
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+../src/nuprism_cmd.c:30:10: warning: implicit declaration of function 'clock_cleaner_command_parser' [-Wimplicit-function-declaration]
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:3: warning: implicit declaration of function 'display_error_message' [-Wimplicit-function-declaration]
+   display_error_message();
+   ^~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c: At top level:
+../src/nuprism_cmd.c:39:4: error: conflicting types for 'adc_command_parser'
+ u8 adc_command_parser(char* command){
+    ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:28:10: note: previous implicit declaration of 'adc_command_parser' was here
+   return adc_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:44:4: error: conflicting types for 'display_help_info'
+ u8 display_help_info(){
+    ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:26:10: note: previous implicit declaration of 'display_help_info' was here
+   return display_help_info();
+          ^~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:49:4: error: conflicting types for 'display_error_message'
+ u8 display_error_message(){
+    ^~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:32:3: note: previous implicit declaration of 'display_error_message' was here
+   display_error_message();
+   ^~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:54:4: error: conflicting types for 'clock_cleaner_command_parser'
+ u8 clock_cleaner_command_parser(char* command){
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/nuprism_cmd.c:30:10: note: previous implicit declaration of 'clock_cleaner_command_parser' was here
+   return clock_cleaner_command_parser(token);
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:35 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:39 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:39 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:40 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:40 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:14:15: error: expected declaration specifiers or '...' before '*' token
+ u8 do_command(* char command);
+               ^
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:41 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:49 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:49 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:50 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:50 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:51 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:51 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:54 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:55 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:55 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:56 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:50:56 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:50:57 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:54:22 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+../src/nuprism_cmd.c:36:13: error: 'string' undeclared (first use in this function); did you mean 'stdin'?
+  if (strcmp(string, "help") == 0){
+             ^~~~~~
+             stdin
+../src/nuprism_cmd.c:36:13: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ../src/nuprism_cmd.c:10:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:54:45 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+../src/nuprism_cmd.c: In function 'command_handler':
+../src/nuprism_cmd.c:24:9: error: switch quantity not an integer
+  switch(token){
+         ^~~~~
+../src/nuprism_cmd.c:25:2: error: case label does not reduce to an integer constant
+  case "help":
+  ^~~~
+../src/nuprism_cmd.c:27:2: error: case label does not reduce to an integer constant
+  case "adc":
+  ^~~~
+../src/nuprism_cmd.c:29:2: error: case label does not reduce to an integer constant
+  case "clc":
+  ^~~~
+../src/nuprism_cmd.c:36:13: error: 'string' undeclared (first use in this function); did you mean 'stdin'?
+  if (strcmp(string, "help") == 0){
+             ^~~~~~
+             stdin
+../src/nuprism_cmd.c:36:13: note: each undeclared identifier is reported only once for each function it appears in
+../src/nuprism_cmd.c: At top level:
+../src/nuprism_cmd.c:59:4: error: conflicting types for 'display_error_message'
+ u8 display_error_message(){
+    ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nuprism_cmd.c:17:0:
+../src/nuprism_cmd.h:17:6: note: previous declaration of 'display_error_message' was here
+ void display_error_message();
+      ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/nuprism_cmd.o] Error 1
+14:55:49 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/nuprism_cmd.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HelloWorld.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size HelloWorld.elf  |tee "HelloWorld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56456	   4504	  20912	  81872	  13fd0	HelloWorld.elf
+'Finished building: HelloWorld.elf.size'
+' '
+14:55:51 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:55:52 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:55:53 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:55:53 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+14:55:53 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:28 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:35:10: fatal error: nuprism_command.h: No such file or directory
+ #include "nuprism_command.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+14:56:34 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:34 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:35 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:35 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:35:10: fatal error: nuprism_command.h: No such file or directory
+ #include "nuprism_command.h"
+          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:26: src/main.o] Error 1
+14:56:36 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:45 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:76:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:82:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:146:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:167:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HelloWorld.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size HelloWorld.elf  |tee "HelloWorld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56456	   4504	  20912	  81872	  13fd0	HelloWorld.elf
+'Finished building: HelloWorld.elf.size'
+' '
+14:56:46 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:47 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:48 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:48 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+14:56:49 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:10 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:76:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:82:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:146:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:167:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\triumf\max\xu1-max10-testing\XU1\workspace\HelloWorld\Debug/../src/main.c:91: undefined reference to `do_command'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: HelloWorld.elf] Error 1
+14:57:11 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:11 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:12 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:12 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\triumf\max\xu1-max10-testing\XU1\workspace\HelloWorld\Debug/../src/main.c:91: undefined reference to `do_command'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: HelloWorld.elf] Error 1
+14:57:13 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:34 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:34 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:35 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:35 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\triumf\max\xu1-max10-testing\XU1\workspace\HelloWorld\Debug/../src/main.c:91: undefined reference to `do_command'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: HelloWorld.elf] Error 1
+14:57:36 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:57:57 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:76:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:82:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:146:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:167:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\triumf\max\xu1-max10-testing\XU1\workspace\HelloWorld\Debug/../src/main.c:91: undefined reference to `do_command'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: HelloWorld.elf] Error 1
+14:58:13 **** Clean-only build of configuration Debug for project HelloWorld ****
+make clean 
+rm -rf  ./src/main.o ./src/nuprism_cmd.o  ./src/main.d ./src/nuprism_cmd.d  HelloWorld.elf.size  HelloWorld.elf
+' '
+14:58:13 **** Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:76:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:82:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:146:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:167:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/nuprism_cmd.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\triumf\max\xu1-max10-testing\XU1\workspace\HelloWorld\Debug/../src/main.c:91: undefined reference to `do_command'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: HelloWorld.elf] Error 1
+14:58:19 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:58:20 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:58:21 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:58:21 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\triumf\max\xu1-max10-testing\XU1\workspace\HelloWorld\Debug/../src/main.c:91: undefined reference to `do_command'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: HelloWorld.elf] Error 1
+14:58:22 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:01 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:76:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:91:3: warning: implicit declaration of function 'do_command'; did you mean '_howmany'? [-Wimplicit-function-declaration]
+   do_command(buf);
+   ^~~~~~~~~~
+   _howmany
+../src/main.c:82:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:146:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:167:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/nuprism_cmd.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/nuprism_cmd.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/nuprism_cmd.d" -MT"src/nuprism_cmd.o" -o "src/nuprism_cmd.o" "../src/nuprism_cmd.c"
+In file included from ../src/nuprism_cmd.c:10:0:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/nuprism_cmd.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+C:\triumf\max\xu1-max10-testing\XU1\workspace\HelloWorld\Debug/../src/main.c:91: undefined reference to `do_command'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:38: HelloWorld.elf] Error 1
+14:59:08 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:76:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:82:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:146:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:167:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HelloWorld.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size HelloWorld.elf  |tee "HelloWorld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56456	   4504	  20912	  81872	  13fd0	HelloWorld.elf
+'Finished building: HelloWorld.elf.size'
+' '
+14:59:09 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:10 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:10 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:11 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:11 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+14:59:29 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:04 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:07 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:08 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:09 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:10 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:34 **** Auto Build of configuration Debug for project HelloWorld ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../standalone_bsp_0/psu_cortexa53_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:30: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+ #define USER_UART_RX_TIMEOUT 20000
+                              ^
+../src/main.c:76:34: note: in expansion of macro 'USER_UART_RX_TIMEOUT'
+  XUartPs_SetRecvTimeout(&uart_0, USER_UART_RX_TIMEOUT);
+                                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:82:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i = 0;
+      ^
+../src/main.c: In function 'send_pmt_uart_command':
+../src/main.c:146:23: warning: pointer targets in passing argument 2 of 'XUartPs_Send' differ in signedness [-Wpointer-sign]
+  XUartPs_Send(&uart_0,cmd,strlen(cmd));
+                       ^~~
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:462:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Send(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+../src/main.c: In function 'uart_rx_packet':
+../src/main.c:167:35: warning: pointer targets in passing argument 2 of 'XUartPs_Recv' differ in signedness [-Wpointer-sign]
+   num_rec = XUartPs_Recv(&uart_0, &packet[packet_index], 1);
+                                   ^
+In file included from ../src/main.c:32:0:
+../../standalone_bsp_0/psu_cortexa53_0/include/xuartps.h:465:5: note: expected 'u8 * {aka unsigned char *}' but argument is of type 'char *'
+ u32 XUartPs_Recv(XUartPs *InstancePtr,u8 *BufferPtr,
+     ^~~~~~~~~~~~
+In file included from ../src/main.c:27:0:
+At top level:
+../src/UtilityFunctions.h:39:12: warning: 'ConvertBinaryCodedDecimalToDecimal' defined but not used [-Wunused-function]
+ static int ConvertBinaryCodedDecimalToDecimal(uint8_t bcd)
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: HelloWorld.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L../../standalone_bsp_0/psu_cortexa53_0/lib -o "HelloWorld.elf"  ./src/main.o ./src/nuprism_cmd.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilpm,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilsecure,-lxil,-lgcc,-lc,--end-group
+'Finished building target: HelloWorld.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size HelloWorld.elf  |tee "HelloWorld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  56456	   4504	  20912	  81872	  13fd0	HelloWorld.elf
+'Finished building: HelloWorld.elf.size'
+' '
+09:21:39 **** Incremental Build of configuration Debug for project i2c_example ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:40 **** Incremental Build of configuration Debug for project fsbl ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:41 **** Incremental Build of configuration Debug for project MemoryTest ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:42 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:21:42 **** Incremental Build of configuration Debug for project FlashTest ****
+make all 
+make: Nothing to be done for 'all'.
+09:22:19 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:22:56 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:24:34 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:27:30 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:27:58 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.
+09:28:44 **** Incremental Build of configuration Debug for project HelloWorld ****
+make all 
+make: Nothing to be done for 'all'.

@@ -2,8 +2,11 @@
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
 <instance id="xilinx.gnu.arm.a53.exe.debug.1491007397;xilinx.gnu.arm.a53.exe.debug.1491007397.">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __ARM_BIG_ENDIAN" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_FP16_SCALAR_ARITHMETIC" removed="true"/>
 <includePath path="#undef __AARCH64_CMODEL_LARGE__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/7.3.1/include"/>
+<includePath path="#undef __ARM_FEATURE_FP16_VECTOR_ARITHMETIC" removed="true"/>
 <includePath path="#undef _ILP32" removed="true"/>
 <includePath path="#undef __ILP32__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
@@ -11,8 +14,12 @@
 <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/7.3.1/include-fixed"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/7.3.1/../../../../aarch64-none-elf/include"/>
+<includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
 <includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+<includePath path="#undef __AARCH64_CMODEL_TINY__" removed="true"/>
+<includePath path="#undef __AARCH64_CMODEL_SMALL__" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_CRC32" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201112L"/>
 <definedSymbol symbol="__STDC_UTF_16__=1"/>
@@ -729,19 +736,24 @@
 </instance>
 <instance id="xilinx.gnu.arm.a53.exe.debug.1491007397;xilinx.gnu.arm.a53.exe.debug.1491007397.;xilinx.gnu.arm.a53.c.toolchain.compiler.debug.1278728158;xilinx.gnu.arm.a53.c.compiler.input.796256203">
 <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+<includePath path="#undef __AARCH64EB__" removed="true"/>
 <includePath path="#undef __ILP32__" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
 <includePath path="#undef __AARCH64_CMODEL_TINY__" removed="true"/>
 <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/7.3.1/include"/>
+<includePath path="#undef __ARM_BIG_ENDIAN" removed="true"/>
 <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
 <includePath path="#undef __AARCH64_CMODEL_SMALL__" removed="true"/>
 <includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/7.3.1/include-fixed"/>
 <includePath path="#undef __AARCH64_CMODEL_LARGE__" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/7.3.1/../../../../aarch64-none-elf/include"/>
+<includePath path="#undef __ARM_FEATURE_CRC32" removed="true"/>
+<includePath path="#undef __ARM_FEATURE_FP16_SCALAR_ARITHMETIC" removed="true"/>
 <includePath path="c:\xilinx\sdk\2018.3\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+<includePath path="#undef __ARM_FEATURE_FP16_VECTOR_ARITHMETIC" removed="true"/>
 <includePath path="#undef _ILP32" removed="true"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__STDC_VERSION__=201112L"/>

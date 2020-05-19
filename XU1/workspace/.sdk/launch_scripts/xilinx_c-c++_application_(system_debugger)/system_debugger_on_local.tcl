@@ -5,6 +5,8 @@ rst -system
 after 3000
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
 reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
+clear_rpu_reset
 targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001631dbc501" && level==0} -index 0
 fpga -file C:/triumf/max/xu1-max10-testing/XU1/workspace/hw_platform_0/system_top.bit
 targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001631dbc501"} -index 1
